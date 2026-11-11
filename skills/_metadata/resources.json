@@ -1,0 +1,2223 @@
+{
+  "format_version": 1,
+  "unhashed_manifest": "_metadata/resources.json",
+  "note": "The manifest cannot hash itself. All other public files, including the verifier and metadata, are indexed. Git executable distinction is checked rather than umask-dependent full permission modes.",
+  "cross_skill_links": 70,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7911,
+      "sha256": "9411f6360e178cfd42e27c15a633810740eade5a0c15e4433f35c0844e6b0f84",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "_metadata/current-skills.json",
+      "bytes": 12653,
+      "sha256": "e55b0f605bd22dabf16eb436e7586fd73e1baae383e0413d290b10b60d51f8a2",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "_metadata/enable-state-snapshot.json",
+      "bytes": 1035,
+      "sha256": "1b261290c875e039296aa40842506a29ab35e74bb6a63de9108e00fafb6d6673",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "_metadata/external-dependencies.json",
+      "bytes": 1161,
+      "sha256": "1dc71c98514d3337486e57026462b31a81dab1fa2d43de5b44f05bc108f1998c",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "_metadata/source-summary.json",
+      "bytes": 4929,
+      "sha256": "d66117232b07661f2e23c13112b0c8260a7852704eb3cf076d525b5f97d7b520",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "_tools/verify_bundle.py",
+      "bytes": 7703,
+      "sha256": "55bffbb4cd782467339a9d816676179823e6328c214a456f7bd577f2c75b1fed",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "embedded-firmware/LICENSE",
+      "bytes": 1069,
+      "sha256": "0989602f40c6d38ecb0c043240bdea5085cda6bf3fe7a413577c1a76394fb258",
+      "executable": false,
+      "source_id": "skills/embedded-firmware/LICENSE",
+      "source_sha256": "0989602f40c6d38ecb0c043240bdea5085cda6bf3fe7a413577c1a76394fb258",
+      "source_bytes": 1069,
+      "adapted": false
+    },
+    {
+      "path": "embedded-firmware/SKILL.md",
+      "bytes": 9530,
+      "sha256": "72bc149e0e011259537dd266f8bd62e543e26e1fb53cd27ea4e19068e172aca2",
+      "executable": false,
+      "source_id": "skills/embedded-firmware/SKILL.md",
+      "source_sha256": "72bc149e0e011259537dd266f8bd62e543e26e1fb53cd27ea4e19068e172aca2",
+      "source_bytes": 9530,
+      "adapted": false
+    },
+    {
+      "path": "embedded-firmware/SOURCE.json",
+      "bytes": 530,
+      "sha256": "6da57657242795ae81fb18a53f8cab141501f0e2186d8a6f78b9bf9b86352dcc",
+      "executable": false,
+      "source_id": "skills/embedded-firmware/SOURCE.json",
+      "source_sha256": "6da57657242795ae81fb18a53f8cab141501f0e2186d8a6f78b9bf9b86352dcc",
+      "source_bytes": 530,
+      "adapted": false
+    },
+    {
+      "path": "embedded-firmware/references/gowin-ae350.md",
+      "bytes": 4733,
+      "sha256": "d232f2b89e831996c4372926501d47a8e8574577b339b32858507618aba1f59e",
+      "executable": false,
+      "source_id": "skills/embedded-firmware/references/gowin-ae350.md",
+      "source_sha256": "6723458ccb8c081d4c4965824c9e4415ab441f88f83b8cdbd9c671de82cc8480",
+      "source_bytes": 4751,
+      "adapted": true
+    },
+    {
+      "path": "embedded-firmware/references/upstream/firmware-orchestrator.md",
+      "bytes": 26505,
+      "sha256": "d11470a7e8e3c1de9e4c6b64c0fc287490f4421c4018f3575411b18cb579db46",
+      "executable": false,
+      "source_id": "skills/embedded-firmware/references/upstream/firmware-orchestrator.md",
+      "source_sha256": "d11470a7e8e3c1de9e4c6b64c0fc287490f4421c4018f3575411b18cb579db46",
+      "source_bytes": 26505,
+      "adapted": false
+    },
+    {
+      "path": "embedded-firmware/references/upstream/skill-original.md",
+      "bytes": 10458,
+      "sha256": "a655f29a5caf3be4ba61d6d7c30c3b3423f85aa05b12f7f663d46aeaa4aff7b7",
+      "executable": false,
+      "source_id": "skills/embedded-firmware/references/upstream/skill-original.md",
+      "source_sha256": "a655f29a5caf3be4ba61d6d7c30c3b3423f85aa05b12f7f663d46aeaa4aff7b7",
+      "source_bytes": 10458,
+      "adapted": false
+    },
+    {
+      "path": "fpga/SKILL.md",
+      "bytes": 6298,
+      "sha256": "f7bf8a447bd9cdc424ce8da0e381e71ebbc939d7f924f1524d8264aaa32f76f8",
+      "executable": false,
+      "source_id": "skills/fpga/SKILL.md",
+      "source_sha256": "714ab5e38c954940feb4fc7746e4821710443c210bd5d8f27c28e73a790225a9",
+      "source_bytes": 6337,
+      "adapted": true
+    },
+    {
+      "path": "gf/SKILL.md",
+      "bytes": 2732,
+      "sha256": "6e6b6b63ffd333585cd1976890bc212e43981a16ed28407e38b13f57bd6b0b56",
+      "executable": false,
+      "source_id": "skills/gf/SKILL.md",
+      "source_sha256": "3c29849dca03a6041e47df448e6a97e8e3b45e8be018137bb8c23c53ea585992",
+      "source_bytes": 2717,
+      "adapted": true
+    },
+    {
+      "path": "gf/references/audio-contest.md",
+      "bytes": 3238,
+      "sha256": "a480f2756b9195b7dd6fd4aeac1ece78739c2fedb734c037a31d96aa2482a389",
+      "executable": false,
+      "source_id": "skills/gf/references/audio-contest.md",
+      "source_sha256": "a480f2756b9195b7dd6fd4aeac1ece78739c2fedb734c037a31d96aa2482a389",
+      "source_bytes": 3238,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/codex-runtime.md",
+      "bytes": 6339,
+      "sha256": "7cfdd35ce89072ee39cdc0d25dc853f610de4cb98e6820a505003a84a3e2a39a",
+      "executable": false,
+      "source_id": "skills/gf/references/codex-runtime.md",
+      "source_sha256": "7cfdd35ce89072ee39cdc0d25dc853f610de4cb98e6820a505003a84a3e2a39a",
+      "source_bytes": 6339,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/gowin-vendor-flow.md",
+      "bytes": 15728,
+      "sha256": "bc9a653463f97f67b44227994b59206fe4ca30315db58795e02a0a298996049f",
+      "executable": false,
+      "source_id": "skills/gf/references/gowin-vendor-flow.md",
+      "source_sha256": "98219c63b4fbf1e6e912ac24224e2891f9717dcc0ad34de750633928d3a266e8",
+      "source_bytes": 15689,
+      "adapted": true
+    },
+    {
+      "path": "gf/references/gowin-vendor-windows.md",
+      "bytes": 1321,
+      "sha256": "b9af4c2b3a09f20a3a871fef250eed042d40bb8fa9bb5def222cbc3856f47795",
+      "executable": false,
+      "source_id": "skills/gf/references/gowin-vendor-windows.md",
+      "source_sha256": "b9af4c2b3a09f20a3a871fef250eed042d40bb8fa9bb5def222cbc3856f47795",
+      "source_bytes": 1321,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/host-linux.md",
+      "bytes": 5281,
+      "sha256": "108b7f42a294d1f7833918dfa47d9d4a001798c49ca07e41c682c0e58257e738",
+      "executable": false,
+      "source_id": "skills/gf/references/host-linux.md",
+      "source_sha256": "13d35edc97021603eb4519cff54c72b67d761aabbd89bfae2cc6b8cbb14e06a8",
+      "source_bytes": 5269,
+      "adapted": true
+    },
+    {
+      "path": "gf/references/host-windows.md",
+      "bytes": 1243,
+      "sha256": "2ad3e362ec67d93ac7d6988f07e364ce245f2096301a841ab35f7ff0d970214d",
+      "executable": false,
+      "source_id": "skills/gf/references/host-windows.md",
+      "source_sha256": "2ad3e362ec67d93ac7d6988f07e364ce245f2096301a841ab35f7ff0d970214d",
+      "source_bytes": 1243,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/local-edits.md",
+      "bytes": 4812,
+      "sha256": "149e0ac10bfb1fc7321cf666eea1f40aba033689b99bdaac1947fca53fd7d1eb",
+      "executable": false,
+      "source_id": "skills/gf/references/local-edits.md",
+      "source_sha256": "149e0ac10bfb1fc7321cf666eea1f40aba033689b99bdaac1947fca53fd7d1eb",
+      "source_bytes": 4812,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-command-discovery.md",
+      "bytes": 3481,
+      "sha256": "3c1b7169dd6070c0d8725262f5c5aed33f68bd65b47f853df5eaed2e8bf7eb9b",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-command-discovery.md",
+      "source_sha256": "3c1b7169dd6070c0d8725262f5c5aed33f68bd65b47f853df5eaed2e8bf7eb9b",
+      "source_bytes": 3481,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-coordination.md",
+      "bytes": 15117,
+      "sha256": "8d42787ae0ca1140559be60af933544d0dcab61c59b609511f17b216cd792dcb",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-coordination.md",
+      "source_sha256": "8d42787ae0ca1140559be60af933544d0dcab61c59b609511f17b216cd792dcb",
+      "source_bytes": 15117,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-intake.md",
+      "bytes": 3408,
+      "sha256": "af813e24f1fdd98850e055686ea5125839c53cb7039ea856cb6ba5e7ac2fa505",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-intake.md",
+      "source_sha256": "af813e24f1fdd98850e055686ea5125839c53cb7039ea856cb6ba5e7ac2fa505",
+      "source_bytes": 3408,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-plan-execution.md",
+      "bytes": 2163,
+      "sha256": "5cb4787b30c2c929b956922109440df1b5cc4f4623383ab9cfc9ae11511dc4c5",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-plan-execution.md",
+      "source_sha256": "5cb4787b30c2c929b956922109440df1b5cc4f4623383ab9cfc9ae11511dc4c5",
+      "source_bytes": 2163,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-request-examples.md",
+      "bytes": 5807,
+      "sha256": "ac619d0b8c77750ca7f1da725bd61f5a76334ee02aba6b4d915d56c45b66925c",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-request-examples.md",
+      "source_sha256": "ac619d0b8c77750ca7f1da725bd61f5a76334ee02aba6b4d915d56c45b66925c",
+      "source_bytes": 5807,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-verification.md",
+      "bytes": 4734,
+      "sha256": "90662a2299b24c5cf458cc794ccf86ba08783f4d00ecdcd72ebc4f6d6da11a7a",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-verification.md",
+      "source_sha256": "90662a2299b24c5cf458cc794ccf86ba08783f4d00ecdcd72ebc4f6d6da11a7a",
+      "source_bytes": 4734,
+      "adapted": false
+    },
+    {
+      "path": "gf/references/rtl-workflow.md",
+      "bytes": 3230,
+      "sha256": "262d43469a13d50641d152273d5e61b2a29e1eadac22532fb5350994ba4189f6",
+      "executable": false,
+      "source_id": "skills/gf/references/rtl-workflow.md",
+      "source_sha256": "262d43469a13d50641d152273d5e61b2a29e1eadac22532fb5350994ba4189f6",
+      "source_bytes": 3230,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/SKILL.md",
+      "bytes": 2475,
+      "sha256": "4b54e1774790ff4bf5346297fbc6d815753bb806af780297aac09a70c6570f90",
+      "executable": false,
+      "source_id": "skills/gf-architect/SKILL.md",
+      "source_sha256": "4b54e1774790ff4bf5346297fbc6d815753bb806af780297aac09a70c6570f90",
+      "source_bytes": 2475,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/clock-domains.md",
+      "bytes": 746,
+      "sha256": "81722ccac43255def883c1e5d51323d089ddbf53022b9cf6376b17db6e84276c",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/clock-domains.md",
+      "source_sha256": "81722ccac43255def883c1e5d51323d089ddbf53022b9cf6376b17db6e84276c",
+      "source_bytes": 746,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/fsm.md",
+      "bytes": 711,
+      "sha256": "e12ee8aa7dd76ddd780b7c7beffb27317a5df83a86ec6c5df13144da0abf65d9",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/fsm.md",
+      "source_sha256": "e12ee8aa7dd76ddd780b7c7beffb27317a5df83a86ec6c5df13144da0abf65d9",
+      "source_bytes": 711,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/hierarchy-and-signals.md",
+      "bytes": 1294,
+      "sha256": "26e4b758d6ebb9b987f03759d7f96faa885294710030a7359cbe61710f398b53",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/hierarchy-and-signals.md",
+      "source_sha256": "26e4b758d6ebb9b987f03759d7f96faa885294710030a7359cbe61710f398b53",
+      "source_bytes": 1294,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/incremental-and-diagnostics.md",
+      "bytes": 3560,
+      "sha256": "341a5f1d7ffef7906a8a0da868bdc8942fdf093651bbc62c5f23758696c6033b",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/incremental-and-diagnostics.md",
+      "source_sha256": "341a5f1d7ffef7906a8a0da868bdc8942fdf093651bbc62c5f23758696c6033b",
+      "source_bytes": 3560,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/language-objects.md",
+      "bytes": 1786,
+      "sha256": "7e9993cff63bd61ff19a99d6a3cba1955fd5dbf84e1a61d9409462e65de56433",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/language-objects.md",
+      "source_sha256": "7e9993cff63bd61ff19a99d6a3cba1955fd5dbf84e1a61d9409462e65de56433",
+      "source_bytes": 1786,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/map-index.md",
+      "bytes": 2475,
+      "sha256": "aef818031dd3fd5ddaa5d3e4ed28611bedd4c94b694aed5429d75e6bf39c47b7",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/map-index.md",
+      "source_sha256": "aef818031dd3fd5ddaa5d3e4ed28611bedd4c94b694aed5429d75e6bf39c47b7",
+      "source_bytes": 2475,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/mapping.md",
+      "bytes": 3713,
+      "sha256": "d12e6444c794c6cac5743dfb35b326d268fa3ae4f84abb2fc097b3b2c49880f6",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/mapping.md",
+      "source_sha256": "d12e6444c794c6cac5743dfb35b326d268fa3ae4f84abb2fc097b3b2c49880f6",
+      "source_bytes": 3713,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/modules-and-recipe.md",
+      "bytes": 1642,
+      "sha256": "a301027ab9210c8a6694f08abff7ad1fb9b582544fd4833559e6f27a986dd118",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/modules-and-recipe.md",
+      "source_sha256": "a301027ab9210c8a6694f08abff7ad1fb9b582544fd4833559e6f27a986dd118",
+      "source_bytes": 1642,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/scan-patterns.md",
+      "bytes": 1376,
+      "sha256": "b69519d8f9d66fb9201b30e06e9399b7bfa50c8e9f19dec6ac5c0b02389f7414",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/scan-patterns.md",
+      "source_sha256": "b69519d8f9d66fb9201b30e06e9399b7bfa50c8e9f19dec6ac5c0b02389f7414",
+      "source_bytes": 1376,
+      "adapted": false
+    },
+    {
+      "path": "gf-architect/references/verification-objects.md",
+      "bytes": 1999,
+      "sha256": "a4255df3abe09ef267da3c6ec17e9e37c0ec87a0348470bdf3aedc9a18a900f9",
+      "executable": false,
+      "source_id": "skills/gf-architect/references/verification-objects.md",
+      "source_sha256": "a4255df3abe09ef267da3c6ec17e9e37c0ec87a0348470bdf3aedc9a18a900f9",
+      "source_bytes": 1999,
+      "adapted": false
+    },
+    {
+      "path": "gf-build/SKILL.md",
+      "bytes": 2038,
+      "sha256": "51bb5923df4783877f04ac150759700203f39f5bf1bb45c7d23745eec6980849",
+      "executable": false,
+      "source_id": "skills/gf-build/SKILL.md",
+      "source_sha256": "51bb5923df4783877f04ac150759700203f39f5bf1bb45c7d23745eec6980849",
+      "source_bytes": 2038,
+      "adapted": false
+    },
+    {
+      "path": "gf-build/references/cache-and-report.md",
+      "bytes": 1942,
+      "sha256": "3cab956b32d8437874de2d014343fd441afc0cb380bdec4f8dc870244f5ca93d",
+      "executable": false,
+      "source_id": "skills/gf-build/references/cache-and-report.md",
+      "source_sha256": "3cab956b32d8437874de2d014343fd441afc0cb380bdec4f8dc870244f5ca93d",
+      "source_bytes": 1942,
+      "adapted": false
+    },
+    {
+      "path": "gf-build/references/coordination.md",
+      "bytes": 1696,
+      "sha256": "50292637ed27b5b437138d6e9560256d88234959f1fc336d486985f8219474e0",
+      "executable": false,
+      "source_id": "skills/gf-build/references/coordination.md",
+      "source_sha256": "50292637ed27b5b437138d6e9560256d88234959f1fc336d486985f8219474e0",
+      "source_bytes": 1696,
+      "adapted": false
+    },
+    {
+      "path": "gf-build/references/phases.md",
+      "bytes": 3714,
+      "sha256": "6a311d866dbbb8759a942b1780b56b0179de6773036cb443c30fe548a3e4ad54",
+      "executable": false,
+      "source_id": "skills/gf-build/references/phases.md",
+      "source_sha256": "6a311d866dbbb8759a942b1780b56b0179de6773036cb443c30fe548a3e4ad54",
+      "source_bytes": 3714,
+      "adapted": false
+    },
+    {
+      "path": "gf-build/references/worker-prompts.md",
+      "bytes": 1049,
+      "sha256": "2c9f4c539ddbaedb38757ff8381d37ddf2b7a9e77fd445a2ef2095aaa392b044",
+      "executable": false,
+      "source_id": "skills/gf-build/references/worker-prompts.md",
+      "source_sha256": "2c9f4c539ddbaedb38757ff8381d37ddf2b7a9e77fd445a2ef2095aaa392b044",
+      "source_bytes": 1049,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/SKILL.md",
+      "bytes": 1874,
+      "sha256": "b92dcbce5aa8bf10cdc01c92acd9aaeb2ec3dc62f9d11d5e817cd48dacae7880",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/SKILL.md",
+      "source_sha256": "b92dcbce5aa8bf10cdc01c92acd9aaeb2ec3dc62f9d11d5e817cd48dacae7880",
+      "source_bytes": 1874,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/basic-test.md",
+      "bytes": 612,
+      "sha256": "385e2f8bb4b38376ccb964979a096d5f40282eac2316e7eeeb627848423f8e50",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/basic-test.md",
+      "source_sha256": "385e2f8bb4b38376ccb964979a096d5f40282eac2316e7eeeb627848423f8e50",
+      "source_bytes": 612,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/fifo-test.md",
+      "bytes": 1204,
+      "sha256": "03df50f836f0c4c8703f0bbeb720875cf6078c77131a4ad22a518b8fc0204dd6",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/fifo-test.md",
+      "source_sha256": "03df50f836f0c4c8703f0bbeb720875cf6078c77131a4ad22a518b8fc0204dd6",
+      "source_bytes": 1204,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/fsm-test.md",
+      "bytes": 654,
+      "sha256": "0eae1516aa0829d8a33a1618dc56c5d81e5eb32f5e30e5c77b85f00993290968",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/fsm-test.md",
+      "source_sha256": "0eae1516aa0829d8a33a1618dc56c5d81e5eb32f5e30e5c77b85f00993290968",
+      "source_bytes": 654,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/handshake-test.md",
+      "bytes": 975,
+      "sha256": "b26685bb3047fb96114ee581155ef5edccd66ef535f642ae21b0fd4bb0744c69",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/handshake-test.md",
+      "source_sha256": "b26685bb3047fb96114ee581155ef5edccd66ef535f642ae21b0fd4bb0744c69",
+      "source_bytes": 975,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/protocol-libraries.md",
+      "bytes": 936,
+      "sha256": "18b7ced8bf2d63135958d6b8e9af0a4700a6104d373f3cd23fdbeb6236212d55",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/protocol-libraries.md",
+      "source_sha256": "18b7ced8bf2d63135958d6b8e9af0a4700a6104d373f3cd23fdbeb6236212d55",
+      "source_bytes": 936,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/runners.md",
+      "bytes": 1006,
+      "sha256": "017c555c077308a804a4d371a484d958808ff9fe39e9c512887ac789612e31df",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/runners.md",
+      "source_sha256": "017c555c077308a804a4d371a484d958808ff9fe39e9c512887ac789612e31df",
+      "source_bytes": 1006,
+      "adapted": false
+    },
+    {
+      "path": "gf-cocotb/references/selection-and-results.md",
+      "bytes": 1022,
+      "sha256": "768b4de0f36a4b7f380dae4e0afd9b36baae337dcfe5ead062ca80e7685ba451",
+      "executable": false,
+      "source_id": "skills/gf-cocotb/references/selection-and-results.md",
+      "source_sha256": "768b4de0f36a4b7f380dae4e0afd9b36baae337dcfe5ead062ca80e7685ba451",
+      "source_bytes": 1022,
+      "adapted": false
+    },
+    {
+      "path": "gf-errors/SKILL.md",
+      "bytes": 5358,
+      "sha256": "662d14957d1dae93d894ebd946eef5b88fc8b96ff28b4e5e83105ff2b0f64711",
+      "executable": false,
+      "source_id": "skills/gf-errors/SKILL.md",
+      "source_sha256": "662d14957d1dae93d894ebd946eef5b88fc8b96ff28b4e5e83105ff2b0f64711",
+      "source_bytes": 5358,
+      "adapted": false
+    },
+    {
+      "path": "gf-expand/SKILL.md",
+      "bytes": 1392,
+      "sha256": "27f4df19d3de6ebdbba77c1a4fd5943f7d71b3b8deda889d39601d847fc024e6",
+      "executable": false,
+      "source_id": "skills/gf-expand/SKILL.md",
+      "source_sha256": "27f4df19d3de6ebdbba77c1a4fd5943f7d71b3b8deda889d39601d847fc024e6",
+      "source_bytes": 1392,
+      "adapted": false
+    },
+    {
+      "path": "gf-expand/references/defaults.md",
+      "bytes": 1203,
+      "sha256": "126c42bdd9b90d1ce3a97377044581486d3b1aa3ff6e22d031b0c35f70f48170",
+      "executable": false,
+      "source_id": "skills/gf-expand/references/defaults.md",
+      "source_sha256": "126c42bdd9b90d1ce3a97377044581486d3b1aa3ff6e22d031b0c35f70f48170",
+      "source_bytes": 1203,
+      "adapted": false
+    },
+    {
+      "path": "gf-expand/references/handoff.md",
+      "bytes": 933,
+      "sha256": "2169a3cbd3d8be2a0ee2d2cb2054e5cd3f5613c2c44a79bfbf83b6547cea2db0",
+      "executable": false,
+      "source_id": "skills/gf-expand/references/handoff.md",
+      "source_sha256": "2169a3cbd3d8be2a0ee2d2cb2054e5cd3f5613c2c44a79bfbf83b6547cea2db0",
+      "source_bytes": 933,
+      "adapted": false
+    },
+    {
+      "path": "gf-expand/references/options.md",
+      "bytes": 1389,
+      "sha256": "496b5151c78ac07cbc01757416273cfd328e210cdf7f4a32a9f192162cb0966f",
+      "executable": false,
+      "source_id": "skills/gf-expand/references/options.md",
+      "source_sha256": "496b5151c78ac07cbc01757416273cfd328e210cdf7f4a32a9f192162cb0966f",
+      "source_bytes": 1389,
+      "adapted": false
+    },
+    {
+      "path": "gf-expand/references/questions.md",
+      "bytes": 4674,
+      "sha256": "f18ede6e012564732ae15e652f02a6810746927153b3e72a62d8dec740b18f52",
+      "executable": false,
+      "source_id": "skills/gf-expand/references/questions.md",
+      "source_sha256": "f18ede6e012564732ae15e652f02a6810746927153b3e72a62d8dec740b18f52",
+      "source_bytes": 4674,
+      "adapted": false
+    },
+    {
+      "path": "gf-formal/SKILL.md",
+      "bytes": 2233,
+      "sha256": "cf5ca22fe0fe67476f6ab1535d89d7832b299d633ae231a0f22ae3c7bd45477b",
+      "executable": false,
+      "source_id": "skills/gf-formal/SKILL.md",
+      "source_sha256": "3425210c2a421717ef14edff8ca108d31a64dc8e6a5a161e0b6d298f16c5cc62",
+      "source_bytes": 2205,
+      "adapted": true
+    },
+    {
+      "path": "gf-formal/references/counterexamples.md",
+      "bytes": 899,
+      "sha256": "545b4d89f7262f520ee01e11a7400c0c1a6f0c8afae0f7931f44e1ad4ce39d89",
+      "executable": false,
+      "source_id": "skills/gf-formal/references/counterexamples.md",
+      "source_sha256": "545b4d89f7262f520ee01e11a7400c0c1a6f0c8afae0f7931f44e1ad4ce39d89",
+      "source_bytes": 899,
+      "adapted": false
+    },
+    {
+      "path": "gf-formal/references/engines-and-strategy.md",
+      "bytes": 1193,
+      "sha256": "05d5165e569c5574c248b4648559862f963c6c1f8a565245c60d2ba180ce1b8d",
+      "executable": false,
+      "source_id": "skills/gf-formal/references/engines-and-strategy.md",
+      "source_sha256": "05d5165e569c5574c248b4648559862f963c6c1f8a565245c60d2ba180ce1b8d",
+      "source_bytes": 1193,
+      "adapted": false
+    },
+    {
+      "path": "gf-formal/references/extensions.md",
+      "bytes": 747,
+      "sha256": "232fdfb95a197f23237fe72c7083994488f00efbb203d6666343a5057395f056",
+      "executable": false,
+      "source_id": "skills/gf-formal/references/extensions.md",
+      "source_sha256": "232fdfb95a197f23237fe72c7083994488f00efbb203d6666343a5057395f056",
+      "source_bytes": 747,
+      "adapted": false
+    },
+    {
+      "path": "gf-formal/references/sby-templates.md",
+      "bytes": 1454,
+      "sha256": "cee4ada2d20429a2948c0777a83f4224bbc3fa4317b477da1522a90ce48ce650",
+      "executable": false,
+      "source_id": "skills/gf-formal/references/sby-templates.md",
+      "source_sha256": "cee4ada2d20429a2948c0777a83f4224bbc3fa4317b477da1522a90ce48ce650",
+      "source_bytes": 1454,
+      "adapted": false
+    },
+    {
+      "path": "gf-formal/references/sva-patterns.md",
+      "bytes": 1264,
+      "sha256": "f96f7c575884eff264a9545b3d42aa3115751ee2f8907ef6c818b82d6a04ada4",
+      "executable": false,
+      "source_id": "skills/gf-formal/references/sva-patterns.md",
+      "source_sha256": "f96f7c575884eff264a9545b3d42aa3115751ee2f8907ef6c818b82d6a04ada4",
+      "source_bytes": 1264,
+      "adapted": false
+    },
+    {
+      "path": "gf-fusesoc/SKILL.md",
+      "bytes": 1445,
+      "sha256": "38d82496a95ed73e8341abb003e677f764af767bd6b4a371e6e749b6bdeb3deb",
+      "executable": false,
+      "source_id": "skills/gf-fusesoc/SKILL.md",
+      "source_sha256": "38d82496a95ed73e8341abb003e677f764af767bd6b4a371e6e749b6bdeb3deb",
+      "source_bytes": 1445,
+      "adapted": false
+    },
+    {
+      "path": "gf-fusesoc/references/core-schema.md",
+      "bytes": 2373,
+      "sha256": "358bc96566607ba51c2bf48fafaa9bf2e8119091de62273ff9480d2a1f7aead2",
+      "executable": false,
+      "source_id": "skills/gf-fusesoc/references/core-schema.md",
+      "source_sha256": "358bc96566607ba51c2bf48fafaa9bf2e8119091de62273ff9480d2a1f7aead2",
+      "source_bytes": 2373,
+      "adapted": false
+    },
+    {
+      "path": "gf-fusesoc/references/dependencies-and-backends.md",
+      "bytes": 1220,
+      "sha256": "6dcdecc662ee3c931d6ce19363b158bfd998f356a6c5ff43cc0bcc31b4a534ef",
+      "executable": false,
+      "source_id": "skills/gf-fusesoc/references/dependencies-and-backends.md",
+      "source_sha256": "6dcdecc662ee3c931d6ce19363b158bfd998f356a6c5ff43cc0bcc31b4a534ef",
+      "source_bytes": 1220,
+      "adapted": false
+    },
+    {
+      "path": "gf-fusesoc/references/execution.md",
+      "bytes": 1412,
+      "sha256": "06f9bf747a453ea9288a318ab85175f92eba7c30ced5c21b25e92fc65d2d0ac9",
+      "executable": false,
+      "source_id": "skills/gf-fusesoc/references/execution.md",
+      "source_sha256": "06f9bf747a453ea9288a318ab85175f92eba7c30ced5c21b25e92fc65d2d0ac9",
+      "source_bytes": 1412,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip/SKILL.md",
+      "bytes": 1651,
+      "sha256": "7268399b0d8d9657a0955d8794679122deca1fc62cb40e5475c27d0bef72a8b9",
+      "executable": false,
+      "source_id": "skills/gf-ip/SKILL.md",
+      "source_sha256": "7268399b0d8d9657a0955d8794679122deca1fc62cb40e5475c27d0bef72a8b9",
+      "source_bytes": 1651,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip/references/adding-and-instantiating.md",
+      "bytes": 2480,
+      "sha256": "8714459a87a2758ff2df893699773c21c8f0d5a215362b5a8035823a2e2ca46b",
+      "executable": false,
+      "source_id": "skills/gf-ip/references/adding-and-instantiating.md",
+      "source_sha256": "8714459a87a2758ff2df893699773c21c8f0d5a215362b5a8035823a2e2ca46b",
+      "source_bytes": 2480,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip/references/catalog-and-metadata.md",
+      "bytes": 2732,
+      "sha256": "8f0df5d179cc3512e754074ab49391420e135a0291a1cfb934b3a13af0a5e496",
+      "executable": false,
+      "source_id": "skills/gf-ip/references/catalog-and-metadata.md",
+      "source_sha256": "8f0df5d179cc3512e754074ab49391420e135a0291a1cfb934b3a13af0a5e496",
+      "source_bytes": 2732,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip-detect/SKILL.md",
+      "bytes": 1899,
+      "sha256": "202728497975bc26b20d4339fd5e1495f8de702abfec2a88e2cf1f8fec434ec5",
+      "executable": false,
+      "source_id": "skills/gf-ip-detect/SKILL.md",
+      "source_sha256": "202728497975bc26b20d4339fd5e1495f8de702abfec2a88e2cf1f8fec434ec5",
+      "source_bytes": 1899,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip-detect/references/authorized-fill.md",
+      "bytes": 4129,
+      "sha256": "70aef38ada522c452aa0c2d4dda8fa8f698b06cbb7a2ea2b00fb30aaab4210fb",
+      "executable": false,
+      "source_id": "skills/gf-ip-detect/references/authorized-fill.md",
+      "source_sha256": "70aef38ada522c452aa0c2d4dda8fa8f698b06cbb7a2ea2b00fb30aaab4210fb",
+      "source_bytes": 4129,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip-detect/references/gowin-ip.md",
+      "bytes": 1370,
+      "sha256": "7b81423f64101119a0d10e3075508790785b0a397ef08312ac2ba166f8425cf2",
+      "executable": false,
+      "source_id": "skills/gf-ip-detect/references/gowin-ip.md",
+      "source_sha256": "7b81423f64101119a0d10e3075508790785b0a397ef08312ac2ba166f8425cf2",
+      "source_bytes": 1370,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip-detect/references/patterns.md",
+      "bytes": 4448,
+      "sha256": "b4a2fcc258ad9b62a7b5c13b470c35dca76251e8a2e4723452d00c49b6279757",
+      "executable": false,
+      "source_id": "skills/gf-ip-detect/references/patterns.md",
+      "source_sha256": "b4a2fcc258ad9b62a7b5c13b470c35dca76251e8a2e4723452d00c49b6279757",
+      "source_bytes": 4448,
+      "adapted": false
+    },
+    {
+      "path": "gf-ip-detect/references/scan-and-report.md",
+      "bytes": 2354,
+      "sha256": "2ca0d10a7ba3a20364386eb0ab0445844ac1296f43c00b69d100cb08d27eb105",
+      "executable": false,
+      "source_id": "skills/gf-ip-detect/references/scan-and-report.md",
+      "source_sha256": "2ca0d10a7ba3a20364386eb0ab0445844ac1296f43c00b69d100cb08d27eb105",
+      "source_bytes": 2354,
+      "adapted": false
+    },
+    {
+      "path": "gf-learn/SKILL.md",
+      "bytes": 1324,
+      "sha256": "9b58e7fff7b400b47b703703a7961d0c0a7498ed3b4fd58f51d8b5a9117882b0",
+      "executable": false,
+      "source_id": "skills/gf-learn/SKILL.md",
+      "source_sha256": "9b58e7fff7b400b47b703703a7961d0c0a7498ed3b4fd58f51d8b5a9117882b0",
+      "source_bytes": 1324,
+      "adapted": false
+    },
+    {
+      "path": "gf-learn/references/exercise-workflow.md",
+      "bytes": 2625,
+      "sha256": "0ef0418d70ed62faa0dc42155244809dd7fd0375e2668cdc006baba693d4d3fe",
+      "executable": false,
+      "source_id": "skills/gf-learn/references/exercise-workflow.md",
+      "source_sha256": "0ef0418d70ed62faa0dc42155244809dd7fd0375e2668cdc006baba693d4d3fe",
+      "source_bytes": 2625,
+      "adapted": false
+    },
+    {
+      "path": "gf-learn/references/topics-and-grading.md",
+      "bytes": 2402,
+      "sha256": "012c7edc044838a95bf57c707708c278a1b36dc0daa4f0b5ae0db0e7d983da9b",
+      "executable": false,
+      "source_id": "skills/gf-learn/references/topics-and-grading.md",
+      "source_sha256": "012c7edc044838a95bf57c707708c278a1b36dc0daa4f0b5ae0db0e7d983da9b",
+      "source_bytes": 2402,
+      "adapted": false
+    },
+    {
+      "path": "gf-learn-ctx/SKILL.md",
+      "bytes": 1269,
+      "sha256": "013819bae0eb5e2050dea5d7b1f1081f1fd6e27c3485de4829ded65ed16d401b",
+      "executable": false,
+      "source_id": "skills/gf-learn-ctx/SKILL.md",
+      "source_sha256": "013819bae0eb5e2050dea5d7b1f1081f1fd6e27c3485de4829ded65ed16d401b",
+      "source_bytes": 1269,
+      "adapted": false
+    },
+    {
+      "path": "gf-learn-ctx/references/micro-lessons.md",
+      "bytes": 3993,
+      "sha256": "26256d7d929246a5b094679a8cebee0a329d9907d6b34b007291c84cf54920d2",
+      "executable": false,
+      "source_id": "skills/gf-learn-ctx/references/micro-lessons.md",
+      "source_sha256": "26256d7d929246a5b094679a8cebee0a329d9907d6b34b007291c84cf54920d2",
+      "source_bytes": 3993,
+      "adapted": false
+    },
+    {
+      "path": "gf-learn-ctx/references/progress.md",
+      "bytes": 1356,
+      "sha256": "a7da2adc6d20a72edddde26116141184815704bbc46c0ee13e34940fa0a6a75f",
+      "executable": false,
+      "source_id": "skills/gf-learn-ctx/references/progress.md",
+      "source_sha256": "a7da2adc6d20a72edddde26116141184815704bbc46c0ee13e34940fa0a6a75f",
+      "source_bytes": 1356,
+      "adapted": false
+    },
+    {
+      "path": "gf-lint/SKILL.md",
+      "bytes": 1888,
+      "sha256": "000441fae7fb7ea8871bd82fb3677e758f2cc682e38203086e1683adfa38afa7",
+      "executable": false,
+      "source_id": "skills/gf-lint/SKILL.md",
+      "source_sha256": "f4aea0f734215eec30ded383acf7532a8524c160b7360e6dadf421b371d6d5f2",
+      "source_bytes": 1860,
+      "adapted": true
+    },
+    {
+      "path": "gf-lint/references/reporting.md",
+      "bytes": 2222,
+      "sha256": "f9476cf9ed868041e116f8579dfa34deffaca3b28ec77eb686633bc7b59652f3",
+      "executable": false,
+      "source_id": "skills/gf-lint/references/reporting.md",
+      "source_sha256": "f9476cf9ed868041e116f8579dfa34deffaca3b28ec77eb686633bc7b59652f3",
+      "source_bytes": 2222,
+      "adapted": false
+    },
+    {
+      "path": "gf-lint/references/waivers-and-output.md",
+      "bytes": 953,
+      "sha256": "d632f2d0d8deb397b2ac9ab5385ce906bc863b35450aa629f933e1ef5ee184c7",
+      "executable": false,
+      "source_id": "skills/gf-lint/references/waivers-and-output.md",
+      "source_sha256": "d632f2d0d8deb397b2ac9ab5385ce906bc863b35450aa629f933e1ef5ee184c7",
+      "source_bytes": 953,
+      "adapted": false
+    },
+    {
+      "path": "gf-lint/references/warnings.md",
+      "bytes": 2414,
+      "sha256": "4fbc608880e193f27e5c6858938bc2aada6abdd7de8aa4d141d4513784cc7fa9",
+      "executable": false,
+      "source_id": "skills/gf-lint/references/warnings.md",
+      "source_sha256": "4fbc608880e193f27e5c6858938bc2aada6abdd7de8aa4d141d4513784cc7fa9",
+      "source_bytes": 2414,
+      "adapted": false
+    },
+    {
+      "path": "gf-pcb/SKILL.md",
+      "bytes": 1354,
+      "sha256": "67b06b61cd8a2c486127608dc9471e895ef7ae36d1ffd0598e066542021e3833",
+      "executable": false,
+      "source_id": "skills/gf-pcb/SKILL.md",
+      "source_sha256": "67b06b61cd8a2c486127608dc9471e895ef7ae36d1ffd0598e066542021e3833",
+      "source_bytes": 1354,
+      "adapted": false
+    },
+    {
+      "path": "gf-pcb/references/execution.md",
+      "bytes": 2455,
+      "sha256": "4f1ab4ad0c628c043902d3d02e51e479b86c790366e41c7ee183809f14ccfc66",
+      "executable": false,
+      "source_id": "skills/gf-pcb/references/execution.md",
+      "source_sha256": "4f1ab4ad0c628c043902d3d02e51e479b86c790366e41c7ee183809f14ccfc66",
+      "source_bytes": 2455,
+      "adapted": false
+    },
+    {
+      "path": "gf-pcb/references/kicad-cli.md",
+      "bytes": 17747,
+      "sha256": "662fd7258d894b73a5e0ad34f0e9dff7601c556ad2584bdcfbb7577385bbcaa7",
+      "executable": false,
+      "source_id": "skills/gf-pcb/references/kicad-cli.md",
+      "source_sha256": "662fd7258d894b73a5e0ad34f0e9dff7601c556ad2584bdcfbb7577385bbcaa7",
+      "source_bytes": 17747,
+      "adapted": false
+    },
+    {
+      "path": "gf-pcb/references/manufacturing.md",
+      "bytes": 792,
+      "sha256": "21a02300acd849da6e8063daf48c2a1f2b753d05143201a798fd82e9e4f54cab",
+      "executable": false,
+      "source_id": "skills/gf-pcb/references/manufacturing.md",
+      "source_sha256": "21a02300acd849da6e8063daf48c2a1f2b753d05143201a798fd82e9e4f54cab",
+      "source_bytes": 792,
+      "adapted": false
+    },
+    {
+      "path": "gf-pcb/references/review.md",
+      "bytes": 2136,
+      "sha256": "bd073ef4d04ea538f9013f988d5df9a8fb51d7fd9b4e0fb88f72f10708279201",
+      "executable": false,
+      "source_id": "skills/gf-pcb/references/review.md",
+      "source_sha256": "bd073ef4d04ea538f9013f988d5df9a8fb51d7fd9b4e0fb88f72f10708279201",
+      "source_bytes": 2136,
+      "adapted": false
+    },
+    {
+      "path": "gf-pinmap/SKILL.md",
+      "bytes": 1855,
+      "sha256": "cba335fcd81a280ee1cf5301106cf28ca6dc2bdc08d41799eed1bc691256185f",
+      "executable": false,
+      "source_id": "skills/gf-pinmap/SKILL.md",
+      "source_sha256": "cba335fcd81a280ee1cf5301106cf28ca6dc2bdc08d41799eed1bc691256185f",
+      "source_bytes": 1855,
+      "adapted": false
+    },
+    {
+      "path": "gf-pinmap/references/board-evidence.md",
+      "bytes": 2440,
+      "sha256": "d8cb12f354f89537c6aae4eb09055cac044d16f9b97771790351c5cfee4653fa",
+      "executable": false,
+      "source_id": "skills/gf-pinmap/references/board-evidence.md",
+      "source_sha256": "d8cb12f354f89537c6aae4eb09055cac044d16f9b97771790351c5cfee4653fa",
+      "source_bytes": 2440,
+      "adapted": false
+    },
+    {
+      "path": "gf-pinmap/references/electrical-and-formats.md",
+      "bytes": 2724,
+      "sha256": "81af467891851ee555c325b1b4e9897c1f3004c638a11de9de517eeca1e43da3",
+      "executable": false,
+      "source_id": "skills/gf-pinmap/references/electrical-and-formats.md",
+      "source_sha256": "81af467891851ee555c325b1b4e9897c1f3004c638a11de9de517eeca1e43da3",
+      "source_bytes": 2724,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/SKILL.md",
+      "bytes": 2920,
+      "sha256": "ceeebccdb929d6186a7bde6f2593281a15a04abdcada99d6d071ab2fe4913758",
+      "executable": false,
+      "source_id": "skills/gf-plan/SKILL.md",
+      "source_sha256": "ceeebccdb929d6186a7bde6f2593281a15a04abdcada99d6d071ab2fe4913758",
+      "source_bytes": 2920,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/architecture.md",
+      "bytes": 2860,
+      "sha256": "830e1b65ccf5c4ac4e942f46b74458df47b490fc97ea10af2ab8354507c7d17d",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/architecture.md",
+      "source_sha256": "830e1b65ccf5c4ac4e942f46b74458df47b490fc97ea10af2ab8354507c7d17d",
+      "source_bytes": 2860,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/build-and-tools.md",
+      "bytes": 10636,
+      "sha256": "677b1f81a236450f2c58b5539bc37dc31bae94c4d43939b85081861ab40a1e62",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/build-and-tools.md",
+      "source_sha256": "677b1f81a236450f2c58b5539bc37dc31bae94c4d43939b85081861ab40a1e62",
+      "source_bytes": 10636,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/clocks-and-resets.md",
+      "bytes": 1795,
+      "sha256": "06fbd7abc527b9ad5379f4382cb1da5bc6453d1bde5f068d784f44b9bac0d92a",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/clocks-and-resets.md",
+      "source_sha256": "06fbd7abc527b9ad5379f4382cb1da5bc6453d1bde5f068d784f44b9bac0d92a",
+      "source_bytes": 1795,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/design-patterns.md",
+      "bytes": 12445,
+      "sha256": "745ddea50ca3feab6f0fc0587c335ebc71d05a5d73129a82ef709cbd80435ae5",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/design-patterns.md",
+      "source_sha256": "745ddea50ca3feab6f0fc0587c335ebc71d05a5d73129a82ef709cbd80435ae5",
+      "source_bytes": 12445,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/dft-and-checklists.md",
+      "bytes": 14464,
+      "sha256": "a1659f729b6f7c28ec2f8664490cf703eed42bd25f5b9e4ff2345dce93516a63",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/dft-and-checklists.md",
+      "source_sha256": "a1659f729b6f7c28ec2f8664490cf703eed42bd25f5b9e4ff2345dce93516a63",
+      "source_bytes": 14464,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/estimation.md",
+      "bytes": 2681,
+      "sha256": "7ce6ace5d4af2cf726e004f521988b0703a9be05db41220d0ab7b4058aafb8d2",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/estimation.md",
+      "source_sha256": "7ce6ace5d4af2cf726e004f521988b0703a9be05db41220d0ab7b4058aafb8d2",
+      "source_bytes": 2681,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/fsm.md",
+      "bytes": 1982,
+      "sha256": "2dcbfc4d1442a48d9878fdb379aa15976687288814a22c43dfbdca1b34277019",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/fsm.md",
+      "source_sha256": "2dcbfc4d1442a48d9878fdb379aa15976687288814a22c43dfbdca1b34277019",
+      "source_bytes": 1982,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/implementation.md",
+      "bytes": 2936,
+      "sha256": "45a2f4b29c39953ce98f11e7aee61894f11f4fbe441677b780f7d34ddff1c974",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/implementation.md",
+      "source_sha256": "45a2f4b29c39953ce98f11e7aee61894f11f4fbe441677b780f7d34ddff1c974",
+      "source_bytes": 2936,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/pipeline.md",
+      "bytes": 1081,
+      "sha256": "58118c31515247ffed9d64ba879abd0313b85a5e6645808f3b3fc2a0c7d2fc70",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/pipeline.md",
+      "source_sha256": "58118c31515247ffed9d64ba879abd0313b85a5e6645808f3b3fc2a0c7d2fc70",
+      "source_bytes": 1081,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/plan-output.md",
+      "bytes": 2707,
+      "sha256": "e74f37228e32c30292e6188a8b02c2f4feb6f0ff0ff6e3000bac7d9185d3eb36",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/plan-output.md",
+      "source_sha256": "e74f37228e32c30292e6188a8b02c2f4feb6f0ff0ff6e3000bac7d9185d3eb36",
+      "source_bytes": 2707,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/requirements.md",
+      "bytes": 2219,
+      "sha256": "db4a74c9d01940aa7e526c7c0f5821384b5fffd0db090ecfe4098a8bfdc67b49",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/requirements.md",
+      "source_sha256": "db4a74c9d01940aa7e526c7c0f5821384b5fffd0db090ecfe4098a8bfdc67b49",
+      "source_bytes": 2219,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/specification.md",
+      "bytes": 3014,
+      "sha256": "c4b3f66120ad95ed7cf02165fdfcd487d5d1e45a87c227728331def7f69b2515",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/specification.md",
+      "source_sha256": "c4b3f66120ad95ed7cf02165fdfcd487d5d1e45a87c227728331def7f69b2515",
+      "source_bytes": 3014,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/sv-constructs.md",
+      "bytes": 15440,
+      "sha256": "d84ff9263194c652ff8ba32ca1c4b98f86def4720c2f23695ca49fbcbac51538",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/sv-constructs.md",
+      "source_sha256": "d84ff9263194c652ff8ba32ca1c4b98f86def4720c2f23695ca49fbcbac51538",
+      "source_bytes": 15440,
+      "adapted": false
+    },
+    {
+      "path": "gf-plan/references/verification.md",
+      "bytes": 1368,
+      "sha256": "c787b7e72cc84115628e4e8fd6c285d353207f7bdc41c2df3177b53caefc4349",
+      "executable": false,
+      "source_id": "skills/gf-plan/references/verification.md",
+      "source_sha256": "c787b7e72cc84115628e4e8fd6c285d353207f7bdc41c2df3177b53caefc4349",
+      "source_bytes": 1368,
+      "adapted": false
+    },
+    {
+      "path": "gf-pnr/SKILL.md",
+      "bytes": 1565,
+      "sha256": "716f4f33c83080cd4f17fe85cb876aa74ef804112f9242db4a3e0ece5486eacd",
+      "executable": false,
+      "source_id": "skills/gf-pnr/SKILL.md",
+      "source_sha256": "716f4f33c83080cd4f17fe85cb876aa74ef804112f9242db4a3e0ece5486eacd",
+      "source_bytes": 1565,
+      "adapted": false
+    },
+    {
+      "path": "gf-pnr/references/open-source-execution.md",
+      "bytes": 4303,
+      "sha256": "423ce497d403b524340cde3621b0a60bd52147a59051ef62f435fa9eb45ce5f2",
+      "executable": false,
+      "source_id": "skills/gf-pnr/references/open-source-execution.md",
+      "source_sha256": "423ce497d403b524340cde3621b0a60bd52147a59051ef62f435fa9eb45ce5f2",
+      "source_bytes": 4303,
+      "adapted": false
+    },
+    {
+      "path": "gf-pnr/references/timing-and-constraints.md",
+      "bytes": 1659,
+      "sha256": "186e88151c607fe4935e9ba902312bc357107ec7a75bbd1b4ec976ddd2a3d825",
+      "executable": false,
+      "source_id": "skills/gf-pnr/references/timing-and-constraints.md",
+      "source_sha256": "186e88151c607fe4935e9ba902312bc357107ec7a75bbd1b4ec976ddd2a3d825",
+      "source_bytes": 1659,
+      "adapted": false
+    },
+    {
+      "path": "gf-project/SKILL.md",
+      "bytes": 1581,
+      "sha256": "9361587bbc87aae093cee7e2eaeaf6c19d779b84f8ea0d4c8d0c8a795da1cfab",
+      "executable": false,
+      "source_id": "skills/gf-project/SKILL.md",
+      "source_sha256": "9361587bbc87aae093cee7e2eaeaf6c19d779b84f8ea0d4c8d0c8a795da1cfab",
+      "source_bytes": 1581,
+      "adapted": false
+    },
+    {
+      "path": "gf-project/references/context-and-health.md",
+      "bytes": 2826,
+      "sha256": "c4f39e632161caead41ba344942d833210a2d96ad03a57cfb0227eee33c8ea49",
+      "executable": false,
+      "source_id": "skills/gf-project/references/context-and-health.md",
+      "source_sha256": "c4f39e632161caead41ba344942d833210a2d96ad03a57cfb0227eee33c8ea49",
+      "source_bytes": 2826,
+      "adapted": false
+    },
+    {
+      "path": "gf-project/references/schema-and-templates.md",
+      "bytes": 1986,
+      "sha256": "7177b3c2a120a50ba69ff5e1a49baac7b0dbf6e7c57b8d15b7c00cbca9f336bd",
+      "executable": false,
+      "source_id": "skills/gf-project/references/schema-and-templates.md",
+      "source_sha256": "7177b3c2a120a50ba69ff5e1a49baac7b0dbf6e7c57b8d15b7c00cbca9f336bd",
+      "source_bytes": 1986,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/SKILL.md",
+      "bytes": 1859,
+      "sha256": "25b56be8cd462dc3ea2c48f7ac7f77475d8c6ef32715363159591c38fc648211",
+      "executable": false,
+      "source_id": "skills/gf-protocols/SKILL.md",
+      "source_sha256": "25b56be8cd462dc3ea2c48f7ac7f77475d8c6ef32715363159591c38fc648211",
+      "source_bytes": 1859,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/axi-stream.md",
+      "bytes": 1636,
+      "sha256": "9fc7ad6eebb1257c8ff80d041d0f4e8da64a869ef50b6d7cd385cfc7f41c9fdb",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/axi-stream.md",
+      "source_sha256": "9fc7ad6eebb1257c8ff80d041d0f4e8da64a869ef50b6d7cd385cfc7f41c9fdb",
+      "source_bytes": 1636,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/axi4-full.md",
+      "bytes": 1224,
+      "sha256": "44c8671c0705523f571db4006f75a980c22db9638587adb84305927b6bfc70d0",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/axi4-full.md",
+      "source_sha256": "44c8671c0705523f571db4006f75a980c22db9638587adb84305927b6bfc70d0",
+      "source_bytes": 1224,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/axi4-lite-scaffold.md",
+      "bytes": 1255,
+      "sha256": "3b134d70f8ef19b34ba0eaea3725b2a7b79e916101b127805911762850c2de27",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/axi4-lite-scaffold.md",
+      "source_sha256": "3b134d70f8ef19b34ba0eaea3725b2a7b79e916101b127805911762850c2de27",
+      "source_bytes": 1255,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/axi4-lite.md",
+      "bytes": 1853,
+      "sha256": "1441ec705b1cb21f4b3410c563e33990c5637d5ba3f4b101b68be1ad4a9f6c93",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/axi4-lite.md",
+      "source_sha256": "1441ec705b1cb21f4b3410c563e33990c5637d5ba3f4b101b68be1ad4a9f6c93",
+      "source_bytes": 1853,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/i2c-scaffold.md",
+      "bytes": 892,
+      "sha256": "cf7975a5f2d34e8905cd3cb6ad6f6d8b2cf4de78640dfc924013a5b45c645d47",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/i2c-scaffold.md",
+      "source_sha256": "cf7975a5f2d34e8905cd3cb6ad6f6d8b2cf4de78640dfc924013a5b45c645d47",
+      "source_bytes": 892,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/i2c.md",
+      "bytes": 862,
+      "sha256": "4d7ac3405ac164816d1b7eda10911d8da466e828a37d41601925b9b0af4982a9",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/i2c.md",
+      "source_sha256": "4d7ac3405ac164816d1b7eda10911d8da466e828a37d41601925b9b0af4982a9",
+      "source_bytes": 862,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/scaffold-output.md",
+      "bytes": 1431,
+      "sha256": "2ff17be29b21a67dd560bba75cba13a09a142a8166fbead0b1c688d30ce112f6",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/scaffold-output.md",
+      "source_sha256": "2ff17be29b21a67dd560bba75cba13a09a142a8166fbead0b1c688d30ce112f6",
+      "source_bytes": 1431,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/spi-scaffold.md",
+      "bytes": 813,
+      "sha256": "6ec2ef2cd07a1249e9c401efda752916d3ed248bd8f422ff1f2f9244ed105a3d",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/spi-scaffold.md",
+      "source_sha256": "6ec2ef2cd07a1249e9c401efda752916d3ed248bd8f422ff1f2f9244ed105a3d",
+      "source_bytes": 813,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/spi.md",
+      "bytes": 828,
+      "sha256": "3e64ea3fe642f9f6a0fc8065724e7c0965fe9c5d81cc25779b035f0f35e69cd9",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/spi.md",
+      "source_sha256": "3e64ea3fe642f9f6a0fc8065724e7c0965fe9c5d81cc25779b035f0f35e69cd9",
+      "source_bytes": 828,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/uart-scaffold.md",
+      "bytes": 711,
+      "sha256": "acc72d5292111d7eac9e46d73df9587c1dc8c0450d52699d83c186e4c273daac",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/uart-scaffold.md",
+      "source_sha256": "acc72d5292111d7eac9e46d73df9587c1dc8c0450d52699d83c186e4c273daac",
+      "source_bytes": 711,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/uart.md",
+      "bytes": 765,
+      "sha256": "1d4df075b2e43326b5573af1adc5a6bb7123ea2fb7b71931696aa716ea027d14",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/uart.md",
+      "source_sha256": "1d4df075b2e43326b5573af1adc5a6bb7123ea2fb7b71931696aa716ea027d14",
+      "source_bytes": 765,
+      "adapted": false
+    },
+    {
+      "path": "gf-protocols/references/wishbone.md",
+      "bytes": 825,
+      "sha256": "6bfc5576a91f0a87654d611384ac72ff2e4eb1e6893dc0e6b1c8253de010cab5",
+      "executable": false,
+      "source_id": "skills/gf-protocols/references/wishbone.md",
+      "source_sha256": "6bfc5576a91f0a87654d611384ac72ff2e4eb1e6893dc0e6b1c8253de010cab5",
+      "source_bytes": 825,
+      "adapted": false
+    },
+    {
+      "path": "gf-release/SKILL.md",
+      "bytes": 4245,
+      "sha256": "53090bc38fe3c17721f537f1d2969b4ba051564ce50dd30dc339b5122aaac91f",
+      "executable": false,
+      "source_id": "skills/gf-release/SKILL.md",
+      "source_sha256": "53090bc38fe3c17721f537f1d2969b4ba051564ce50dd30dc339b5122aaac91f",
+      "source_bytes": 4245,
+      "adapted": false
+    },
+    {
+      "path": "gf-router/SKILL.md",
+      "bytes": 2446,
+      "sha256": "0ad0c44da7a2633b23c6f92935c7fa8ebad3a86a02d695326d1315c70bf01d58",
+      "executable": false,
+      "source_id": "skills/gf-router/SKILL.md",
+      "source_sha256": "0ad0c44da7a2633b23c6f92935c7fa8ebad3a86a02d695326d1315c70bf01d58",
+      "source_bytes": 2446,
+      "adapted": false
+    },
+    {
+      "path": "gf-router/classification-examples.md",
+      "bytes": 8904,
+      "sha256": "ae10037ddff50ee2643cd53969bd20af5f2aa9076b8353240ee8b1a08bbc3345",
+      "executable": false,
+      "source_id": "skills/gf-router/classification-examples.md",
+      "source_sha256": "ae10037ddff50ee2643cd53969bd20af5f2aa9076b8353240ee8b1a08bbc3345",
+      "source_bytes": 8904,
+      "adapted": false
+    },
+    {
+      "path": "gf-router/references/clarification.md",
+      "bytes": 1610,
+      "sha256": "2a87f2cc181a16066039022333a4349f685751c9d500d7beae91530cbd2d6ca4",
+      "executable": false,
+      "source_id": "skills/gf-router/references/clarification.md",
+      "source_sha256": "2a87f2cc181a16066039022333a4349f685751c9d500d7beae91530cbd2d6ca4",
+      "source_bytes": 1610,
+      "adapted": false
+    },
+    {
+      "path": "gf-router/references/classification-notes.md",
+      "bytes": 2356,
+      "sha256": "ce36aa571fbc885d75a5a4b30ad4ceffc2b3550ad1cb51e95e452ea74bcd890d",
+      "executable": false,
+      "source_id": "skills/gf-router/references/classification-notes.md",
+      "source_sha256": "ce36aa571fbc885d75a5a4b30ad4ceffc2b3550ad1cb51e95e452ea74bcd890d",
+      "source_bytes": 2356,
+      "adapted": false
+    },
+    {
+      "path": "gf-router/references/handoff.md",
+      "bytes": 2029,
+      "sha256": "5cef8c4e5f8e79643b41840333fa5d71a1ec51b3ad323d3fd6a24e2bcd5df550",
+      "executable": false,
+      "source_id": "skills/gf-router/references/handoff.md",
+      "source_sha256": "5cef8c4e5f8e79643b41840333fa5d71a1ec51b3ad323d3fd6a24e2bcd5df550",
+      "source_bytes": 2029,
+      "adapted": false
+    },
+    {
+      "path": "gf-router/references/intent-reference.md",
+      "bytes": 7641,
+      "sha256": "c4fda197d334814b4fad61e6448bee0a866b7bafbf704d62369440d47ba23b68",
+      "executable": false,
+      "source_id": "skills/gf-router/references/intent-reference.md",
+      "source_sha256": "c4fda197d334814b4fad61e6448bee0a866b7bafbf704d62369440d47ba23b68",
+      "source_bytes": 7641,
+      "adapted": false
+    },
+    {
+      "path": "gf-sim/SKILL.md",
+      "bytes": 2552,
+      "sha256": "0ccc05bc4334d37fde3b33ceb84121c4a0bdaa8baafa80905574691e874a94b7",
+      "executable": false,
+      "source_id": "skills/gf-sim/SKILL.md",
+      "source_sha256": "c95708bdb1d4f5f70d7d8a925bbff8da8a5d52777f4781832287294cbc542ccf",
+      "source_bytes": 2503,
+      "adapted": true
+    },
+    {
+      "path": "gf-sim/references/simulation-linux-options.md",
+      "bytes": 1878,
+      "sha256": "d3a307a34b8ac97db315cb90de7b7e6eaacbde532b6f49a7c24d69780b166ed4",
+      "executable": false,
+      "source_id": "skills/gf-sim/references/simulation-linux-options.md",
+      "source_sha256": "80ed26c612f1ff163b99330c1aeadf9674f297f7f2c60c23ee8acb98f0aa6518",
+      "source_bytes": 1888,
+      "adapted": true
+    },
+    {
+      "path": "gf-sim/references/simulation-linux.md",
+      "bytes": 4004,
+      "sha256": "ae4fc6277c27a6e712e44b3320eebd6598215c129ca34fe1affc85bb8f133d25",
+      "executable": false,
+      "source_id": "skills/gf-sim/references/simulation-linux.md",
+      "source_sha256": "4c30976c2a643d15e687436fa3198ba0b5bd411299c0e830d4e6498a3a1abc67",
+      "source_bytes": 3976,
+      "adapted": true
+    },
+    {
+      "path": "gf-sim/references/simulation-workflow.md",
+      "bytes": 7666,
+      "sha256": "3303715d5622a79f4d089efe6aae90122137d306aaaa6e687fe18988630f98ff",
+      "executable": false,
+      "source_id": "skills/gf-sim/references/simulation-workflow.md",
+      "source_sha256": "3303715d5622a79f4d089efe6aae90122137d306aaaa6e687fe18988630f98ff",
+      "source_bytes": 7666,
+      "adapted": false
+    },
+    {
+      "path": "gf-summary/SKILL.md",
+      "bytes": 3051,
+      "sha256": "ab4eecfd498205befbdc70fd542be2fe113f31397ab18eddac8d6d613256fcc3",
+      "executable": false,
+      "source_id": "skills/gf-summary/SKILL.md",
+      "source_sha256": "ab4eecfd498205befbdc70fd542be2fe113f31397ab18eddac8d6d613256fcc3",
+      "source_bytes": 3051,
+      "adapted": false
+    },
+    {
+      "path": "gf-synth/SKILL.md",
+      "bytes": 2863,
+      "sha256": "9fb84c00763cf0b17bb253cb3539ec2a32cfb4e8b28afb227496b82e306678c4",
+      "executable": false,
+      "source_id": "skills/gf-synth/SKILL.md",
+      "source_sha256": "9fb84c00763cf0b17bb253cb3539ec2a32cfb4e8b28afb227496b82e306678c4",
+      "source_bytes": 2863,
+      "adapted": false
+    },
+    {
+      "path": "gf-tui/SKILL.md",
+      "bytes": 3701,
+      "sha256": "40e22a6632511b5c0d7c1ae3939e91244f7b3a796b098c73e150d81b0e2e7efb",
+      "executable": false,
+      "source_id": "skills/gf-tui/SKILL.md",
+      "source_sha256": "40e22a6632511b5c0d7c1ae3939e91244f7b3a796b098c73e150d81b0e2e7efb",
+      "source_bytes": 3701,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/SKILL.md",
+      "bytes": 1877,
+      "sha256": "c338e3140ddb6206f69b7b8f2afd070db6e660c87989d30ef747e24339a11b0c",
+      "executable": false,
+      "source_id": "skills/gf-viz/SKILL.md",
+      "source_sha256": "c338e3140ddb6206f69b7b8f2afd070db6e660c87989d30ef747e24339a11b0c",
+      "source_bytes": 1877,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/advanced-views.md",
+      "bytes": 1959,
+      "sha256": "fa89640acd8eb7ea3b8f4a111d71b910d2cbec902ec4d40c8e7d966e07c9dfc0",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/advanced-views.md",
+      "source_sha256": "fa89640acd8eb7ea3b8f4a111d71b910d2cbec902ec4d40c8e7d966e07c9dfc0",
+      "source_bytes": 1959,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/fsm.md",
+      "bytes": 3646,
+      "sha256": "186bc1f5737f1893acb975c95bdd0ba348115548228eb95422e545aa6c4a1054",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/fsm.md",
+      "source_sha256": "186bc1f5737f1893acb975c95bdd0ba348115548228eb95422e545aa6c4a1054",
+      "source_bytes": 3646,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/hierarchy.md",
+      "bytes": 2337,
+      "sha256": "28d1585a424532d6c0761aa2839ac83bd8ffb78f37f34dc3dc24862ba81d3379",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/hierarchy.md",
+      "source_sha256": "28d1585a424532d6c0761aa2839ac83bd8ffb78f37f34dc3dc24862ba81d3379",
+      "source_bytes": 2337,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/interaction.md",
+      "bytes": 2993,
+      "sha256": "b25475fdcd236501630d32189fab7514e1ebb2fdc1f1a64524e45e487b01a20f",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/interaction.md",
+      "source_sha256": "b25475fdcd236501630d32189fab7514e1ebb2fdc1f1a64524e45e487b01a20f",
+      "source_bytes": 2993,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/map-data.md",
+      "bytes": 1076,
+      "sha256": "c718a42e2e21d8ce96014aed5f2ea8b36721f4a249da5ecedef2330148e15318",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/map-data.md",
+      "source_sha256": "c718a42e2e21d8ce96014aed5f2ea8b36721f4a249da5ecedef2330148e15318",
+      "source_bytes": 1076,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/module.md",
+      "bytes": 3791,
+      "sha256": "47d86e07340c5689c97128710d27c669159203fa702e7d0c69701e08968bffec",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/module.md",
+      "source_sha256": "47d86e07340c5689c97128710d27c669159203fa702e7d0c69701e08968bffec",
+      "source_bytes": 3791,
+      "adapted": false
+    },
+    {
+      "path": "gf-viz/references/overview.md",
+      "bytes": 2893,
+      "sha256": "778b72775c9ecc1323fbb3984e51f39497731e143ec535568b79ad3246c52ebc",
+      "executable": false,
+      "source_id": "skills/gf-viz/references/overview.md",
+      "source_sha256": "778b72775c9ecc1323fbb3984e51f39497731e143ec535568b79ad3246c52ebc",
+      "source_bytes": 2893,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/SKILL.md",
+      "bytes": 2604,
+      "sha256": "3eae57b9b0b341a930cdc8399c1365d2cfbf709e780e530304d6089fddd0623e",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/SKILL.md",
+      "source_sha256": "3eae57b9b0b341a930cdc8399c1365d2cfbf709e780e530304d6089fddd0623e",
+      "source_bytes": 2604,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/agents/openai.yaml",
+      "bytes": 265,
+      "sha256": "760be00f5a819e22a713bb5bc3cf7d517850a5e97fcd34713113e7b187fd12d9",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/agents/openai.yaml",
+      "source_sha256": "760be00f5a819e22a713bb5bc3cf7d517850a5e97fcd34713113e7b187fd12d9",
+      "source_bytes": 265,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/cfu-structure.md",
+      "bytes": 2914,
+      "sha256": "9078281e62f88bc9ea22a3b973e974d507d98a8030b88b9d880c59fd92f10eb2",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/cfu-structure.md",
+      "source_sha256": "9078281e62f88bc9ea22a3b973e974d507d98a8030b88b9d880c59fd92f10eb2",
+      "source_bytes": 2914,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/clocks-cdc.md",
+      "bytes": 2473,
+      "sha256": "fbdb30064456b3d6383b310125ec166a3fbee3d1d0a7bb5eedf86fb9a1262ad0",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/clocks-cdc.md",
+      "source_sha256": "fbdb30064456b3d6383b310125ec166a3fbee3d1d0a7bb5eedf86fb9a1262ad0",
+      "source_bytes": 2473,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/dsp.md",
+      "bytes": 3066,
+      "sha256": "c1fc92193b4a0a6d72a77206cf316a281bd6b88db1ef348fbfb2b8542979d0ba",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/dsp.md",
+      "source_sha256": "c1fc92193b4a0a6d72a77206cf316a281bd6b88db1ef348fbfb2b8542979d0ba",
+      "source_bytes": 3066,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/conversion.json",
+      "bytes": 2595,
+      "sha256": "6ae41dd23d53e3ef01c64d090bcef9cbeb7701d4213df6818aa84d1a3a374989",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/manuals/conversion.json",
+      "source_sha256": "6c09e9caca0e05182db15a2d557ccc63c2c970e99cda16e33956220ae1c2682a",
+      "source_bytes": 13625,
+      "adapted": true
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/manifest.json",
+      "bytes": 5577,
+      "sha256": "6989f4e83cc58bd7f2d025857cad4cd75a6f1934547cba0e6a4ce3578885c142",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/manuals/manifest.json",
+      "source_sha256": "f1f8b625266f8db5440e0f1b1a033831aeff66cdaff7854aab64ccfa87a5753f",
+      "source_bytes": 2808,
+      "adapted": true
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/DS1239E.md",
+      "bytes": 1577,
+      "sha256": "865f83952f6c6cbbc9278c6c3a7e470dcc43f67fdd685b07b7d59188a7e97ef3",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/SUG113.md",
+      "bytes": 1569,
+      "sha256": "d32c23c5568454ee9ea2bc56d4100d86809e97bcf91d68dad421e54a08ec0708",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/SUG550.md",
+      "bytes": 2194,
+      "sha256": "16d366b65bd0f6eac02066fc23048e51ea4dc70ca9cb243be1ab7840ae8654fc",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/SUG940.md",
+      "bytes": 2850,
+      "sha256": "ae6a8fdbb8a1ee4522a56d7573ff1d075e0dcf5de6d7db99064a37b1df9c853d",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/SUG949E.md",
+      "bytes": 1399,
+      "sha256": "6e1247f7027767337eaf5231bb607618be9308e8764404121f45406d8f4a5901",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/UG300E.md",
+      "bytes": 2201,
+      "sha256": "e9b370a25d979e3845a4c000bd9bbacc6f4581d95e9d1a5e1ef419e5048086a4",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/UG303E.md",
+      "bytes": 1574,
+      "sha256": "1d3c37d3f02c017e4822bc43257fe3aaf84011bd83a007998907ba9fe7c03698",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/manuals/markdown/UG306E.md",
+      "bytes": 2194,
+      "sha256": "05b05207029eb2d3f2b4d34d729a6d66eec04955379c285825aea1196f14de8b",
+      "executable": false,
+      "kind": "project_authored_manual_locator_no_vendor_body"
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/memory.md",
+      "bytes": 4080,
+      "sha256": "f9947088b6b9702775a36649f969bcc0566bf0b64a329e33d9fd2f477113fa8c",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/memory.md",
+      "source_sha256": "f9947088b6b9702775a36649f969bcc0566bf0b64a329e33d9fd2f477113fa8c",
+      "source_bytes": 4080,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/rtl-coding.md",
+      "bytes": 2973,
+      "sha256": "c59f1e829aa0a01a4981c58857e37d08aeacbcef184c70939529663f4fb95e46",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/rtl-coding.md",
+      "source_sha256": "c59f1e829aa0a01a4981c58857e37d08aeacbcef184c70939529663f4fb95e46",
+      "source_bytes": 2973,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/sources.md",
+      "bytes": 3161,
+      "sha256": "da192c3c89dd0816605c1fc58e8979050c80ed904dc194745f69b7c683c237ad",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/sources.md",
+      "source_sha256": "d85d2cdca4d551ccd84edbdb3f7b9743876272e2d5e5c8c6871432c79ded9de2",
+      "source_bytes": 2217,
+      "adapted": true
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/timing.md",
+      "bytes": 6528,
+      "sha256": "56f4669f29bb74f21bb9d317a793b4da77859222fee09c7ccb82aae89468deee",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/timing.md",
+      "source_sha256": "56f4669f29bb74f21bb9d317a793b4da77859222fee09c7ccb82aae89468deee",
+      "source_bytes": 6528,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/references/validation.md",
+      "bytes": 1945,
+      "sha256": "382479b3fd7102c9f36fe18d072ca1e829ca1d2a1771843de526cd54819197e7",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/references/validation.md",
+      "source_sha256": "382479b3fd7102c9f36fe18d072ca1e829ca1d2a1771843de526cd54819197e7",
+      "source_bytes": 1945,
+      "adapted": false
+    },
+    {
+      "path": "gowin-arora-v-rtl/scripts/read_manual.py",
+      "bytes": 6609,
+      "sha256": "c1a0fd9b7ba8ef94f685ec6a470f5740968a7a476f95a95191be0a9d7f095bf8",
+      "executable": false,
+      "source_id": "skills/gowin-arora-v-rtl/scripts/read_manual.py",
+      "source_sha256": "8fcc28da3bb0f7c7ce57ea2ab7612db5ce188bfc343026e04864289d27a3feaf",
+      "source_bytes": 6126,
+      "adapted": true
+    },
+    {
+      "path": "gowin-ip-generation/SKILL.md",
+      "bytes": 3201,
+      "sha256": "6f071f5966e8cbed37566d97a080c568435f01e38053a3d1301491d2e782a7d5",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/SKILL.md",
+      "source_sha256": "797671d441e08ec99d0df6b976affe1fdc986b9bf3483372d1c9b9bb1502832e",
+      "source_bytes": 2997,
+      "adapted": true
+    },
+    {
+      "path": "gowin-ip-generation/agents/openai.yaml",
+      "bytes": 234,
+      "sha256": "5f5a875319f4857f782d65ed5036e6d16cc9da895dcc8a1fc8c4ea40ec8dda79",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/agents/openai.yaml",
+      "source_sha256": "5f5a875319f4857f782d65ed5036e6d16cc9da895dcc8a1fc8c4ea40ec8dda79",
+      "source_bytes": 234,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/references/maintenance.md",
+      "bytes": 1940,
+      "sha256": "ea22937ae284805dde3d721f05d7348dd8b27eaaa3e8e3429baf82ec1c03aae7",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/references/maintenance.md",
+      "source_sha256": "b2a762db4d292adb81c7cde9001e2cf83344002074eadbd150f58679d0a5cd67",
+      "source_bytes": 1536,
+      "adapted": true
+    },
+    {
+      "path": "gowin-ip-generation/references/notes.md",
+      "bytes": 4373,
+      "sha256": "e571e1973f0598733682d3e7a8b7fd66b25b7e930a42a5490f07038d61e2abd7",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/references/notes.md",
+      "source_sha256": "f0b3846ac44c6e07f3fe7af176c36a8648843fbc7730262d20ce682457473784",
+      "source_bytes": 4204,
+      "adapted": true
+    },
+    {
+      "path": "gowin-ip-generation/references/package-manifest.json",
+      "bytes": 951,
+      "sha256": "fb43013309aa2201566c4b74efd894a9b15d8e7129c687c4d02d428c82ded1b9",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/references/package-manifest.json",
+      "source_sha256": "fb43013309aa2201566c4b74efd894a9b15d8e7129c687c4d02d428c82ded1b9",
+      "source_bytes": 951,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/references/public-package.md",
+      "bytes": 1595,
+      "sha256": "2500aace011384314098285a5d27785b2ab5066196a9337784cb23b000940160",
+      "executable": false,
+      "kind": "public_package_support"
+    },
+    {
+      "path": "gowin-ip-generation/references/tcl-ipflow.md",
+      "bytes": 5633,
+      "sha256": "e4601cd14f58aaba84ec72cf68c1aa75298eb67abd878e6176fef06b3a960337",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/references/tcl-ipflow.md",
+      "source_sha256": "ec2f167fa0704f870df51d2ec34e0b0495f42cf9d0022bc2a127c3f5251f2429",
+      "source_bytes": 5600,
+      "adapted": true
+    },
+    {
+      "path": "gowin-ip-generation/scripts/bin/gowin-ip-ai",
+      "bytes": 123,
+      "sha256": "a96758b7ff50e3b82d2f47dfeef3f99bd7c954a841e64865f5aab7d35c60f8d7",
+      "executable": true,
+      "source_id": "skills/gowin-ip-generation/scripts/bin/gowin-ip-ai",
+      "source_sha256": "a96758b7ff50e3b82d2f47dfeef3f99bd7c954a841e64865f5aab7d35c60f8d7",
+      "source_bytes": 123,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/scripts/bin/libgowin_ip_bridge.so",
+      "bytes": 116704,
+      "sha256": "e7c23bfb2c300f48b8e437306a131072303c2c84a2338376f21f5ab8b090d85c",
+      "executable": true,
+      "source_id": "skills/gowin-ip-generation/scripts/bin/libgowin_ip_bridge.so",
+      "source_sha256": "e7c23bfb2c300f48b8e437306a131072303c2c84a2338376f21f5ab8b090d85c",
+      "source_bytes": 116704,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/scripts/bin/vendor-runner",
+      "bytes": 8343,
+      "sha256": "cde362e3cbbb5dd6b84a2c08029e15fb77d877b660f11343ec349b5713844d09",
+      "executable": true,
+      "source_id": "skills/gowin-ip-generation/scripts/bin/vendor-runner",
+      "source_sha256": "cde362e3cbbb5dd6b84a2c08029e15fb77d877b660f11343ec349b5713844d09",
+      "source_bytes": 8343,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/scripts/build_bridge.py",
+      "bytes": 1272,
+      "sha256": "862338e5137d907c031f06ce9af9dcdd3634d9d5257e450eff06f19ac3debabf",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/scripts/build_bridge.py",
+      "source_sha256": "862338e5137d907c031f06ce9af9dcdd3634d9d5257e450eff06f19ac3debabf",
+      "source_bytes": 1272,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/scripts/gowin_ip.py",
+      "bytes": 19400,
+      "sha256": "635be29ff1d73b7ce275c2f4ea23b89559557351e07c3d984cfd17d3f1ee7755",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/scripts/gowin_ip.py",
+      "source_sha256": "635be29ff1d73b7ce275c2f4ea23b89559557351e07c3d984cfd17d3f1ee7755",
+      "source_bytes": 19400,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/scripts/src/bridge.cpp",
+      "bytes": 16273,
+      "sha256": "cf7db015cff08cb5a294e9bccea0186ca9061e272ebac8a32005ea5239a40c37",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/scripts/src/bridge.cpp",
+      "source_sha256": "cf7db015cff08cb5a294e9bccea0186ca9061e272ebac8a32005ea5239a40c37",
+      "source_bytes": 16273,
+      "adapted": false
+    },
+    {
+      "path": "gowin-ip-generation/scripts/tests/test_ai_ip.py",
+      "bytes": 5035,
+      "sha256": "c6a59ea8799642b56ba8bf3132cd2fb55cacf9417aa8fd684aeacfa1f87cb8d5",
+      "executable": false,
+      "source_id": "skills/gowin-ip-generation/scripts/tests/test_ai_ip.py",
+      "source_sha256": "c6a59ea8799642b56ba8bf3132cd2fb55cacf9417aa8fd684aeacfa1f87cb8d5",
+      "source_bytes": 5035,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/SKILL.md",
+      "bytes": 2988,
+      "sha256": "0f707fe0d2a031989420eb37604c179d3df3ff8e0958eb133db11bf92146f7a3",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/SKILL.md",
+      "source_sha256": "00877d266b1b630236e2894fc4cfef3753fef3ee32f01ddc0c8df64c0195d3a6",
+      "source_bytes": 2978,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/build-tracing.md",
+      "bytes": 1340,
+      "sha256": "58862ead98b1670c7a44bc973b26e95258dcea92d3356e1d33b03fce8b87362d",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/build-tracing.md",
+      "source_sha256": "58862ead98b1670c7a44bc973b26e95258dcea92d3356e1d33b03fce8b87362d",
+      "source_bytes": 1340,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/cst-physical-constraints.md",
+      "bytes": 10478,
+      "sha256": "314aedddf39ad0e273e3e853af9169c7b23c8ad449abd5e92252388ba4c4d83c",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/cst-physical-constraints.md",
+      "source_sha256": "314aedddf39ad0e273e3e853af9169c7b23c8ad449abd5e92252388ba4c4d83c",
+      "source_bytes": 10478,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/document-index.md",
+      "bytes": 4284,
+      "sha256": "db25ad02a6fb3f82f102f9b8b3972bc81d1db1b8a21fd9273e2123a1b8f8bd82",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/document-index.md",
+      "source_sha256": "db25ad02a6fb3f82f102f9b8b3972bc81d1db1b8a21fd9273e2123a1b8f8bd82",
+      "source_bytes": 4284,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-build-ubuntu.md",
+      "bytes": 6354,
+      "sha256": "20efc7e6316feef4e4251d6067ac355d6e99ec367719b10fe525c43e8071fd87",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-build-ubuntu.md",
+      "source_sha256": "1f6af6eb23d8129198b56c76cec50aa39881434c7cee528779ddd3bd3cf63109",
+      "source_bytes": 6328,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-build-windows.md",
+      "bytes": 832,
+      "sha256": "25727b7f473f8170c75327dd3ba589501eccdf069a1d14f292adb2d95099ea9e",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-build-windows.md",
+      "source_sha256": "25727b7f473f8170c75327dd3ba589501eccdf069a1d14f292adb2d95099ea9e",
+      "source_bytes": 832,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-ip-capability-index.md",
+      "bytes": 3425,
+      "sha256": "52ded0825e406426119d5057e2b9a570c7a3a94f37d47eb2214c274805614291",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-ip-capability-index.md",
+      "source_sha256": "c201ae65463ad43067e8aac6b3417747bdfa078bd39d31035a9df67c76111337",
+      "source_bytes": 3461,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-ip-checks.md",
+      "bytes": 6366,
+      "sha256": "0169674aa75242769d71827593ae849f763d29831a364823491969363ef9ae5a",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-ip-checks.md",
+      "source_sha256": "0c4e889d9dab7ae20c63aabf2269b4007c57f336615915566c5940cf3983098f",
+      "source_bytes": 6402,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-ip-generation.md",
+      "bytes": 347,
+      "sha256": "8d72b66092d79434edff6494ec80a4eca57ba28565e55a35afd06fcab4196cae",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-ip-generation.md",
+      "source_sha256": "f76b105403cd2f4ea43f5fd375ae3e0a9f40ebfa29b5982646eac4031496d3ca",
+      "source_bytes": 383,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-linux-troubleshooting.md",
+      "bytes": 10618,
+      "sha256": "aaa84db46f5029e91116b708b4d0b24501d42dedef57893e504f7bd94c28c150",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-linux-troubleshooting.md",
+      "source_sha256": "c370a40c976d9b04a7808e1db67f594daf81746c386944bb0d43b1d7af4df116",
+      "source_bytes": 10698,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/gowin-tool-automation.md",
+      "bytes": 5988,
+      "sha256": "dbe5aed1fac44b7b7d44ca3f1f2c920b828566d31f3dc43c3ea8b12435bc3af6",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/gowin-tool-automation.md",
+      "source_sha256": "ba12909c712d85147b8da99357a2ac85f42e95e18153fd9e6a68fb282ad072e5",
+      "source_bytes": 6006,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/local-edits.md",
+      "bytes": 2752,
+      "sha256": "8a3590bb5924c17d1b26bb04586baf3fafb1e30eefbaf0670876b733a88fd430",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/local-edits.md",
+      "source_sha256": "8a3590bb5924c17d1b26bb04586baf3fafb1e30eefbaf0670876b733a88fd430",
+      "source_bytes": 2752,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/modular-constraints.md",
+      "bytes": 6934,
+      "sha256": "e2fddc0fba9235cf106722358a3feb24729eb0654bc4b0a9998c04c660c02191",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/modular-constraints.md",
+      "source_sha256": "d69549c7378967f55f19aa96d5e43ef9b04dc708795d41f242d82a1b30739497",
+      "source_bytes": 6869,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/navigation-workflow.md",
+      "bytes": 5666,
+      "sha256": "e98aa0258982c3c3e60347b6567cac6c9ce8aa46f5b1e3e7d71dfe8fd359caca",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/navigation-workflow.md",
+      "source_sha256": "72992fe4a0c8c78b2773f412bcf0c2072a77975cee3838a3af03c023713b9806",
+      "source_bytes": 5702,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/references/project-artifact-map.md",
+      "bytes": 5862,
+      "sha256": "a2d9adf16333466b743500b21563e3f169ce934182abb74fc2b5319157fd19cb",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/project-artifact-map.md",
+      "source_sha256": "a2d9adf16333466b743500b21563e3f169ce934182abb74fc2b5319157fd19cb",
+      "source_bytes": 5862,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/project-inspection.md",
+      "bytes": 4528,
+      "sha256": "20a7a93cb17749d2c9751d21fbf43dddc1522f7d6a2792d003d70b0fe28e228f",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/project-inspection.md",
+      "source_sha256": "20a7a93cb17749d2c9751d21fbf43dddc1522f7d6a2792d003d70b0fe28e228f",
+      "source_bytes": 4528,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/project-maintenance.md",
+      "bytes": 1324,
+      "sha256": "2d3216eac84261b3373a59c0554b9ce9ec6d0a6902db87fd795e053b71d623f9",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/project-maintenance.md",
+      "source_sha256": "2d3216eac84261b3373a59c0554b9ce9ec6d0a6902db87fd795e053b71d623f9",
+      "source_bytes": 1324,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/project-move-windows.md",
+      "bytes": 353,
+      "sha256": "34e7217aa5a285ec9b449e4c8bb60239b38ac0735234c9d063c523f6b71bfaf8",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/project-move-windows.md",
+      "source_sha256": "34e7217aa5a285ec9b449e4c8bb60239b38ac0735234c9d063c523f6b71bfaf8",
+      "source_bytes": 353,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/project-scan-ubuntu.md",
+      "bytes": 769,
+      "sha256": "2643fc3c73f93e8f977a2737a287dd9a272724b57c28f92b1f7fc3ed35d560a4",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/project-scan-ubuntu.md",
+      "source_sha256": "2643fc3c73f93e8f977a2737a287dd9a272724b57c28f92b1f7fc3ed35d560a4",
+      "source_bytes": 769,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/project-scan-windows.md",
+      "bytes": 653,
+      "sha256": "257238b3641abaecfdeeca44dd1cad7b07f1106fe61f9fb341abb4c42d5f4765",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/project-scan-windows.md",
+      "source_sha256": "257238b3641abaecfdeeca44dd1cad7b07f1106fe61f9fb341abb4c42d5f4765",
+      "source_bytes": 653,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/rtl-change-cost-review.md",
+      "bytes": 2400,
+      "sha256": "96611ce44204f81c37bc3b1322094b02d206b0565cb39b91de2bcb1e459c7ef3",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/rtl-change-cost-review.md",
+      "source_sha256": "96611ce44204f81c37bc3b1322094b02d206b0565cb39b91de2bcb1e459c7ef3",
+      "source_bytes": 2400,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/sdc-timing-constraints.md",
+      "bytes": 10015,
+      "sha256": "9c447c275c8fdb922596fdb9f24f0310eb0c78c58b6bf5c5cbb022af3d07df63",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/sdc-timing-constraints.md",
+      "source_sha256": "9c447c275c8fdb922596fdb9f24f0310eb0c78c58b6bf5c5cbb022af3d07df63",
+      "source_bytes": 10015,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/synthesis-attributes.md",
+      "bytes": 6817,
+      "sha256": "8cae8a53c0efce60573d94532e463baefe24a9990b07140ede3f9b79a54e488f",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/synthesis-attributes.md",
+      "source_sha256": "8cae8a53c0efce60573d94532e463baefe24a9990b07140ede3f9b79a54e488f",
+      "source_bytes": 6817,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/references/tcl-project-build.md",
+      "bytes": 10675,
+      "sha256": "3042bc76372ee71de97e479309dcddfad4e5390ef1b3b767c450d3a7d3cf1334",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/references/tcl-project-build.md",
+      "source_sha256": "ce7cb42e1462c018c1d4d608190824cd6138a570cc6d6f4c287739090bbcb29c",
+      "source_bytes": 10711,
+      "adapted": true
+    },
+    {
+      "path": "gowin-project-navigation/scripts/find-gowin-project.ps1",
+      "bytes": 17300,
+      "sha256": "c2f7ee956027454c586795ae5f95e14bb1f600a3d99214ce7245f4283abf8600",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/scripts/find-gowin-project.ps1",
+      "source_sha256": "c2f7ee956027454c586795ae5f95e14bb1f600a3d99214ce7245f4283abf8600",
+      "source_bytes": 17300,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/scripts/find_gowin_project.py",
+      "bytes": 12800,
+      "sha256": "890ca1c8cc279ce22fac5b5e0eb2406879fdb396845917210d91b2532406f95a",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/scripts/find_gowin_project.py",
+      "source_sha256": "890ca1c8cc279ce22fac5b5e0eb2406879fdb396845917210d91b2532406f95a",
+      "source_bytes": 12800,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/scripts/run_gowin_linux.py",
+      "bytes": 3839,
+      "sha256": "2e68db9be38543ba5138c1a3631ffbc85d5c89292d557dfd678d0bb9d1b2466c",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/scripts/run_gowin_linux.py",
+      "source_sha256": "2e68db9be38543ba5138c1a3631ffbc85d5c89292d557dfd678d0bb9d1b2466c",
+      "source_bytes": 3839,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/scripts/test-find-gowin-project.ps1",
+      "bytes": 7772,
+      "sha256": "b3e8a4f355b9ef83a9a33418086b69bd31a04de235514e18e1883e00fb678021",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/scripts/test-find-gowin-project.ps1",
+      "source_sha256": "b3e8a4f355b9ef83a9a33418086b69bd31a04de235514e18e1883e00fb678021",
+      "source_bytes": 7772,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/scripts/test_find_gowin_project.py",
+      "bytes": 8279,
+      "sha256": "67a984b8a7c269088ebd9e48b529eeac0ca49639c7b07e84310fcb6a1dc3a2e9",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/scripts/test_find_gowin_project.py",
+      "source_sha256": "67a984b8a7c269088ebd9e48b529eeac0ca49639c7b07e84310fcb6a1dc3a2e9",
+      "source_bytes": 8279,
+      "adapted": false
+    },
+    {
+      "path": "gowin-project-navigation/scripts/test_run_gowin_linux.py",
+      "bytes": 8363,
+      "sha256": "9551c39c6943daa43f4246756997c68a305fa06d8e71099e8dda3a4e7902c4c5",
+      "executable": false,
+      "source_id": "skills/gowin-project-navigation/scripts/test_run_gowin_linux.py",
+      "source_sha256": "9551c39c6943daa43f4246756997c68a305fa06d8e71099e8dda3a4e7902c4c5",
+      "source_bytes": 8363,
+      "adapted": false
+    },
+    {
+      "path": "host_support/gw_sh",
+      "bytes": 346,
+      "sha256": "bf3215bd70ea9abec2aa926c5dac0c6812d392a46a4f16bc40c8d4e320b54bcf",
+      "executable": true,
+      "source_id": "host_support/gw_sh",
+      "source_sha256": "bf3215bd70ea9abec2aa926c5dac0c6812d392a46a4f16bc40c8d4e320b54bcf",
+      "source_bytes": 346,
+      "adapted": false
+    },
+    {
+      "path": "host_support/oss-cad",
+      "bytes": 340,
+      "sha256": "2593dc5188bf1ab6d233879a6ca37189761bff01e6e2e9e978f84e87f560dfeb",
+      "executable": true,
+      "source_id": "host_support/oss-cad",
+      "source_sha256": "a40f86a2244f1b606743ff348c853f45f4ebe2979463190ca9ab7fd5a9255b83",
+      "source_bytes": 320,
+      "adapted": true
+    },
+    {
+      "path": "soc-integration/LICENSE",
+      "bytes": 1069,
+      "sha256": "0989602f40c6d38ecb0c043240bdea5085cda6bf3fe7a413577c1a76394fb258",
+      "executable": false,
+      "source_id": "skills/soc-integration/LICENSE",
+      "source_sha256": "0989602f40c6d38ecb0c043240bdea5085cda6bf3fe7a413577c1a76394fb258",
+      "source_bytes": 1069,
+      "adapted": false
+    },
+    {
+      "path": "soc-integration/SKILL.md",
+      "bytes": 11485,
+      "sha256": "0bceba183c822c4fc9d9712d42a46ac27f9368474687be414e04a3702fe713a0",
+      "executable": false,
+      "source_id": "skills/soc-integration/SKILL.md",
+      "source_sha256": "0bceba183c822c4fc9d9712d42a46ac27f9368474687be414e04a3702fe713a0",
+      "source_bytes": 11485,
+      "adapted": false
+    },
+    {
+      "path": "soc-integration/SOURCE.json",
+      "bytes": 523,
+      "sha256": "5111e2b8ec105e08850d7caa00a004e3981f80e8e42083365bf0f10594ce3bad",
+      "executable": false,
+      "source_id": "skills/soc-integration/SOURCE.json",
+      "source_sha256": "5111e2b8ec105e08850d7caa00a004e3981f80e8e42083365bf0f10594ce3bad",
+      "source_bytes": 523,
+      "adapted": false
+    },
+    {
+      "path": "soc-integration/references/gowin-ae350.md",
+      "bytes": 4733,
+      "sha256": "d232f2b89e831996c4372926501d47a8e8574577b339b32858507618aba1f59e",
+      "executable": false,
+      "source_id": "skills/soc-integration/references/gowin-ae350.md",
+      "source_sha256": "6723458ccb8c081d4c4965824c9e4415ab441f88f83b8cdbd9c671de82cc8480",
+      "source_bytes": 4751,
+      "adapted": true
+    },
+    {
+      "path": "soc-integration/references/upstream/skill-original.md",
+      "bytes": 12138,
+      "sha256": "aba525d759d8cc084d4e5ab6d1e13ab4ca5db5ca291c1f53b5aaa91f267a0c56",
+      "executable": false,
+      "source_id": "skills/soc-integration/references/upstream/skill-original.md",
+      "source_sha256": "aba525d759d8cc084d4e5ab6d1e13ab4ca5db5ca291c1f53b5aaa91f267a0c56",
+      "source_bytes": 12138,
+      "adapted": false
+    },
+    {
+      "path": "soc-integration/references/upstream/soc-integration-orchestrator.md",
+      "bytes": 33873,
+      "sha256": "149cf6dce66113dcb59223e5820fadaeb5fdbf2febbbbaa27613397be2edf9e9",
+      "executable": false,
+      "source_id": "skills/soc-integration/references/upstream/soc-integration-orchestrator.md",
+      "source_sha256": "149cf6dce66113dcb59223e5820fadaeb5fdbf2febbbbaa27613397be2edf9e9",
+      "source_bytes": 33873,
+      "adapted": false
+    },
+    {
+      "path": "soc-integration/references/upstream-constraints.md",
+      "bytes": 2236,
+      "sha256": "ec7d388b42c87b8df750e2880b736fc12eb4a61af86319edd6eaa49d025109b7",
+      "executable": false,
+      "source_id": "skills/soc-integration/references/upstream-constraints.md",
+      "source_sha256": "ec7d388b42c87b8df750e2880b736fc12eb4a61af86319edd6eaa49d025109b7",
+      "source_bytes": 2236,
+      "adapted": false
+    },
+    {
+      "path": "soc-integration/scripts/check_design_inputs.py",
+      "bytes": 23332,
+      "sha256": "30910ad27ca4ca621cc388ebf2e0a0b70585a91fd279bc80f2e819926e3e7725",
+      "executable": false,
+      "source_id": "skills/soc-integration/scripts/check_design_inputs.py",
+      "source_sha256": "30910ad27ca4ca621cc388ebf2e0a0b70585a91fd279bc80f2e819926e3e7725",
+      "source_bytes": 23332,
+      "adapted": false
+    },
+    {
+      "path": "tb-best-practices/SKILL.md",
+      "bytes": 14782,
+      "sha256": "fce8ffdf39e217ad0c44d59f35ddcdcf2c15e38413d533528ec50fbc6fde928e",
+      "executable": false,
+      "source_id": "skills/tb-best-practices/SKILL.md",
+      "source_sha256": "fce8ffdf39e217ad0c44d59f35ddcdcf2c15e38413d533528ec50fbc6fde928e",
+      "source_bytes": 14782,
+      "adapted": false
+    }
+  ]
+}

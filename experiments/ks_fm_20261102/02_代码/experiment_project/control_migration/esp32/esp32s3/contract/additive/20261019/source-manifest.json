@@ -1,0 +1,36 @@
+{
+  "recorded_date": "2026-10-19",
+  "scope": "read-only local FPGA sources; generated parameter data only",
+  "sample_rate": {
+    "numerator": 91015625,
+    "denominator": 948
+  },
+  "sources": [
+    {
+      "source": "/home/ice/Project/my_project/development/tang_mega_138k_synth/audio_i2s/eda_proj/scripts/additive_patch.py",
+      "sha256": "c23abed4549149ae0b7dbd0fdc0e78454892a5771005f6d7e9da4ab00d267429",
+      "bytes": 2773
+    },
+    {
+      "source": "/home/ice/Project/my_project/development/tang_mega_138k_synth/audio_i2s/eda_proj/src/additive/README.md",
+      "sha256": "054383eb909a144539c0c29ad844c5239054d5f64738569467e640fb7351ee5a",
+      "bytes": 7499
+    },
+    {
+      "source": "/home/ice/Project/my_project/development/tang_mega_138k_synth/audio_i2s/eda_proj/src/additive/README-spectrum.md",
+      "sha256": "7cc1478e9f0e7f6c221b157ce3c0ab3cd6877329282c6aa0af1e76ed4e6f3ca6",
+      "bytes": 4780
+    },
+    {
+      "source": "/home/ice/Project/my_project/development/tang_mega_138k_synth/audio_i2s/eda_proj/src/additive/rtl/additive_control_bridge.sv",
+      "sha256": "2728e667cd6c644e9c7b453681f98dbf4218aa8bbb70c6dfad5e925f7d8d4765",
+      "bytes": 4784
+    },
+    {
+      "source": "/home/ice/Project/my_project/development/tang_mega_138k_synth/audio_i2s/eda_proj/src/additive/rtl/additive_spectrum.sv",
+      "sha256": "9d28de22ba9c1cf37f0e57f1c2fedc55f05e968f5f2c37157cd341026cbe8df9",
+      "bytes": 13481
+    }
+  ],
+  "hardware_writes": false
+}

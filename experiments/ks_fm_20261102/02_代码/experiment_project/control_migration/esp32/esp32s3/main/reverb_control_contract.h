@@ -1,0 +1,20 @@
+/* Proposed RVR1 v1: FPGA implementation pending; 32-bit SPI word addresses.
+ * Keep this portable contract beside the public API for isolated components. */
+#pragma once
+#include <stdint.h>
+#define REVERB_MAGIC UINT32_C(0x52565231)
+#define REVERB_ABI UINT32_C(0x00010000)
+#define REVERB_REG_MAGIC UINT16_C(0x0720)
+#define REVERB_REG_ABI UINT16_C(0x0721)
+#define REVERB_REG_STATUS UINT16_C(0x0722)
+#define REVERB_REG_APPLIED_PARAMS UINT16_C(0x0723)
+#define REVERB_REG_APPLIED_SEQUENCE UINT16_C(0x0724)
+#define REVERB_REG_SHADOW_PARAMS UINT16_C(0x0725)
+#define REVERB_REG_COMMIT UINT16_C(0x0726)
+#define REVERB_REG_GENERATION UINT16_C(0x0727)
+#define REVERB_STATUS_READY UINT32_C(1)
+#define REVERB_STATUS_BUSY UINT32_C(2)
+#define REVERB_STATUS_FAULT UINT32_C(4)
+#define REVERB_WET_MAX UINT32_C(32768)
+#define REVERB_DAMP_MAX UINT32_C(28672)
+#define REVERB_SEQUENCE_MAX UINT32_C(0x7fffffff)

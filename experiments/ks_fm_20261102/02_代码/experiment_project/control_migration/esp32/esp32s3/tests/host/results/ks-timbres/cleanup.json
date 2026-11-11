@@ -1,0 +1,43 @@
+{
+  "removed": [
+    {
+      "path": "/media/ice/D;/FPGA_simulation/my_project/ks_timbres_20261026/firmware/idf-build",
+      "bytes": 46674,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    },
+    {
+      "path": "/media/ice/D;/FPGA_simulation/my_project/ks_timbres_20261026/firmware/baseline-dds-check",
+      "bytes": 5197,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    },
+    {
+      "path": "/media/ice/D;/FPGA_simulation/my_project/ks_timbres_20261026/firmware-template",
+      "bytes": 31440,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    },
+    {
+      "path": "/media/ice/D;/FPGA_simulation/my_project/ks_timbres_20261026/firmware-document",
+      "bytes": 105768,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    },
+    {
+      "path": "/tmp/ks_fw_edit.py",
+      "bytes": 386,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    },
+    {
+      "path": "/tmp/ks_link_edit.py",
+      "bytes": 5954,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    },
+    {
+      "path": "/tmp/ks-idf-env.log",
+      "bytes": 574,
+      "reason": "Task-created failed CMake scratch, reproducible baseline RED copies, superseded preliminary host binary, or completed editing helper. Important source/results retained separately."
+    }
+  ],
+  "retained_review_evidence": "/media/ice/D;/FPGA_simulation/my_project/ks_timbres_20261026/firmware/host",
+  "retained_actual_build": "/home/ice/Project/ks-timbres-20261026/work/firmware-build",
+  "retained_deliverables": "/home/ice/Project/ks-timbres-20261026/deliverables/firmware",
+  "removed_preexisting_files": false
+}

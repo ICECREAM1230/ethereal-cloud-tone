@@ -1,0 +1,618 @@
+{
+  "case": "fm_poly8_retrigger",
+  "engine": "fm",
+  "capture": {
+    "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/audio.wav",
+    "SHA256": "ecf5054bc25de1eb81055867a30f8a595b4f75bb6db36a043788e1103e403695",
+    "frames": 768768,
+    "WAV_rate_Hz": 96008,
+    "channels": 2,
+    "container_bits": 32,
+    "PCM24_common_trailing_zero_bits": 0,
+    "low8_zero_verified": true,
+    "zero_channel": [
+      false,
+      false
+    ]
+  },
+  "transport": {
+    "status": "PASS",
+    "raw_SHA256": "0c89ad09f4d7dbbdfff0f4b41c93657db157b1ef3aa0da0efb5cdd59812fcccd",
+    "raw_bytes": 7028736,
+    "parser_SHA256": "d354b786e33befce15182ff61518f64143578e87f762ea788e5197d96a07e2f8",
+    "parser": {
+      "bytes_discarded": 0,
+      "frames_valid": 12012,
+      "frames_invalid": 0,
+      "resync_count": 0,
+      "seq_jumps": 0,
+      "sample_rate_changes": 0,
+      "crc_nonzero": 0,
+      "padding_bytes": 710424
+    },
+    "raw_payload_WAV_exact": true,
+    "native_sample_index_verified": false,
+    "CRC_verified": false,
+    "FPGA_drop_counter_verified": false
+  },
+  "requested_simultaneous_voices": 8,
+  "requested_notes": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "native_active_voice_count_verified": false,
+  "velocity": 100,
+  "MIDI_channel_zero_based": 2,
+  "all_six_event_batches_byte_ACK": true,
+  "ack_scope": "fpga_raw_byte",
+  "host_timing_sample_accurate": false,
+  "preroll_sample_pairs": 25536,
+  "preroll_AC_RMS_FS": 0.0,
+  "events": [
+    {
+      "kind": "NoteOn",
+      "round": 1,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "planned_ms": 50,
+      "dispatch_ms": 1635.882540998864,
+      "acknowledged_ms": 1785.0102230004268,
+      "host_seconds_from_capture_start": 1.8981668339984026,
+      "host_frame_estimate": 182239
+    },
+    {
+      "kind": "NoteOff",
+      "round": 1,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "planned_ms": 500,
+      "dispatch_ms": 2099.5646770024905,
+      "acknowledged_ms": 2252.014792000409,
+      "host_seconds_from_capture_start": 2.361848970002029,
+      "host_frame_estimate": 226756
+    },
+    {
+      "kind": "NoteOn",
+      "round": 2,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "planned_ms": 1050,
+      "dispatch_ms": 2646.53591599199,
+      "acknowledged_ms": 2806.026481994195,
+      "host_seconds_from_capture_start": 2.9088202089915285,
+      "host_frame_estimate": 279270
+    },
+    {
+      "kind": "NoteOff",
+      "round": 2,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "planned_ms": 1500,
+      "dispatch_ms": 3073.6305180034833,
+      "acknowledged_ms": 3226.5364670020062,
+      "host_seconds_from_capture_start": 3.335914811003022,
+      "host_frame_estimate": 320275
+    },
+    {
+      "kind": "NoteOn",
+      "round": 3,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "planned_ms": 2050,
+      "dispatch_ms": 3645.945401993231,
+      "acknowledged_ms": 3786.6041279921774,
+      "host_seconds_from_capture_start": 3.9082296949927695,
+      "host_frame_estimate": 375221
+    },
+    {
+      "kind": "NoteOff",
+      "round": 3,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "planned_ms": 2500,
+      "dispatch_ms": 4078.1874649983365,
+      "acknowledged_ms": 4229.393892004737,
+      "host_seconds_from_capture_start": 4.340471757997875,
+      "host_frame_estimate": 416720
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "onset_detection": {
+        "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+        "search_start_frame": 178368,
+        "search_end_frame": 236357,
+        "threshold_FS": 0.0005,
+        "substantial_attack_detected": true
+      },
+      "detected_onset_frame": 186624,
+      "detected_onset_seconds": 1.943838013498875,
+      "host_NoteOn_frame_estimate": 182239,
+      "host_NoteOff_frame_estimate": 226756,
+      "actual_dispatch_hold_ms": 463.6821360036265,
+      "active_interval": {
+        "start_frame": 186624,
+        "end_frame": 245958,
+        "frames": 59334,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.13648593027788705,
+            "RMS_dBFS": -17.29824231570432,
+            "AC_RMS_dBFS": -17.298273542134417,
+            "peak_PCM24": 4957567,
+            "peak_dBFS": -4.568426159952469,
+            "DC_FS": 0.0003659789581593285,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.13648593027788705,
+            "RMS_dBFS": -17.29824231570432,
+            "AC_RMS_dBFS": -17.298273542134417,
+            "peak_PCM24": 4957567,
+            "peak_dBFS": -4.568426159952469,
+            "DC_FS": 0.0003659789581593285,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "held_interval": {
+        "start_frame": 196225,
+        "end_frame": 215426,
+        "frames": 19201,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.1594736473806439,
+            "RMS_dBFS": -15.946221454986151,
+            "AC_RMS_dBFS": -15.946352895328847,
+            "peak_PCM24": 4957567,
+            "peak_dBFS": -4.568426159952469,
+            "DC_FS": 0.0008773195899393985,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.1594736473806439,
+            "RMS_dBFS": -15.946221454986151,
+            "AC_RMS_dBFS": -15.946352895328847,
+            "peak_PCM24": 4957567,
+            "peak_dBFS": -4.568426159952469,
+            "DC_FS": 0.0008773195899393985,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "spectrum": {
+        "start_frame": 196225,
+        "end_frame": 215426,
+        "NFFT": 8192,
+        "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+        "channels": [
+          {
+            "channel": "L",
+            "band_power_fraction_gt_Hz": {
+              "2000": 1.3908774396946518e-07,
+              "5000": 5.218616534349213e-08,
+              "10000": 2.786036992042762e-08,
+              "20000": 1.0475136447508184e-08
+            },
+            "spectral_centroid_Hz": 326.1791464970929
+          },
+          {
+            "channel": "R",
+            "band_power_fraction_gt_Hz": {
+              "2000": 1.3908774396946518e-07,
+              "5000": 5.218616534349213e-08,
+              "10000": 2.786036992042762e-08,
+              "20000": 1.0475136447508184e-08
+            },
+            "spectral_centroid_Hz": 326.1791464970929
+          }
+        ]
+      },
+      "postOff_250ms": {
+        "start_frame": 250758,
+        "end_frame": 260359,
+        "frames": 9601,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_FS": 0.0,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null,
+            "peak_PCM24": 0,
+            "peak_dBFS": null,
+            "DC_FS": 0.0,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_FS": 0.0,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null,
+            "peak_PCM24": 0,
+            "peak_dBFS": null,
+            "DC_FS": 0.0,
+            "rail_samples": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "onset_detection": {
+        "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+        "search_start_frame": 275424,
+        "search_end_frame": 329876,
+        "threshold_FS": 0.0005,
+        "substantial_attack_detected": true
+      },
+      "detected_onset_frame": 283488,
+      "detected_onset_seconds": 2.9527539371719023,
+      "host_NoteOn_frame_estimate": 279270,
+      "host_NoteOff_frame_estimate": 320275,
+      "actual_dispatch_hold_ms": 427.0946020114934,
+      "active_interval": {
+        "start_frame": 283488,
+        "end_frame": 339477,
+        "frames": 55989,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.13562860759185813,
+            "RMS_dBFS": -17.352973936678836,
+            "AC_RMS_dBFS": -17.353022466811602,
+            "peak_PCM24": 4881541,
+            "peak_dBFS": -4.702659179509282,
+            "DC_FS": 0.00045338137367964066,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.13562860759185813,
+            "RMS_dBFS": -17.352973936678836,
+            "AC_RMS_dBFS": -17.353022466811602,
+            "peak_PCM24": 4881541,
+            "peak_dBFS": -4.702659179509282,
+            "DC_FS": 0.00045338137367964066,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "held_interval": {
+        "start_frame": 293089,
+        "end_frame": 312290,
+        "frames": 19201,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.16334370764856468,
+            "RMS_dBFS": -15.737951816503202,
+            "AC_RMS_dBFS": -15.738101475226,
+            "peak_PCM24": 4881541,
+            "peak_dBFS": -4.702659179509282,
+            "DC_FS": 0.0009588651387407521,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.16334370764856468,
+            "RMS_dBFS": -15.737951816503202,
+            "AC_RMS_dBFS": -15.738101475226,
+            "peak_PCM24": 4881541,
+            "peak_dBFS": -4.702659179509282,
+            "DC_FS": 0.0009588651387407521,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "spectrum": {
+        "start_frame": 293089,
+        "end_frame": 312290,
+        "NFFT": 8192,
+        "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+        "channels": [
+          {
+            "channel": "L",
+            "band_power_fraction_gt_Hz": {
+              "2000": 1.451458084281891e-07,
+              "5000": 5.514172870660473e-08,
+              "10000": 2.8288723466527996e-08,
+              "20000": 1.082435388180908e-08
+            },
+            "spectral_centroid_Hz": 326.26872371819894
+          },
+          {
+            "channel": "R",
+            "band_power_fraction_gt_Hz": {
+              "2000": 1.451458084281891e-07,
+              "5000": 5.514172870660473e-08,
+              "10000": 2.8288723466527996e-08,
+              "20000": 1.082435388180908e-08
+            },
+            "spectral_centroid_Hz": 326.26872371819894
+          }
+        ]
+      },
+      "postOff_250ms": {
+        "start_frame": 344277,
+        "end_frame": 353878,
+        "frames": 9601,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_FS": 0.0,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null,
+            "peak_PCM24": 0,
+            "peak_dBFS": null,
+            "DC_FS": 0.0,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_FS": 0.0,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null,
+            "peak_PCM24": 0,
+            "peak_dBFS": null,
+            "DC_FS": 0.0,
+            "rail_samples": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "onset_detection": {
+        "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+        "search_start_frame": 371328,
+        "search_end_frame": 426321,
+        "threshold_FS": 0.0005,
+        "substantial_attack_detected": true
+      },
+      "detected_onset_frame": 379488,
+      "detected_onset_seconds": 3.9526706107824348,
+      "host_NoteOn_frame_estimate": 375221,
+      "host_NoteOff_frame_estimate": 416720,
+      "actual_dispatch_hold_ms": 432.2420630051056,
+      "active_interval": {
+        "start_frame": 379488,
+        "end_frame": 435922,
+        "frames": 56434,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.13432448540554762,
+            "RMS_dBFS": -17.4368962905934,
+            "AC_RMS_dBFS": -17.43693084335362,
+            "peak_PCM24": 4444383,
+            "peak_dBFS": -5.517568450912923,
+            "DC_FS": 0.00037888162136162374,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.13432448540554762,
+            "RMS_dBFS": -17.4368962905934,
+            "AC_RMS_dBFS": -17.43693084335362,
+            "peak_PCM24": 4444383,
+            "peak_dBFS": -5.517568450912923,
+            "DC_FS": 0.00037888162136162374,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "held_interval": {
+        "start_frame": 389089,
+        "end_frame": 408290,
+        "frames": 19201,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.16120625411828785,
+            "RMS_dBFS": -15.852362268438196,
+            "AC_RMS_dBFS": -15.852386129911991,
+            "peak_PCM24": 4444383,
+            "peak_dBFS": -5.517568450912923,
+            "DC_FS": -0.0003778659566654078,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.16120625411828785,
+            "RMS_dBFS": -15.852362268438196,
+            "AC_RMS_dBFS": -15.852386129911991,
+            "peak_PCM24": 4444383,
+            "peak_dBFS": -5.517568450912923,
+            "DC_FS": -0.0003778659566654078,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "spectrum": {
+        "start_frame": 389089,
+        "end_frame": 408290,
+        "NFFT": 8192,
+        "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+        "channels": [
+          {
+            "channel": "L",
+            "band_power_fraction_gt_Hz": {
+              "2000": 1.4213329823542954e-07,
+              "5000": 5.4334207386419433e-08,
+              "10000": 2.801876800185296e-08,
+              "20000": 1.0675947480989425e-08
+            },
+            "spectral_centroid_Hz": 326.5846397414927
+          },
+          {
+            "channel": "R",
+            "band_power_fraction_gt_Hz": {
+              "2000": 1.4213329823542954e-07,
+              "5000": 5.4334207386419433e-08,
+              "10000": 2.801876800185296e-08,
+              "20000": 1.0675947480989425e-08
+            },
+            "spectral_centroid_Hz": 326.5846397414927
+          }
+        ]
+      },
+      "postOff_250ms": {
+        "start_frame": 440722,
+        "end_frame": 450323,
+        "frames": 9601,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_FS": 0.0,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null,
+            "peak_PCM24": 0,
+            "peak_dBFS": null,
+            "DC_FS": 0.0,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_FS": 0.0,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null,
+            "peak_PCM24": 0,
+            "peak_dBFS": null,
+            "DC_FS": 0.0,
+            "rail_samples": 0
+          }
+        ]
+      }
+    }
+  ],
+  "whole_capture": {
+    "start_frame": 0,
+    "end_frame": 768768,
+    "frames": 768768,
+    "channels": [
+      {
+        "channel": "L",
+        "digital_zero": false,
+        "RMS_FS": 0.06404663937856937,
+        "RMS_dBFS": -23.870073067842092,
+        "AC_RMS_dBFS": -23.87008146908989,
+        "peak_PCM24": 4957567,
+        "peak_dBFS": -4.568426159952469,
+        "DC_FS": 8.907911184427145e-05,
+        "rail_samples": 0
+      },
+      {
+        "channel": "R",
+        "digital_zero": false,
+        "RMS_FS": 0.06404663937856937,
+        "RMS_dBFS": -23.870073067842092,
+        "AC_RMS_dBFS": -23.87008146908989,
+        "peak_PCM24": 4957567,
+        "peak_dBFS": -4.568426159952469,
+        "DC_FS": 8.907911184427145e-05,
+        "rail_samples": 0
+      }
+    ]
+  },
+  "plot_suggestions": {
+    "time_crop_start_frame": 177023,
+    "time_crop_end_frame": 488726,
+    "time_origin_frame": 186624,
+    "time_crop_seconds_relative_to_first_detected_onset": [
+      -0.10000208315973669,
+      3.1466336138655113
+    ],
+    "spectrum_start_frame": 196225,
+    "spectrum_end_frame": 215426,
+    "spectrum_scope": "First detected round, onset+0.10..0.30s, original amplitude",
+    "NFFT": 8192
+  },
+  "normalization": false,
+  "gain_applied": 1,
+  "resampling": false,
+  "channel_order": "L,R unchanged",
+  "CRC_verified": false,
+  "native_sample_index_verified": false,
+  "FPGA_internal_drop_counter_verified": false,
+  "parameter_scope": {
+    "KS": "基础KS拨弦；保留现有decay3000ms，不代表测得自然T60",
+    "FM": "按现有CPU代码定义的默认单算子音色；未逐寄存器读回或覆盖复杂FM"
+  }
+}

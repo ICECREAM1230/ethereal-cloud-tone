@@ -1,0 +1,60 @@
+# Local S3: 8-bit sustain; fixed LFO1 pitch route; 96k CSP rates.
+# Copyright © 2026 Thor H. Linløkken <thj@thj.no>
+# License: MIT
+format = 1
+
+[voice]
+structure = "4+4"
+osc_mix = 0
+unison_detune = 0.04
+unison_stereo = 100
+
+[[osc]]
+wave = "pulse"
+tune = -6
+pulse_width = 90.220684
+
+[[osc]]
+wave = "pulse"
+tune = 6
+pulse_width = 65.832305
+
+[filter]
+type = "lowpass"
+slope = 24
+cutoff = 261.6
+resonance = 2.146
+key_track = 100
+
+[amp_env]
+attack = 0
+sustain = -0.47
+decay = 0.341
+release = 9.9
+velocity = 50
+
+[mod_env]
+attack = 0.9
+sustain = 0
+decay = 14.4
+release = 11
+velocity = 50
+destination = "cutoff"
+depth = 34.17
+
+[[lfo]]
+shape = "pulse"
+rate = 7.293
+destination = "pitch"
+depth = 6
+
+[[lfo]]
+shape = "pulse"
+rate = 3.405
+destination = "pulse_width"
+depth = 12.4
+
+[part]
+volume = -0.4
+pan = 0
+bend_range = 2

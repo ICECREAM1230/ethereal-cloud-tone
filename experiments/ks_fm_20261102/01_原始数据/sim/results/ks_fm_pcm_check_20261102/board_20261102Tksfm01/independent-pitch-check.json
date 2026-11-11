@@ -1,0 +1,47 @@
+{
+  "method": "ACF over onset+40..300ms; expected-C4 +/-12percent search, parabolic lag; no gain/resampling",
+  "results": [
+    {
+      "case": "ks_single_c4",
+      "attack": true,
+      "ACF_near_C4_Hz": 261.6409508552407,
+      "ACF_peak_ratio": 0.9968998825343423,
+      "cents_from_C4": 0.10180661778187801
+    },
+    {
+      "case": "ks_single_c4_repeat1",
+      "attack": true,
+      "ACF_near_C4_Hz": 261.64302600071784,
+      "ACF_peak_ratio": 0.9961779711529989,
+      "cents_from_C4": 0.115537451003282
+    },
+    {
+      "case": "ks_single_c4_repeat2",
+      "attack": true,
+      "ACF_near_C4_Hz": 261.6389270958439,
+      "ACF_peak_ratio": 0.9963699724284142,
+      "cents_from_C4": 0.08841569134827792
+    },
+    {
+      "case": "fm_single_c4",
+      "attack": true,
+      "ACF_near_C4_Hz": 261.5235788234415,
+      "ACF_peak_ratio": 0.9999984205495652,
+      "cents_from_C4": -0.6749985734756397
+    },
+    {
+      "case": "fm_single_c4_repeat1",
+      "attack": true,
+      "ACF_near_C4_Hz": 261.4793952892792,
+      "ACF_peak_ratio": 0.9999967919191415,
+      "cents_from_C4": -0.9675094872487738
+    },
+    {
+      "case": "fm_single_c4_repeat2",
+      "attack": true,
+      "ACF_near_C4_Hz": 261.52076154329006,
+      "ACF_peak_ratio": 0.9999983223258638,
+      "cents_from_C4": -0.6936485078981347
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:23:12:read_reg	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:37:12:write_reg	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:67:13:reset_algorithm	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:258:6:fdc_ae350_init	192	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:268:6:fdc_ae350_set_enabled	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:277:6:fdc_ae350_request_restart	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:284:6:fdc_ae350_stage_config	192	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:292:6:fdc_ae350_apply_config	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:300:10:fdc_ae350_poll	112	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:353:6:fdc_ae350_quiescent	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:372:26:fdc_ae350_active_config	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:374:26:fdc_ae350_staged_config	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/fdc_ae350.c:376:26:fdc_ae350_stats	0	static

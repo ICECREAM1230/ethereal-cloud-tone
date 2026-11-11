@@ -1,0 +1,7 @@
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:19:12:queued	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:13:12:owned	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:4:12:busy	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:29:6:fdc_native_owner_init	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:36:5:fdc_native_stop	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:57:5:fdc_native_resume	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/integration/fdc_native_owner.c:62:5:fdc_native_publish	48	static

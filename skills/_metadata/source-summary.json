@@ -1,0 +1,111 @@
+{
+  "source_snapshot_date": "2026-11-12",
+  "source_id": "current-fpga-skill-archive-20261112",
+  "source_resources": 227,
+  "source_skill_resources": 225,
+  "source_host_launchers": 2,
+  "source_resource_bytes": 13882469,
+  "retained_source_resources": 211,
+  "replaced_manual_conversions_with_project_locators": 8,
+  "external_only_official_pdfs": 8,
+  "historical_snapshots_included": 0,
+  "manual_body_omissions": [
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/SUG949E.pdf",
+      "sha256": "0514e832313e8dd8c0112cf35ed501bdadf2458ac9b8ba84a265898e5b94446b",
+      "bytes": 1369924,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/UG306E.pdf",
+      "sha256": "ee8ed3e6545b287b64506a2672dbe480db4ac8b195e7732217e6ab2dab651376",
+      "bytes": 2620669,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/UG303E.pdf",
+      "sha256": "82ba8a6d457dca795f29602a19ccc4415a1fa4c89bd624cbb86c9d0a75c0767e",
+      "bytes": 984571,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/SUG113.pdf",
+      "sha256": "c2b787671a03087587a811ae144441a83aa11daa497906b95ec8f0e026c78a82",
+      "bytes": 981362,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/SUG940.pdf",
+      "sha256": "bd0fe73c6252266834fbae246595ff9be69c3cf8c988b4de7f7d790c947a15e5",
+      "bytes": 2046051,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/UG300E.pdf",
+      "sha256": "7b3fd3a2887a98d07075db3b812dccf903d8efe8c5dfbdb972e4067391b28fdd",
+      "bytes": 1357289,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/DS1239E.pdf",
+      "sha256": "6930ad832b626a1f4256a759152daf056af56abea8409e055cd7ef060a93dc68",
+      "bytes": 790149,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/pdf/SUG550.pdf",
+      "sha256": "af6c4d4223374c63d65ebfd80f4e227705efe15438d6e7d0ae55770c1051af67",
+      "bytes": 1611239,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/UG303E.md",
+      "sha256": "2af10ffc62c5e2395b30299681c359b5e48294af82c812037ba598c450701555",
+      "bytes": 58066,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/SUG113.md",
+      "sha256": "367a78e45e65f1daf78370cf4924b84d0fa345680f5ee98fe28deefd047b3a7f",
+      "bytes": 49402,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/DS1239E.md",
+      "sha256": "cb8374d2f47be2704450b4faae62b95acc16f566e55d84d1b39e507882230823",
+      "bytes": 136440,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/UG300E.md",
+      "sha256": "20abb6c70bd63ba20a549a3dc78d44c1d4359cd1cfd6c997edecd580b7b1062c",
+      "bytes": 122242,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/UG306E.md",
+      "sha256": "be7c91b89ac5a6fa33015fbddca95d165c7904b767c75921d7adf3a5b2823c4b",
+      "bytes": 224585,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/SUG550.md",
+      "sha256": "ff32b1016ea1748ae36688a91dc39bd6b9a6a4df08b2df2f807693480e2f8a12",
+      "bytes": 143075,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/SUG949E.md",
+      "sha256": "a9fb9afeb0061e5deaf2da4a981460154ca87d0f75e8e634b426670cc4c4eed5",
+      "bytes": 277412,
+      "reason": "vendor_manual_redistribution_restriction"
+    },
+    {
+      "archive_path": "skills/gowin-arora-v-rtl/references/manuals/markdown/SUG940.md",
+      "sha256": "f8c07aad0403cf4ab82e94129e5813580c09633ca7daded5e6eed63d2c32d242",
+      "bytes": 137279,
+      "reason": "vendor_manual_redistribution_restriction"
+    }
+  ],
+  "note": "Logical archive paths and hashes preserve provenance. Personal absolute source directories and global configuration are deliberately not published. Resources with matching hashes are unchanged; public adaptation is reflected in resources.json."
+}

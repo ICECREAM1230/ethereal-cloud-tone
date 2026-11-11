@@ -52,7 +52,7 @@ GUI后台24项主机测试、前端JavaScript语法检查通过；真实串口�
 
 当前设备留在FAULT，SCL/SDA已释放，所有主机串口会话已关闭。INT线本次未用于中断，采用STATUS轮询。主工程没有修改，未暂存或提交。
 
-证据：[本轮实板报告](../verification/bringup_20261029T213113/summary.json)、[自动诊断日志](../verification/bringup_20261029T213113/serial-released.log)、[原Flash备份](../verification/bringup_20261029T213113/device-before-16MiB.bin)。
+历史证据包括当时的实板报告、自动诊断日志和原Flash备份，均保留在本地，未随公开仓库提供；本节按原日期记录，不代表当前设备状态或本次重新验收。
 
 ## 历史：首次离线交付，以下仅说明该阶段
 

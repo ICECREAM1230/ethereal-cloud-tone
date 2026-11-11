@@ -1,0 +1,128 @@
+{
+  "artifact_directory": ".",
+  "artifacts": {
+    "laser_harp_b.bin": {
+      "bytes": 523104,
+      "sha256": "e2bb487f90c352001f87e16a42016c0c83268befbad4e05ef52c72fa5ef26d71",
+      "path": "laser_harp_b.bin"
+    },
+    "laser_harp_b.elf": {
+      "bytes": 6699376,
+      "sha256": "d159a1b1062a7e7614579768b63de13942e69f60fb4ef3ee305e13381ccb4b53",
+      "path": "laser_harp_b.elf"
+    },
+    "bootloader/bootloader.bin": {
+      "bytes": 21120,
+      "sha256": "f27bd74442b173b48816c53313e6a935e82836d176e2caee36956a0ab0847304",
+      "path": "bootloader/bootloader.bin"
+    },
+    "partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "655cd209ba03a1c8b6108ac5762de3ca6e2610f23a4fbf2e99792d3894a610cf",
+      "path": "partition_table/partition-table.bin"
+    },
+    "flasher_args.json": {
+      "bytes": 843,
+      "sha256": "174d93a3233684a88b95c78fcbee2d708b247407ec98200039aa9bdb129e8bc0",
+      "path": "flasher_args.json"
+    },
+    "flash_args": {
+      "bytes": 150,
+      "sha256": "d49087f1c6180554acfc99597fe38345b53d820b6dda1a4d451148ffe10d3981",
+      "path": "flash_args"
+    },
+    "sdkconfig": {
+      "bytes": 107425,
+      "sha256": "2e1489f931e6c57a7776bdb10edfe58a962995a0763a4202ba4a97b5d2e24c5c",
+      "path": "sdkconfig"
+    },
+    "sdkconfig.defaults": {
+      "bytes": 1231,
+      "sha256": "ef9485071a82cede8a5bffd17ecb573b32f7492cdf3a65fc1922bc138ec6c92a",
+      "path": "../../../esp32/b_board/sdkconfig.defaults"
+    },
+    "partitions.csv": {
+      "bytes": 234,
+      "sha256": "eb581cb475614c3aaacb41f4cbe563bb4ea54cee6ab9d2270a845c99ace5be46",
+      "path": "../../../esp32/b_board/partitions.csv"
+    },
+    "dependencies.lock": {
+      "bytes": 1119,
+      "sha256": "7831958af74c255abbc48d95226daa252d3eb5a8ceded7d1dcf5b8b322780ac5",
+      "path": "../../../esp32/b_board/dependencies.lock"
+    }
+  },
+  "source_fingerprints_verified": true,
+  "generated_sdkconfig_verified": {
+    "B_MIDI_CHANNEL": 2,
+    "B_VELOCITY_MIN": 127,
+    "B_VELOCITY_MAX": 16,
+    "B_DURATION_MIN_MS": 20,
+    "B_DURATION_MAX_MS": 500,
+    "B_NOTE_GATE_MS": 200
+  },
+  "default_wire_channel_id": 1,
+  "serial_selection_range": [
+    0,
+    15
+  ],
+  "velocity": [
+    20,
+    500,
+    127,
+    16
+  ],
+  "hardware_flashed": false,
+  "public_copy": {
+    "historical_artifact_metadata": {
+      "laser_harp_b.bin": {
+        "bytes": 523104,
+        "sha256": "e2bb487f90c352001f87e16a42016c0c83268befbad4e05ef52c72fa5ef26d71"
+      },
+      "laser_harp_b.elf": {
+        "bytes": 6699376,
+        "sha256": "d159a1b1062a7e7614579768b63de13942e69f60fb4ef3ee305e13381ccb4b53"
+      },
+      "bootloader/bootloader.bin": {
+        "bytes": 21120,
+        "sha256": "f27bd74442b173b48816c53313e6a935e82836d176e2caee36956a0ab0847304"
+      },
+      "partition_table/partition-table.bin": {
+        "bytes": 3072,
+        "sha256": "655cd209ba03a1c8b6108ac5762de3ca6e2610f23a4fbf2e99792d3894a610cf"
+      },
+      "flasher_args.json": {
+        "bytes": 917,
+        "sha256": "d30917db02ad95840714da7804977c159f2e77737f099c280b335b90767d879e"
+      },
+      "flash_args": {
+        "bytes": 150,
+        "sha256": "d49087f1c6180554acfc99597fe38345b53d820b6dda1a4d451148ffe10d3981"
+      },
+      "sdkconfig": {
+        "bytes": 107425,
+        "sha256": "2e1489f931e6c57a7776bdb10edfe58a962995a0763a4202ba4a97b5d2e24c5c"
+      },
+      "sdkconfig.defaults": {
+        "bytes": 1231,
+        "sha256": "ef9485071a82cede8a5bffd17ecb573b32f7492cdf3a65fc1922bc138ec6c92a"
+      },
+      "partitions.csv": {
+        "bytes": 234,
+        "sha256": "eb581cb475614c3aaacb41f4cbe563bb4ea54cee6ab9d2270a845c99ace5be46"
+      },
+      "dependencies.lock": {
+        "bytes": 1119,
+        "sha256": "7831958af74c255abbc48d95226daa252d3eb5a8ceded7d1dcf5b8b322780ac5"
+      }
+    },
+    "metadata_paths_normalized": true,
+    "binary_files_unchanged": true,
+    "deduplicated_configuration_paths": {
+      "sdkconfig.defaults": "../../../esp32/b_board/sdkconfig.defaults",
+      "partitions.csv": "../../../esp32/b_board/partitions.csv",
+      "dependencies.lock": "../../../esp32/b_board/dependencies.lock"
+    },
+    "hashes_in_artifacts_describe_public_current_files": true
+  }
+}

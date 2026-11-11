@@ -1,0 +1,175 @@
+{
+  "status": "PACKAGED",
+  "PNG_count": 12,
+  "single_page_PDF_count": 12,
+  "combined_PDF": {
+    "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/KS与FM_中文报告图集_12页.pdf",
+    "pages": 12,
+    "SHA256": "f3ae4669312efa22eb90f7b2f8ed9551928638fbdd6d8f55571680b19e60a604"
+  },
+  "ZIP": {
+    "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/KS与FM_12张中文图稿及录音.zip",
+    "bytes": 21737604,
+    "SHA256": "bd09e9914c476304a0b48337957b13f12f3436c8d300fb9825f8007c443b4eee",
+    "members": 37,
+    "CRC_and_member_SHA_verified": true
+  },
+  "audio_count": 6,
+  "images": [
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/01_ks_single_c4_时域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "98e92531f043a109efce9d7b3e2e8b9d755c2121f50c51ddaad2be4014e7e525"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/02_ks_single_c4_频域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "8d9f7843f6c4d9cc35d9eb498b5e51ca26cc98b3d973273630d4274b55ff81a2"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/03_ks_chord_ceg_时域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "2f4cbc79e0a72ac684eaa205f6779c0b03aeb36781d7b8fb0011caafedef84d9"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/04_ks_chord_ceg_频域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "3dc1ba0f490e7fc506e428a1b81f790d88c078fec20a2e0d005181a2866ebdc7"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/05_fm_single_c4_时域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "4f6236dde25695aa1d093e565f3cf13c7d3115df54d8007dc20fbbe422c90abf"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/06_fm_single_c4_频域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "ee3b912177cbd0296bb008a3f0a6e3d2db3cec2386efc976cc7a98026cb23f46"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/07_fm_chord_ceg_时域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "610f3108804e1dcbc9ce023218e219e7a79272350b8908dca57e45265396c9c7"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/08_fm_chord_ceg_频域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "408e615e2e17cb956cff03740407940b69fb3e160006f068cbbbd8aa251c1ddd"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/09_ks_poly16_retrigger_时域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "98d7bc719414645857fc18029e2a6e625c0e78cfb5d1732f5da686b1f8cd66f8"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/10_ks_poly16_retrigger_频域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "9bf11ffd5559b97ad01282545dd66ab6a17fa9f969c9833dc4ccc04699faf606"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/11_fm_poly8_retrigger_时域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "feaf3994becc39e1942b7cef5fbb11ef87a1813a77d8c57aac1287678ed9f0f2"
+    },
+    {
+      "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/12_fm_poly8_retrigger_频域.png",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "SHA256": "02cbc890b878f26daaad77061edfa4794ba2ec34a743dbf934cdcbafedbd6b81"
+    }
+  ],
+  "input_hashes_unchanged": true,
+  "hardware_access": false,
+  "package_script_SHA256": "a56678c741a135182bc3f08af23387f70a2dde9de813469901f2ebebc36d8972",
+  "final_PDF_QA": "PASS 12 vector pages; embedded Unicode fonts; no bitmap objects; representative combined-page renders inspected",
+  "final_PNG_QA": "PASS 12 files at4800x3000 approximately600dpi; all rendered and inspected",
+  "QA_reports": [
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/qa/qa.json",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/合并图集校验/qa.json"
+  ],
+  "no_hardware_access_after_release": true,
+  "hardware_release_record": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/hardware-released.json"
+}

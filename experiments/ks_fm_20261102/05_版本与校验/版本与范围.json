@@ -1,0 +1,19 @@
+{
+  "archive_created_utc": "2026-11-02T04:44:53.702230+00:00",
+  "original_project": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project",
+  "scope": "KS/FM only; no subtractive capture/results/simulation",
+  "board_image_SHA256": "02e62fe1280fc406f992620120e662bba3d8f4c279ba6fcce7ac0cc4558cfed3",
+  "board_user_code": "0x00006A5B",
+  "ESP32_app_SHA256_recorded": "0055b93ddce38455d1b52be622a63a121ea886d2bb8e26cdafd3c4b094195c0c",
+  "ESP32_source_inputs": 333,
+  "raw_totals": {
+    "cases": 10,
+    "raw_bytes": 70377472,
+    "valid_frames": 120274,
+    "stereo_sample_pairs": 7697536
+  },
+  "source_inputs_unchanged_during_copy": true,
+  "hardware_access": false,
+  "original_files_moved_or_deleted": false,
+  "implementation_snapshot_is_complete_independent_FPGA_project": false
+}

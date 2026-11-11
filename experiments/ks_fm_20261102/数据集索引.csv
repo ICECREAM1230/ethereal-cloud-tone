@@ -1,0 +1,11 @@
+合成器,场景,数据集,轮数,力度,MIDI音符,左右样本对,有效帧,RAW字节,归档相对路径
+FM,fm_chord_ceg,board_20261102Tksfm01,1,100,60 64 67,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg
+FM,fm_single_c4,board_20261102Tksfm01,1,100,60,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4
+FM,fm_single_c4_repeat1,board_20261102Tksfm01,1,100,60,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4_repeat1
+FM,fm_single_c4_repeat2,board_20261102Tksfm01,1,100,60,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4_repeat2
+KS,ks_chord_ceg,board_20261102Tksfm01,1,100,60 64 67,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg
+KS,ks_single_c4,board_20261102Tksfm01,1,100,60,773696,12089,7073792,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4
+KS,ks_single_c4_repeat1,board_20261102Tksfm01,1,100,60,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4_repeat1
+KS,ks_single_c4_repeat2,board_20261102Tksfm01,1,100,60,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4_repeat2
+FM,fm_poly8_retrigger,board_poly_report_20261102,3,100,60 61 62 63 64 65 66 67,768768,12012,7028736,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger
+KS,ks_poly16_retrigger,board_poly_report_20261102,3,100,48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63,773696,12089,7073792,01_原始数据/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger

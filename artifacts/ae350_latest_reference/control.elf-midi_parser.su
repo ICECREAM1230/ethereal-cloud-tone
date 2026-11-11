@@ -1,0 +1,12 @@
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:9:13:short_type	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:52:13:enqueue_event	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:63:13:enqueue_sysex	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:186:13:select_event	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:202:13:select_sysex	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:37:6:midi_parser_init	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:81:22:midi_parser_push	64	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:172:22:midi_parser_flush	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:234:6:midi_parser_peek_event	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:242:6:midi_parser_pop_event	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:254:6:midi_parser_peek_sysex	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/midi_parser.c:262:6:midi_parser_pop_sysex	16	static

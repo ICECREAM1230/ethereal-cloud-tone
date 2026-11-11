@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+"""Invoke Gowin's installed GUI-plugin methods without mouse or keyboard automation."""
+import argparse,configparser,csv,hashlib,json,os,re,signal,subprocess,sys,time
+from pathlib import Path
+import xml.etree.ElementTree as ET
+ROOT=Path(__file__).resolve().parents[1]
+IDE=Path('/home/ice/Gowin/V1.9.12.04/IDE')
+CURRENT_PART='GW5AST-LV138PG484AC1/I0'
+
+def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def lookup_ip(ident):
+ found=[]
+ for p in sorted((IDE/'ipcore').rglob('*.ipspec')):
+  tree=ET.parse(p).getroot();x=tree.find('ip')
+  if ident in (x.get('id'),p.parent.name,str(p.relative_to(IDE/'ipcore'))):found.append((p,tree,x))
+ if len(found)!=1:raise ValueError('IP identity must resolve uniquely; choose directory name or relative spec path: '+str([(str(x[0]),x[2].get('id')) for x in found]))
+ return found[0]
+def target(part,version):
+ rows=[x for x in csv.reader((IDE/'data/device/device_info.csv').open()) if len(x)>7 and x[1]==part and (x[5] or 'NA')==version]
+ if not rows:raise ValueError('Part/version not registered in installed Gowin')
+ return rows[0]
+def generate(args):
+ case=Path(args.output).resolve()
+ if case.exists() and any(case.iterdir()):raise ValueError('Output directory must be empty/new; existing evidence is never overwritten')
+ case.mkdir(parents=True,exist_ok=True);(case/'home').mkdir();spec,tree,ip=lookup_ip(args.ip);dev=target(args.part,args.device_version);selection_ip=lookup_ip(args.parent_ip)[2] if args.parent_ip else ip
+ project=ET.Element('Project');ET.SubElement(project,'Template').text='FPGA';ET.SubElement(project,'Version').text='5';ET.SubElement(project,'Device',name=dev[3],pn=dev[1]).text=dev[0];ET.SubElement(project,'FileList');gprj=case/'isolated.gprj';gprj.write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE gowin-fpga-project>\n'+ET.tostring(project))
+ settings=json.loads(Path(args.params).read_text()) if args.params else {}
+ job={'label':selection_ip.get('label'),'labels':[selection_ip.get('label'),(selection_ip.text or '').strip()],'ip_id':ip.get('id'),'spec':str(spec),'module':args.module,'project':str(gprj),'output':str(case/'ip'),'set':settings,'auto_parameter':args.auto_parameter,'timeout_ticks':args.timeout*10-10,'mode':args.mode,'category':selection_ip.get('category'),'protocol':args.protocol or '','set_order':list(settings)}
+ (case/'job.json').write_text(json.dumps(job,ensure_ascii=False,indent=2));env=os.environ.copy()
+ env.update(HOME=str(case/'home'),XDG_CONFIG_HOME=str(case/'home/.config'),XDG_CACHE_HOME=str(case/'home/.cache'),XDG_DATA_HOME=str(case/'home/.local/share'),QT_QPA_PLATFORM='offscreen',QT_QPA_PLATFORM_PLUGIN_PATH=str(IDE/'plugins/qt/platforms'),QT_PLUGIN_PATH=str(IDE/'plugins/qt'),QT_QUICK_BACKEND='software',QTWEBENGINE_DISABLE_SANDBOX='1',QTWEBENGINE_CHROMIUM_FLAGS='--disable-gpu --disable-dev-shm-usage --no-sandbox',GOWIN_IP_BRIDGE_JOB=str(case/'job.json'),LD_LIBRARY_PATH=str(IDE/'bin')+':'+str(IDE/'lib'),LD_PRELOAD='/lib/x86_64-linux-gnu/libfreetype.so.6:/lib/x86_64-linux-gnu/libstdc++.so.6:/lib/x86_64-linux-gnu/libz.so.1:'+str(ROOT/'bin/libgowin_ip_bridge.so'))
+ env.pop('DISPLAY',None);env.pop('WAYLAND_DISPLAY',None)
+ start=time.monotonic();timedout=False
+ with (case/'tool.log').open('w') as log:
+  app=subprocess.Popen([str(IDE/'bin/gw_ide')],cwd=case,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+  try:code=app.wait(timeout=args.timeout)
+  except subprocess.TimeoutExpired:timedout=True;code=124
+  finally:
+   # Own process group only; also releases WebEngine and generator children.
+   try:os.killpg(app.pid,signal.SIGTERM)
+   except ProcessLookupError:pass
+   try:app.wait(timeout=4)
+   except subprocess.TimeoutExpired:os.killpg(app.pid,signal.SIGKILL);app.wait()
+ bridge=json.loads((case/'bridge.json').read_text()) if (case/'bridge.json').exists() else {}
+ files=[]
+ for p in sorted((case/'ip').rglob('*')):
+  if p.is_file():files.append({'path':str(p.relative_to(case)),'bytes':p.stat().st_size,'sha256':digest(p)})
+ vo=[x for x in files if Path(x['path']).suffix.lower()=='.vo'];ipc=[x for x in files if Path(x['path']).suffix.lower()=='.ipc'];named=[];protected=[]
+ for x in vo:
+  text=(case/x['path']).read_text(errors='replace')
+  if re.search(r'pragma\s+protect|begin_protected|begin_data_block|data_block|key_block',text,re.I):protected.append(x['path'])
+ for x in files:
+  if Path(x['path']).suffix.lower() in ('.v','.vo','.vhd','.vhdl') and x['bytes']<8_000_000:
+   text=(case/x['path']).read_text(errors='replace')
+   if re.search(r'\bmodule\s+'+re.escape(args.module)+r'\b|\bentity\s+'+re.escape(args.module)+r'\b',text,re.I):named.append(x['path'])
+ configs=[]
+ for x in ipc:
+  ini=configparser.ConfigParser(interpolation=None,strict=False);ini.optionxform=str;ini.read_string((case/x['path']).read_text(errors='replace'))
+  sections={section:dict(ini[section]) for section in ini.sections()}
+  vals={**sections.get('Config',{}),**sections.get('General',{})}
+  configs.append({'path':x['path'],'values':vals,'sections':sections})
+ valid_config=any((x['values'].get('module')==args.module or bridge.get('module_policy')=='vendor_fixed') and x['values'].get('target_device')==dev[0] and x['values'].get('type')==(selection_ip.get('id') if args.protocol else ip.get('id')) for x in configs)
+ required={suffix:str(Path('ip')/(args.module+suffix)) for suffix in ['.ipc','.v','.vo','_tmp.v']}
+ required_present={suffix:(case/name).is_file() and (case/name).stat().st_size>0 for suffix,name in required.items()}
+ result={'required_files':required,'required_files_present':required_present,'wrapper_exists':required_present['.v'],'template_exists':required_present['_tmp.v'],'mode':args.mode,'invocation_route':'qt_plugin_metaobject','ip':ip.get('id'),'spec':str(spec),'spec_sha256':digest(spec),'module':args.module,'part':dev[1],'device_version':args.device_version,'target_id':dev[0],'returncode':code,'timeout':timedout,'elapsed_seconds':round(time.monotonic()-start,3),'bridge_status':bridge.get('status'),'ipc_exists':bool(ipc),'ipc_matches_request':valid_config,'vo_exists':bool(vo),'vo_protected':bool(protected),'protected_vo_files':protected,'named_hdl_module_exists':bool(named),'public_wrappers':named,'configs':configs,'files':files,'applied_parameters':bridge.get('applied_parameters',{}),'requested_parameters':settings,'strict_artifacts_pass':bool(code==0 and valid_config and named and all(required_present.values()))}
+ fixed=bridge.get('module_policy')=='vendor_fixed'
+ tops=[]
+ if fixed:
+  for f in vo:
+   m=re.search(r'\bmodule\s+(\w+)',(case/f['path']).read_text(errors='replace'))
+   if m and m[1] not in tops:tops.append(m[1])
+ result['effective_modules']=tops if fixed else [args.module]
+ result['module_policy']=bridge.get('module_policy')
+ result['protocol']=args.protocol
+ result['generation_pass']=bool(code==0 and valid_config and (tops if fixed else named) and any(Path(f['path']).suffix=='.v' for f in files) and bridge.get('phase',0)>=4)
+ result['status']='ARTIFACTS_PASS_PARAMETERS_NOT_YET_VERIFIED' if result['strict_artifacts_pass'] else 'PARTIAL_OUTPUT' if files else bridge.get('status','PROCESS_FAILED')
+ (case/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print(json.dumps({k:result[k] for k in ['ip','status','bridge_status','returncode','ipc_exists','vo_exists','vo_protected','elapsed_seconds']},ensure_ascii=False));return 0 if result['generation_pass'] or (args.mode in ('inspect','catalog') and code==0) else 1
+
+def main():
+ ap=argparse.ArgumentParser();subs=ap.add_subparsers(dest='command',required=True);p=subs.add_parser('generate');p.add_argument('--ip',required=True);p.add_argument('--module',required=True);p.add_argument('--output',required=True);p.add_argument('--part',default=CURRENT_PART);p.add_argument('--device-version',default='C');p.add_argument('--parent-ip');p.add_argument('--protocol');p.add_argument('--mode',choices=['inspect','catalog','generate'],default='generate');p.add_argument('--params');p.add_argument('--auto-parameter',action='store_true');p.add_argument('--timeout',type=int,default=65);a=ap.parse_args()
+ if not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_]*',a.module):raise ValueError('Invalid module name')
+ return generate(a)
+if __name__=='__main__':
+ try:sys.exit(main())
+ except Exception as ex:print(str(ex),file=sys.stderr);sys.exit(2)

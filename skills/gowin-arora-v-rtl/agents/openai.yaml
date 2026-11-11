@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gowin Arora V RTL"
+  short_description: "Write and optimize Arora V RTL, mapping, and timing"
+  default_prompt: "Use $gowin-arora-v-rtl to write or optimize Arora V RTL for performance and verify behavior, resource mapping, and timing."

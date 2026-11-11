@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "pages": 12,
+  "time_figures": 6,
+  "frequency_figures": 6,
+  "page_text_checks": [
+    {
+      "page": 1,
+      "Chinese_time": true,
+      "Chinese_frequency": false,
+      "text_length": 538
+    },
+    {
+      "page": 2,
+      "Chinese_time": false,
+      "Chinese_frequency": true,
+      "text_length": 458
+    },
+    {
+      "page": 3,
+      "Chinese_time": true,
+      "Chinese_frequency": false,
+      "text_length": 554
+    },
+    {
+      "page": 4,
+      "Chinese_time": false,
+      "Chinese_frequency": true,
+      "text_length": 478
+    },
+    {
+      "page": 5,
+      "Chinese_time": true,
+      "Chinese_frequency": false,
+      "text_length": 530
+    },
+    {
+      "page": 6,
+      "Chinese_time": false,
+      "Chinese_frequency": true,
+      "text_length": 446
+    },
+    {
+      "page": 7,
+      "Chinese_time": true,
+      "Chinese_frequency": false,
+      "text_length": 546
+    },
+    {
+      "page": 8,
+      "Chinese_time": false,
+      "Chinese_frequency": true,
+      "text_length": 466
+    },
+    {
+      "page": 9,
+      "Chinese_time": true,
+      "Chinese_frequency": false,
+      "text_length": 601
+    },
+    {
+      "page": 10,
+      "Chinese_time": false,
+      "Chinese_frequency": true,
+      "text_length": 475
+    },
+    {
+      "page": 11,
+      "Chinese_time": true,
+      "Chinese_frequency": false,
+      "text_length": 585
+    },
+    {
+      "page": 12,
+      "Chinese_time": false,
+      "Chinese_frequency": true,
+      "text_length": 461
+    }
+  ],
+  "bitmap_image_objects": 0,
+  "PDF_SHA256": "f3ae4669312efa22eb90f7b2f8ed9551928638fbdd6d8f55571680b19e60a604",
+  "representative_renders": [
+    1,
+    9,
+    12
+  ],
+  "hardware_access": false
+}

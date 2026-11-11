@@ -1,0 +1,1341 @@
+{
+  "status": "MEASURED_OFFLINE_ALL_SIX_ROUNDS_DETECTED",
+  "totals": {
+    "takes": 2,
+    "rounds": 6,
+    "raw_bytes": 14102528,
+    "valid_frames": 24101,
+    "stereo_sample_pairs": 1542464,
+    "frames_invalid": 0,
+    "seq_jumps": 0,
+    "resync_count": 0,
+    "sample_rate_changes": 0,
+    "bytes_discarded": 0
+  },
+  "cases": [
+    {
+      "case": "ks_poly16_retrigger",
+      "engine": "ks",
+      "capture": {
+        "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/capture/audio.wav",
+        "SHA256": "ce11c04661ce194bc8fd43b94f84da810bcad7babdb3e0915ecda85c0e67e09f",
+        "frames": 773696,
+        "WAV_rate_Hz": 96008,
+        "channels": 2,
+        "container_bits": 32,
+        "PCM24_common_trailing_zero_bits": 0,
+        "low8_zero_verified": true,
+        "zero_channel": [
+          false,
+          false
+        ]
+      },
+      "transport": {
+        "status": "PASS",
+        "raw_SHA256": "19709b5b25c87f6af5519831f2590f40b72c86b8bc404f8af1224bad1d12b19d",
+        "raw_bytes": 7073792,
+        "parser_SHA256": "d354b786e33befce15182ff61518f64143578e87f762ea788e5197d96a07e2f8",
+        "parser": {
+          "bytes_discarded": 0,
+          "frames_valid": 12089,
+          "frames_invalid": 0,
+          "resync_count": 0,
+          "seq_jumps": 0,
+          "sample_rate_changes": 0,
+          "crc_nonzero": 0,
+          "padding_bytes": 714978
+        },
+        "raw_payload_WAV_exact": true,
+        "native_sample_index_verified": false,
+        "CRC_verified": false,
+        "FPGA_drop_counter_verified": false
+      },
+      "requested_simultaneous_voices": 16,
+      "requested_notes": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "native_active_voice_count_verified": false,
+      "velocity": 100,
+      "MIDI_channel_zero_based": 1,
+      "all_six_event_batches_byte_ACK": true,
+      "ack_scope": "fpga_raw_byte",
+      "host_timing_sample_accurate": false,
+      "preroll_sample_pairs": 25088,
+      "preroll_AC_RMS_FS": 0.0,
+      "events": [
+        {
+          "kind": "NoteOn",
+          "round": 1,
+          "requested_notes": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "planned_ms": 50,
+          "dispatch_ms": 1663.1077189958887,
+          "acknowledged_ms": 1903.6945330008166,
+          "host_seconds_from_capture_start": 1.885816407011589,
+          "host_frame_estimate": 181053
+        },
+        {
+          "kind": "NoteOff",
+          "round": 1,
+          "requested_notes": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "planned_ms": 500,
+          "dispatch_ms": 2120.257329996093,
+          "acknowledged_ms": 2370.417660000385,
+          "host_seconds_from_capture_start": 2.3429660180117935,
+          "host_frame_estimate": 224943
+        },
+        {
+          "kind": "NoteOn",
+          "round": 2,
+          "requested_notes": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "planned_ms": 1050,
+          "dispatch_ms": 2669.291122991126,
+          "acknowledged_ms": 2901.8502940016333,
+          "host_seconds_from_capture_start": 2.8919998110068263,
+          "host_frame_estimate": 277655
+        },
+        {
+          "kind": "NoteOff",
+          "round": 2,
+          "requested_notes": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "planned_ms": 1500,
+          "dispatch_ms": 3119.12635799672,
+          "acknowledged_ms": 3352.052312999149,
+          "host_seconds_from_capture_start": 3.34183504601242,
+          "host_frame_estimate": 320843
+        },
+        {
+          "kind": "NoteOn",
+          "round": 3,
+          "requested_notes": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "planned_ms": 2050,
+          "dispatch_ms": 3663.8321919890586,
+          "acknowledged_ms": 3866.4127369993366,
+          "host_seconds_from_capture_start": 3.886540880004759,
+          "host_frame_estimate": 373139
+        },
+        {
+          "kind": "NoteOff",
+          "round": 3,
+          "requested_notes": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "planned_ms": 2500,
+          "dispatch_ms": 4120.5404679931235,
+          "acknowledged_ms": 4352.722369992989,
+          "host_seconds_from_capture_start": 4.343249156008824,
+          "host_frame_estimate": 416987
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "onset_detection": {
+            "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+            "search_start_frame": 177120,
+            "search_end_frame": 234544,
+            "threshold_FS": 0.0005,
+            "substantial_attack_detected": true
+          },
+          "detected_onset_frame": 188736,
+          "detected_onset_seconds": 1.9658361803183069,
+          "host_NoteOn_frame_estimate": 181053,
+          "host_NoteOff_frame_estimate": 224943,
+          "actual_dispatch_hold_ms": 457.14961100020446,
+          "active_interval": {
+            "start_frame": 188736,
+            "end_frame": 244145,
+            "frames": 55409,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.05985830914282129,
+                "RMS_dBFS": -24.457511102510555,
+                "AC_RMS_dBFS": -24.45751111236487,
+                "peak_PCM24": 2255273,
+                "peak_dBFS": -11.409815593636887,
+                "DC_FS": 2.851317791118738e-06,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.060331489842351885,
+                "RMS_dBFS": -24.389118999283287,
+                "AC_RMS_dBFS": -24.38911900904181,
+                "peak_PCM24": 2273112,
+                "peak_dBFS": -11.341381312193327,
+                "DC_FS": 2.859854715822983e-06,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "held_interval": {
+            "start_frame": 198337,
+            "end_frame": 217538,
+            "frames": 19201,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.06375559530514194,
+                "RMS_dBFS": -23.90963389520922,
+                "AC_RMS_dBFS": -23.909708383341105,
+                "peak_PCM24": 1903222,
+                "peak_dBFS": -12.884009021070568,
+                "DC_FS": 0.00026403884764518795,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.06425957493470806,
+                "RMS_dBFS": -23.841243031065456,
+                "AC_RMS_dBFS": -23.84131756937007,
+                "peak_PCM24": 1918274,
+                "peak_dBFS": -12.815585195984674,
+                "DC_FS": 0.0002662156511176335,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "spectrum": {
+            "start_frame": 198337,
+            "end_frame": 217538,
+            "NFFT": 8192,
+            "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+            "channels": [
+              {
+                "channel": "L",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 0.4058502606011586,
+                  "5000": 0.056639072165397035,
+                  "10000": 0.0022940380286013843,
+                  "20000": 5.543990360818778e-07
+                },
+                "spectral_centroid_Hz": 1940.4003759532072
+              },
+              {
+                "channel": "R",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 0.4058498565409168,
+                  "5000": 0.05663907237341797,
+                  "10000": 0.002294039415652846,
+                  "20000": 5.544441217495566e-07
+                },
+                "spectral_centroid_Hz": 1940.400505108165
+              }
+            ]
+          },
+          "postOff_250ms": {
+            "start_frame": 248945,
+            "end_frame": 258546,
+            "frames": 9601,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              }
+            ]
+          }
+        },
+        {
+          "round": 2,
+          "onset_detection": {
+            "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+            "search_start_frame": 273792,
+            "search_end_frame": 330444,
+            "threshold_FS": 0.0005,
+            "substantial_attack_detected": true
+          },
+          "detected_onset_frame": 285600,
+          "detected_onset_seconds": 2.9747521039913343,
+          "host_NoteOn_frame_estimate": 277655,
+          "host_NoteOff_frame_estimate": 320843,
+          "actual_dispatch_hold_ms": 449.83523500559386,
+          "active_interval": {
+            "start_frame": 285600,
+            "end_frame": 340045,
+            "frames": 54445,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.062293119177252734,
+                "RMS_dBFS": -24.11119844671587,
+                "AC_RMS_dBFS": -24.111221591083904,
+                "peak_PCM24": 2544146,
+                "peak_dBFS": -10.362957397547174,
+                "DC_FS": -0.00014380368223881326,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.06278552982142863,
+                "RMS_dBFS": -24.042808731250798,
+                "AC_RMS_dBFS": -24.042831850924156,
+                "peak_PCM24": 2564262,
+                "peak_dBFS": -10.2945500741343,
+                "DC_FS": -0.00014486306735510032,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "held_interval": {
+            "start_frame": 295201,
+            "end_frame": 314402,
+            "frames": 19201,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.06820792116246761,
+                "RMS_dBFS": -23.323303733443048,
+                "AC_RMS_dBFS": -23.323364929576265,
+                "peak_PCM24": 2007118,
+                "peak_dBFS": -12.422339890585302,
+                "DC_FS": 0.00025603722907634993,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.06874708704687055,
+                "RMS_dBFS": -23.25491398086942,
+                "AC_RMS_dBFS": -23.254975216003288,
+                "peak_PCM24": 2022987,
+                "peak_dBFS": -12.353936166588714,
+                "DC_FS": 0.00025814335505531876,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "spectrum": {
+            "start_frame": 295201,
+            "end_frame": 314402,
+            "NFFT": 8192,
+            "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+            "channels": [
+              {
+                "channel": "L",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 0.298149808059339,
+                  "5000": 0.05076566944740505,
+                  "10000": 0.0018313240322981512,
+                  "20000": 2.6888977723178575e-07
+                },
+                "spectral_centroid_Hz": 1772.8572817936881
+              },
+              {
+                "channel": "R",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 0.2981496059730167,
+                  "5000": 0.050765578969398054,
+                  "10000": 0.001831303760859719,
+                  "20000": 2.6883197602079643e-07
+                },
+                "spectral_centroid_Hz": 1772.857166540016
+              }
+            ]
+          },
+          "postOff_250ms": {
+            "start_frame": 344845,
+            "end_frame": 354446,
+            "frames": 9601,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              }
+            ]
+          }
+        },
+        {
+          "round": 3,
+          "onset_detection": {
+            "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+            "search_start_frame": 369216,
+            "search_end_frame": 426588,
+            "threshold_FS": 0.0005,
+            "substantial_attack_detected": true
+          },
+          "detected_onset_frame": 380544,
+          "detected_onset_seconds": 3.9636696941921508,
+          "host_NoteOn_frame_estimate": 373139,
+          "host_NoteOff_frame_estimate": 416987,
+          "actual_dispatch_hold_ms": 456.7082760040648,
+          "active_interval": {
+            "start_frame": 380544,
+            "end_frame": 436189,
+            "frames": 55645,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.06415140841225504,
+                "RMS_dBFS": -23.85587608930213,
+                "AC_RMS_dBFS": -23.855938071711755,
+                "peak_PCM24": 2641156,
+                "peak_dBFS": -10.03791693367219,
+                "DC_FS": 0.00024235206147775847,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.06465847641967472,
+                "RMS_dBFS": -23.787490662080877,
+                "AC_RMS_dBFS": -23.78755263248863,
+                "peak_PCM24": 2662023,
+                "peak_dBFS": -9.969561935851823,
+                "DC_FS": 0.0002442440196974857,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "held_interval": {
+            "start_frame": 390145,
+            "end_frame": 409346,
+            "frames": 19201,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.07271212318342528,
+                "RMS_dBFS": -22.767863476705106,
+                "AC_RMS_dBFS": -22.76794532316933,
+                "peak_PCM24": 2264084,
+                "peak_dBFS": -11.37594729309489,
+                "DC_FS": 0.0003156549365227064,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.07328685290326745,
+                "RMS_dBFS": -22.699478549107184,
+                "AC_RMS_dBFS": -22.69956037761748,
+                "peak_PCM24": 2281981,
+                "peak_dBFS": -11.307557523064453,
+                "DC_FS": 0.0003181150335674764,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "spectrum": {
+            "start_frame": 390145,
+            "end_frame": 409346,
+            "NFFT": 8192,
+            "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+            "channels": [
+              {
+                "channel": "L",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 0.294393232068482,
+                  "5000": 0.04661220156351949,
+                  "10000": 0.0018458042533737588,
+                  "20000": 8.01495959278806e-07
+                },
+                "spectral_centroid_Hz": 1754.5388340066072
+              },
+              {
+                "channel": "R",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 0.29439375895783315,
+                  "5000": 0.0466121183410539,
+                  "10000": 0.0018458182489321758,
+                  "20000": 8.01322243495299e-07
+                },
+                "spectral_centroid_Hz": 1754.5402281607082
+              }
+            ]
+          },
+          "postOff_250ms": {
+            "start_frame": 440989,
+            "end_frame": 450590,
+            "frames": 9601,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              }
+            ]
+          }
+        }
+      ],
+      "whole_capture": {
+        "start_frame": 0,
+        "end_frame": 773696,
+        "frames": 773696,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.028734150015724196,
+            "RMS_dBFS": -30.832032903920755,
+            "AC_RMS_dBFS": -30.832033200976838,
+            "peak_PCM24": 2641156,
+            "peak_dBFS": -10.03791693367219,
+            "DC_FS": 7.5149382301650535e-06,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.028961283226306412,
+            "RMS_dBFS": -30.763643983643362,
+            "AC_RMS_dBFS": -30.7636442809137,
+            "peak_PCM24": 2662023,
+            "peak_dBFS": -9.969561935851823,
+            "DC_FS": 7.577072214238134e-06,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "plot_suggestions": {
+        "time_crop_start_frame": 179135,
+        "time_crop_end_frame": 488993,
+        "time_origin_frame": 188736,
+        "time_crop_seconds_relative_to_first_detected_onset": [
+          -0.10000208315973669,
+          3.1274164652945586
+        ],
+        "spectrum_start_frame": 198337,
+        "spectrum_end_frame": 217538,
+        "spectrum_scope": "First detected round, onset+0.10..0.30s, original amplitude",
+        "NFFT": 8192
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "resampling": false,
+      "channel_order": "L,R unchanged",
+      "CRC_verified": false,
+      "native_sample_index_verified": false,
+      "FPGA_internal_drop_counter_verified": false,
+      "parameter_scope": {
+        "KS": "基础KS拨弦；保留现有decay3000ms，不代表测得自然T60",
+        "FM": "按现有CPU代码定义的默认单算子音色；未逐寄存器读回或覆盖复杂FM"
+      }
+    },
+    {
+      "case": "fm_poly8_retrigger",
+      "engine": "fm",
+      "capture": {
+        "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/audio.wav",
+        "SHA256": "ecf5054bc25de1eb81055867a30f8a595b4f75bb6db36a043788e1103e403695",
+        "frames": 768768,
+        "WAV_rate_Hz": 96008,
+        "channels": 2,
+        "container_bits": 32,
+        "PCM24_common_trailing_zero_bits": 0,
+        "low8_zero_verified": true,
+        "zero_channel": [
+          false,
+          false
+        ]
+      },
+      "transport": {
+        "status": "PASS",
+        "raw_SHA256": "0c89ad09f4d7dbbdfff0f4b41c93657db157b1ef3aa0da0efb5cdd59812fcccd",
+        "raw_bytes": 7028736,
+        "parser_SHA256": "d354b786e33befce15182ff61518f64143578e87f762ea788e5197d96a07e2f8",
+        "parser": {
+          "bytes_discarded": 0,
+          "frames_valid": 12012,
+          "frames_invalid": 0,
+          "resync_count": 0,
+          "seq_jumps": 0,
+          "sample_rate_changes": 0,
+          "crc_nonzero": 0,
+          "padding_bytes": 710424
+        },
+        "raw_payload_WAV_exact": true,
+        "native_sample_index_verified": false,
+        "CRC_verified": false,
+        "FPGA_drop_counter_verified": false
+      },
+      "requested_simultaneous_voices": 8,
+      "requested_notes": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "native_active_voice_count_verified": false,
+      "velocity": 100,
+      "MIDI_channel_zero_based": 2,
+      "all_six_event_batches_byte_ACK": true,
+      "ack_scope": "fpga_raw_byte",
+      "host_timing_sample_accurate": false,
+      "preroll_sample_pairs": 25536,
+      "preroll_AC_RMS_FS": 0.0,
+      "events": [
+        {
+          "kind": "NoteOn",
+          "round": 1,
+          "requested_notes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "planned_ms": 50,
+          "dispatch_ms": 1635.882540998864,
+          "acknowledged_ms": 1785.0102230004268,
+          "host_seconds_from_capture_start": 1.8981668339984026,
+          "host_frame_estimate": 182239
+        },
+        {
+          "kind": "NoteOff",
+          "round": 1,
+          "requested_notes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "planned_ms": 500,
+          "dispatch_ms": 2099.5646770024905,
+          "acknowledged_ms": 2252.014792000409,
+          "host_seconds_from_capture_start": 2.361848970002029,
+          "host_frame_estimate": 226756
+        },
+        {
+          "kind": "NoteOn",
+          "round": 2,
+          "requested_notes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "planned_ms": 1050,
+          "dispatch_ms": 2646.53591599199,
+          "acknowledged_ms": 2806.026481994195,
+          "host_seconds_from_capture_start": 2.9088202089915285,
+          "host_frame_estimate": 279270
+        },
+        {
+          "kind": "NoteOff",
+          "round": 2,
+          "requested_notes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "planned_ms": 1500,
+          "dispatch_ms": 3073.6305180034833,
+          "acknowledged_ms": 3226.5364670020062,
+          "host_seconds_from_capture_start": 3.335914811003022,
+          "host_frame_estimate": 320275
+        },
+        {
+          "kind": "NoteOn",
+          "round": 3,
+          "requested_notes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "planned_ms": 2050,
+          "dispatch_ms": 3645.945401993231,
+          "acknowledged_ms": 3786.6041279921774,
+          "host_seconds_from_capture_start": 3.9082296949927695,
+          "host_frame_estimate": 375221
+        },
+        {
+          "kind": "NoteOff",
+          "round": 3,
+          "requested_notes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "planned_ms": 2500,
+          "dispatch_ms": 4078.1874649983365,
+          "acknowledged_ms": 4229.393892004737,
+          "host_seconds_from_capture_start": 4.340471757997875,
+          "host_frame_estimate": 416720
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "onset_detection": {
+            "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+            "search_start_frame": 178368,
+            "search_end_frame": 236357,
+            "threshold_FS": 0.0005,
+            "substantial_attack_detected": true
+          },
+          "detected_onset_frame": 186624,
+          "detected_onset_seconds": 1.943838013498875,
+          "host_NoteOn_frame_estimate": 182239,
+          "host_NoteOff_frame_estimate": 226756,
+          "actual_dispatch_hold_ms": 463.6821360036265,
+          "active_interval": {
+            "start_frame": 186624,
+            "end_frame": 245958,
+            "frames": 59334,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.13648593027788705,
+                "RMS_dBFS": -17.29824231570432,
+                "AC_RMS_dBFS": -17.298273542134417,
+                "peak_PCM24": 4957567,
+                "peak_dBFS": -4.568426159952469,
+                "DC_FS": 0.0003659789581593285,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.13648593027788705,
+                "RMS_dBFS": -17.29824231570432,
+                "AC_RMS_dBFS": -17.298273542134417,
+                "peak_PCM24": 4957567,
+                "peak_dBFS": -4.568426159952469,
+                "DC_FS": 0.0003659789581593285,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "held_interval": {
+            "start_frame": 196225,
+            "end_frame": 215426,
+            "frames": 19201,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.1594736473806439,
+                "RMS_dBFS": -15.946221454986151,
+                "AC_RMS_dBFS": -15.946352895328847,
+                "peak_PCM24": 4957567,
+                "peak_dBFS": -4.568426159952469,
+                "DC_FS": 0.0008773195899393985,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.1594736473806439,
+                "RMS_dBFS": -15.946221454986151,
+                "AC_RMS_dBFS": -15.946352895328847,
+                "peak_PCM24": 4957567,
+                "peak_dBFS": -4.568426159952469,
+                "DC_FS": 0.0008773195899393985,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "spectrum": {
+            "start_frame": 196225,
+            "end_frame": 215426,
+            "NFFT": 8192,
+            "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+            "channels": [
+              {
+                "channel": "L",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 1.3908774396946518e-07,
+                  "5000": 5.218616534349213e-08,
+                  "10000": 2.786036992042762e-08,
+                  "20000": 1.0475136447508184e-08
+                },
+                "spectral_centroid_Hz": 326.1791464970929
+              },
+              {
+                "channel": "R",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 1.3908774396946518e-07,
+                  "5000": 5.218616534349213e-08,
+                  "10000": 2.786036992042762e-08,
+                  "20000": 1.0475136447508184e-08
+                },
+                "spectral_centroid_Hz": 326.1791464970929
+              }
+            ]
+          },
+          "postOff_250ms": {
+            "start_frame": 250758,
+            "end_frame": 260359,
+            "frames": 9601,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              }
+            ]
+          }
+        },
+        {
+          "round": 2,
+          "onset_detection": {
+            "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+            "search_start_frame": 275424,
+            "search_end_frame": 329876,
+            "threshold_FS": 0.0005,
+            "substantial_attack_detected": true
+          },
+          "detected_onset_frame": 283488,
+          "detected_onset_seconds": 2.9527539371719023,
+          "host_NoteOn_frame_estimate": 279270,
+          "host_NoteOff_frame_estimate": 320275,
+          "actual_dispatch_hold_ms": 427.0946020114934,
+          "active_interval": {
+            "start_frame": 283488,
+            "end_frame": 339477,
+            "frames": 55989,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.13562860759185813,
+                "RMS_dBFS": -17.352973936678836,
+                "AC_RMS_dBFS": -17.353022466811602,
+                "peak_PCM24": 4881541,
+                "peak_dBFS": -4.702659179509282,
+                "DC_FS": 0.00045338137367964066,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.13562860759185813,
+                "RMS_dBFS": -17.352973936678836,
+                "AC_RMS_dBFS": -17.353022466811602,
+                "peak_PCM24": 4881541,
+                "peak_dBFS": -4.702659179509282,
+                "DC_FS": 0.00045338137367964066,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "held_interval": {
+            "start_frame": 293089,
+            "end_frame": 312290,
+            "frames": 19201,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.16334370764856468,
+                "RMS_dBFS": -15.737951816503202,
+                "AC_RMS_dBFS": -15.738101475226,
+                "peak_PCM24": 4881541,
+                "peak_dBFS": -4.702659179509282,
+                "DC_FS": 0.0009588651387407521,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.16334370764856468,
+                "RMS_dBFS": -15.737951816503202,
+                "AC_RMS_dBFS": -15.738101475226,
+                "peak_PCM24": 4881541,
+                "peak_dBFS": -4.702659179509282,
+                "DC_FS": 0.0009588651387407521,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "spectrum": {
+            "start_frame": 293089,
+            "end_frame": 312290,
+            "NFFT": 8192,
+            "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+            "channels": [
+              {
+                "channel": "L",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 1.451458084281891e-07,
+                  "5000": 5.514172870660473e-08,
+                  "10000": 2.8288723466527996e-08,
+                  "20000": 1.082435388180908e-08
+                },
+                "spectral_centroid_Hz": 326.26872371819894
+              },
+              {
+                "channel": "R",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 1.451458084281891e-07,
+                  "5000": 5.514172870660473e-08,
+                  "10000": 2.8288723466527996e-08,
+                  "20000": 1.082435388180908e-08
+                },
+                "spectral_centroid_Hz": 326.26872371819894
+              }
+            ]
+          },
+          "postOff_250ms": {
+            "start_frame": 344277,
+            "end_frame": 353878,
+            "frames": 9601,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              }
+            ]
+          }
+        },
+        {
+          "round": 3,
+          "onset_detection": {
+            "method": "96-frame AC-RMS, three consecutive windows, fixed preroll threshold",
+            "search_start_frame": 371328,
+            "search_end_frame": 426321,
+            "threshold_FS": 0.0005,
+            "substantial_attack_detected": true
+          },
+          "detected_onset_frame": 379488,
+          "detected_onset_seconds": 3.9526706107824348,
+          "host_NoteOn_frame_estimate": 375221,
+          "host_NoteOff_frame_estimate": 416720,
+          "actual_dispatch_hold_ms": 432.2420630051056,
+          "active_interval": {
+            "start_frame": 379488,
+            "end_frame": 435922,
+            "frames": 56434,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.13432448540554762,
+                "RMS_dBFS": -17.4368962905934,
+                "AC_RMS_dBFS": -17.43693084335362,
+                "peak_PCM24": 4444383,
+                "peak_dBFS": -5.517568450912923,
+                "DC_FS": 0.00037888162136162374,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.13432448540554762,
+                "RMS_dBFS": -17.4368962905934,
+                "AC_RMS_dBFS": -17.43693084335362,
+                "peak_PCM24": 4444383,
+                "peak_dBFS": -5.517568450912923,
+                "DC_FS": 0.00037888162136162374,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "held_interval": {
+            "start_frame": 389089,
+            "end_frame": 408290,
+            "frames": 19201,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": false,
+                "RMS_FS": 0.16120625411828785,
+                "RMS_dBFS": -15.852362268438196,
+                "AC_RMS_dBFS": -15.852386129911991,
+                "peak_PCM24": 4444383,
+                "peak_dBFS": -5.517568450912923,
+                "DC_FS": -0.0003778659566654078,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": false,
+                "RMS_FS": 0.16120625411828785,
+                "RMS_dBFS": -15.852362268438196,
+                "AC_RMS_dBFS": -15.852386129911991,
+                "peak_PCM24": 4444383,
+                "peak_dBFS": -5.517568450912923,
+                "DC_FS": -0.0003778659566654078,
+                "rail_samples": 0
+              }
+            ]
+          },
+          "spectrum": {
+            "start_frame": 389089,
+            "end_frame": 408290,
+            "NFFT": 8192,
+            "window": "Hann, 50% overlap, per-window mean removed, power averaged",
+            "channels": [
+              {
+                "channel": "L",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 1.4213329823542954e-07,
+                  "5000": 5.4334207386419433e-08,
+                  "10000": 2.801876800185296e-08,
+                  "20000": 1.0675947480989425e-08
+                },
+                "spectral_centroid_Hz": 326.5846397414927
+              },
+              {
+                "channel": "R",
+                "band_power_fraction_gt_Hz": {
+                  "2000": 1.4213329823542954e-07,
+                  "5000": 5.4334207386419433e-08,
+                  "10000": 2.801876800185296e-08,
+                  "20000": 1.0675947480989425e-08
+                },
+                "spectral_centroid_Hz": 326.5846397414927
+              }
+            ]
+          },
+          "postOff_250ms": {
+            "start_frame": 440722,
+            "end_frame": 450323,
+            "frames": 9601,
+            "channels": [
+              {
+                "channel": "L",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              },
+              {
+                "channel": "R",
+                "digital_zero": true,
+                "RMS_FS": 0.0,
+                "RMS_dBFS": null,
+                "AC_RMS_dBFS": null,
+                "peak_PCM24": 0,
+                "peak_dBFS": null,
+                "DC_FS": 0.0,
+                "rail_samples": 0
+              }
+            ]
+          }
+        }
+      ],
+      "whole_capture": {
+        "start_frame": 0,
+        "end_frame": 768768,
+        "frames": 768768,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_FS": 0.06404663937856937,
+            "RMS_dBFS": -23.870073067842092,
+            "AC_RMS_dBFS": -23.87008146908989,
+            "peak_PCM24": 4957567,
+            "peak_dBFS": -4.568426159952469,
+            "DC_FS": 8.907911184427145e-05,
+            "rail_samples": 0
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_FS": 0.06404663937856937,
+            "RMS_dBFS": -23.870073067842092,
+            "AC_RMS_dBFS": -23.87008146908989,
+            "peak_PCM24": 4957567,
+            "peak_dBFS": -4.568426159952469,
+            "DC_FS": 8.907911184427145e-05,
+            "rail_samples": 0
+          }
+        ]
+      },
+      "plot_suggestions": {
+        "time_crop_start_frame": 177023,
+        "time_crop_end_frame": 488726,
+        "time_origin_frame": 186624,
+        "time_crop_seconds_relative_to_first_detected_onset": [
+          -0.10000208315973669,
+          3.1466336138655113
+        ],
+        "spectrum_start_frame": 196225,
+        "spectrum_end_frame": 215426,
+        "spectrum_scope": "First detected round, onset+0.10..0.30s, original amplitude",
+        "NFFT": 8192
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "resampling": false,
+      "channel_order": "L,R unchanged",
+      "CRC_verified": false,
+      "native_sample_index_verified": false,
+      "FPGA_internal_drop_counter_verified": false,
+      "parameter_scope": {
+        "KS": "基础KS拨弦；保留现有decay3000ms，不代表测得自然T60",
+        "FM": "按现有CPU代码定义的默认单算子音色；未逐寄存器读回或覆盖复杂FM"
+      }
+    }
+  ],
+  "capture_root": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102",
+  "input_SHA256": {
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/session.json": "8315531a42692b0101990772f9b808ba52cede58c52ae81fa82d39d544eeaba6",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/run.json": "db878a3408e2a68a1e40a2acf1920c9ad650274019cff9126cfffc5eb7b4c75b",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/midi.json": "823bba71e62a8efe4e7a92a8ed88dddc5d4162a3c7e35b986de5d6492db3b785",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/selected-state.json": "1a0a4fd77c1dff99a93f3d11880a758e9309faf8e1e75de4aa2d123f7b856244",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/events.json": "27cd154e7841ed344c985b82168d25a2c4f00835d9a34e9f3f2fbea56adda2c9",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/capture/raw.bin": "19709b5b25c87f6af5519831f2590f40b72c86b8bc404f8af1224bad1d12b19d",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/capture/payload.pcm": "eea8fac783cd57ef48f708160a289b62fc41146f331a240d0ac1b722e32ea312",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/capture/audio.wav": "ce11c04661ce194bc8fd43b94f84da810bcad7babdb3e0915ecda85c0e67e09f",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/run.json": "c368695fc5e1a35ebd7b74d80b577c5e97bc81aadd142c2046d3cdb97fc78a4a",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/midi.json": "bce437807cae5413a0227697f795fb68377ff200bd090538e42ce57a1254bc2e",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/selected-state.json": "809b671e0e26da6b9bf81a973bb70608e5dbf9bc9ad420d5692ae37c2388442b",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/events.json": "ae85ea3a45deaae4ce1ecb7b75d6af5f0615b1f0a80dc0344d680c233f169893",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/raw.bin": "0c89ad09f4d7dbbdfff0f4b41c93657db157b1ef3aa0da0efb5cdd59812fcccd",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/payload.pcm": "90a9dbdca43d9d5e7aff0478d363846cecc07a44631cde3aaa14780882b7eacf",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/audio.wav": "ecf5054bc25de1eb81055867a30f8a595b4f75bb6db36a043788e1103e403695"
+  },
+  "input_hashes_unchanged": true,
+  "script_SHA256": "ef1d6ebbf65416a69faea02a572bee49c83cab88dc8c2ae876230ac691673429",
+  "common_analyzer_SHA256": "8280b8634ddaf665b03399d9469b9eb19d5935b63c2258df70ede45d5b9552f0",
+  "hardware_access": false,
+  "normalization": false,
+  "gain_applied": 1,
+  "resampling": false,
+  "native_voice_count_verified": false,
+  "limits": [
+    "声部数是同时发送的MIDI音符请求数，不是直接观测到的native active voice计数",
+    "HTTP dispatch映射到WAV仅是主机估计，无native采样时刻标签",
+    "v1无CRC验证和FPGA内部丢样计数；零跳号仅证明接收到的帧连续",
+    "基础KS和当前默认单算子FM；未与匹配整段仿真作逐点比较"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "publication": "provenance_only_complete_conversions_not_bundled",
+  "manuals": {
+    "DS1239E": {
+      "markdown_file": "markdown/DS1239E.md",
+      "source_pdf": "pdf/DS1239E.pdf",
+      "source_sha256": "6930ad832b626a1f4256a759152daf056af56abea8409e055cd7ef060a93dc68",
+      "markdown_sha256": "cb8374d2f47be2704450b4faae62b95acc16f566e55d84d1b39e507882230823",
+      "pdf_pages": 65
+    },
+    "SUG113": {
+      "markdown_file": "markdown/SUG113.md",
+      "source_pdf": "pdf/SUG113.pdf",
+      "source_sha256": "c2b787671a03087587a811ae144441a83aa11daa497906b95ec8f0e026c78a82",
+      "markdown_sha256": "367a78e45e65f1daf78370cf4924b84d0fa345680f5ee98fe28deefd047b3a7f",
+      "pdf_pages": 28
+    },
+    "SUG550": {
+      "markdown_file": "markdown/SUG550.md",
+      "source_pdf": "pdf/SUG550.pdf",
+      "source_sha256": "af6c4d4223374c63d65ebfd80f4e227705efe15438d6e7d0ae55770c1051af67",
+      "markdown_sha256": "ff32b1016ea1748ae36688a91dc39bd6b9a6a4df08b2df2f807693480e2f8a12",
+      "pdf_pages": 97
+    },
+    "SUG940": {
+      "markdown_file": "markdown/SUG940.md",
+      "source_pdf": "pdf/SUG940.pdf",
+      "source_sha256": "bd0fe73c6252266834fbae246595ff9be69c3cf8c988b4de7f7d790c947a15e5",
+      "markdown_sha256": "f8c07aad0403cf4ab82e94129e5813580c09633ca7daded5e6eed63d2c32d242",
+      "pdf_pages": 92
+    },
+    "SUG949E": {
+      "markdown_file": "markdown/SUG949E.md",
+      "source_pdf": "pdf/SUG949E.pdf",
+      "source_sha256": "0514e832313e8dd8c0112cf35ed501bdadf2458ac9b8ba84a265898e5b94446b",
+      "markdown_sha256": "a9fb9afeb0061e5deaf2da4a981460154ca87d0f75e8e634b426670cc4c4eed5",
+      "pdf_pages": 219
+    },
+    "UG300E": {
+      "markdown_file": "markdown/UG300E.md",
+      "source_pdf": "pdf/UG300E.pdf",
+      "source_sha256": "7b3fd3a2887a98d07075db3b812dccf903d8efe8c5dfbdb972e4067391b28fdd",
+      "markdown_sha256": "20abb6c70bd63ba20a549a3dc78d44c1d4359cd1cfd6c997edecd580b7b1062c",
+      "pdf_pages": 80
+    },
+    "UG303E": {
+      "markdown_file": "markdown/UG303E.md",
+      "source_pdf": "pdf/UG303E.pdf",
+      "source_sha256": "82ba8a6d457dca795f29602a19ccc4415a1fa4c89bd624cbb86c9d0a75c0767e",
+      "markdown_sha256": "2af10ffc62c5e2395b30299681c359b5e48294af82c812037ba598c450701555",
+      "pdf_pages": 47
+    },
+    "UG306E": {
+      "markdown_file": "markdown/UG306E.md",
+      "source_pdf": "pdf/UG306E.pdf",
+      "source_sha256": "ee8ed3e6545b287b64506a2672dbe480db4ac8b195e7732217e6ab2dab651376",
+      "markdown_sha256": "be7c91b89ac5a6fa33015fbddca95d165c7904b767c75921d7adf3a5b2823c4b",
+      "pdf_pages": 134
+    }
+  }
+}

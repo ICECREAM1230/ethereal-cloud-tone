@@ -1,0 +1,2028 @@
+{
+  "status": "EXPORTED_OFFLINE",
+  "figure_count": 12,
+  "sample_only": false,
+  "script_SHA256": "41fe4b7b3242d085d355eeb89d4613ac1b8fcda6bb948edfa78a99b76fcca87c",
+  "hardware_access": false,
+  "figures": [
+    {
+      "number": 1,
+      "case": "ks_single_c4",
+      "title": "KS 拨弦合成器 · 单音 C4 · 时域",
+      "domain": "时域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/01_ks_single_c4_时域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/01_ks_single_c4_时域.pdf",
+      "PNG_SHA256": "98e92531f043a109efce9d7b3e2e8b9d755c2121f50c51ddaad2be4014e7e525",
+      "PDF_SHA256": "e5f551537cbed116a427f5e22e31cd16e24405c774eb6cb9bc3dacd69225147e",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ],
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4/capture/audio.wav": "3ae6f64e983259f8c8f48783f2b347ef0d4b548021de277ae4496b6e6f9de0db",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4/run.json": "98da1f8eaa92e3801f9f86b7e0f7c8c4c0fba213e65e41c286cb7a5bbe61b2cd",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4/midi.json": "32054dceae75ceca842c1645da985f8ba63047580e55278068dd0987e3b10ce2"
+      },
+      "detected_attack_frame": 188736,
+      "events": [
+        {
+          "host_capture_seconds": 1.8871298440062674,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            145,
+            60,
+            100
+          ],
+          "host_estimated_frame": 181180
+        },
+        {
+          "host_capture_seconds": 2.3525580300047295,
+          "relative_seconds": 0.46542818599846214,
+          "kind": "松音",
+          "bytes": [
+            129,
+            60,
+            0
+          ],
+          "host_estimated_frame": 225864
+        }
+      ],
+      "parameters": {
+        "overview_seconds_relative_to_first_host_NoteOn": [
+          -0.1,
+          1.2
+        ],
+        "zoom_frame_range": [
+          206017,
+          206785
+        ],
+        "overview_display": "interval min/max original samples; no signal averaging/resampling",
+        "amplitude_y_range": [
+          -0.30000000000000004,
+          0.30000000000000004
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 2,
+      "case": "ks_single_c4",
+      "title": "KS 拨弦合成器 · 单音 C4 · 频域",
+      "domain": "频域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/02_ks_single_c4_频域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/02_ks_single_c4_频域.pdf",
+      "PNG_SHA256": "8d9f7843f6c4d9cc35d9eb498b5e51ca26cc98b3d973273630d4274b55ff81a2",
+      "PDF_SHA256": "ccab89e5df47f131617bca68e019f27b8e4239dda163a74ba412de90a5ae6ae6",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          1432.0,
+          256.96073215183924
+        ],
+        [
+          1432.0,
+          169.03926784816076
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4/capture/audio.wav": "3ae6f64e983259f8c8f48783f2b347ef0d4b548021de277ae4496b6e6f9de0db",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4/run.json": "98da1f8eaa92e3801f9f86b7e0f7c8c4c0fba213e65e41c286cb7a5bbe61b2cd",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4/midi.json": "32054dceae75ceca842c1645da985f8ba63047580e55278068dd0987e3b10ce2"
+      },
+      "detected_attack_frame": 188736,
+      "events": [
+        {
+          "host_capture_seconds": 1.8871298440062674,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            145,
+            60,
+            100
+          ],
+          "host_estimated_frame": 181180
+        },
+        {
+          "host_capture_seconds": 2.3525580300047295,
+          "relative_seconds": 0.46542818599846214,
+          "kind": "松音",
+          "bytes": [
+            129,
+            60,
+            0
+          ],
+          "host_estimated_frame": 225864
+        }
+      ],
+      "parameters": {
+        "FFT_points": 16384,
+        "hop_points": 8192,
+        "window": "Hann",
+        "power_averaged_segments": 2,
+        "window_frame_range": [
+          200257,
+          225219
+        ],
+        "window_seconds_relative_to_detected_attack": [
+          0.12000041663194734,
+          0.3799995833680527
+        ],
+        "frequency_bin_spacing_Hz": 5.85986328125,
+        "amplitude_calibration": "full-scale sine peak=0dBFS; coherent Hann gain corrected",
+        "display_dBFS_range": [
+          -120,
+          0
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 3,
+      "case": "ks_chord_ceg",
+      "title": "KS 拨弦合成器 · CEG 和弦 · 时域",
+      "domain": "时域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/03_ks_chord_ceg_时域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/03_ks_chord_ceg_时域.pdf",
+      "PNG_SHA256": "2f4cbc79e0a72ac684eaa205f6779c0b03aeb36781d7b8fb0011caafedef84d9",
+      "PDF_SHA256": "e6495c4afb5fa42f3415cdd2b810b8654d57177af34d7ab0cfd2e72c5065f187",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ],
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/capture/audio.wav": "3c83e459e3a7270399621f11bb9d896efdaf597620d6d7b0def1552621eebc5c",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/run.json": "ca12eb95e92005cb7224f0bae4412a725b1d1ec543cca46fca14746da066af67",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/midi.json": "5412bb40efb386e5436c0d7fe50055b7056821a4adad687012c1449afa0ee1ec"
+      },
+      "detected_attack_frame": 190752,
+      "events": [
+        {
+          "host_capture_seconds": 1.9407084340200527,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            145,
+            60,
+            100,
+            145,
+            64,
+            100,
+            145,
+            67,
+            100
+          ],
+          "host_estimated_frame": 186324
+        },
+        {
+          "host_capture_seconds": 2.3942679110186873,
+          "relative_seconds": 0.45355947699863464,
+          "kind": "松音",
+          "bytes": [
+            129,
+            60,
+            0,
+            129,
+            64,
+            0,
+            129,
+            67,
+            0
+          ],
+          "host_estimated_frame": 229869
+        }
+      ],
+      "parameters": {
+        "overview_seconds_relative_to_first_host_NoteOn": [
+          -0.1,
+          1.2
+        ],
+        "zoom_frame_range": [
+          208033,
+          208801
+        ],
+        "overview_display": "interval min/max original samples; no signal averaging/resampling",
+        "amplitude_y_range": [
+          -0.4,
+          0.4
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 4,
+      "case": "ks_chord_ceg",
+      "title": "KS 拨弦合成器 · CEG 和弦 · 频域",
+      "domain": "频域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/04_ks_chord_ceg_频域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/04_ks_chord_ceg_频域.pdf",
+      "PNG_SHA256": "3dc1ba0f490e7fc506e428a1b81f790d88c078fec20a2e0d005181a2866ebdc7",
+      "PDF_SHA256": "c4ac9b1ca01e188e0144e2c1475e9dbfb23225fad329d502d4c341dd50a1846a",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          1432.0,
+          256.96073215183924
+        ],
+        [
+          1432.0,
+          169.03926784816076
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/capture/audio.wav": "3c83e459e3a7270399621f11bb9d896efdaf597620d6d7b0def1552621eebc5c",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/run.json": "ca12eb95e92005cb7224f0bae4412a725b1d1ec543cca46fca14746da066af67",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/midi.json": "5412bb40efb386e5436c0d7fe50055b7056821a4adad687012c1449afa0ee1ec"
+      },
+      "detected_attack_frame": 190752,
+      "events": [
+        {
+          "host_capture_seconds": 1.9407084340200527,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            145,
+            60,
+            100,
+            145,
+            64,
+            100,
+            145,
+            67,
+            100
+          ],
+          "host_estimated_frame": 186324
+        },
+        {
+          "host_capture_seconds": 2.3942679110186873,
+          "relative_seconds": 0.45355947699863464,
+          "kind": "松音",
+          "bytes": [
+            129,
+            60,
+            0,
+            129,
+            64,
+            0,
+            129,
+            67,
+            0
+          ],
+          "host_estimated_frame": 229869
+        }
+      ],
+      "parameters": {
+        "FFT_points": 16384,
+        "hop_points": 8192,
+        "window": "Hann",
+        "power_averaged_segments": 2,
+        "window_frame_range": [
+          202273,
+          227235
+        ],
+        "window_seconds_relative_to_detected_attack": [
+          0.12000041663194734,
+          0.3799995833680527
+        ],
+        "frequency_bin_spacing_Hz": 5.85986328125,
+        "amplitude_calibration": "full-scale sine peak=0dBFS; coherent Hann gain corrected",
+        "display_dBFS_range": [
+          -120,
+          0
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 5,
+      "case": "fm_single_c4",
+      "title": "FM 合成器 · 单音 C4 · 时域",
+      "domain": "时域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/05_fm_single_c4_时域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/05_fm_single_c4_时域.pdf",
+      "PNG_SHA256": "4f6236dde25695aa1d093e565f3cf13c7d3115df54d8007dc20fbbe422c90abf",
+      "PDF_SHA256": "0e6e21c0d8789532e48bdcc879d9c61b5f9a4c8cc5c4e841484ebd1f0faa775a",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ],
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4/capture/audio.wav": "d78a111d0e0053a77467d2775c47c688d2925dd49ae42888b925e8e522067c53",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4/run.json": "60b90e50b8be07e8791427dff4567b89d5093ede2f592b35ff2711ea42867081",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4/midi.json": "1e075e85e808b2fc3575c09281f5e1f2ff2b323d847518b68a63cb74d91228ed"
+      },
+      "detected_attack_frame": 194688,
+      "events": [
+        {
+          "host_capture_seconds": 1.9821419450163376,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100
+          ],
+          "host_estimated_frame": 190301
+        },
+        {
+          "host_capture_seconds": 2.4191707330173813,
+          "relative_seconds": 0.4370287880010437,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0
+          ],
+          "host_estimated_frame": 232260
+        }
+      ],
+      "parameters": {
+        "overview_seconds_relative_to_first_host_NoteOn": [
+          -0.1,
+          1.2
+        ],
+        "zoom_frame_range": [
+          211969,
+          212737
+        ],
+        "overview_display": "interval min/max original samples; no signal averaging/resampling",
+        "amplitude_y_range": [
+          -0.1,
+          0.1
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 6,
+      "case": "fm_single_c4",
+      "title": "FM 合成器 · 单音 C4 · 频域",
+      "domain": "频域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/06_fm_single_c4_频域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/06_fm_single_c4_频域.pdf",
+      "PNG_SHA256": "ee3b912177cbd0296bb008a3f0a6e3d2db3cec2386efc976cc7a98026cb23f46",
+      "PDF_SHA256": "57a5fb69f301220d2974bf5e2ee7ebef197d9e353fb597d9f418adc13e415fcc",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          1432.0,
+          256.96073215183924
+        ],
+        [
+          1432.0,
+          169.03926784816076
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4/capture/audio.wav": "d78a111d0e0053a77467d2775c47c688d2925dd49ae42888b925e8e522067c53",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4/run.json": "60b90e50b8be07e8791427dff4567b89d5093ede2f592b35ff2711ea42867081",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4/midi.json": "1e075e85e808b2fc3575c09281f5e1f2ff2b323d847518b68a63cb74d91228ed"
+      },
+      "detected_attack_frame": 194688,
+      "events": [
+        {
+          "host_capture_seconds": 1.9821419450163376,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100
+          ],
+          "host_estimated_frame": 190301
+        },
+        {
+          "host_capture_seconds": 2.4191707330173813,
+          "relative_seconds": 0.4370287880010437,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0
+          ],
+          "host_estimated_frame": 232260
+        }
+      ],
+      "parameters": {
+        "FFT_points": 16384,
+        "hop_points": 8192,
+        "window": "Hann",
+        "power_averaged_segments": 2,
+        "window_frame_range": [
+          206209,
+          231171
+        ],
+        "window_seconds_relative_to_detected_attack": [
+          0.12000041663194734,
+          0.3799995833680527
+        ],
+        "frequency_bin_spacing_Hz": 5.85986328125,
+        "amplitude_calibration": "full-scale sine peak=0dBFS; coherent Hann gain corrected",
+        "display_dBFS_range": [
+          -120,
+          0
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 7,
+      "case": "fm_chord_ceg",
+      "title": "FM 合成器 · CEG 和弦 · 时域",
+      "domain": "时域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/07_fm_chord_ceg_时域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/07_fm_chord_ceg_时域.pdf",
+      "PNG_SHA256": "610f3108804e1dcbc9ce023218e219e7a79272350b8908dca57e45265396c9c7",
+      "PDF_SHA256": "9edb3b0fffa56c660c19dea7ca49804b73f3ca5dca55027bce85f09d0e51a4ca",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ],
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg/capture/audio.wav": "08d634383e8f15630946fcbddaaa192477cb79710f13fca1621782569903d0b1",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg/run.json": "60cd025a148a9794feec1627d752b672327e47e2cabcd42471292c3c96d5e9df",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg/midi.json": "c1c8fb712d245f998e6c03646552e23ed482458f93a9bda62f7d668c649ad3a9"
+      },
+      "detected_attack_frame": 191424,
+      "events": [
+        {
+          "host_capture_seconds": 1.9483068780100439,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            64,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 187053
+        },
+        {
+          "host_capture_seconds": 2.402515673020389,
+          "relative_seconds": 0.45420879501034506,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            64,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 230661
+        }
+      ],
+      "parameters": {
+        "overview_seconds_relative_to_first_host_NoteOn": [
+          -0.1,
+          1.2
+        ],
+        "zoom_frame_range": [
+          208705,
+          209473
+        ],
+        "overview_display": "interval min/max original samples; no signal averaging/resampling",
+        "amplitude_y_range": [
+          -0.30000000000000004,
+          0.30000000000000004
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 8,
+      "case": "fm_chord_ceg",
+      "title": "FM 合成器 · CEG 和弦 · 频域",
+      "domain": "频域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/08_fm_chord_ceg_频域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/08_fm_chord_ceg_频域.pdf",
+      "PNG_SHA256": "408e615e2e17cb956cff03740407940b69fb3e160006f068cbbbd8aa251c1ddd",
+      "PDF_SHA256": "6413bf75d9eedd2e4ffcbfcd94e63e4fbe4b92f586fdb2d9b5a9d79161c288d4",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          1432.0,
+          256.96073215183924
+        ],
+        [
+          1432.0,
+          169.03926784816076
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg/capture/audio.wav": "08d634383e8f15630946fcbddaaa192477cb79710f13fca1621782569903d0b1",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg/run.json": "60cd025a148a9794feec1627d752b672327e47e2cabcd42471292c3c96d5e9df",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_chord_ceg/midi.json": "c1c8fb712d245f998e6c03646552e23ed482458f93a9bda62f7d668c649ad3a9"
+      },
+      "detected_attack_frame": 191424,
+      "events": [
+        {
+          "host_capture_seconds": 1.9483068780100439,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            64,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 187053
+        },
+        {
+          "host_capture_seconds": 2.402515673020389,
+          "relative_seconds": 0.45420879501034506,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            64,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 230661
+        }
+      ],
+      "parameters": {
+        "FFT_points": 16384,
+        "hop_points": 8192,
+        "window": "Hann",
+        "power_averaged_segments": 2,
+        "window_frame_range": [
+          202945,
+          227907
+        ],
+        "window_seconds_relative_to_detected_attack": [
+          0.12000041663194734,
+          0.3799995833680527
+        ],
+        "frequency_bin_spacing_Hz": 5.85986328125,
+        "amplitude_calibration": "full-scale sine peak=0dBFS; coherent Hann gain corrected",
+        "display_dBFS_range": [
+          -120,
+          0
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 9,
+      "case": "ks_poly16_retrigger",
+      "title": "KS 拨弦合成器 · 16 音请求，三轮重复触发 · 时域",
+      "domain": "时域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/09_ks_poly16_retrigger_时域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/09_ks_poly16_retrigger_时域.pdf",
+      "PNG_SHA256": "98d7bc719414645857fc18029e2a6e625c0e78cfb5d1732f5da686b1f8cd66f8",
+      "PDF_SHA256": "2799807e2be13339b12a1d2d3912e4c6558a3ad49363287b5e7e500d353dc50e",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ],
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/capture/audio.wav": "ce11c04661ce194bc8fd43b94f84da810bcad7babdb3e0915ecda85c0e67e09f",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/run.json": "db878a3408e2a68a1e40a2acf1920c9ad650274019cff9126cfffc5eb7b4c75b",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/midi.json": "823bba71e62a8efe4e7a92a8ed88dddc5d4162a3c7e35b986de5d6492db3b785"
+      },
+      "detected_attack_frame": 188736,
+      "events": [
+        {
+          "host_capture_seconds": 1.885816407011589,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            145,
+            48,
+            100,
+            145,
+            49,
+            100,
+            145,
+            50,
+            100,
+            145,
+            51,
+            100,
+            145,
+            52,
+            100,
+            145,
+            53,
+            100,
+            145,
+            54,
+            100,
+            145,
+            55,
+            100,
+            145,
+            56,
+            100,
+            145,
+            57,
+            100,
+            145,
+            58,
+            100,
+            145,
+            59,
+            100,
+            145,
+            60,
+            100,
+            145,
+            61,
+            100,
+            145,
+            62,
+            100,
+            145,
+            63,
+            100
+          ],
+          "host_estimated_frame": 181053
+        },
+        {
+          "host_capture_seconds": 2.3429660180117935,
+          "relative_seconds": 0.45714961100020446,
+          "kind": "松音",
+          "bytes": [
+            129,
+            48,
+            0,
+            129,
+            49,
+            0,
+            129,
+            50,
+            0,
+            129,
+            51,
+            0,
+            129,
+            52,
+            0,
+            129,
+            53,
+            0,
+            129,
+            54,
+            0,
+            129,
+            55,
+            0,
+            129,
+            56,
+            0,
+            129,
+            57,
+            0,
+            129,
+            58,
+            0,
+            129,
+            59,
+            0,
+            129,
+            60,
+            0,
+            129,
+            61,
+            0,
+            129,
+            62,
+            0,
+            129,
+            63,
+            0
+          ],
+          "host_estimated_frame": 224943
+        },
+        {
+          "host_capture_seconds": 2.8919998110068263,
+          "relative_seconds": 1.0061834039952373,
+          "kind": "发音",
+          "bytes": [
+            145,
+            48,
+            100,
+            145,
+            49,
+            100,
+            145,
+            50,
+            100,
+            145,
+            51,
+            100,
+            145,
+            52,
+            100,
+            145,
+            53,
+            100,
+            145,
+            54,
+            100,
+            145,
+            55,
+            100,
+            145,
+            56,
+            100,
+            145,
+            57,
+            100,
+            145,
+            58,
+            100,
+            145,
+            59,
+            100,
+            145,
+            60,
+            100,
+            145,
+            61,
+            100,
+            145,
+            62,
+            100,
+            145,
+            63,
+            100
+          ],
+          "host_estimated_frame": 277655
+        },
+        {
+          "host_capture_seconds": 3.34183504601242,
+          "relative_seconds": 1.4560186390008312,
+          "kind": "松音",
+          "bytes": [
+            129,
+            48,
+            0,
+            129,
+            49,
+            0,
+            129,
+            50,
+            0,
+            129,
+            51,
+            0,
+            129,
+            52,
+            0,
+            129,
+            53,
+            0,
+            129,
+            54,
+            0,
+            129,
+            55,
+            0,
+            129,
+            56,
+            0,
+            129,
+            57,
+            0,
+            129,
+            58,
+            0,
+            129,
+            59,
+            0,
+            129,
+            60,
+            0,
+            129,
+            61,
+            0,
+            129,
+            62,
+            0,
+            129,
+            63,
+            0
+          ],
+          "host_estimated_frame": 320843
+        },
+        {
+          "host_capture_seconds": 3.886540880004759,
+          "relative_seconds": 2.00072447299317,
+          "kind": "发音",
+          "bytes": [
+            145,
+            48,
+            100,
+            145,
+            49,
+            100,
+            145,
+            50,
+            100,
+            145,
+            51,
+            100,
+            145,
+            52,
+            100,
+            145,
+            53,
+            100,
+            145,
+            54,
+            100,
+            145,
+            55,
+            100,
+            145,
+            56,
+            100,
+            145,
+            57,
+            100,
+            145,
+            58,
+            100,
+            145,
+            59,
+            100,
+            145,
+            60,
+            100,
+            145,
+            61,
+            100,
+            145,
+            62,
+            100,
+            145,
+            63,
+            100
+          ],
+          "host_estimated_frame": 373139
+        },
+        {
+          "host_capture_seconds": 4.343249156008824,
+          "relative_seconds": 2.4574327489972347,
+          "kind": "松音",
+          "bytes": [
+            129,
+            48,
+            0,
+            129,
+            49,
+            0,
+            129,
+            50,
+            0,
+            129,
+            51,
+            0,
+            129,
+            52,
+            0,
+            129,
+            53,
+            0,
+            129,
+            54,
+            0,
+            129,
+            55,
+            0,
+            129,
+            56,
+            0,
+            129,
+            57,
+            0,
+            129,
+            58,
+            0,
+            129,
+            59,
+            0,
+            129,
+            60,
+            0,
+            129,
+            61,
+            0,
+            129,
+            62,
+            0,
+            129,
+            63,
+            0
+          ],
+          "host_estimated_frame": 416987
+        }
+      ],
+      "parameters": {
+        "overview_seconds_relative_to_first_host_NoteOn": [
+          -0.1,
+          3.1
+        ],
+        "zoom_frame_range": [
+          206017,
+          206785
+        ],
+        "overview_display": "interval min/max original samples; no signal averaging/resampling",
+        "amplitude_y_range": [
+          -0.4,
+          0.4
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 10,
+      "case": "ks_poly16_retrigger",
+      "title": "KS 拨弦合成器 · 16 音请求，三轮重复触发 · 频域",
+      "domain": "频域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/10_ks_poly16_retrigger_频域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/10_ks_poly16_retrigger_频域.pdf",
+      "PNG_SHA256": "9bf11ffd5559b97ad01282545dd66ab6a17fa9f969c9833dc4ccc04699faf606",
+      "PDF_SHA256": "e8486fd4b8eddac0c6ccec2e23e65a67287aad715c4e253693a88d3f4202042d",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          1432.0,
+          256.96073215183924
+        ],
+        [
+          1432.0,
+          169.03926784816076
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/capture/audio.wav": "ce11c04661ce194bc8fd43b94f84da810bcad7babdb3e0915ecda85c0e67e09f",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/run.json": "db878a3408e2a68a1e40a2acf1920c9ad650274019cff9126cfffc5eb7b4c75b",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/ks_poly16_retrigger/midi.json": "823bba71e62a8efe4e7a92a8ed88dddc5d4162a3c7e35b986de5d6492db3b785"
+      },
+      "detected_attack_frame": 188736,
+      "events": [
+        {
+          "host_capture_seconds": 1.885816407011589,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            145,
+            48,
+            100,
+            145,
+            49,
+            100,
+            145,
+            50,
+            100,
+            145,
+            51,
+            100,
+            145,
+            52,
+            100,
+            145,
+            53,
+            100,
+            145,
+            54,
+            100,
+            145,
+            55,
+            100,
+            145,
+            56,
+            100,
+            145,
+            57,
+            100,
+            145,
+            58,
+            100,
+            145,
+            59,
+            100,
+            145,
+            60,
+            100,
+            145,
+            61,
+            100,
+            145,
+            62,
+            100,
+            145,
+            63,
+            100
+          ],
+          "host_estimated_frame": 181053
+        },
+        {
+          "host_capture_seconds": 2.3429660180117935,
+          "relative_seconds": 0.45714961100020446,
+          "kind": "松音",
+          "bytes": [
+            129,
+            48,
+            0,
+            129,
+            49,
+            0,
+            129,
+            50,
+            0,
+            129,
+            51,
+            0,
+            129,
+            52,
+            0,
+            129,
+            53,
+            0,
+            129,
+            54,
+            0,
+            129,
+            55,
+            0,
+            129,
+            56,
+            0,
+            129,
+            57,
+            0,
+            129,
+            58,
+            0,
+            129,
+            59,
+            0,
+            129,
+            60,
+            0,
+            129,
+            61,
+            0,
+            129,
+            62,
+            0,
+            129,
+            63,
+            0
+          ],
+          "host_estimated_frame": 224943
+        },
+        {
+          "host_capture_seconds": 2.8919998110068263,
+          "relative_seconds": 1.0061834039952373,
+          "kind": "发音",
+          "bytes": [
+            145,
+            48,
+            100,
+            145,
+            49,
+            100,
+            145,
+            50,
+            100,
+            145,
+            51,
+            100,
+            145,
+            52,
+            100,
+            145,
+            53,
+            100,
+            145,
+            54,
+            100,
+            145,
+            55,
+            100,
+            145,
+            56,
+            100,
+            145,
+            57,
+            100,
+            145,
+            58,
+            100,
+            145,
+            59,
+            100,
+            145,
+            60,
+            100,
+            145,
+            61,
+            100,
+            145,
+            62,
+            100,
+            145,
+            63,
+            100
+          ],
+          "host_estimated_frame": 277655
+        },
+        {
+          "host_capture_seconds": 3.34183504601242,
+          "relative_seconds": 1.4560186390008312,
+          "kind": "松音",
+          "bytes": [
+            129,
+            48,
+            0,
+            129,
+            49,
+            0,
+            129,
+            50,
+            0,
+            129,
+            51,
+            0,
+            129,
+            52,
+            0,
+            129,
+            53,
+            0,
+            129,
+            54,
+            0,
+            129,
+            55,
+            0,
+            129,
+            56,
+            0,
+            129,
+            57,
+            0,
+            129,
+            58,
+            0,
+            129,
+            59,
+            0,
+            129,
+            60,
+            0,
+            129,
+            61,
+            0,
+            129,
+            62,
+            0,
+            129,
+            63,
+            0
+          ],
+          "host_estimated_frame": 320843
+        },
+        {
+          "host_capture_seconds": 3.886540880004759,
+          "relative_seconds": 2.00072447299317,
+          "kind": "发音",
+          "bytes": [
+            145,
+            48,
+            100,
+            145,
+            49,
+            100,
+            145,
+            50,
+            100,
+            145,
+            51,
+            100,
+            145,
+            52,
+            100,
+            145,
+            53,
+            100,
+            145,
+            54,
+            100,
+            145,
+            55,
+            100,
+            145,
+            56,
+            100,
+            145,
+            57,
+            100,
+            145,
+            58,
+            100,
+            145,
+            59,
+            100,
+            145,
+            60,
+            100,
+            145,
+            61,
+            100,
+            145,
+            62,
+            100,
+            145,
+            63,
+            100
+          ],
+          "host_estimated_frame": 373139
+        },
+        {
+          "host_capture_seconds": 4.343249156008824,
+          "relative_seconds": 2.4574327489972347,
+          "kind": "松音",
+          "bytes": [
+            129,
+            48,
+            0,
+            129,
+            49,
+            0,
+            129,
+            50,
+            0,
+            129,
+            51,
+            0,
+            129,
+            52,
+            0,
+            129,
+            53,
+            0,
+            129,
+            54,
+            0,
+            129,
+            55,
+            0,
+            129,
+            56,
+            0,
+            129,
+            57,
+            0,
+            129,
+            58,
+            0,
+            129,
+            59,
+            0,
+            129,
+            60,
+            0,
+            129,
+            61,
+            0,
+            129,
+            62,
+            0,
+            129,
+            63,
+            0
+          ],
+          "host_estimated_frame": 416987
+        }
+      ],
+      "parameters": {
+        "FFT_points": 16384,
+        "hop_points": 8192,
+        "window": "Hann",
+        "power_averaged_segments": 2,
+        "window_frame_range": [
+          200257,
+          225219
+        ],
+        "window_seconds_relative_to_detected_attack": [
+          0.12000041663194734,
+          0.3799995833680527
+        ],
+        "frequency_bin_spacing_Hz": 5.85986328125,
+        "amplitude_calibration": "full-scale sine peak=0dBFS; coherent Hann gain corrected",
+        "display_dBFS_range": [
+          -120,
+          0
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 11,
+      "case": "fm_poly8_retrigger",
+      "title": "FM 合成器 · 8 音请求，三轮重复触发 · 时域",
+      "domain": "时域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/11_fm_poly8_retrigger_时域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/11_fm_poly8_retrigger_时域.pdf",
+      "PNG_SHA256": "feaf3994becc39e1942b7cef5fbb11ef87a1813a77d8c57aac1287678ed9f0f2",
+      "PDF_SHA256": "e8c5e7cf36a990876a58ced70f622e3ad5bcc55dec4ff35360103e8ec39ffe2e",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ],
+        [
+          654.1618117131234,
+          213.0
+        ],
+        [
+          649.8381882868766,
+          213.0
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/audio.wav": "ecf5054bc25de1eb81055867a30f8a595b4f75bb6db36a043788e1103e403695",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/run.json": "c368695fc5e1a35ebd7b74d80b577c5e97bc81aadd142c2046d3cdb97fc78a4a",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/midi.json": "bce437807cae5413a0227697f795fb68377ff200bd090538e42ce57a1254bc2e"
+      },
+      "detected_attack_frame": 186624,
+      "events": [
+        {
+          "host_capture_seconds": 1.8981668339984026,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            61,
+            100,
+            146,
+            62,
+            100,
+            146,
+            63,
+            100,
+            146,
+            64,
+            100,
+            146,
+            65,
+            100,
+            146,
+            66,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 182239
+        },
+        {
+          "host_capture_seconds": 2.361848970002029,
+          "relative_seconds": 0.4636821360036265,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            61,
+            0,
+            130,
+            62,
+            0,
+            130,
+            63,
+            0,
+            130,
+            64,
+            0,
+            130,
+            65,
+            0,
+            130,
+            66,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 226756
+        },
+        {
+          "host_capture_seconds": 2.9088202089915285,
+          "relative_seconds": 1.010653374993126,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            61,
+            100,
+            146,
+            62,
+            100,
+            146,
+            63,
+            100,
+            146,
+            64,
+            100,
+            146,
+            65,
+            100,
+            146,
+            66,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 279270
+        },
+        {
+          "host_capture_seconds": 3.335914811003022,
+          "relative_seconds": 1.4377479770046193,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            61,
+            0,
+            130,
+            62,
+            0,
+            130,
+            63,
+            0,
+            130,
+            64,
+            0,
+            130,
+            65,
+            0,
+            130,
+            66,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 320275
+        },
+        {
+          "host_capture_seconds": 3.9082296949927695,
+          "relative_seconds": 2.010062860994367,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            61,
+            100,
+            146,
+            62,
+            100,
+            146,
+            63,
+            100,
+            146,
+            64,
+            100,
+            146,
+            65,
+            100,
+            146,
+            66,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 375221
+        },
+        {
+          "host_capture_seconds": 4.340471757997875,
+          "relative_seconds": 2.4423049239994725,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            61,
+            0,
+            130,
+            62,
+            0,
+            130,
+            63,
+            0,
+            130,
+            64,
+            0,
+            130,
+            65,
+            0,
+            130,
+            66,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 416720
+        }
+      ],
+      "parameters": {
+        "overview_seconds_relative_to_first_host_NoteOn": [
+          -0.1,
+          3.1
+        ],
+        "zoom_frame_range": [
+          203905,
+          204673
+        ],
+        "overview_display": "interval min/max original samples; no signal averaging/resampling",
+        "amplitude_y_range": [
+          -0.7000000000000001,
+          0.7000000000000001
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    },
+    {
+      "number": 12,
+      "case": "fm_poly8_retrigger",
+      "title": "FM 合成器 · 8 音请求，三轮重复触发 · 频域",
+      "domain": "频域",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/12_fm_poly8_retrigger_频域.png",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/12_fm_poly8_retrigger_频域.pdf",
+      "PNG_SHA256": "02cbc890b878f26daaad77061edfa4794ba2ec34a743dbf934cdcbafedbd6b81",
+      "PDF_SHA256": "94371fc1f33588946a01bf66add2781ea674a6a806e2cac282c4bfd3e72e1879",
+      "pixels": [
+        4800,
+        3000
+      ],
+      "dpi": 600,
+      "PDF_vector": true,
+      "font_family": "Noto Sans CJK SC",
+      "plot_view_sizes": [
+        [
+          1432.0,
+          256.96073215183924
+        ],
+        [
+          1432.0,
+          169.03926784816076
+        ]
+      ],
+      "source_inputs_SHA256": {
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/capture/audio.wav": "ecf5054bc25de1eb81055867a30f8a595b4f75bb6db36a043788e1103e403695",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/run.json": "c368695fc5e1a35ebd7b74d80b577c5e97bc81aadd142c2046d3cdb97fc78a4a",
+        "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_poly_report_20261102/fm_poly8_retrigger/midi.json": "bce437807cae5413a0227697f795fb68377ff200bd090538e42ce57a1254bc2e"
+      },
+      "detected_attack_frame": 186624,
+      "events": [
+        {
+          "host_capture_seconds": 1.8981668339984026,
+          "relative_seconds": 0.0,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            61,
+            100,
+            146,
+            62,
+            100,
+            146,
+            63,
+            100,
+            146,
+            64,
+            100,
+            146,
+            65,
+            100,
+            146,
+            66,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 182239
+        },
+        {
+          "host_capture_seconds": 2.361848970002029,
+          "relative_seconds": 0.4636821360036265,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            61,
+            0,
+            130,
+            62,
+            0,
+            130,
+            63,
+            0,
+            130,
+            64,
+            0,
+            130,
+            65,
+            0,
+            130,
+            66,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 226756
+        },
+        {
+          "host_capture_seconds": 2.9088202089915285,
+          "relative_seconds": 1.010653374993126,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            61,
+            100,
+            146,
+            62,
+            100,
+            146,
+            63,
+            100,
+            146,
+            64,
+            100,
+            146,
+            65,
+            100,
+            146,
+            66,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 279270
+        },
+        {
+          "host_capture_seconds": 3.335914811003022,
+          "relative_seconds": 1.4377479770046193,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            61,
+            0,
+            130,
+            62,
+            0,
+            130,
+            63,
+            0,
+            130,
+            64,
+            0,
+            130,
+            65,
+            0,
+            130,
+            66,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 320275
+        },
+        {
+          "host_capture_seconds": 3.9082296949927695,
+          "relative_seconds": 2.010062860994367,
+          "kind": "发音",
+          "bytes": [
+            146,
+            60,
+            100,
+            146,
+            61,
+            100,
+            146,
+            62,
+            100,
+            146,
+            63,
+            100,
+            146,
+            64,
+            100,
+            146,
+            65,
+            100,
+            146,
+            66,
+            100,
+            146,
+            67,
+            100
+          ],
+          "host_estimated_frame": 375221
+        },
+        {
+          "host_capture_seconds": 4.340471757997875,
+          "relative_seconds": 2.4423049239994725,
+          "kind": "松音",
+          "bytes": [
+            130,
+            60,
+            0,
+            130,
+            61,
+            0,
+            130,
+            62,
+            0,
+            130,
+            63,
+            0,
+            130,
+            64,
+            0,
+            130,
+            65,
+            0,
+            130,
+            66,
+            0,
+            130,
+            67,
+            0
+          ],
+          "host_estimated_frame": 416720
+        }
+      ],
+      "parameters": {
+        "FFT_points": 16384,
+        "hop_points": 8192,
+        "window": "Hann",
+        "power_averaged_segments": 2,
+        "window_frame_range": [
+          198145,
+          223107
+        ],
+        "window_seconds_relative_to_detected_attack": [
+          0.12000041663194734,
+          0.3799995833680527
+        ],
+        "frequency_bin_spacing_Hz": 5.85986328125,
+        "amplitude_calibration": "full-scale sine peak=0dBFS; coherent Hann gain corrected",
+        "display_dBFS_range": [
+          -120,
+          0
+        ]
+      },
+      "normalization": false,
+      "gain_applied": 1,
+      "channel_order": "L,R unchanged",
+      "resampling": false,
+      "alignment_scope": "Host dispatch time estimate, not native sample tags"
+    }
+  ],
+  "scope": "Polyphony count denotes simultaneous MIDI note requests; no native voice-counter proof"
+}

@@ -1,0 +1,39 @@
+{
+  "scope": "actual owner plus KS compiler and compiled helper frames",
+  "frames_bytes": 3040,
+  "task_stack_bytes": 6144,
+  "external_interrupt_reserve": 2048,
+  "passed": true,
+  "path": [
+    {
+      "function": "voice_alloc_task",
+      "bytes": 336,
+      "allocation": "static"
+    },
+    {
+      "function": "owner_templates_update",
+      "bytes": 624,
+      "allocation": "static"
+    },
+    {
+      "function": "owner_kst_compile",
+      "bytes": 32,
+      "allocation": "static"
+    },
+    {
+      "function": "ks_timbre_compile",
+      "bytes": 1952,
+      "allocation": "static"
+    },
+    {
+      "function": "ks_timbre_validate",
+      "bytes": 48,
+      "allocation": "static"
+    },
+    {
+      "function": "range",
+      "bytes": 48,
+      "allocation": "static"
+    }
+  ]
+}

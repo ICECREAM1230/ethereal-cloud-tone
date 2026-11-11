@@ -1,0 +1,78 @@
+
+Discarded input sections
+
+ .comment       0x00000000       0x23 /tmp/cccGbtZ5.o
+ .comment       0x00000000       0x23 /tmp/ccpwUO7s.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x80000000         0x00010000         xr
+RAM              0x00000000         0x00010000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /tmp/cc1otMds.o
+LOAD /tmp/cccGbtZ5.o
+LOAD /tmp/ccpwUO7s.o
+
+.text           0x80000000      0x9fc
+ *(.text.start)
+ .text.start    0x80000000      0x10c /tmp/cc1otMds.o
+                0x80000000                _start
+ *(.text .text.*)
+ .text          0x8000010c        0x0 /tmp/cc1otMds.o
+ .text          0x8000010c        0x0 /tmp/cccGbtZ5.o
+ .text.startup  0x8000010c      0x420 /tmp/cccGbtZ5.o
+                0x8000010c                main
+ .text          0x8000052c      0x3fc /tmp/ccpwUO7s.o
+                0x800005d8                menu_init
+                0x800005f8                menu_key
+                0x800006b4                menu_render
+ *(.rodata .rodata.*)
+ .rodata        0x80000928       0x10 /tmp/cccGbtZ5.o
+ .rodata.str1.4
+                0x80000938       0xc1 /tmp/ccpwUO7s.o
+                                 0xbd (size before relaxing)
+                0x800009fc                        . = ALIGN (0x4)
+ *fill*         0x800009f9        0x3 
+
+.rela.dyn       0x800009fc        0x0
+ .rela.text.start
+                0x800009fc        0x0 /tmp/cc1otMds.o
+
+.data           0x00000000        0x0 load address 0x800009fc
+                0x00000000                        __data_start = .
+ *(.data .data.* .sdata .sdata.*)
+ .data          0x00000000        0x0 /tmp/cc1otMds.o
+ .data          0x00000000        0x0 /tmp/cccGbtZ5.o
+ .data          0x00000000        0x0 /tmp/ccpwUO7s.o
+                0x00000000                        . = ALIGN (0x4)
+                0x00000000                        __data_end = .
+                0x800009fc                        __data_load = LOADADDR (.data)
+
+.bss            0x00000000        0x0 load address 0x800009fc
+                0x00000000                        __bss_start = .
+ *(.bss .bss.* .sbss .sbss.* COMMON)
+ .bss           0x00000000        0x0 /tmp/cc1otMds.o
+ .bss           0x00000000        0x0 /tmp/cccGbtZ5.o
+ .bss           0x00000000        0x0 /tmp/ccpwUO7s.o
+                0x00000000                        . = ALIGN (0x4)
+                0x00000000                        __bss_end = .
+                0x00000800                        __global_pointer$ = (ORIGIN (RAM) + 0x800)
+                0x00010000                        __stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000001                        ASSERT ((__bss_end < (__stack_top - 0x1000)), DTCM stack reserve exceeded)
+
+/DISCARD/
+ *(.comment .note.* .eh_frame*)
+OUTPUT(/media/ice/D;/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/build/menu.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x37
+ .riscv.attributes
+                0x00000000       0x35 /tmp/cc1otMds.o
+ .riscv.attributes
+                0x00000035       0x33 /tmp/cccGbtZ5.o
+ .riscv.attributes
+                0x00000068       0x33 /tmp/ccpwUO7s.o

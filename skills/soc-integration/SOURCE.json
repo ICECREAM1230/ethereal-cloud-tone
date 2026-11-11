@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/hdl-tools/digital-chip-design-agents",
+  "commit": "441cad1ffb4a6c980b82a55374a4d7222a237192",
+  "path": "plugins/soc/skills/soc-integration",
+  "license": "MIT",
+  "upstream_skill_sha256": "aba525d759d8cc084d4e5ab6d1e13ab4ca5db5ca291c1f53b5aaa91f267a0c56",
+  "adaptation": [
+    "Codex-compatible metadata and standalone invocation",
+    "Self-contained references and scoped project records",
+    "Gowin/AE350 platform profile; existing vendor toolchain remains authoritative"
+  ]
+}

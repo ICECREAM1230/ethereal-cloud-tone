@@ -1,0 +1,11 @@
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:18:17:now_us	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:22:12:eligible	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:29:12:reject	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:31:12:accept	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:20:12:publish	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:34:5:fdc_application_init	128	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:48:5:fdc_application_record	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:109:6:fdc_application_poll	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:149:6:fdc_application_telemetry	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:165:10:fdc_application_status_word	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/firmware/fdc_application.c:175:32:fdc_application_stats	0	static

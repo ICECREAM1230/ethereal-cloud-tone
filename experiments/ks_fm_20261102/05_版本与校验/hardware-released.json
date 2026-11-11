@@ -1,0 +1,21 @@
+{
+  "status": "HARDWARE_RELEASED_OFFLINE_ONLY",
+  "checks": [
+    {
+      "scenario": "ks_poly16_retrigger",
+      "USB_released": true,
+      "trigger_rounds": 3,
+      "requested_voices": 16,
+      "pairs": 773696
+    },
+    {
+      "scenario": "fm_poly8_retrigger",
+      "USB_released": true,
+      "trigger_rounds": 3,
+      "requested_voices": 8,
+      "pairs": 768768
+    }
+  ],
+  "shared_lock_available": true,
+  "next": "Offline Chinese report figures only; no further FPGA/ESP32/CH569 operations"
+}

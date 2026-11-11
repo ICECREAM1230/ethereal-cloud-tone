@@ -1,0 +1,146 @@
+[
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/CMakeLists.txt",
+    "baseline_sha256": "f7e9959a07b372b00eece604fcd4f9baa7e7520f2bb88711f752f494ac7c9df4",
+    "sha256": "407a11c009a12586d6d4c1b3611e918ae5827777deadd8985b2906925e648904",
+    "bytes": 3768
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/dds_document.c",
+    "baseline_sha256": "92656842095a1efe1651d8e2ab13d9cb2acc06c599e5c1d3e9eac488b91c717c",
+    "sha256": "012a31a2808e06d1b04ce9e3eb50aa071feff3d1fed31335307bd1e39c0d52b3",
+    "bytes": 10298
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/event_bus.h",
+    "baseline_sha256": "b47b6e2921466e1e2be891699bf966d35e3c347c951d18f364314e5ee90039b0",
+    "sha256": "4e2b7ec9ac9535279606b3f45c6e6d7c9d32a016f9189fe8e321f153b3597a2b",
+    "bytes": 3347
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/http_ks_timbre.inc.h",
+    "baseline_sha256": null,
+    "sha256": "e1aaa314c307881135371a7f7d7e3a8782573d6e5bb89f8f420b6c0f570c4758",
+    "bytes": 9227
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/ks_timbre_contract.h",
+    "baseline_sha256": null,
+    "sha256": "3532a0928d6111719dfda44a175fc3b92986c14a2b55f916b06049c4c3fe5b1d",
+    "bytes": 188
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/ks_timbre_control.c",
+    "baseline_sha256": null,
+    "sha256": "cbe372e7c22e7de12875ce44512b027a8c6232ee2ad7fdb49c46fcabb450c3c7",
+    "bytes": 8265
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/ks_timbre_control.h",
+    "baseline_sha256": null,
+    "sha256": "09f365733b4475b733f921d85f98f2aa2cbfa9b96a0a624096541955612736d4",
+    "bytes": 2751
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/ks_timbre_document.c",
+    "baseline_sha256": null,
+    "sha256": "6d834831e859fe925bad9055edb301f86688ec6efe4228334d4c74d60cc29c5b",
+    "bytes": 13147
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/main.c",
+    "baseline_sha256": "fbe64254f26fa4eb49d1f3633bb29dc0937cf74b6560d9f44f58d036838c60f6",
+    "sha256": "1f62ce8d946d68b5ac5f1efec79897e1bdf3fc2cb604512c7ad186f3f37f538b",
+    "bytes": 9995
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/midi_template_link.c",
+    "baseline_sha256": "222897309f70b1ec4b85aa9011ebf1fb81c774e5eb45550eab44e0bd3d1e2acb",
+    "sha256": "47d4912dff4003f008607b964f57c69f8f6066d5452c9891641e1bb158b3de31",
+    "bytes": 26662
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/midi_template_link.h",
+    "baseline_sha256": "2c5e41c118975dd92e2c41ef7fa53814069848911549e7b2d16cfdcd37d457b8",
+    "sha256": "7a66369c34cc41e1acc71e2ffd9e1a33386808a3ca45eba83741861750135e20",
+    "bytes": 2750
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/midi_templates.h",
+    "baseline_sha256": "be8117582ef33521613f6386ec325f034806f3bb50f6552b60111648d75e207a",
+    "sha256": "1cf38f461ac52e2972a1046709ad18dddc83c369a77fd9de4bca16cd8027912d",
+    "bytes": 923
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/owner_ks_timbre.inc.h",
+    "baseline_sha256": null,
+    "sha256": "bea220c5f5aa23c2cbde8d6425feeb8d8df4fd60b36cc16d2bb139a7472fe205",
+    "bytes": 14953
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/voice_alloc.c",
+    "baseline_sha256": "43f0700245a9dd2bcf015993da09d5917a3ef15d9761ae706759425270fc0c9a",
+    "sha256": "80921b013f5dd547b7fbec52efd1be1da2a087dc71178b3187ce7c1fd747358c",
+    "bytes": 93790
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/main/wifi_web.c",
+    "baseline_sha256": "b39f38202192382f6d3ceb64127c3f36a4fc054d7726cab40c58c354cfe71ac9",
+    "sha256": "f8357c37586897ecd4b6292eb2c25b15d7309c23ca803cc2f7ce107a908d0591",
+    "bytes": 23965
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/storage/Patches/Factory/Pads/Galaxy.toml",
+    "baseline_sha256": "6e76d9476b76018e9d713b658cae7ac8988c65585f0b195ad2a9c6f5701e3a59",
+    "sha256": "bc97d76b6919eccb0535c37ce496d81fb09d41dfec615b5536e3656cb7b85086",
+    "bytes": 823
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/test_midi_template_link.c",
+    "baseline_sha256": "eee74ebd31439d08cecf044d2da66404085fd96ce1b98db565207bb233014f44",
+    "sha256": "d0b86b6f230e6bab6ee1dc93cd1ecf3ca876f0275c9e13c53fb66a48805742b0",
+    "bytes": 8989
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tools/check_ks_timbre_stack.py",
+    "baseline_sha256": null,
+    "sha256": "614d3e180d1489d50a98bce17cfe3b960b1fc7886db1daccdf590643db47fac4",
+    "bytes": 2786
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/run_ks_timbres.sh",
+    "baseline_sha256": null,
+    "sha256": "c0e5c200ac4aa261a22704926e9c6407db2f5d59c3192a0b03633dd2c96f36a1",
+    "bytes": 1570
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/test_ks_timbre_owner.c",
+    "baseline_sha256": null,
+    "sha256": "9f5d0417255fb896c53372036cb0d248f25020d78ac5baf413d71d4cd6e17ced",
+    "bytes": 11575
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/test_ks_timbre_store.c",
+    "baseline_sha256": null,
+    "sha256": "30c203752ae8d850fda98c7d8d7a24ba8186b4d3fd612d67bdb784c0787601ff",
+    "bytes": 1737
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/test_ks_timbre_link.c",
+    "baseline_sha256": null,
+    "sha256": "7ea36a0b8094ea1cfa73b28452c5823741393856aa5f0c7a168899833ba02249",
+    "bytes": 6263
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/test_ks_timbre_document.c",
+    "baseline_sha256": null,
+    "sha256": "730c2b084e44b0c157d000a4698e8d0ef5ae8baebb2ba5ca5589dc62891c5638",
+    "bytes": 1444
+  },
+  {
+    "path": "development/ESP32/ESP32_development/esp32s3/tests/host/test_ks_timbre_http.c",
+    "baseline_sha256": null,
+    "sha256": "7acfe00e6fa8a34fc34a12ef7da464e6ecf2ed55a620fc329beae52e1278c523",
+    "bytes": 5389
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "Gowin": {
+    "version": "V1.9.12.04 for the included native adapter; other selected flows must match their project",
+    "root_environment": "GOWIN_IDE",
+    "included": false,
+    "requirements": [
+      "vendor CLI/plugins",
+      "device data",
+      "matching Qt runtime",
+      "applicable license"
+    ],
+    "native_bridge_limits": "See gowin-ip-generation/references/public-package.md"
+  },
+  "OSS_CAD_Suite": {
+    "root_environment": "OSS_CAD_SUITE",
+    "included": false,
+    "requirements": [
+      "selected Verilator/Yosys/SymbiYosys/solver/nextpnr tools only"
+    ]
+  },
+  "manuals": {
+    "root_environment": "GOWIN_MANUAL_DIR",
+    "included_body": false,
+    "index": "gowin-arora-v-rtl/references/manuals/manifest.json",
+    "optional_text_fallback": "pdftotext"
+  },
+  "optional_selected_flows": [
+    "cocotb/cocotbext",
+    "FuseSoC/Edalize",
+    "licensed compatible ModelSim/Questa and usable vendor models",
+    "KiCad tools",
+    "SDK/BSP and authorized hardware"
+  ],
+  "maintenance_validator_environment": "SKILL_VALIDATOR (optional external skill-creator quick_validate.py)",
+  "installation_or_execution_performed": false
+}

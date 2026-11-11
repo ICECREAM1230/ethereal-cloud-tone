@@ -14,3 +14,7 @@
 | Gowin 生成 IP 与模型 | 生成文件内的厂商许可条款；本仓库不提供 EDA 工具或许可证 |
 
 混合来源的文件按局部声明区分，例如 KS 数值表使用项目 MIT，FM attenuation 表与 JT51 编译代码保留 GPL 声明。不能仅依据根目录 LICENSE 将所有第三方内容视为同一种许可。
+
+## 开发技能与厂商手册
+
+`skills/`保留各自的原作者和适用条款，仓库顶层MIT不替代其独立声明。两项外部来源技能保留原MIT LICENSE/SOURCE；厂商手册PDF和完整Markdown正文不在公开包中，仅有自行编写的定位页和版本SHA索引。Gowin/Qt库和许可证不随包提供；本机自编native桥不改变厂商运行库的条款，且有固定主机路径/ABI限制，见skills/README.md。

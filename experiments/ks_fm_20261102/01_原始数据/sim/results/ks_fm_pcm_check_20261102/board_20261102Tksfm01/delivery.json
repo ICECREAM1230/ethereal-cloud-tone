@@ -1,0 +1,12 @@
+{
+  "status": "MEASURED_BOARD_ONLY_ALL_EIGHT_ATTACKS",
+  "report": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/analysis/report.md",
+  "script_SHA256": {
+    "capture_ks_fm_pcm_20261102.py": "358f2c2356f0cca4f52333980ec4fbc0f88e88914d94a6e19bbac8e6f154a2e6",
+    "analyze_ks_fm_pcm_20261102.py": "6db2a6b632a8108e38bfa0135e79e5ef98367776de4ffe4c48eced48c8ff4a40"
+  },
+  "raw_inputs_unchanged": true,
+  "production_source_changed": false,
+  "simulation_scratch_created": false,
+  "cleanup": "No unnecessary current-task simulation artifacts; all capture evidence retained"
+}

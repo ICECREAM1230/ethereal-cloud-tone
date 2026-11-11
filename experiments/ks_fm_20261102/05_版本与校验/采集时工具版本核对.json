@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "dataset": "board_20261102Tksfm01",
+      "captured_tool_hashes_matched_archive": 15
+    },
+    {
+      "dataset": "board_poly_report_20261102",
+      "captured_tool_hashes_matched_archive": 15
+    }
+  ],
+  "basic_exact_capture_script_SHA256": "358f2c2356f0cca4f52333980ec4fbc0f88e88914d94a6e19bbac8e6f154a2e6"
+}

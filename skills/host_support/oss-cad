@@ -1,0 +1,11 @@
+#!/bin/bash
+suite="${OSS_CAD_SUITE:-/opt/eda/oss-cad-suite/current}"
+if [[ ! -r "$suite/environment" ]]; then
+    printf 'OSS CAD Suite environment not found: %s\n' "$suite/environment" >&2
+    exit 1
+fi
+if (( $# == 0 )); then
+    exec /bin/bash --noprofile --rcfile "$suite/environment" -i
+fi
+source "$suite/environment" || exit
+exec "$@"

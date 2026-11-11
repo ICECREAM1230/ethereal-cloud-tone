@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/hdl-tools/digital-chip-design-agents",
+  "commit": "441cad1ffb4a6c980b82a55374a4d7222a237192",
+  "path": "plugins/firmware/skills/embedded-firmware",
+  "license": "MIT",
+  "upstream_skill_sha256": "a655f29a5caf3be4ba61d6d7c30c3b3423f85aa05b12f7f663d46aeaa4aff7b7",
+  "adaptation": [
+    "Codex-compatible metadata and standalone invocation",
+    "Self-contained references and scoped project records",
+    "Gowin/AE350 platform profile; existing vendor toolchain remains authoritative"
+  ]
+}

@@ -1,0 +1,8 @@
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:2:6:cr_init	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:9:5:cr_set_route	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:13:22:cr_push	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:17:6:cr_flush	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:23:5:cr_pump	48	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:51:5:cr_next_command	48	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:69:13:cr_backend_ack	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/firmware/control_runtime.c:75:13:cr_idle	0	static

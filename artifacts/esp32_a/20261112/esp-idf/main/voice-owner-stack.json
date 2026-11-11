@@ -1,0 +1,20 @@
+{
+  "scope": "compiled owner state publication path",
+  "task_stack_bytes": 6144,
+  "external_and_interrupt_reserve": 1024,
+  "compiled_owner_limit": 5120,
+  "max_compiled_owner_frames": 720,
+  "path": [
+    {
+      "function": "voice_alloc_task",
+      "bytes": 336,
+      "allocation": "static"
+    },
+    {
+      "function": "publish_web_state",
+      "bytes": 384,
+      "allocation": "static"
+    }
+  ],
+  "passed": true
+}

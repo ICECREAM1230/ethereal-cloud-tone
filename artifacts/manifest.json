@@ -1,0 +1,482 @@
+{
+  "date": "2026-11-12",
+  "source_commit": "edc8d979cfd9b0e8b9422e250804431c4292130c",
+  "scope": "Existing reviewed binaries and public metadata only; no new build, programming or hardware acceptance in this upload task",
+  "historical_reports": "Old source hashes remain original build identities. Names and host paths in public metadata are normalized; not a claim of a current-source rebuild.",
+  "files": [
+    {
+      "path": "artifacts/ae350_latest_reference/build.json",
+      "original_sha256": "cae95f3dd5fa8bccbfbbfff1e0ccccfb202c782c463eba2047581b4a689f69d7",
+      "sha256": "49f93e34570dd7265297bec5c16fef63507ec5c50332a7f8356c62c1f5eb9125",
+      "bytes": 1252,
+      "original_bytes": 1252,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control-build.json",
+      "original_sha256": "de49acfc93f8e9e8321c80fe32821df2e2acd83fe72b759460559c9a49da26a2",
+      "sha256": "86f44b952ad1521f3b325b76957d743237e024c65e899b0cc6641619869c39ed",
+      "bytes": 8798,
+      "original_bytes": 8798,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.bin",
+      "original_sha256": "01a11239e23ba502dea43f2faa20fa090247110264450ea0c54543ad0c44dcfb",
+      "sha256": "01a11239e23ba502dea43f2faa20fa090247110264450ea0c54543ad0c44dcfb",
+      "bytes": 55152,
+      "original_bytes": 55152,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf",
+      "original_sha256": "684c5702128b5a7ce674a44931e1e6201eaa241bf7946925d1ba186f7ee9e371",
+      "sha256": "684c5702128b5a7ce674a44931e1e6201eaa241bf7946925d1ba186f7ee9e371",
+      "bytes": 117616,
+      "original_bytes": 117616,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-control_compile.su",
+      "original_sha256": "aeeab57afbb3c0e16e6dd596d52fa0a2e0fbf9be8da7d9703f635a2e713dda43",
+      "sha256": "4130fd97e93d74f3c54a92f3dcf8baec16483068857ef5518e83ac5d8ed4dd97",
+      "bytes": 3130,
+      "original_bytes": 3130,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-control_main.su",
+      "original_sha256": "b3d0539cf9e283a8bb4cb71e43ae71a8f8d9013a825db7f6d91916344fcda793",
+      "sha256": "6cb2e33f2c23738742990baaf72e267d4db09e83152827e76784f6dd3ae987b7",
+      "bytes": 103,
+      "original_bytes": 103,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-control_runtime.su",
+      "original_sha256": "bfb87e6a7dff3b4503103d9430a919c585a8d58bb650a2a47e157b6425454a40",
+      "sha256": "41f5ceeba6f5399ab76693ba2e434c1705c1ae89b08351d5418025cc04519af5",
+      "bytes": 1035,
+      "original_bytes": 1035,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-control_service.su",
+      "original_sha256": "8331f2944a03172220c4cb8e7e5486acbbd2d662b9da326de9923d73c6aefdf1",
+      "sha256": "0c2b1bab3e4fb656183f8f5bf714618e80013e461209793e78c96017a2fc3c11",
+      "bytes": 2085,
+      "original_bytes": 2085,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-fdc_ae350.su",
+      "original_sha256": "961db08e136ca874b63900e41f95177fb607cf69c2dd97438fb7362e004649b0",
+      "sha256": "59a8dead562aee4bebd1601494ecc9527fda3765950e192c152b8787043460ba",
+      "bytes": 1832,
+      "original_bytes": 1832,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-fdc_application.su",
+      "original_sha256": "7930a5ccaed2ff8938be26e4999a8ec21b6eee3cf074eb099b84c43a24aaf2b3",
+      "sha256": "327ccc58894d3715ece67d2c6f5125a9efd23ffb963919e0b13e08b9d042fcdb",
+      "bytes": 1295,
+      "original_bytes": 1295,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-fdc_native_owner.su",
+      "original_sha256": "0527d9cf9b914d6ae284db7790a7e307ebea77bb3b045cc29b76abb28c9d662c",
+      "sha256": "d86db97ae1b504d9061812acfa1bcff020c6aed8d9481b6f94eb3e9f2b6c2cdb",
+      "bytes": 1009,
+      "original_bytes": 1009,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-midi_parser.su",
+      "original_sha256": "0513f8e9c44d31ca767ba9cd61bbdbd06734e620953547bdb8e012f46082cf59",
+      "sha256": "916beeee559ab2a96447f0e830b0bbc6a2835bd81d90ed38d23fdb4324284bc3",
+      "bytes": 1593,
+      "original_bytes": 1593,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-runtime.su",
+      "original_sha256": "932dcbdd1474c46128ba6022ead512a31e4b44aa9669478726a27f6ee3ee5601",
+      "sha256": "e6c5c9c8b899abd096f6e44aa473696346fdcf296dbe38396d4256951fe39f74",
+      "bytes": 274,
+      "original_bytes": 274,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-theremin_control.su",
+      "original_sha256": "4b02bb2647094821f8fde5dee54682faae439f4e7903df7ac29283f535f8effd",
+      "sha256": "705f12f57a11ab7b96424d0b6cab4a553f0d34d95fbd6e9d4711267ccaadef83",
+      "bytes": 1318,
+      "original_bytes": 1318,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.elf-voice_manager.su",
+      "original_sha256": "8204c2f7eba2f99995a5840088bdf7d4bad2f343e5baf782b18054295dfcbd44",
+      "sha256": "ff32b2976dd73f1c6c3a2d80cc6c1b23e030d0a7a5a20af5ba51ca5bfdaf5f96",
+      "bytes": 3592,
+      "original_bytes": 3592,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/control.map",
+      "original_sha256": "8c23855f9342c37db327eee7acade930b698565d3922b99ea9e383e97ce4b0cd",
+      "sha256": "8c23855f9342c37db327eee7acade930b698565d3922b99ea9e383e97ce4b0cd",
+      "bytes": 59266,
+      "original_bytes": 59266,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/menu.bin",
+      "original_sha256": "e058ee49541a767ce93ac1528144ff22d2a36451a40c39b28c3a8eb424a7444f",
+      "sha256": "e058ee49541a767ce93ac1528144ff22d2a36451a40c39b28c3a8eb424a7444f",
+      "bytes": 2556,
+      "original_bytes": 2556,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/menu.elf",
+      "original_sha256": "f31e43f9f2fcca41a25be75149cc8e22f744d7f057ec7f51c23c8d87a5307cea",
+      "sha256": "f31e43f9f2fcca41a25be75149cc8e22f744d7f057ec7f51c23c8d87a5307cea",
+      "bytes": 9280,
+      "original_bytes": 9280,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/ae350_latest_reference/menu.map",
+      "original_sha256": "38143eafcb7c9a406e3c416f17916ea3486d42f332169b9f6d8f30e23dd9b572",
+      "sha256": "38143eafcb7c9a406e3c416f17916ea3486d42f332169b9f6d8f30e23dd9b572",
+      "bytes": 3236,
+      "original_bytes": 3236,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/bootloader/bootloader.bin",
+      "original_sha256": "f27bd74442b173b48816c53313e6a935e82836d176e2caee36956a0ab0847304",
+      "sha256": "f27bd74442b173b48816c53313e6a935e82836d176e2caee36956a0ab0847304",
+      "bytes": 21120,
+      "original_bytes": 21120,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/flash_args",
+      "original_sha256": "d49087f1c6180554acfc99597fe38345b53d820b6dda1a4d451148ffe10d3981",
+      "sha256": "d49087f1c6180554acfc99597fe38345b53d820b6dda1a4d451148ffe10d3981",
+      "bytes": 150,
+      "original_bytes": 150,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/flasher_args.json",
+      "original_sha256": "d30917db02ad95840714da7804977c159f2e77737f099c280b335b90767d879e",
+      "sha256": "174d93a3233684a88b95c78fcbee2d708b247407ec98200039aa9bdb129e8bc0",
+      "bytes": 843,
+      "original_bytes": 917,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/laser_harp_b.bin",
+      "original_sha256": "e2bb487f90c352001f87e16a42016c0c83268befbad4e05ef52c72fa5ef26d71",
+      "sha256": "e2bb487f90c352001f87e16a42016c0c83268befbad4e05ef52c72fa5ef26d71",
+      "bytes": 523104,
+      "original_bytes": 523104,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/laser_harp_b.elf",
+      "original_sha256": "d159a1b1062a7e7614579768b63de13942e69f60fb4ef3ee305e13381ccb4b53",
+      "sha256": "d159a1b1062a7e7614579768b63de13942e69f60fb4ef3ee305e13381ccb4b53",
+      "bytes": 6699376,
+      "original_bytes": 6699376,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/manifest.json",
+      "original_sha256": "0084c4b353613e69427a58036f80f29889014eb4e75ab088928dc2dbb1f123de",
+      "sha256": "b10fc591f2b54d8ea35054a2f761c5ed0067dd433be35da0c433268bc70dd822",
+      "bytes": 4213,
+      "original_bytes": 1963,
+      "metadata_sanitized": true,
+      "initial_copy_sha256": "2df8ef8ce06a0c34fff125eb93546a05d9bcd2e734b48302888123ca2c666e92"
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/partition_table/partition-table.bin",
+      "original_sha256": "655cd209ba03a1c8b6108ac5762de3ca6e2610f23a4fbf2e99792d3894a610cf",
+      "sha256": "655cd209ba03a1c8b6108ac5762de3ca6e2610f23a4fbf2e99792d3894a610cf",
+      "bytes": 3072,
+      "original_bytes": 3072,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_b/20261103-serial-midi-channel/sdkconfig",
+      "original_sha256": "2e1489f931e6c57a7776bdb10edfe58a962995a0763a4202ba4a97b5d2e24c5c",
+      "sha256": "2e1489f931e6c57a7776bdb10edfe58a962995a0763a4202ba4a97b5d2e24c5c",
+      "bytes": 107425,
+      "original_bytes": 107425,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/ethereal_cloud_tone.fs",
+      "original_sha256": "53868851a657598bca54604b196c820369f8b0230ec960e1854a3242b52c11ee",
+      "sha256": "53868851a657598bca54604b196c820369f8b0230ec960e1854a3242b52c11ee",
+      "bytes": 42303585,
+      "original_bytes": 42303585,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/README.md",
+      "original_sha256": "eb6275d4be95f8d2026bd696aa4cf732feda7d4774357622852631498ec29a33",
+      "sha256": "8547c9e4211e37762fa972302cf9919021df72425d3ed0e0576097b969d2ebe0",
+      "bytes": 938,
+      "original_bytes": 786,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/ethereal_cloud_tone_build_results.json",
+      "original_sha256": "3bae00361fc6581dc5b389c1fe7388b94238e9d0baa832309f45c6e43ec4688f",
+      "sha256": "5b60b810e28dd26792d15ea0ea379bd9a9ca377d5c8effe8c3a0093869eab68a",
+      "bytes": 139265,
+      "original_bytes": 139283,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/gwsynthesis/ethereal_cloud_tone_syn.rpt.html",
+      "original_sha256": "f04405108c30ea7f230f0bf7b469eff1c77b347cb3e3b32bf20ece90b4c5fe4a",
+      "sha256": "f04405108c30ea7f230f0bf7b469eff1c77b347cb3e3b32bf20ece90b4c5fe4a",
+      "bytes": 212548,
+      "original_bytes": 212548,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/gwsynthesis/ethereal_cloud_tone_syn_resource.html",
+      "original_sha256": "d435c24e06bfb03ee6b9d87d00494c2ad330ef1d6b52a9518c4e5de8ff86eef2",
+      "sha256": "d435c24e06bfb03ee6b9d87d00494c2ad330ef1d6b52a9518c4e5de8ff86eef2",
+      "bytes": 127327,
+      "original_bytes": 127327,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/gwsynthesis/ethereal_cloud_tone_syn_rsc.xml",
+      "original_sha256": "c89aa0290f892a96fe206b795b02d2db75ae71381814b4dab9a6360f9ad1cd24",
+      "sha256": "c89aa0290f892a96fe206b795b02d2db75ae71381814b4dab9a6360f9ad1cd24",
+      "bytes": 30453,
+      "original_bytes": 30453,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone.pin.html",
+      "original_sha256": "ce8e68bc54670f9c548f40389b60dc79a46fd32f741888b7911bfbfd60ae3892",
+      "sha256": "ce8e68bc54670f9c548f40389b60dc79a46fd32f741888b7911bfbfd60ae3892",
+      "bytes": 105848,
+      "original_bytes": 105848,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone.power.html",
+      "original_sha256": "fd5a61e0bc124c93720232720c364d06c8f3e77090fa6a3d07a65ba688b068e4",
+      "sha256": "fd5a61e0bc124c93720232720c364d06c8f3e77090fa6a3d07a65ba688b068e4",
+      "bytes": 43886,
+      "original_bytes": 43886,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone.rpt.html",
+      "original_sha256": "074eae7615bd1030b5d44d8c9e022c3cfa537950b9a0e7f0ef2399253453f5b6",
+      "sha256": "074eae7615bd1030b5d44d8c9e022c3cfa537950b9a0e7f0ef2399253453f5b6",
+      "bytes": 112267,
+      "original_bytes": 112267,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone.rpt.txt",
+      "original_sha256": "b7382d9127702c8eaac739eadb6bb4befbb0430ec067bd676cf354beb9dfc402",
+      "sha256": "fd5c86be056841c973cd1636c68f8ef384a76174bb0a66469be45b00862c10f2",
+      "bytes": 97940,
+      "original_bytes": 97940,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone.tr",
+      "original_sha256": "01fb2ff57c3b8e7ed27c8fdebd6e66f77a7bcd356bb99bf73aaf8b1839809f0d",
+      "sha256": "01fb2ff57c3b8e7ed27c8fdebd6e66f77a7bcd356bb99bf73aaf8b1839809f0d",
+      "bytes": 14346084,
+      "original_bytes": 14346084,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone.tr.html",
+      "original_sha256": "08db3b1656d2e1465630ed603ea57073a1cc08cd9e0bb8e83149c98cc284ea7b",
+      "sha256": "08db3b1656d2e1465630ed603ea57073a1cc08cd9e0bb8e83149c98cc284ea7b",
+      "bytes": 363,
+      "original_bytes": 363,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone_tr_cata.html",
+      "original_sha256": "f2a45ef60a81853dde2fdafe334bfa2f2922e29992eccae008ad0579edf1c1de",
+      "sha256": "f2a45ef60a81853dde2fdafe334bfa2f2922e29992eccae008ad0579edf1c1de",
+      "bytes": 25444,
+      "original_bytes": 25444,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/fpga/frozen_20261104T034808Z/reports/pnr/ethereal_cloud_tone_tr_content.html",
+      "original_sha256": "4b263a8e3d2cb97dba8ce3472e227fc7d20ef23491b8ba42aa37f27b611658cd",
+      "sha256": "4b263a8e3d2cb97dba8ce3472e227fc7d20ef23491b8ba42aa37f27b611658cd",
+      "bytes": 17668346,
+      "original_bytes": 17668346,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/bootloader/bootloader.bin",
+      "original_sha256": "3c513f28ed6dd5b8829db45f69f15580830f5a8527ace04428260127f1469af5",
+      "sha256": "3c513f28ed6dd5b8829db45f69f15580830f5a8527ace04428260127f1469af5",
+      "bytes": 21168,
+      "original_bytes": 21168,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/dds_storage.bin",
+      "original_sha256": "82245e6d8c129e0f41335a9a8a1f4d448dc09018b78721f6fe14d7dabe0b205f",
+      "sha256": "82245e6d8c129e0f41335a9a8a1f4d448dc09018b78721f6fe14d7dabe0b205f",
+      "bytes": 2097152,
+      "original_bytes": 2097152,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/esp-idf/main/ble-control-stack.json",
+      "original_sha256": "6de4a5b1a9ad96882f9204121bc78a6fcb931da0ca0dafce72958e777a71e326",
+      "sha256": "0b61acbf54e2a8471587f593d870ca59db4bacacf7788eadaf38f5459eb73061",
+      "bytes": 26137,
+      "original_bytes": 27103,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/esp-idf/main/ks-timbre-owner-stack.json",
+      "original_sha256": "fd80d5b6bdc7a8975108bb627ff15804e4eb29efbd286212216134170e3a8764",
+      "sha256": "fd80d5b6bdc7a8975108bb627ff15804e4eb29efbd286212216134170e3a8764",
+      "bytes": 795,
+      "original_bytes": 795,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/esp-idf/main/voice-owner-stack.json",
+      "original_sha256": "0d8ea0f1bd18f05f8ce878ffe54cb790abf0b81ee34dbcad176c5c757f737cd1",
+      "sha256": "0d8ea0f1bd18f05f8ce878ffe54cb790abf0b81ee34dbcad176c5c757f737cd1",
+      "bytes": 428,
+      "original_bytes": 428,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/partition_table/partition-table.bin",
+      "original_sha256": "75435d8b25beec22ab45d21652c16f981b1254c01c986b5cc5283cb584844068",
+      "sha256": "75435d8b25beec22ab45d21652c16f981b1254c01c986b5cc5283cb584844068",
+      "bytes": 3072,
+      "original_bytes": 3072,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/project_description.json",
+      "original_sha256": "f0830f75570cb796b6a8c90fc6386c6dbf6ec7b5120b3765c1e381e53e8c6c38",
+      "sha256": "654c7a590efe48c9046ced60aa73a486bba7f0e12e64ce2285670b00be8ba0cc",
+      "bytes": 188069,
+      "original_bytes": 210985,
+      "metadata_sanitized": true
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/tang_mega_138k_synth_ctrl.bin",
+      "original_sha256": "942179c3bf56591dbcd03da6d382c0e300db13ced93bddd318501080d36c1742",
+      "sha256": "942179c3bf56591dbcd03da6d382c0e300db13ced93bddd318501080d36c1742",
+      "bytes": 1417808,
+      "original_bytes": 1417808,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/esp32_a/20261112/tang_mega_138k_synth_ctrl.elf",
+      "original_sha256": "ea19705d03c7ebfa85f2d4d8e82cca96dd7b1dc1a94576c621b22e68ffab5efc",
+      "sha256": "ea19705d03c7ebfa85f2d4d8e82cca96dd7b1dc1a94576c621b22e68ffab5efc",
+      "bytes": 12956716,
+      "original_bytes": 12956716,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/android/20261112/SHA256SUMS",
+      "original_sha256": "11ffa5a97b84d765e908ddd4e6c83ec08c75d4224cb1bd1891010ee0d23f4b0c",
+      "sha256": "11ffa5a97b84d765e908ddd4e6c83ec08c75d4224cb1bd1891010ee0d23f4b0c",
+      "bytes": 88,
+      "original_bytes": 88,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/android/20261112/build-info.json",
+      "original_sha256": "fa3cb9eb83877b1dd534197dea0ad183894c224f3990ce7a1c38b281064e535d",
+      "sha256": "bb3ee2a626b52cda8af98f20e103f3748257403ad06331883332d54ccb311c08",
+      "bytes": 425,
+      "original_bytes": 380,
+      "metadata_sanitized": true,
+      "initial_copy_sha256": "fa3cb9eb83877b1dd534197dea0ad183894c224f3990ce7a1c38b281064e535d"
+    },
+    {
+      "path": "artifacts/android/20261112/fpga-synth-0.10.0.apk",
+      "original_sha256": "c43e176ba807da8f439fb34f332e9a076037444f467bf8d6b4f3ab5722243225",
+      "sha256": "c43e176ba807da8f439fb34f332e9a076037444f467bf8d6b4f3ab5722243225",
+      "bytes": 2765442,
+      "original_bytes": 2765442,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/android/20261112/fpga-synth-0.10.0.apk.idsig",
+      "original_sha256": "8c1ea3e9eb2913ab1790ce1e5e6cdd2884fee9fec67247b7478b7d171ee80b70",
+      "sha256": "8c1ea3e9eb2913ab1790ce1e5e6cdd2884fee9fec67247b7478b7d171ee80b70",
+      "bytes": 30087,
+      "original_bytes": 30087,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/android/20261112/instrumentation-smoke.apk",
+      "original_sha256": "ab447f162ef68ffa2499906097d3dce46a4d0d2a71710c23715d3676e41c5957",
+      "sha256": "ab447f162ef68ffa2499906097d3dce46a4d0d2a71710c23715d3676e41c5957",
+      "bytes": 24979,
+      "original_bytes": 24979,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/web/current/index.html",
+      "original_sha256": "993da2efecab1cc5e250d028028b085b715b2f7ca0fe701e88955cb9764a4c5b",
+      "sha256": "993da2efecab1cc5e250d028028b085b715b2f7ca0fe701e88955cb9764a4c5b",
+      "bytes": 220398,
+      "original_bytes": 220398,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "artifacts/web/current/index.html.gz",
+      "original_sha256": "ab3a9c69f26061b06542d0d1dc8397e02840a0ad450e6a6955d78262cad68fb2",
+      "sha256": "ab3a9c69f26061b06542d0d1dc8397e02840a0ad450e6a6955d78262cad68fb2",
+      "bytes": 63291,
+      "original_bytes": 63291,
+      "metadata_sanitized": false
+    },
+    {
+      "path": "docs/provenance/archive-versions-20261104.md",
+      "original_sha256": "6c1968a817e0fb25099435e4bad956377794519602364b3593b1f048ab893656",
+      "sha256": "6924dcdbe57f0bfd6d2e5318a89d310c7a494cdf0f037f7ceb9d83cf60050555",
+      "bytes": 2031,
+      "original_bytes": 1779,
+      "metadata_sanitized": true,
+      "initial_copy_sha256": "6c1968a817e0fb25099435e4bad956377794519602364b3593b1f048ab893656"
+    },
+    {
+      "path": "artifacts/README.md",
+      "sha256": "7f1edb70c89c81cdf5a50b9e086cb1e95e12b1939cbfdaa5a3d26c5227d91c67",
+      "bytes": 2563,
+      "source_kind": "task_authored_public_index",
+      "metadata_sanitized": false
+    }
+  ]
+}

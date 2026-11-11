@@ -1,0 +1,624 @@
+Archive member included to satisfy reference by file (symbol)
+
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                              /tmp/cckyvpFk.o (__udivdi3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+                              /tmp/cckyvpFk.o (__addsf3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+                              /tmp/cckyvpFk.o (__divsf3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+                              /tmp/cckyvpFk.o (__eqsf2)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+                              /tmp/cckyvpFk.o (__gesf2)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+                              /tmp/cckyvpFk.o (__lesf2)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+                              /tmp/cckyvpFk.o (__mulsf3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+                              /tmp/cckyvpFk.o (__subsf3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+                              /tmp/cckyvpFk.o (__unordsf2)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+                              /tmp/cckyvpFk.o (__fixunssfsi)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+                              /tmp/cckyvpFk.o (__floatunsisf)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+                              /tmp/cckyvpFk.o (__floatdisf)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+                              /tmp/cckyvpFk.o (__floatundisf)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+                              /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o) (__lshrdi3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+                              /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o) (__ashldi3)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                              /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o) (__clz_tab)
+/media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                              /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o) (__clzsi2)
+
+Discarded input sections
+
+ .comment       0x00000000       0x23 /tmp/ccAjWs6f.o
+ .comment       0x00000000       0x23 /tmp/ccc7bC6n.o
+ .comment       0x00000000       0x23 /tmp/ccU3nJUE.o
+ .comment       0x00000000       0x23 /tmp/cc1BDk8P.o
+ .comment       0x00000000       0x23 /tmp/ccX0Z1kj.o
+ .comment       0x00000000       0x23 /tmp/cckT4ehV.o
+ .comment       0x00000000       0x23 /tmp/cciaj6aG.o
+ .comment       0x00000000       0x23 /tmp/cclVbSgO.o
+ .comment       0x00000000       0x23 /tmp/cckyvpFk.o
+ .comment       0x00000000       0x23 /tmp/ccD4QiAn.o
+ .comment       0x00000000       0x23 /tmp/cchZKME7.o
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .eh_frame      0x00000000       0x28 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .comment       0x00000000       0x23 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x80000000         0x00010000         xr
+RAM              0x00000100         0x0000ff00         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccVtebEW.o
+LOAD /tmp/ccAjWs6f.o
+LOAD /tmp/ccc7bC6n.o
+LOAD /tmp/ccU3nJUE.o
+LOAD /tmp/cc1BDk8P.o
+LOAD /tmp/ccX0Z1kj.o
+LOAD /tmp/cckT4ehV.o
+LOAD /tmp/cciaj6aG.o
+LOAD /tmp/cclVbSgO.o
+LOAD /tmp/cckyvpFk.o
+LOAD /tmp/ccD4QiAn.o
+LOAD /tmp/cchZKME7.o
+LOAD /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a
+
+.text           0x80000000     0xd770
+ *(.text.start)
+ .text.start    0x80000000      0x10c /tmp/ccVtebEW.o
+                0x80000000                _start
+ *(.text .text.*)
+ .text          0x8000010c        0x0 /tmp/ccVtebEW.o
+ .text          0x8000010c        0x0 /tmp/ccAjWs6f.o
+ .text.startup  0x8000010c      0x204 /tmp/ccAjWs6f.o
+                0x8000010c                main
+ .text          0x80000310     0x1bf8 /tmp/ccc7bC6n.o
+                0x80000738                cs_enable_parallel_sources
+                0x800007e0                cs_enable_channel_routes
+                0x8000083c                cs_init
+                0x80000a70                cs_get_stats
+                0x80000a84                cs_request_mode
+                0x80000b04                cs_poll
+                0x80001e94                cs_set_fdc_telemetry
+                0x80001ec0                cs_set_fdc_status
+                0x80001ef0                cs_set_fdc_config_handler
+ .text          0x80001f08     0x2b98 /tmp/ccU3nJUE.o
+                0x8000288c                cf_floor64
+                0x800028ac                cf_raw_bend
+                0x800028c4                cf_q16_bend
+                0x800028f4                cf_note_pitch
+                0x8000290c                cf_keytrack_cutoff
+                0x8000307c                cf_fm_pitch_codes
+                0x8000381c                cf_init
+                0x8000391c                cf_packet
+                0x80003954                cf_begin
+                0x80003c68                cf_ack
+                0x80003da4                cf_idle
+                0x80003e3c                cf_maintenance
+                0x80003e6c                cf_template_record
+                0x800044a0                cf_background
+ .text          0x80004aa0      0xac4 /tmp/cc1BDk8P.o
+                0x80004c88                midi_parser_init
+                0x80004d08                midi_parser_push
+                0x800050dc                midi_parser_flush
+                0x8000519c                midi_parser_peek_event
+                0x80005258                midi_parser_pop_event
+                0x80005358                midi_parser_peek_sysex
+                0x8000543c                midi_parser_pop_sysex
+ .text          0x80005564     0x23a4 /tmp/ccX0Z1kj.o
+                0x80005ff4                vm_engine_caps
+                0x8000601c                vm_init
+                0x80006130                vm_enable_extended
+                0x800061b4                vm_set_adapter_ready
+                0x80006258                vm_submit
+                0x80006b74                vm_command_peek
+                0x80006bec                vm_command_consume
+                0x80006e00                vm_feedback_idle
+                0x80006f48                vm_flush_sources
+                0x80007080                vm_reset
+                0x80007180                vm_pending_commands
+                0x800071c0                vm_sensor_claim
+                0x8000747c                vm_sensor_update
+                0x80007710                vm_sensor_release
+                0x800077fc                vm_sensor_flush
+ .text          0x80007908      0x6ac /tmp/cckT4ehV.o
+                0x80007908                cr_init
+                0x800079f0                cr_set_route
+                0x80007a60                cr_push
+                0x80007a88                cr_flush
+                0x80007b00                cr_pump
+                0x80007d6c                cr_next_command
+                0x80007ed8                cr_backend_ack
+                0x80007f5c                cr_idle
+ .text          0x80007fb4      0x798 /tmp/cciaj6aG.o
+                0x80008080                fdc_application_init
+                0x80008160                fdc_application_record
+                0x80008388                fdc_application_poll
+                0x80008574                fdc_application_telemetry
+                0x8000866c                fdc_application_status_word
+                0x80008740                fdc_application_stats
+ .text          0x8000874c      0xf14 /tmp/cclVbSgO.o
+                0x800088e4                fdc_ae350_init
+                0x800089a4                fdc_ae350_set_enabled
+                0x800089f4                fdc_ae350_request_restart
+                0x80008a48                fdc_ae350_stage_config
+                0x80008ac8                fdc_ae350_apply_config
+                0x80008b50                fdc_ae350_poll
+                0x800095d0                fdc_ae350_quiescent
+                0x8000961c                fdc_ae350_active_config
+                0x80009638                fdc_ae350_staged_config
+                0x80009654                fdc_ae350_stats
+ .text          0x80009660     0x1228 /tmp/cckyvpFk.o
+                0x800097f4                theremin_default_config
+                0x800098c4                theremin_reset
+                0x8000995c                theremin_init
+                0x80009cbc                theremin_rebaseline
+                0x80009da4                theremin_update_timed
+                0x8000a828                theremin_update
+                0x8000a85c                theremin_quality_name
+ .text          0x8000a888       0x48 /tmp/ccD4QiAn.o
+                0x8000a888                memset
+                0x8000a8a8                memcpy
+ .text          0x8000a8d0      0x654 /tmp/cchZKME7.o
+                0x8000aa4c                fdc_native_owner_init
+                0x8000aa78                fdc_native_stop
+                0x8000abb8                fdc_native_resume
+                0x8000abf0                fdc_native_publish
+ .text          0x8000af24      0x430 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                0x8000af24                __udivdi3
+ .text          0x8000b354      0x424 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+                0x8000b354                __addsf3
+ .text          0x8000b778      0x338 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+                0x8000b778                __divsf3
+ .text          0x8000bab0       0x68 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+                0x8000bab0                __nesf2
+                0x8000bab0                __eqsf2
+ .text          0x8000bb18       0xac /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+                0x8000bb18                __gtsf2
+                0x8000bb18                __gesf2
+ .text          0x8000bbc4       0xac /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+                0x8000bbc4                __lesf2
+                0x8000bbc4                __ltsf2
+ .text          0x8000bc70      0x324 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+                0x8000bc70                __mulsf3
+ .text          0x8000bf94      0x434 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+                0x8000bf94                __subsf3
+ .text          0x8000c3c8       0x44 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+                0x8000c3c8                __unordsf2
+ .text          0x8000c40c       0x68 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+                0x8000c40c                __fixunssfsi
+ .text          0x8000c474       0xe0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+                0x8000c474                __floatunsisf
+ .text          0x8000c554      0x17c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+                0x8000c554                __floatdisf
+ .text          0x8000c6d0      0x148 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+                0x8000c6d0                __floatundisf
+ .text          0x8000c818       0x38 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+                0x8000c818                __lshrdi3
+ .text          0x8000c850       0x38 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+                0x8000c850                __ashldi3
+ .text          0x8000c888        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .text          0x8000c888       0x4c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                0x8000c888                __clzsi2
+ *(.rodata .rodata.*)
+ .rodata        0x8000c8d4       0x15 /tmp/ccc7bC6n.o
+                0x8000c8e4                cs_default_budget
+ *fill*         0x8000c8e9        0x3 
+ .rodata        0x8000c8ec      0xbe8 /tmp/ccU3nJUE.o
+ .rodata        0x8000d4d4       0x51 /tmp/ccX0Z1kj.o
+ *fill*         0x8000d525        0x3 
+ .rodata        0x8000d528       0x31 /tmp/cclVbSgO.o
+ *fill*         0x8000d559        0x3 
+ .rodata.str1.4
+                0x8000d55c       0x6d /tmp/cckyvpFk.o
+ *fill*         0x8000d5c9        0x3 
+ .rodata.cst4   0x8000d5cc       0x48 /tmp/cckyvpFk.o
+ .rodata        0x8000d614       0x20 /tmp/cckyvpFk.o
+ .rodata        0x8000d634       0x3c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .rodata        0x8000d670      0x100 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                0x8000d670                __clz_tab
+                0x8000d770                        . = ALIGN (0x4)
+
+.rela.dyn       0x8000d770        0x0
+ .rela.text.start
+                0x8000d770        0x0 /tmp/ccVtebEW.o
+
+.data           0x00000100        0x0 load address 0x8000d770
+                0x00000100                        __data_start = .
+ *(.data .data.* .sdata .sdata.*)
+ .data          0x00000100        0x0 /tmp/ccVtebEW.o
+ .data          0x00000100        0x0 /tmp/ccAjWs6f.o
+ .data          0x00000100        0x0 /tmp/ccc7bC6n.o
+ .data          0x00000100        0x0 /tmp/ccU3nJUE.o
+ .data          0x00000100        0x0 /tmp/cc1BDk8P.o
+ .data          0x00000100        0x0 /tmp/ccX0Z1kj.o
+ .data          0x00000100        0x0 /tmp/cckT4ehV.o
+ .data          0x00000100        0x0 /tmp/cciaj6aG.o
+ .data          0x00000100        0x0 /tmp/cclVbSgO.o
+ .data          0x00000100        0x0 /tmp/cckyvpFk.o
+ .data          0x00000100        0x0 /tmp/ccD4QiAn.o
+ .data          0x00000100        0x0 /tmp/cchZKME7.o
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .data          0x00000100        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                0x00000100                        . = ALIGN (0x4)
+                0x00000100                        __data_end = .
+                0x8000d770                        __data_load = LOADADDR (.data)
+
+.bss            0x00000100     0x61b0 load address 0x8000d770
+                0x00000100                        __bss_start = .
+ *(.bss .bss.* .sbss .sbss.* COMMON)
+ .bss           0x00000100        0x0 /tmp/ccVtebEW.o
+ .bss           0x00000100     0x5e98 /tmp/ccAjWs6f.o
+ .bss           0x00005f98        0x0 /tmp/ccc7bC6n.o
+ .bss           0x00005f98        0x0 /tmp/ccU3nJUE.o
+ .bss           0x00005f98        0x0 /tmp/cc1BDk8P.o
+ .bss           0x00005f98        0x0 /tmp/ccX0Z1kj.o
+ .bss           0x00005f98        0x0 /tmp/cckT4ehV.o
+ .bss           0x00005f98      0x318 /tmp/cciaj6aG.o
+ .bss           0x000062b0        0x0 /tmp/cclVbSgO.o
+ .bss           0x000062b0        0x0 /tmp/cckyvpFk.o
+ .bss           0x000062b0        0x0 /tmp/ccD4QiAn.o
+ .bss           0x000062b0        0x0 /tmp/cchZKME7.o
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .bss           0x000062b0        0x0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                0x000062b0                        . = ALIGN (0x4)
+                0x000062b0                        __bss_end = .
+                0x00000900                        __global_pointer$ = (ORIGIN (RAM) + 0x800)
+                0x00010000                        __stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000001                        ASSERT ((__bss_end < (__stack_top - 0x1000)), DTCM stack reserve exceeded)
+
+/DISCARD/
+ *(.comment .note.* .eh_frame*)
+OUTPUT(/media/ice/D;/PROJECT_improve/ae350_fpga_menu_lab_20261028/sim/results/fdc_return_sub_20261104T004413+0900/firmware-build02/control.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x37
+ .riscv.attributes
+                0x00000000       0x35 /tmp/ccVtebEW.o
+ .riscv.attributes
+                0x00000035       0x33 /tmp/ccAjWs6f.o
+ .riscv.attributes
+                0x00000068       0x33 /tmp/ccc7bC6n.o
+ .riscv.attributes
+                0x0000009b       0x33 /tmp/ccU3nJUE.o
+ .riscv.attributes
+                0x000000ce       0x33 /tmp/cc1BDk8P.o
+ .riscv.attributes
+                0x00000101       0x33 /tmp/ccX0Z1kj.o
+ .riscv.attributes
+                0x00000134       0x33 /tmp/cckT4ehV.o
+ .riscv.attributes
+                0x00000167       0x33 /tmp/cciaj6aG.o
+ .riscv.attributes
+                0x0000019a       0x33 /tmp/cclVbSgO.o
+ .riscv.attributes
+                0x000001cd       0x33 /tmp/cckyvpFk.o
+ .riscv.attributes
+                0x00000200       0x33 /tmp/ccD4QiAn.o
+ .riscv.attributes
+                0x00000233       0x33 /tmp/cchZKME7.o
+ .riscv.attributes
+                0x00000266       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .riscv.attributes
+                0x00000290       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .riscv.attributes
+                0x000002ba       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .riscv.attributes
+                0x000002e4       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .riscv.attributes
+                0x0000030e       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .riscv.attributes
+                0x00000338       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .riscv.attributes
+                0x00000362       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .riscv.attributes
+                0x0000038c       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .riscv.attributes
+                0x000003b6       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .riscv.attributes
+                0x000003e0       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .riscv.attributes
+                0x0000040a       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .riscv.attributes
+                0x00000434       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .riscv.attributes
+                0x0000045e       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .riscv.attributes
+                0x00000488       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .riscv.attributes
+                0x000004b2       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .riscv.attributes
+                0x000004dc       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .riscv.attributes
+                0x00000506       0x2a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_info     0x00000000     0x294b
+ .debug_info    0x00000000      0x761 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .debug_info    0x00000761      0x2ec /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_info    0x00000a4d      0x358 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_info    0x00000da5      0x1fb /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_info    0x00000fa0      0x201 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_info    0x000011a1      0x201 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_info    0x000013a2      0x348 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_info    0x000016ea      0x2ec /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_info    0x000019d6      0x1f3 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_info    0x00001bc9      0x19b /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_info    0x00001d64      0x20a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_info    0x00001f6e      0x244 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_info    0x000021b2      0x23d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_info    0x000023ef      0x1a1 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_info    0x00002590      0x1a1 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_info    0x00002731       0xd8 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .debug_info    0x00002809      0x142 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_abbrev   0x00000000     0x153b
+ .debug_abbrev  0x00000000      0x1a6 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x000001a6      0x164 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_abbrev  0x0000030a      0x141 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_abbrev  0x0000044b      0x12d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_abbrev  0x00000578      0x15f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_abbrev  0x000006d7      0x15f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_abbrev  0x00000836      0x150 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_abbrev  0x00000986      0x164 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_abbrev  0x00000aea      0x14a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_abbrev  0x00000c34      0x14d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_abbrev  0x00000d81      0x186 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_abbrev  0x00000f07      0x16d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_abbrev  0x00001074      0x175 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_abbrev  0x000011e9      0x10c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x000012f5      0x10c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x00001401       0x70 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .debug_abbrev  0x00001471       0xca /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_loclists
+                0x00000000     0x203b
+ .debug_loclists
+                0x00000000      0x704 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x00000704      0x571 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_loclists
+                0x00000c75      0x450 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_loclists
+                0x000010c5       0x2c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_loclists
+                0x000010f1       0x8f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_loclists
+                0x00001180       0x8f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_loclists
+                0x0000120f      0x356 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_loclists
+                0x00001565      0x588 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_loclists
+                0x00001aed       0x32 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_loclists
+                0x00001b1f       0x96 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_loclists
+                0x00001bb5       0xf0 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_loclists
+                0x00001ca5      0x122 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_loclists
+                0x00001dc7      0x15a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_loclists
+                0x00001f21       0x6b /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_loclists
+                0x00001f8c       0x6b /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_loclists
+                0x00001ff7       0x44 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_aranges  0x00000000      0x218
+ .debug_aranges
+                0x00000000       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000020       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_aranges
+                0x00000040       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_aranges
+                0x00000060       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_aranges
+                0x00000080       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_aranges
+                0x000000a0       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_aranges
+                0x000000c0       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_aranges
+                0x000000e0       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_aranges
+                0x00000100       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_aranges
+                0x00000120       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_aranges
+                0x00000140       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_aranges
+                0x00000160       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_aranges
+                0x00000180       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_aranges
+                0x000001a0       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x000001c0       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_aranges
+                0x000001e0       0x18 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .debug_aranges
+                0x000001f8       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_rnglists
+                0x00000000      0x412
+ .debug_rnglists
+                0x00000000       0x99 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x00000099       0x92 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_rnglists
+                0x0000012b       0x7d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_rnglists
+                0x000001a8       0x1d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_rnglists
+                0x000001c5       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_rnglists
+                0x000001e5       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_rnglists
+                0x00000205       0x7d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_rnglists
+                0x00000282       0x96 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_rnglists
+                0x00000318       0x16 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_rnglists
+                0x0000032e       0x13 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_rnglists
+                0x00000341       0x33 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_rnglists
+                0x00000374       0x49 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_rnglists
+                0x000003bd       0x3f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_rnglists
+                0x000003fc       0x16 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_line     0x00000000     0x4a7a
+ .debug_line    0x00000000      0x905 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .debug_line    0x00000905      0xc15 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_line    0x0000151a      0x89e /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_line    0x00001db8      0x22f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_line    0x00001fe7      0x2df /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_line    0x000022c6      0x2df /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_line    0x000025a5      0x7e9 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_line    0x00002d8e      0xc5b /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_line    0x000039e9      0x181 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_line    0x00003b6a      0x1ab /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_line    0x00003d15      0x31f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_line    0x00004034      0x39b /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_line    0x000043cf      0x37f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_line    0x0000474e      0x107 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_line    0x00004855      0x107 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_line    0x0000495c       0x3f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .debug_line    0x0000499b       0xdf /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_str      0x00000000      0x644
+ .debug_str     0x00000000      0x644 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                                0x23e (size before relaxing)
+ .debug_str     0x00000644      0x25c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_str     0x00000644      0x2c6 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_str     0x00000644      0x18f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_str     0x00000644      0x1b3 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_str     0x00000644      0x1b3 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_str     0x00000644      0x281 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_str     0x00000644      0x25c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_str     0x00000644      0x192 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_str     0x00000644      0x190 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_str     0x00000644      0x21f /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_str     0x00000644      0x238 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_str     0x00000644      0x233 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_str     0x00000644      0x1c8 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_str     0x00000644      0x1c8 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_str     0x00000644      0x18b /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .debug_str     0x00000644      0x1a8 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_line_str
+                0x00000000      0x379
+ .debug_line_str
+                0x00000000      0x379 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                                0x148 (size before relaxing)
+ .debug_line_str
+                0x00000379      0x154 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_line_str
+                0x00000379      0x154 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_line_str
+                0x00000379      0x161 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_line_str
+                0x00000379      0x161 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_line_str
+                0x00000379      0x161 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_line_str
+                0x00000379      0x15e /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_line_str
+                0x00000379      0x154 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_line_str
+                0x00000379      0x16a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_line_str
+                0x00000379      0x16a /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_line_str
+                0x00000379      0x16d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_line_str
+                0x00000379      0x167 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_line_str
+                0x00000379      0x16d /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_line_str
+                0x00000379      0x148 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_line_str
+                0x00000379      0x148 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_line_str
+                0x00000379      0x148 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .debug_line_str
+                0x00000379      0x148 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_frame    0x00000000      0x2d8
+ .debug_frame   0x00000000       0x40 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(addsf3.o)
+ .debug_frame   0x00000040       0x4c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_frame   0x0000008c       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .debug_frame   0x000000ac       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .debug_frame   0x000000cc       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(lesf2.o)
+ .debug_frame   0x000000ec       0x4c /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_frame   0x00000138       0x40 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_frame   0x00000178       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .debug_frame   0x00000198       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(fixunssfsi.o)
+ .debug_frame   0x000001b8       0x34 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatunsisf.o)
+ .debug_frame   0x000001ec       0x48 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatdisf.o)
+ .debug_frame   0x00000234       0x44 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(floatundisf.o)
+ .debug_frame   0x00000278       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_lshrdi3.o)
+ .debug_frame   0x00000298       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_ashldi3.o)
+ .debug_frame   0x000002b8       0x20 /media/ice/D;/FPGA_tools/ae350-control-rv32-gcc13/runtime/usr/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)

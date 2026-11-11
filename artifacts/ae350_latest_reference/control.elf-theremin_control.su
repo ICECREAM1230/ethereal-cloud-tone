@@ -1,0 +1,9 @@
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:21:13:valid_calibration	32	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:107:27:quality	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:44:19:theremin_default_config	0	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:65:6:theremin_reset	16	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:80:6:theremin_init	112	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:92:6:theremin_rebaseline	96	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:199:6:theremin_update_timed	128	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:252:6:theremin_update	32	static
+$ARCHIVE_ROOT/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/fdc2214/firmware/theremin_control.c:259:13:theremin_quality_name	0	static

@@ -1,0 +1,9 @@
+{
+  "generator": "tests/host/test_ks_timbre_http.c includes actual main/wifi_web.c and http_ks_timbre.inc.h; ESP HTTP SDK boundaries are host stubs",
+  "files": {
+    "main/http_ks_timbre.inc.h": "e1aaa314c307881135371a7f7d7e3a8782573d6e5bb89f8f420b6c0f570c4758",
+    "main/ks_timbre_document.c": "6d834831e859fe925bad9055edb301f86688ec6efe4228334d4c74d60cc29c5b",
+    "main/ks_timbre_control.c": "cbe372e7c22e7de12875ce44512b027a8c6232ee2ad7fdb49c46fcabb450c3c7",
+    "tests/host/test_ks_timbre_http.c": "7acfe00e6fa8a34fc34a12ef7da464e6ecf2ed55a620fc329beae52e1278c523"
+  }
+}

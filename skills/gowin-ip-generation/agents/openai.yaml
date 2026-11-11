@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gowin IP Generation"
+  short_description: "Generate Gowin IP with local scripts and clear usage notes."
+  default_prompt: "Use $gowin-ip-generation to generate the requested Gowin IP in a separate folder."

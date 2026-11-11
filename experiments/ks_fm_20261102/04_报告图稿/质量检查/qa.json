@@ -1,0 +1,1185 @@
+{
+  "status": "PASS",
+  "scope": "Read-only exported PDF/PNG inspection; no hardware, no authoring marker, no figure edits",
+  "figure_count": 12,
+  "manifest": "sim/results/ks_fm_report_20261102/figures/final/figure-manifest.json",
+  "manifest_SHA256": "846e00eebfc304086ea9b152b0c74c3c833f3190b6c077269296727a4305d964",
+  "input_hashes_unchanged": true,
+  "source_PCM_metadata_hashes_verified": 18,
+  "records": [
+    {
+      "number": 1,
+      "title": "KS 拨弦合成器 · 单音 C4 · 时域",
+      "domain": "时域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/01_ks_single_c4_时域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/01_ks_single_c4_时域.png",
+      "PDF_SHA256": "e5f551537cbed116a427f5e22e31cd16e24405c774eb6cb9bc3dacd69225147e",
+      "PNG_SHA256": "98e92531f043a109efce9d7b3e2e8b9d755c2121f50c51ddaad2be4014e7e525",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           01_ks_single_c4_时域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:08 2026 JST\nModDate:         Mon Nov  2 13:21:08 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       209274 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                           KS 拨弦合成器 · 单⾳ C4 · 时域波形\n                                           C4（MIDI 60） ｜ ⼒度 100 ｜ 基础拨弦，衰减设置 3000 ms\n\n                                      采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                               左声道 · 演奏全过程                                              左声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                               幅度（满量程⽐例）\n            0.2    发⾳                                                      0.2\n                                      松⾳\n\n              0                                                              0\n\n\n            -0.2                                                           -0.2\n\n                   0    0.2     0.4        0.6   0.8   1.0                        260       262     264    266\n                        相对⾸轮发⾳请求的时间（s）                                             相对⾸轮发⾳请求的时间（ms）\n                               右声道 · 演奏全过程                                              右声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                               幅度（满量程⽐例）\n            0.2    发⾳                                                      0.2\n                                      松⾳\n\n              0                                                              0\n\n\n            -0.2                                                           -0.2\n\n                   0    0.2     0.4        0.6   0.8   1.0                        260       262     264    266\n                        相对⾸轮发⾳请求的时间（s）                                             相对⾸轮发⾳请求的时间（ms）\n                              竖线：主机发⾳∕松⾳请求时刻估计，⾮ FPGA 原⽣采样标签。局部窗：检测起⾳后 180⾄188 ms。\n\n                                 概览按区间保留原始样本极值以保证瞬态可⻅；局部绘制逐样本波形，⾳频没有重采样。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 215,
+      "required_axis_terms": [
+        "幅度",
+        "时间"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/01_ks_single_c4_时域.png"
+    },
+    {
+      "number": 2,
+      "title": "KS 拨弦合成器 · 单音 C4 · 频域",
+      "domain": "频域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/02_ks_single_c4_频域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/02_ks_single_c4_频域.png",
+      "PDF_SHA256": "ccab89e5df47f131617bca68e019f27b8e4239dda163a74ba412de90a5ae6ae6",
+      "PNG_SHA256": "8d9f7843f6c4d9cc35d9eb498b5e51ca26cc98b3d973273630d4274b55ff81a2",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           02_ks_single_c4_频域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:09 2026 JST\nModDate:         Mon Nov  2 13:21:09 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       390876 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                 KS 拨弦合成器 · 单⾳ C4 · 频域幅度谱\n                                   C4（MIDI 60） ｜ ⼒度 100 ｜ 基础拨弦，衰减设置 3000 ms\n\n                               采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                  ⾸轮保持段幅度谱 · 0⾄12 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n\n           -100\n\n                        2000              4000           6000          8000           10000\n                                                       频率（Hz）\n                                     低频局部 · 0⾄1.5 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n           -100\n\n                  200               400          600            800    1000        1200       1400\n                                                       频率（Hz）\n                    分析窗：⾸轮检测起⾳后 120⾄380 ms ｜ 汉宁窗 ｜ 16 384 点 FFT ｜ 50% 重叠，2 段功率平均\n\n                  按满量程正弦峰值标定绝对幅度；逐窗去直流，不进⾏增益拟合。低于 -120 dBFS 的谱线不在显⽰范围内。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 147,
+      "required_axis_terms": [
+        "幅度",
+        "频率"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/02_ks_single_c4_频域.png"
+    },
+    {
+      "number": 3,
+      "title": "KS 拨弦合成器 · CEG 和弦 · 时域",
+      "domain": "时域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/03_ks_chord_ceg_时域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/03_ks_chord_ceg_时域.png",
+      "PDF_SHA256": "e6495c4afb5fa42f3415cdd2b810b8654d57177af34d7ab0cfd2e72c5065f187",
+      "PNG_SHA256": "2f4cbc79e0a72ac684eaa205f6779c0b03aeb36781d7b8fb0011caafedef84d9",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           03_ks_chord_ceg_时域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:11 2026 JST\nModDate:         Mon Nov  2 13:21:11 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       211183 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                        KS 拨弦合成器 · CEG 和弦 · 时域波形\n                                C4、E4、G4（MIDI 60、64、67） ｜ ⼒度 100 ｜ 基础拨弦，衰减设置 3000 ms\n\n                                      采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                               左声道 · 演奏全过程                                        左声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                             幅度（满量程⽐例）\n                   发⾳\n            0.2                       松⾳                                 0.2\n\n              0                                                            0\n\n            -0.2                                                         -0.2\n\n\n                   0    0.2     0.4        0.6   0.8   1.0                      228     230     232   234\n                        相对⾸轮发⾳请求的时间（s）                                          相对⾸轮发⾳请求的时间（ms）\n                               右声道 · 演奏全过程                                        右声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                             幅度（满量程⽐例）\n                   发⾳\n            0.2                       松⾳                                 0.2\n\n              0                                                            0\n\n            -0.2                                                         -0.2\n\n\n                   0    0.2     0.4        0.6   0.8   1.0                      228     230     232   234\n                        相对⾸轮发⾳请求的时间（s）                                          相对⾸轮发⾳请求的时间（ms）\n                              竖线：主机发⾳∕松⾳请求时刻估计，⾮ FPGA 原⽣采样标签。局部窗：检测起⾳后 180⾄188 ms。\n\n                                 概览按区间保留原始样本极值以保证瞬态可⻅；局部绘制逐样本波形，⾳频没有重采样。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 215,
+      "required_axis_terms": [
+        "幅度",
+        "时间"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/03_ks_chord_ceg_时域.png"
+    },
+    {
+      "number": 4,
+      "title": "KS 拨弦合成器 · CEG 和弦 · 频域",
+      "domain": "频域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/04_ks_chord_ceg_频域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/04_ks_chord_ceg_频域.png",
+      "PDF_SHA256": "c4ac9b1ca01e188e0144e2c1475e9dbfb23225fad329d502d4c341dd50a1846a",
+      "PNG_SHA256": "3dc1ba0f490e7fc506e428a1b81f790d88c078fec20a2e0d005181a2866ebdc7",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           04_ks_chord_ceg_频域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:12 2026 JST\nModDate:         Mon Nov  2 13:21:12 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       391067 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                KS 拨弦合成器 · CEG 和弦 · 频域幅度谱\n                         C4、E4、G4（MIDI 60、64、67） ｜ ⼒度 100 ｜ 基础拨弦，衰减设置 3000 ms\n\n                               采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                  ⾸轮保持段幅度谱 · 0⾄12 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n\n           -100\n\n                        2000              4000           6000         8000            10000\n                                                       频率（Hz）\n                                     低频局部 · 0⾄1.5 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n           -100\n\n                  200               400          600            800   1000         1200       1400\n                                                       频率（Hz）\n                    分析窗：⾸轮检测起⾳后 120⾄380 ms ｜ 汉宁窗 ｜ 16 384 点 FFT ｜ 50% 重叠，2 段功率平均\n\n                  按满量程正弦峰值标定绝对幅度；逐窗去直流，不进⾏增益拟合。低于 -120 dBFS 的谱线不在显⽰范围内。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 147,
+      "required_axis_terms": [
+        "幅度",
+        "频率"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/04_ks_chord_ceg_频域.png"
+    },
+    {
+      "number": 5,
+      "title": "FM 合成器 · 单音 C4 · 时域",
+      "domain": "时域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/05_fm_single_c4_时域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/05_fm_single_c4_时域.png",
+      "PDF_SHA256": "0e6e21c0d8789532e48bdcc879d9c61b5f9a4c8cc5c4e841484ebd1f0faa775a",
+      "PNG_SHA256": "4f6236dde25695aa1d093e565f3cf13c7d3115df54d8007dc20fbbe422c90abf",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           05_fm_single_c4_时域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:13 2026 JST\nModDate:         Mon Nov  2 13:21:13 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       206064 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                                  FM 合成器 · 单⾳ C4 · 时域波形\n                                                  C4（MIDI 60） ｜ ⼒度 100 ｜ 当前默认单算⼦⾳⾊\n\n                                       采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                左声道 · 演奏全过程                                                  左声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                                  幅度（满量程⽐例）\n                    发⾳\n            0.05                       松⾳                                     0.05\n\n               0                                                                 0\n\n            -0.05                                                             -0.05\n\n\n                    0    0.2     0.4        0.6     0.8   1.0                         226     228    230        232\n                         相对⾸轮发⾳请求的时间（s）                                                     相对⾸轮发⾳请求的时间（ms）\n                                右声道 · 演奏全过程                                                  右声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                                  幅度（满量程⽐例）\n                    发⾳\n            0.05                       松⾳                                     0.05\n\n               0                                                                 0\n\n            -0.05                                                             -0.05\n\n\n                    0    0.2     0.4        0.6     0.8   1.0                         226     228    230        232\n                         相对⾸轮发⾳请求的时间（s）                                                     相对⾸轮发⾳请求的时间（ms）\n                               竖线：主机发⾳∕松⾳请求时刻估计，⾮ FPGA 原⽣采样标签。局部窗：检测起⾳后 180⾄188 ms。\n\n                                  概览按区间保留原始样本极值以保证瞬态可⻅；局部绘制逐样本波形，⾳频没有重采样。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 214,
+      "required_axis_terms": [
+        "幅度",
+        "时间"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/05_fm_single_c4_时域.png"
+    },
+    {
+      "number": 6,
+      "title": "FM 合成器 · 单音 C4 · 频域",
+      "domain": "频域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/06_fm_single_c4_频域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/06_fm_single_c4_频域.png",
+      "PDF_SHA256": "57a5fb69f301220d2974bf5e2ee7ebef197d9e353fb597d9f418adc13e415fcc",
+      "PNG_SHA256": "ee3b912177cbd0296bb008a3f0a6e3d2db3cec2386efc976cc7a98026cb23f46",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           06_fm_single_c4_频域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:14 2026 JST\nModDate:         Mon Nov  2 13:21:14 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       390677 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                   FM 合成器 · 单⾳ C4 · 频域幅度谱\n                                      C4（MIDI 60） ｜ ⼒度 100 ｜ 当前默认单算⼦⾳⾊\n\n                               采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                  ⾸轮保持段幅度谱 · 0⾄12 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n\n           -100\n\n                        2000              4000           6000            8000         10000\n                                                       频率（Hz）\n                                     低频局部 · 0⾄1.5 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n           -100\n\n                  200               400          600            800      1000      1200       1400\n                                                       频率（Hz）\n                    分析窗：⾸轮检测起⾳后 120⾄380 ms ｜ 汉宁窗 ｜ 16 384 点 FFT ｜ 50% 重叠，2 段功率平均\n\n                  按满量程正弦峰值标定绝对幅度；逐窗去直流，不进⾏增益拟合。低于 -120 dBFS 的谱线不在显⽰范围内。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 146,
+      "required_axis_terms": [
+        "幅度",
+        "频率"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/06_fm_single_c4_频域.png"
+    },
+    {
+      "number": 7,
+      "title": "FM 合成器 · CEG 和弦 · 时域",
+      "domain": "时域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/07_fm_chord_ceg_时域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/07_fm_chord_ceg_时域.png",
+      "PDF_SHA256": "9edb3b0fffa56c660c19dea7ca49804b73f3ca5dca55027bce85f09d0e51a4ca",
+      "PNG_SHA256": "610f3108804e1dcbc9ce023218e219e7a79272350b8908dca57e45265396c9c7",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           07_fm_chord_ceg_时域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:15 2026 JST\nModDate:         Mon Nov  2 13:21:15 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       208013 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                            FM 合成器 · CEG 和弦 · 时域波形\n                                      C4、E4、G4（MIDI 60、64、67） ｜ ⼒度 100 ｜ 当前默认单算⼦⾳⾊\n\n                                      采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                               左声道 · 演奏全过程                                             左声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                             幅度（满量程⽐例）\n            0.2    发⾳                                                    0.2\n                                      松⾳\n\n              0                                                            0\n\n\n            -0.2                                                         -0.2\n\n                   0    0.2     0.4        0.6   0.8   1.0                      226     228    230        232\n                        相对⾸轮发⾳请求的时间（s）                                                相对⾸轮发⾳请求的时间（ms）\n                               右声道 · 演奏全过程                                             右声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                             幅度（满量程⽐例）\n            0.2    发⾳                                                    0.2\n                                      松⾳\n\n              0                                                            0\n\n\n            -0.2                                                         -0.2\n\n                   0    0.2     0.4        0.6   0.8   1.0                      226     228    230        232\n                        相对⾸轮发⾳请求的时间（s）                                                相对⾸轮发⾳请求的时间（ms）\n                              竖线：主机发⾳∕松⾳请求时刻估计，⾮ FPGA 原⽣采样标签。局部窗：检测起⾳后 180⾄188 ms。\n\n                                 概览按区间保留原始样本极值以保证瞬态可⻅；局部绘制逐样本波形，⾳频没有重采样。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 214,
+      "required_axis_terms": [
+        "幅度",
+        "时间"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/07_fm_chord_ceg_时域.png"
+    },
+    {
+      "number": 8,
+      "title": "FM 合成器 · CEG 和弦 · 频域",
+      "domain": "频域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/08_fm_chord_ceg_频域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/08_fm_chord_ceg_频域.png",
+      "PDF_SHA256": "6413bf75d9eedd2e4ffcbfcd94e63e4fbe4b92f586fdb2d9b5a9d79161c288d4",
+      "PNG_SHA256": "408e615e2e17cb956cff03740407940b69fb3e160006f068cbbbd8aa251c1ddd",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           08_fm_chord_ceg_频域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:16 2026 JST\nModDate:         Mon Nov  2 13:21:16 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       391573 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                  FM 合成器 · CEG 和弦 · 频域幅度谱\n                               C4、E4、G4（MIDI 60、64、67） ｜ ⼒度 100 ｜ 当前默认单算⼦⾳⾊\n\n                               采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                  ⾸轮保持段幅度谱 · 0⾄12 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n\n           -100\n\n                        2000              4000           6000         8000            10000\n                                                       频率（Hz）\n                                     低频局部 · 0⾄1.5 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n           -100\n\n                  200               400          600            800   1000         1200       1400\n                                                       频率（Hz）\n                    分析窗：⾸轮检测起⾳后 120⾄380 ms ｜ 汉宁窗 ｜ 16 384 点 FFT ｜ 50% 重叠，2 段功率平均\n\n                  按满量程正弦峰值标定绝对幅度；逐窗去直流，不进⾏增益拟合。低于 -120 dBFS 的谱线不在显⽰范围内。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 146,
+      "required_axis_terms": [
+        "幅度",
+        "频率"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/08_fm_chord_ceg_频域.png"
+    },
+    {
+      "number": 9,
+      "title": "KS 拨弦合成器 · 16 音请求，三轮重复触发 · 时域",
+      "domain": "时域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/09_ks_poly16_retrigger_时域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/09_ks_poly16_retrigger_时域.png",
+      "PDF_SHA256": "2799807e2be13339b12a1d2d3912e4c6558a3ad49363287b5e7e500d353dc50e",
+      "PNG_SHA256": "98d7bc719414645857fc18029e2a6e625c0e78cfb5d1732f5da686b1f8cd66f8",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           09_ks_poly16_retrigger_时域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:20 2026 JST\nModDate:         Mon Nov  2 13:21:20 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       240356 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                KS 拨弦合成器 · 16 ⾳请求，三轮重复触发 · 时域波形\n                                       MIDI 48⾄63，同时请求 16 ⾳ ｜ ⼒度 100 ｜ 基础拨弦，衰减设置 3000 ms\n\n                                        采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                 左声道 · 演奏全过程                                                      左声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                                       幅度（满量程⽐例）\n                   发⾳1            发⾳2            发⾳3\n            0.2           松⾳1              松⾳2           松⾳3                       0.2\n\n              0                                                                      0\n\n            -0.2                                                                   -0.2\n\n\n                   0     0.5     1.0      1.5      2.0     2.5   3.0                      260    262    264     266   268\n                               相对⾸轮发⾳请求的时间（s）                                                   相对⾸轮发⾳请求的时间（ms）\n                                 右声道 · 演奏全过程                                                      右声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                                       幅度（满量程⽐例）\n                   发⾳1            发⾳2            发⾳3\n            0.2           松⾳1              松⾳2           松⾳3                       0.2\n\n              0                                                                      0\n\n            -0.2                                                                   -0.2\n\n\n                   0     0.5     1.0      1.5      2.0     2.5   3.0                      260    262    264     266   268\n                               相对⾸轮发⾳请求的时间（s）                                                   相对⾸轮发⾳请求的时间（ms）\n                                竖线：主机发⾳∕松⾳请求时刻估计，⾮ FPGA 原⽣采样标签。局部窗：检测起⾳后 180⾄188 ms。\n\n                                       概览按区间保留原始样本极值以保证瞬态可⻅；局部绘制逐样本波形，⾳频没有重采样。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 244,
+      "required_axis_terms": [
+        "幅度",
+        "时间"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/09_ks_poly16_retrigger_时域.png"
+    },
+    {
+      "number": 10,
+      "title": "KS 拨弦合成器 · 16 音请求，三轮重复触发 · 频域",
+      "domain": "频域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/10_ks_poly16_retrigger_频域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/10_ks_poly16_retrigger_频域.png",
+      "PDF_SHA256": "e8486fd4b8eddac0c6ccec2e23e65a67287aad715c4e253693a88d3f4202042d",
+      "PNG_SHA256": "9bf11ffd5559b97ad01282545dd66ab6a17fa9f969c9833dc4ccc04699faf606",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           10_ks_poly16_retrigger_频域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:22 2026 JST\nModDate:         Mon Nov  2 13:21:22 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       394058 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                  KS 拨弦合成器 · 16 ⾳请求，三轮重复触发 · 频域幅度谱\n                               MIDI 48⾄63，同时请求 16 ⾳ ｜ ⼒度 100 ｜ 基础拨弦，衰减设置 3000 ms\n\n                               采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                   ⾸轮保持段幅度谱 · 0⾄12 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n\n           -100\n\n                        2000               4000           6000          8000          10000\n                                                        频率（Hz）\n                                      低频局部 · 0⾄1.5 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n           -100\n\n                  200                400          600            800    1000       1200       1400\n                                                        频率（Hz）\n                    分析窗：⾸轮检测起⾳后 120⾄380 ms ｜ 汉宁窗 ｜ 16 384 点 FFT ｜ 50% 重叠，2 段功率平均\n\n                  按满量程正弦峰值标定绝对幅度；逐窗去直流，不进⾏增益拟合。低于 -120 dBFS 的谱线不在显⽰范围内。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 160,
+      "required_axis_terms": [
+        "幅度",
+        "频率"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/10_ks_poly16_retrigger_频域.png"
+    },
+    {
+      "number": 11,
+      "title": "FM 合成器 · 8 音请求，三轮重复触发 · 时域",
+      "domain": "时域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/11_fm_poly8_retrigger_时域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/11_fm_poly8_retrigger_时域.png",
+      "PDF_SHA256": "e8c5e7cf36a990876a58ced70f622e3ad5bcc55dec4ff35360103e8ec39ffe2e",
+      "PNG_SHA256": "feaf3994becc39e1942b7cef5fbb11ef87a1813a77d8c57aac1287678ed9f0f2",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           11_fm_poly8_retrigger_时域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:23 2026 JST\nModDate:         Mon Nov  2 13:21:23 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       225947 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                                   FM 合成器 · 8 ⾳请求，三轮重复触发 · 时域波形\n                                           MIDI 60⾄67，同时请求 8 ⾳ ｜ ⼒度 100 ｜ 当前默认单算⼦⾳⾊\n\n                                        采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                 左声道 · 演奏全过程                                                    左声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                                      幅度（满量程⽐例）\n            0.5    发⾳1             发⾳2          发⾳3                               0.5\n                          松⾳1             松⾳2           松⾳3\n\n              0                                                                     0\n\n\n            -0.5                                                                  -0.5\n\n                   0     0.5     1.0      1.5     2.0     2.5   3.0                      226     228    230        232\n                               相对⾸轮发⾳请求的时间（s）                                                  相对⾸轮发⾳请求的时间（ms）\n                                 右声道 · 演奏全过程                                                    右声道 · 局部波形（8 ms）\n幅度（满量程⽐例）\n\n\n\n\n                                                                      幅度（满量程⽐例）\n            0.5    发⾳1             发⾳2          发⾳3                               0.5\n                          松⾳1             松⾳2           松⾳3\n\n              0                                                                     0\n\n\n            -0.5                                                                  -0.5\n\n                   0     0.5     1.0      1.5     2.0     2.5   3.0                      226     228    230        232\n                               相对⾸轮发⾳请求的时间（s）                                                  相对⾸轮发⾳请求的时间（ms）\n                                竖线：主机发⾳∕松⾳请求时刻估计，⾮ FPGA 原⽣采样标签。局部窗：检测起⾳后 180⾄188 ms。\n\n                                       概览按区间保留原始样本极值以保证瞬态可⻅；局部绘制逐样本波形，⾳频没有重采样。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 243,
+      "required_axis_terms": [
+        "幅度",
+        "时间"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/11_fm_poly8_retrigger_时域.png"
+    },
+    {
+      "number": 12,
+      "title": "FM 合成器 · 8 音请求，三轮重复触发 · 频域",
+      "domain": "频域",
+      "PDF": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/12_fm_poly8_retrigger_频域.pdf",
+      "PNG": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/figures/final/12_fm_poly8_retrigger_频域.png",
+      "PDF_SHA256": "94371fc1f33588946a01bf66add2781ea674a6a806e2cac282c4bfd3e72e1879",
+      "PNG_SHA256": "02cbc890b878f26daaad77061edfa4794ba2ec34a743dbf934cdcbafedbd6b81",
+      "tools": {
+        "pdfinfo": {
+          "exit": 0,
+          "stdout": "Title:           12_fm_poly8_retrigger_频域\nAuthor:          \nCreator:         离线 PCM 报告绘图\nProducer:        Qt 6.12.0\nCreationDate:    Mon Nov  2 13:21:24 2026 JST\nModDate:         Mon Nov  2 13:21:24 2026 JST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       576 x 360 pts\nPage rot:        0\nFile size:       393117 bytes\nOptimized:       no\nPDF version:     1.4\n",
+          "stderr": ""
+        },
+        "pdffonts": {
+          "exit": 0,
+          "stdout": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0\nNotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0\nDejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0\nNotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0\n",
+          "stderr": ""
+        },
+        "pdftotext": {
+          "exit": 0,
+          "stdout": "                        FM 合成器 · 8 ⾳请求，三轮重复触发 · 频域幅度谱\n                                 MIDI 60⾄67，同时请求 8 ⾳ ｜ ⼒度 100 ｜ 当前默认单算⼦⾳⾊\n\n                               采样率 96 008 Hz ｜ 24 位 PCM ｜ 最终低通后输出 ｜ 原始幅度，未归⼀化\n\n                                  ⾸轮保持段幅度谱 · 0⾄12 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n\n           -100\n\n                        2000              4000           6000         8000            10000\n                                                       频率（Hz）\n                                     低频局部 · 0⾄1.5 kHz（蓝实线：左声道；橙虚线：右声道）\n幅度（dBFS）\n\n\n\n\n            -50\n\n\n           -100\n\n                  200               400          600            800   1000         1200       1400\n                                                       频率（Hz）\n                    分析窗：⾸轮检测起⾳后 120⾄380 ms ｜ 汉宁窗 ｜ 16 384 点 FFT ｜ 50% 重叠，2 段功率平均\n\n                  按满量程正弦峰值标定绝对幅度；逐窗去直流，不进⾏增益拟合。低于 -120 dBFS 的谱线不在显⽰范围内。\n\f",
+          "stderr": ""
+        },
+        "pdfimages": {
+          "exit": 0,
+          "stdout": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\n--------------------------------------------------------------------------------------------\n",
+          "stderr": ""
+        }
+      },
+      "checks": {
+        "one_page": true,
+        "expected_page_size": true,
+        "fonts_embedded": true,
+        "fonts_unicode_mapped": true,
+        "Chinese_extractable": true,
+        "no_raster_image_objects": true,
+        "PNG_4800x3000": true,
+        "PNG_600dpi": true,
+        "PDF_rendered": true
+      },
+      "issues": [],
+      "warnings": [],
+      "page_count": 1,
+      "page_points": [
+        576.0,
+        360.0
+      ],
+      "fonts": [
+        {
+          "line": "DejaVuSans-Bold                      CID TrueType      Identity-H       yes no  yes     11  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Bold                   CID TrueType      Identity-H       yes no  yes     12  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "DejaVuSans                           CID TrueType      Identity-H       yes no  yes     13  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        },
+        {
+          "line": "NotoSansCJKsc-Regular                CID TrueType      Identity-H       yes no  yes     14  0",
+          "embedded": true,
+          "subset": false,
+          "unicode_map": true
+        }
+      ],
+      "extracted_Han_count": 159,
+      "required_axis_terms": [
+        "幅度",
+        "频率"
+      ],
+      "PDF_image_objects": [],
+      "PNG_pixels": [
+        4800,
+        3000
+      ],
+      "PNG_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "rendering": {
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "rendered_PNG": "sim/results/ks_fm_report_20261102/qa/final/12_fm_poly8_retrigger_频域.png"
+    }
+  ],
+  "contact_sheets": [
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/qa/final/contact-sheet-01-06.png",
+    "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_report_20261102/qa/final/contact-sheet-07-12.png"
+  ],
+  "visual_review": {
+    "performed": true,
+    "method": "Actual view_image inspection of both Poppler-rendered contact sheets covering all12 PDFs; individual corrected time/frequency samples also inspected at1800px",
+    "notes": [
+      "中文标题、坐标轴、图注和参数数字可见且可提取，无乱码/缺字/边界截字。",
+      "刻度字号正常，图例已移入标题，无巨大文字遮挡谱线。",
+      "时域左右声道与局部波形清晰；09和11多声部时域三轮完整可见。",
+      "频域全谱和低频局部均可读，数据曲线未被图例遮挡。",
+      "所有最终PDF无光栅图像对象；字体嵌入且Unicode映射完整。"
+    ]
+  },
+  "checks_summary": {
+    "one_page": 12,
+    "expected_page_size": 12,
+    "fonts_embedded": 12,
+    "fonts_unicode_mapped": 12,
+    "Chinese_extractable": 12,
+    "no_raster_image_objects": 12,
+    "PNG_4800x3000": 12,
+    "PNG_600dpi": 12,
+    "PDF_rendered": 12
+  },
+  "previous_sample_issues": {
+    "status": "CORRECTED_IN_FINAL",
+    "issues": [
+      "Initial sample enormous tick fonts and frequency legends overlapped plots"
+    ],
+    "evidence_scope": "Earlierqa/sample* diagnostic renders are superseded; include onlyqa/final contact sheets in report deliverables"
+  },
+  "review_completed_utc": "2026-11-02T04:23:58.226570+00:00"
+}

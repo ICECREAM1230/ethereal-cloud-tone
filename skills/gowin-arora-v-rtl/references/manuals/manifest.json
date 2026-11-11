@@ -1,0 +1,153 @@
+{
+  "collected_on": "2026-10-26",
+  "manuals": {
+    "DS1239E": {
+      "file": "pdf/DS1239E.pdf",
+      "title": "GW5AST series of FPGA Products Data Sheet",
+      "version": "DS1239-1.0.3E",
+      "date": "2025-10-24",
+      "pdf_pages": 65,
+      "first_body_pdf_page": 10,
+      "last_body_page": 55,
+      "sha256": "6930ad832b626a1f4256a759152daf056af56abea8409e055cd7ef060a93dc68",
+      "official_url": "https://cdn.gowinsemi.com.cn/DS1239E.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/DS1239E.pdf",
+        "DS1239E.pdf"
+      ],
+      "url_check_2026_11_12": "fetched; edition and page count matched source metadata; SHA not checked"
+    },
+    "SUG113": {
+      "file": "pdf/SUG113.pdf",
+      "title": "Gowin 器件设计优化与分析 用户指南",
+      "version": "SUG113-1.3",
+      "date": "2025-04-30",
+      "pdf_pages": 28,
+      "first_body_pdf_page": 8,
+      "last_body_page": 20,
+      "sha256": "c2b787671a03087587a811ae144441a83aa11daa497906b95ec8f0e026c78a82",
+      "official_url": "https://cdn.gowinsemi.com.cn/SUG113.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/SUG113.pdf",
+        "SUG113.pdf"
+      ],
+      "url_check_2026_11_12": "lookup timed out; endpoint not verified"
+    },
+    "SUG550": {
+      "file": "pdf/SUG550.pdf",
+      "title": "GowinSynthesis 用户指南",
+      "version": "SUG550-2.4",
+      "date": "2026-06-17",
+      "pdf_pages": 97,
+      "first_body_pdf_page": 9,
+      "last_body_page": 88,
+      "sha256": "af6c4d4223374c63d65ebfd80f4e227705efe15438d6e7d0ae55770c1051af67",
+      "official_url": "https://cdn.gowinsemi.com.cn/SUG550.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/SUG550.pdf",
+        "SUG550.pdf"
+      ],
+      "url_check_2026_11_12": "lookup returned HTTP 403; endpoint not verified"
+    },
+    "SUG940": {
+      "file": "pdf/SUG940.pdf",
+      "title": "Gowin 设计时序约束 用户指南",
+      "version": "SUG940-2.0.5",
+      "date": "2026-09-22",
+      "pdf_pages": 92,
+      "first_body_pdf_page": 11,
+      "last_body_page": 81,
+      "sha256": "bd0fe73c6252266834fbae246595ff9be69c3cf8c988b4de7f7d790c947a15e5",
+      "official_url": "https://cdn.gowinsemi.com.cn/SUG940.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/SUG940.pdf",
+        "SUG940.pdf"
+      ],
+      "url_check_2026_11_12": "lookup timed out; endpoint not verified"
+    },
+    "SUG949E": {
+      "file": "pdf/SUG949E.pdf",
+      "title": "Gowin HDL Coding User Guide",
+      "version": "SUG949-2.2E",
+      "date": "2026-06-17",
+      "pdf_pages": 219,
+      "first_body_pdf_page": 8,
+      "last_body_page": 211,
+      "sha256": "0514e832313e8dd8c0112cf35ed501bdadf2458ac9b8ba84a265898e5b94446b",
+      "official_url": "https://cdn.gowinsemi.com.cn/SUG949E.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/SUG949E.pdf",
+        "SUG949E.pdf"
+      ],
+      "url_check_2026_11_12": "fetched; edition and page count matched source metadata; SHA not checked"
+    },
+    "UG300E": {
+      "file": "pdf/UG300E.pdf",
+      "title": "Arora V BSRAM & SSRAM User Guide",
+      "version": "UG300-1.3.6E",
+      "date": "2025-06-27",
+      "pdf_pages": 80,
+      "first_body_pdf_page": 10,
+      "last_body_page": 70,
+      "sha256": "7b3fd3a2887a98d07075db3b812dccf903d8efe8c5dfbdb972e4067391b28fdd",
+      "official_url": "https://cdn.gowinsemi.com.cn/UG300E.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/UG300E.pdf",
+        "UG300E.pdf"
+      ],
+      "url_check_2026_11_12": "lookup timed out; endpoint not verified"
+    },
+    "UG303E": {
+      "file": "pdf/UG303E.pdf",
+      "title": "Arora V Configurable Function Unit (CFU) User Guide",
+      "version": "UG303-1.0E",
+      "date": "2023-04-20",
+      "pdf_pages": 47,
+      "first_body_pdf_page": 9,
+      "last_body_page": 38,
+      "sha256": "82ba8a6d457dca795f29602a19ccc4415a1fa4c89bd624cbb86c9d0a75c0767e",
+      "official_url": "https://cdn.gowinsemi.com.cn/UG303E.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/UG303E.pdf",
+        "UG303E.pdf"
+      ],
+      "url_check_2026_11_12": "fetched; edition and page count matched source metadata; SHA not checked"
+    },
+    "UG306E": {
+      "file": "pdf/UG306E.pdf",
+      "title": "Arora V Clock User Guide",
+      "version": "UG306-1.0.9E",
+      "date": "2026-08-12",
+      "pdf_pages": 134,
+      "first_body_pdf_page": 10,
+      "last_body_page": 124,
+      "sha256": "ee8ed3e6545b287b64506a2672dbe480db4ac8b195e7732217e6ab2dab651376",
+      "official_url": "https://cdn.gowinsemi.com.cn/UG306E.pdf",
+      "bundled_pdf": false,
+      "bundled_markdown_body": false,
+      "external_pdf_layout": [
+        "pdf/UG306E.pdf",
+        "UG306E.pdf"
+      ],
+      "url_check_2026_11_12": "fetched; edition and page count matched source metadata; SHA not checked"
+    }
+  },
+  "publication": "index_only_no_vendor_document_body",
+  "copyright_holder": "Guangdong Gowin Semiconductor Corporation",
+  "external_directory_environment": "GOWIN_MANUAL_DIR",
+  "note": "Versions and SHA-256 identify archived reference editions, not guaranteed contents of mutable official download URLs. No manual is downloaded by this package."
+}

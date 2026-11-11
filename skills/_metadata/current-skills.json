@@ -1,0 +1,299 @@
+[
+  {
+    "name": "embedded-firmware",
+    "path": "embedded-firmware",
+    "source_id": "skills/embedded-firmware",
+    "source_entry_sha256": "72bc149e0e011259537dd266f8bd62e543e26e1fb53cd27ea4e19068e172aca2",
+    "source_tree_sha256": "155c70194ba0b81108bfae050acc975d4a8d887a2ecedbf99e805c6a3bef427d",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/AE350 firmware support"
+  },
+  {
+    "name": "fpga",
+    "path": "fpga",
+    "source_id": "skills/fpga",
+    "source_entry_sha256": "714ab5e38c954940feb4fc7746e4821710443c210bd5d8f27c28e73a790225a9",
+    "source_tree_sha256": "6f5a5fe356f642cd817a3f261a9602050591dae49bc603976320099adaedf2ac",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf",
+    "path": "gf",
+    "source_id": "skills/gf",
+    "source_entry_sha256": "3c29849dca03a6041e47df448e6a97e8e3b45e8be018137bb8c23c53ea585992",
+    "source_tree_sha256": "4bd0663843c0b99c19b5eaaf8e8ef768c2ebbe45bac5e3ba585faa9ef6955c79",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-architect",
+    "path": "gf-architect",
+    "source_id": "skills/gf-architect",
+    "source_entry_sha256": "4b54e1774790ff4bf5346297fbc6d815753bb806af780297aac09a70c6570f90",
+    "source_tree_sha256": "4a39972f271ca67536f23950f63e9750a29a399c90c5f610bb031c1441f284d2",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-build",
+    "path": "gf-build",
+    "source_id": "skills/gf-build",
+    "source_entry_sha256": "51bb5923df4783877f04ac150759700203f39f5bf1bb45c7d23745eec6980849",
+    "source_tree_sha256": "477cc7f2a9e8bee64cdbc53c95a8b36f861b1070f050bb62297e6cf70962d78c",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-cocotb",
+    "path": "gf-cocotb",
+    "source_id": "skills/gf-cocotb",
+    "source_entry_sha256": "b92dcbce5aa8bf10cdc01c92acd9aaeb2ec3dc62f9d11d5e817cd48dacae7880",
+    "source_tree_sha256": "a29ee6af0722eb61a9826b8869836ed5747eb6a4b38b1942bb86b83f8f225f24",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-errors",
+    "path": "gf-errors",
+    "source_id": "skills/gf-errors",
+    "source_entry_sha256": "662d14957d1dae93d894ebd946eef5b88fc8b96ff28b4e5e83105ff2b0f64711",
+    "source_tree_sha256": "0ef879fab5d4d83c8b5ba94346e0188c256a37eb587d446118bd1f40b746c89a",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-expand",
+    "path": "gf-expand",
+    "source_id": "skills/gf-expand",
+    "source_entry_sha256": "27f4df19d3de6ebdbba77c1a4fd5943f7d71b3b8deda889d39601d847fc024e6",
+    "source_tree_sha256": "6f39f948917cad38dad8ea7915499150c8f66044c0e6fd46a34a2f9404081fd4",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-formal",
+    "path": "gf-formal",
+    "source_id": "skills/gf-formal",
+    "source_entry_sha256": "3425210c2a421717ef14edff8ca108d31a64dc8e6a5a161e0b6d298f16c5cc62",
+    "source_tree_sha256": "400c4575d8e09e5da8a2ebf1286dcb7c6017b2f868013c7b68bf23234d4c5d60",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-fusesoc",
+    "path": "gf-fusesoc",
+    "source_id": "skills/gf-fusesoc",
+    "source_entry_sha256": "38d82496a95ed73e8341abb003e677f764af767bd6b4a371e6e749b6bdeb3deb",
+    "source_tree_sha256": "e4152c737eee707761f0e3f9ef4701ede4dd374f1d4ec874c9cc7ecce303bf9f",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-ip",
+    "path": "gf-ip",
+    "source_id": "skills/gf-ip",
+    "source_entry_sha256": "7268399b0d8d9657a0955d8794679122deca1fc62cb40e5475c27d0bef72a8b9",
+    "source_tree_sha256": "eb3ab11d8298db4975d7c3f8092a4251f739fd606e0d61333719e1469c3db8d9",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-ip-detect",
+    "path": "gf-ip-detect",
+    "source_id": "skills/gf-ip-detect",
+    "source_entry_sha256": "202728497975bc26b20d4339fd5e1495f8de702abfec2a88e2cf1f8fec434ec5",
+    "source_tree_sha256": "7c812630013b3d150c50a83191848fec42d8ee6e5dfd630dbe86c08af860ffca",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-learn",
+    "path": "gf-learn",
+    "source_id": "skills/gf-learn",
+    "source_entry_sha256": "9b58e7fff7b400b47b703703a7961d0c0a7498ed3b4fd58f51d8b5a9117882b0",
+    "source_tree_sha256": "eac06df5b5624d3686a90d7d22b18aa6b40ac893f2cb9d25eda707df82616560",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-learn-ctx",
+    "path": "gf-learn-ctx",
+    "source_id": "skills/gf-learn-ctx",
+    "source_entry_sha256": "013819bae0eb5e2050dea5d7b1f1081f1fd6e27c3485de4829ded65ed16d401b",
+    "source_tree_sha256": "163111841cedf3aa444e456d2cb56bf577eb7cc527c44626a7c0129129206908",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-lint",
+    "path": "gf-lint",
+    "source_id": "skills/gf-lint",
+    "source_entry_sha256": "f4aea0f734215eec30ded383acf7532a8524c160b7360e6dadf421b371d6d5f2",
+    "source_tree_sha256": "ba0ec43dc4946186c737ba634cfff6eab1293b634c59a0616a3087962571d24c",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-pcb",
+    "path": "gf-pcb",
+    "source_id": "skills/gf-pcb",
+    "source_entry_sha256": "67b06b61cd8a2c486127608dc9471e895ef7ae36d1ffd0598e066542021e3833",
+    "source_tree_sha256": "da36717ac18accb6720796ed1f8b4000fab4db4e08d175e62f3f5b0d6284fe61",
+    "source_status": "explicitly_disabled",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-pinmap",
+    "path": "gf-pinmap",
+    "source_id": "skills/gf-pinmap",
+    "source_entry_sha256": "cba335fcd81a280ee1cf5301106cf28ca6dc2bdc08d41799eed1bc691256185f",
+    "source_tree_sha256": "07ae026424e498a0727a5da85bc5b5e4996596a97537d17abd8597fd585fd78e",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-plan",
+    "path": "gf-plan",
+    "source_id": "skills/gf-plan",
+    "source_entry_sha256": "ceeebccdb929d6186a7bde6f2593281a15a04abdcada99d6d071ab2fe4913758",
+    "source_tree_sha256": "646e58fb24aca7720241751bc56903cfd6dc34e332640d4b9ba398486a5c73d7",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-pnr",
+    "path": "gf-pnr",
+    "source_id": "skills/gf-pnr",
+    "source_entry_sha256": "716f4f33c83080cd4f17fe85cb876aa74ef804112f9242db4a3e0ece5486eacd",
+    "source_tree_sha256": "eda389102b16d02e9f6cdd47502693386f59a4635bd4ed468549a9b2f2f3e9b6",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-project",
+    "path": "gf-project",
+    "source_id": "skills/gf-project",
+    "source_entry_sha256": "9361587bbc87aae093cee7e2eaeaf6c19d779b84f8ea0d4c8d0c8a795da1cfab",
+    "source_tree_sha256": "b7f22e8fd5fb6a90cc3b18ead5a2ab5c29240a51ff141e721c2f46116ac6ff81",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-protocols",
+    "path": "gf-protocols",
+    "source_id": "skills/gf-protocols",
+    "source_entry_sha256": "25b56be8cd462dc3ea2c48f7ac7f77475d8c6ef32715363159591c38fc648211",
+    "source_tree_sha256": "cb61c37302a73ce9f3503073fb4ff88118e9f4f55b7c5b2dc02febe747171beb",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-release",
+    "path": "gf-release",
+    "source_id": "skills/gf-release",
+    "source_entry_sha256": "53090bc38fe3c17721f537f1d2969b4ba051564ce50dd30dc339b5122aaac91f",
+    "source_tree_sha256": "07f140d529030ea88f7cd686699348aa02483435eb4ae99436b5049000b9538b",
+    "source_status": "explicitly_disabled",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-router",
+    "path": "gf-router",
+    "source_id": "skills/gf-router",
+    "source_entry_sha256": "0ad0c44da7a2633b23c6f92935c7fa8ebad3a86a02d695326d1315c70bf01d58",
+    "source_tree_sha256": "7a7423f3219ddaecca92e03aa21fa0e133032478f875af8d19a7b80c61b8e36a",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-sim",
+    "path": "gf-sim",
+    "source_id": "skills/gf-sim",
+    "source_entry_sha256": "c95708bdb1d4f5f70d7d8a925bbff8da8a5d52777f4781832287294cbc542ccf",
+    "source_tree_sha256": "e2e1e73a4f2f99486d41024e138b014c849ff3e4d9b59cd4230f9c238f8f9ca7",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-summary",
+    "path": "gf-summary",
+    "source_id": "skills/gf-summary",
+    "source_entry_sha256": "ab4eecfd498205befbdc70fd542be2fe113f31397ab18eddac8d6d613256fcc3",
+    "source_tree_sha256": "9c6ca5957fba93bb8cf18c3179e4cccb3cb7d83d6cf3ba25c19aec4339a22aee",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-synth",
+    "path": "gf-synth",
+    "source_id": "skills/gf-synth",
+    "source_entry_sha256": "9fb84c00763cf0b17bb253cb3539ec2a32cfb4e8b28afb227496b82e306678c4",
+    "source_tree_sha256": "2f98645b6d4f47178cf3c332c5dec8e9577ccdbc2176d4461677a1c520fd2895",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-tui",
+    "path": "gf-tui",
+    "source_id": "skills/gf-tui",
+    "source_entry_sha256": "40e22a6632511b5c0d7c1ae3939e91244f7b3a796b098c73e150d81b0e2e7efb",
+    "source_tree_sha256": "e683a1d76b2706c975d6aebb8fcde125eea34032621c3dc7e010e2a01e6df646",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gf-viz",
+    "path": "gf-viz",
+    "source_id": "skills/gf-viz",
+    "source_entry_sha256": "c338e3140ddb6206f69b7b8f2afd070db6e660c87989d30ef747e24339a11b0c",
+    "source_tree_sha256": "d5011f47e5ccd7ccef2a6fed4e29c5b47e67e576f2f6ab82df208a692677ef34",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gowin-arora-v-rtl",
+    "path": "gowin-arora-v-rtl",
+    "source_id": "skills/gowin-arora-v-rtl",
+    "source_entry_sha256": "3eae57b9b0b341a930cdc8399c1365d2cfbf709e780e530304d6089fddd0623e",
+    "source_tree_sha256": "ee1269e91a77af580bbbef0f45d78052d86bf7980a08cd06650636404d36432d",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gowin-ip-generation",
+    "path": "gowin-ip-generation",
+    "source_id": "skills/gowin-ip-generation",
+    "source_entry_sha256": "797671d441e08ec99d0df6b976affe1fdc986b9bf3483372d1c9b9bb1502832e",
+    "source_tree_sha256": "d4e105e04a6524a76ea203fcb288a1c255a8bcf3598e3d4f3a0209299907290b",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "gowin-project-navigation",
+    "path": "gowin-project-navigation",
+    "source_id": "skills/gowin-project-navigation",
+    "source_entry_sha256": "00877d266b1b630236e2894fc4cfef3753fef3ee32f01ddc0c8df64c0195d3a6",
+    "source_tree_sha256": "8b75f364ec19ffd969a17aec9df5bdd5151ae7b24d8aaafcb521edd0d847dd1a",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "soc-integration",
+    "path": "soc-integration",
+    "source_id": "skills/soc-integration",
+    "source_entry_sha256": "0bceba183c822c4fc9d9712d42a46ac27f9368474687be414e04a3702fe713a0",
+    "source_tree_sha256": "8a233766106de6218bdc7a233c5c09ccfe6e952cdc161b84ad36358cb67ecb84",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  },
+  {
+    "name": "tb-best-practices",
+    "path": "tb-best-practices",
+    "source_id": "skills/tb-best-practices",
+    "source_entry_sha256": "fce8ffdf39e217ad0c44d59f35ddcdcf2c15e38413d533528ec50fbc6fde928e",
+    "source_tree_sha256": "e02187d9d50096c4ef04215f21e5696081f69008a18bf6c62e5d32c584ae4f6d",
+    "source_status": "available_not_disabled_in_config",
+    "role": "Gowin/FPGA/GateFlow core"
+  }
+]

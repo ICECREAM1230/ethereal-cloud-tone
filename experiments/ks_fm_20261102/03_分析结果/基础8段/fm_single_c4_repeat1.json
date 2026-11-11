@@ -1,0 +1,800 @@
+{
+  "case": "fm_single_c4_repeat1",
+  "engine": "fm",
+  "notes": [
+    60
+  ],
+  "velocity": 100,
+  "MIDI_channel_zero_based": 2,
+  "owner_metadata_verified": true,
+  "raw_channel_bytes_verified": true,
+  "ack_scope": "fpga_raw_byte",
+  "capture": {
+    "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/fm_single_c4_repeat1/capture/audio.wav",
+    "SHA256": "555b920dd5f47d721ebe1eb6057c8c6bc44096dc0eb024dfc56049b77b9c9234",
+    "frames": 768768,
+    "WAV_rate_Hz": 96008,
+    "channels": 2,
+    "container_bits": 32,
+    "PCM24_common_trailing_zero_bits": 0,
+    "low8_zero_verified": true,
+    "zero_channel": [
+      false,
+      false
+    ]
+  },
+  "transport": {
+    "status": "PASS",
+    "raw_SHA256": "c8f22e40b45a72017437e397c490dff6ba3387b057ed370fda8577a392bb1a4b",
+    "raw_bytes": 7028736,
+    "parser_SHA256": "d354b786e33befce15182ff61518f64143578e87f762ea788e5197d96a07e2f8",
+    "parser": {
+      "bytes_discarded": 0,
+      "frames_valid": 12012,
+      "frames_invalid": 0,
+      "resync_count": 0,
+      "seq_jumps": 0,
+      "sample_rate_changes": 0,
+      "crc_nonzero": 0,
+      "padding_bytes": 710424
+    },
+    "raw_payload_WAV_exact": true,
+    "native_sample_index_verified": false,
+    "CRC_verified": false,
+    "FPGA_drop_counter_verified": false
+  },
+  "onset": {
+    "method": "96-frame AC-RMS, 3 consecutive windows",
+    "threshold_FS": 0.0005,
+    "preroll_AC_RMS_FS": 0.0,
+    "start_search_frame": 25536,
+    "substantial_attack_detected": true
+  },
+  "detected_onset_frame": 189888,
+  "host_event_seconds": [
+    1.9300668470095843,
+    2.3777746010018745
+  ],
+  "host_event_frame_estimates": [
+    185302,
+    228285
+  ],
+  "onset_minus_host_NoteOn_seconds": 0.04776685276226981,
+  "planned_hold_ms": 450,
+  "actual_dispatch_hold_ms": 447.70775399229024,
+  "ks_decay_ms": 3000,
+  "routes": {
+    "version": 1,
+    "available": true,
+    "valid": true,
+    "ready": true,
+    "busy": false,
+    "pending": false,
+    "error": false,
+    "pt8211": 0,
+    "pcm_a": 1,
+    "pcm_b": 3,
+    "sequence": 0,
+    "generation": 0
+  },
+  "reverb": {
+    "api_major": 2,
+    "contract_version": 1,
+    "available": true,
+    "valid": true,
+    "pending": false,
+    "fault": 0,
+    "wet_q15": 0,
+    "damp_q15": 0,
+    "applied_sequence": 0,
+    "generation": 1,
+    "request": null,
+    "result": null,
+    "applied": null,
+    "confirmation": "synth_parameters"
+  },
+  "audio": {
+    "frames": 768768,
+    "duration_s": 8.007332722273144,
+    "onset_frame": 189888,
+    "held_start_frame": 202369,
+    "held_end_frame": 228291,
+    "NFFT": 8192,
+    "window": "Hann, per-window/channel mean removed; RMS-averaged spectral power",
+    "normalization": false,
+    "tail_noteoff_coordinate_assumption_s_after_onset": 0.45,
+    "channels": [
+      {
+        "channel": "L",
+        "peak24": 672731,
+        "peak_dBFS": -21.916969189585977,
+        "hold_RMS_dBFS": -24.932821459304915,
+        "hold_AC_RMS_dBFS": -24.932932942056738,
+        "hold_DC_FS": 0.00028712289512327596,
+        "rail_samples": 0,
+        "whole_zero": false,
+        "spectral_trusted": true,
+        "band_power_fraction_gt_Hz": {
+          "2000": 7.017633189615314e-08,
+          "5000": 5.158321259230782e-08,
+          "10000": 3.67367977608582e-08,
+          "20000": 1.840539904845643e-08
+        },
+        "spectral_centroid_Hz": 261.57715322657805,
+        "strongest_local_peaks": [
+          {
+            "frequency_Hz": 257.83398437499994,
+            "amplitude_dBFS": -22.4939794183906
+          },
+          {
+            "frequency_Hz": 19911.815429687496,
+            "amplitude_dBFS": -101.74810084844478
+          },
+          {
+            "frequency_Hz": 539.1074218749999,
+            "amplitude_dBFS": -102.82225964396461
+          },
+          {
+            "frequency_Hz": 4582.413085937499,
+            "amplitude_dBFS": -103.98569042483581
+          },
+          {
+            "frequency_Hz": 5098.081054687499,
+            "amplitude_dBFS": -105.7758254957475
+          },
+          {
+            "frequency_Hz": 1054.7753906249998,
+            "amplitude_dBFS": -105.81897420700918
+          },
+          {
+            "frequency_Hz": 1828.2773437499998,
+            "amplitude_dBFS": -106.97631783169065
+          },
+          {
+            "frequency_Hz": 2086.1113281249995,
+            "amplitude_dBFS": -108.67338230936183
+          },
+          {
+            "frequency_Hz": 6012.219726562499,
+            "amplitude_dBFS": -108.84257258668197
+          },
+          {
+            "frequency_Hz": 3926.1083984374995,
+            "amplitude_dBFS": -110.64087099054493
+          },
+          {
+            "frequency_Hz": 4441.776367187499,
+            "amplitude_dBFS": -111.5249619050675
+          },
+          {
+            "frequency_Hz": 15587.236328124998,
+            "amplitude_dBFS": -111.69074330096544
+          }
+        ],
+        "C4_harmonic_envelope": [
+          {
+            "order": 1,
+            "target_Hz": 261.6255653,
+            "peak_dBFS": -22.4939794183906
+          },
+          {
+            "order": 2,
+            "target_Hz": 523.2511306,
+            "peak_dBFS": -102.82225964396461
+          },
+          {
+            "order": 3,
+            "target_Hz": 784.8766959,
+            "peak_dBFS": -114.53524046681837
+          },
+          {
+            "order": 4,
+            "target_Hz": 1046.5022612,
+            "peak_dBFS": -105.81897420700918
+          },
+          {
+            "order": 5,
+            "target_Hz": 1308.1278265,
+            "peak_dBFS": -113.04227637055445
+          },
+          {
+            "order": 6,
+            "target_Hz": 1569.7533918,
+            "peak_dBFS": -115.16503010714565
+          },
+          {
+            "order": 7,
+            "target_Hz": 1831.3789571,
+            "peak_dBFS": -106.97631783169065
+          },
+          {
+            "order": 8,
+            "target_Hz": 2093.0045224,
+            "peak_dBFS": -108.67338230936183
+          },
+          {
+            "order": 9,
+            "target_Hz": 2354.6300877,
+            "peak_dBFS": -122.13451114600494
+          },
+          {
+            "order": 10,
+            "target_Hz": 2616.255653,
+            "peak_dBFS": -116.15019251668286
+          },
+          {
+            "order": 11,
+            "target_Hz": 2877.8812183,
+            "peak_dBFS": -112.76808584997305
+          },
+          {
+            "order": 12,
+            "target_Hz": 3139.5067836,
+            "peak_dBFS": -113.98782837805425
+          },
+          {
+            "order": 13,
+            "target_Hz": 3401.1323489,
+            "peak_dBFS": -121.59621602576956
+          },
+          {
+            "order": 14,
+            "target_Hz": 3662.7579142,
+            "peak_dBFS": -119.7904855936393
+          },
+          {
+            "order": 15,
+            "target_Hz": 3924.3834795000002,
+            "peak_dBFS": -110.64087099054493
+          },
+          {
+            "order": 16,
+            "target_Hz": 4186.0090448,
+            "peak_dBFS": -120.59819042104581
+          },
+          {
+            "order": 17,
+            "target_Hz": 4447.6346101,
+            "peak_dBFS": -111.5249619050675
+          },
+          {
+            "order": 18,
+            "target_Hz": 4709.2601754,
+            "peak_dBFS": -119.31569213052447
+          },
+          {
+            "order": 19,
+            "target_Hz": 4970.8857407000005,
+            "peak_dBFS": -123.84851769569963
+          },
+          {
+            "order": 20,
+            "target_Hz": 5232.511306,
+            "peak_dBFS": -112.72280260460654
+          },
+          {
+            "order": 21,
+            "target_Hz": 5494.1368713,
+            "peak_dBFS": -116.81664047643396
+          },
+          {
+            "order": 22,
+            "target_Hz": 5755.7624366,
+            "peak_dBFS": -128.58487039939706
+          },
+          {
+            "order": 23,
+            "target_Hz": 6017.3880019,
+            "peak_dBFS": -108.84257258668197
+          },
+          {
+            "order": 24,
+            "target_Hz": 6279.0135672,
+            "peak_dBFS": -121.06405990352474
+          },
+          {
+            "order": 25,
+            "target_Hz": 6540.6391325,
+            "peak_dBFS": -122.39527066439477
+          },
+          {
+            "order": 26,
+            "target_Hz": 6802.2646978,
+            "peak_dBFS": -123.03508875404856
+          },
+          {
+            "order": 27,
+            "target_Hz": 7063.8902631,
+            "peak_dBFS": -115.40886610218368
+          },
+          {
+            "order": 28,
+            "target_Hz": 7325.5158284,
+            "peak_dBFS": -124.58644538768448
+          },
+          {
+            "order": 29,
+            "target_Hz": 7587.1413937,
+            "peak_dBFS": -126.51220486708397
+          },
+          {
+            "order": 30,
+            "target_Hz": 7848.7669590000005,
+            "peak_dBFS": -117.65691942667644
+          },
+          {
+            "order": 31,
+            "target_Hz": 8110.3925243,
+            "peak_dBFS": -125.1040356604953
+          },
+          {
+            "order": 32,
+            "target_Hz": 8372.0180896,
+            "peak_dBFS": -128.4157795158946
+          }
+        ],
+        "C4_envelope_slope_dB_per_octave_h2_h16": -4.08359674433185,
+        "tail_windows": [
+          {
+            "seconds_after_assumed_NoteOff": 0,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.25,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.5,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.9,
+            "RMS_dBFS": -300.0
+          }
+        ]
+      },
+      {
+        "channel": "R",
+        "peak24": 672731,
+        "peak_dBFS": -21.916969189585977,
+        "hold_RMS_dBFS": -24.932821459304915,
+        "hold_AC_RMS_dBFS": -24.932932942056738,
+        "hold_DC_FS": 0.00028712289512327596,
+        "rail_samples": 0,
+        "whole_zero": false,
+        "spectral_trusted": true,
+        "band_power_fraction_gt_Hz": {
+          "2000": 7.017633189615314e-08,
+          "5000": 5.158321259230782e-08,
+          "10000": 3.67367977608582e-08,
+          "20000": 1.840539904845643e-08
+        },
+        "spectral_centroid_Hz": 261.57715322657805,
+        "strongest_local_peaks": [
+          {
+            "frequency_Hz": 257.83398437499994,
+            "amplitude_dBFS": -22.4939794183906
+          },
+          {
+            "frequency_Hz": 19911.815429687496,
+            "amplitude_dBFS": -101.74810084844478
+          },
+          {
+            "frequency_Hz": 539.1074218749999,
+            "amplitude_dBFS": -102.82225964396461
+          },
+          {
+            "frequency_Hz": 4582.413085937499,
+            "amplitude_dBFS": -103.98569042483581
+          },
+          {
+            "frequency_Hz": 5098.081054687499,
+            "amplitude_dBFS": -105.7758254957475
+          },
+          {
+            "frequency_Hz": 1054.7753906249998,
+            "amplitude_dBFS": -105.81897420700918
+          },
+          {
+            "frequency_Hz": 1828.2773437499998,
+            "amplitude_dBFS": -106.97631783169065
+          },
+          {
+            "frequency_Hz": 2086.1113281249995,
+            "amplitude_dBFS": -108.67338230936183
+          },
+          {
+            "frequency_Hz": 6012.219726562499,
+            "amplitude_dBFS": -108.84257258668197
+          },
+          {
+            "frequency_Hz": 3926.1083984374995,
+            "amplitude_dBFS": -110.64087099054493
+          },
+          {
+            "frequency_Hz": 4441.776367187499,
+            "amplitude_dBFS": -111.5249619050675
+          },
+          {
+            "frequency_Hz": 15587.236328124998,
+            "amplitude_dBFS": -111.69074330096544
+          }
+        ],
+        "C4_harmonic_envelope": [
+          {
+            "order": 1,
+            "target_Hz": 261.6255653,
+            "peak_dBFS": -22.4939794183906
+          },
+          {
+            "order": 2,
+            "target_Hz": 523.2511306,
+            "peak_dBFS": -102.82225964396461
+          },
+          {
+            "order": 3,
+            "target_Hz": 784.8766959,
+            "peak_dBFS": -114.53524046681837
+          },
+          {
+            "order": 4,
+            "target_Hz": 1046.5022612,
+            "peak_dBFS": -105.81897420700918
+          },
+          {
+            "order": 5,
+            "target_Hz": 1308.1278265,
+            "peak_dBFS": -113.04227637055445
+          },
+          {
+            "order": 6,
+            "target_Hz": 1569.7533918,
+            "peak_dBFS": -115.16503010714565
+          },
+          {
+            "order": 7,
+            "target_Hz": 1831.3789571,
+            "peak_dBFS": -106.97631783169065
+          },
+          {
+            "order": 8,
+            "target_Hz": 2093.0045224,
+            "peak_dBFS": -108.67338230936183
+          },
+          {
+            "order": 9,
+            "target_Hz": 2354.6300877,
+            "peak_dBFS": -122.13451114600494
+          },
+          {
+            "order": 10,
+            "target_Hz": 2616.255653,
+            "peak_dBFS": -116.15019251668286
+          },
+          {
+            "order": 11,
+            "target_Hz": 2877.8812183,
+            "peak_dBFS": -112.76808584997305
+          },
+          {
+            "order": 12,
+            "target_Hz": 3139.5067836,
+            "peak_dBFS": -113.98782837805425
+          },
+          {
+            "order": 13,
+            "target_Hz": 3401.1323489,
+            "peak_dBFS": -121.59621602576956
+          },
+          {
+            "order": 14,
+            "target_Hz": 3662.7579142,
+            "peak_dBFS": -119.7904855936393
+          },
+          {
+            "order": 15,
+            "target_Hz": 3924.3834795000002,
+            "peak_dBFS": -110.64087099054493
+          },
+          {
+            "order": 16,
+            "target_Hz": 4186.0090448,
+            "peak_dBFS": -120.59819042104581
+          },
+          {
+            "order": 17,
+            "target_Hz": 4447.6346101,
+            "peak_dBFS": -111.5249619050675
+          },
+          {
+            "order": 18,
+            "target_Hz": 4709.2601754,
+            "peak_dBFS": -119.31569213052447
+          },
+          {
+            "order": 19,
+            "target_Hz": 4970.8857407000005,
+            "peak_dBFS": -123.84851769569963
+          },
+          {
+            "order": 20,
+            "target_Hz": 5232.511306,
+            "peak_dBFS": -112.72280260460654
+          },
+          {
+            "order": 21,
+            "target_Hz": 5494.1368713,
+            "peak_dBFS": -116.81664047643396
+          },
+          {
+            "order": 22,
+            "target_Hz": 5755.7624366,
+            "peak_dBFS": -128.58487039939706
+          },
+          {
+            "order": 23,
+            "target_Hz": 6017.3880019,
+            "peak_dBFS": -108.84257258668197
+          },
+          {
+            "order": 24,
+            "target_Hz": 6279.0135672,
+            "peak_dBFS": -121.06405990352474
+          },
+          {
+            "order": 25,
+            "target_Hz": 6540.6391325,
+            "peak_dBFS": -122.39527066439477
+          },
+          {
+            "order": 26,
+            "target_Hz": 6802.2646978,
+            "peak_dBFS": -123.03508875404856
+          },
+          {
+            "order": 27,
+            "target_Hz": 7063.8902631,
+            "peak_dBFS": -115.40886610218368
+          },
+          {
+            "order": 28,
+            "target_Hz": 7325.5158284,
+            "peak_dBFS": -124.58644538768448
+          },
+          {
+            "order": 29,
+            "target_Hz": 7587.1413937,
+            "peak_dBFS": -126.51220486708397
+          },
+          {
+            "order": 30,
+            "target_Hz": 7848.7669590000005,
+            "peak_dBFS": -117.65691942667644
+          },
+          {
+            "order": 31,
+            "target_Hz": 8110.3925243,
+            "peak_dBFS": -125.1040356604953
+          },
+          {
+            "order": 32,
+            "target_Hz": 8372.0180896,
+            "peak_dBFS": -128.4157795158946
+          }
+        ],
+        "C4_envelope_slope_dB_per_octave_h2_h16": -4.08359674433185,
+        "tail_windows": [
+          {
+            "seconds_after_assumed_NoteOff": 0,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.25,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.5,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.9,
+            "RMS_dBFS": -300.0
+          }
+        ]
+      }
+    ]
+  },
+  "pitch": {
+    "expected_Hz": 261.6255653005986,
+    "nominal_rate_Hz": 96008,
+    "window_start_frame": 202369,
+    "window_end_frame": 228291,
+    "method": "normalized mean-removed ACF; C4 prior +/-20%, quadratic lag interpolation",
+    "FFT_method": "16384-point Hann; log-power peak interpolation; independent global 20-2000Hz peak",
+    "native_clock_frequency_verified": false,
+    "trusted": true,
+    "ACF_coefficient": 0.999999756240303,
+    "frequency_Hz": 261.5762816638518,
+    "cents_from_C4": -0.3261514107619394,
+    "FFT_near_C4_peak_Hz": 261.49141862852525,
+    "FFT_global_strongest_bin_Hz": 263.69384765624994,
+    "FFT_bin_spacing_Hz": 5.85986328125,
+    "diagnostic_ACF_frequency_Hz": 261.5762816638518
+  },
+  "noteoff": {
+    "coordinate": "Actual HTTP dispatch NoteOff mapped to WAV via host monotonic timestamps; no native sample tags",
+    "estimated_NoteOff_frame": 228285,
+    "window_seconds": 0.1,
+    "windows": [
+      {
+        "seconds_relative_to_host_NoteOff": -0.1,
+        "start_frame": 218684,
+        "end_frame": 228285,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_dBFS": -24.94702506407966,
+            "AC_RMS_dBFS": -24.947055731328028
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_dBFS": -24.94702506407966,
+            "AC_RMS_dBFS": -24.947055731328028
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 0,
+        "start_frame": 228285,
+        "end_frame": 237886,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_dBFS": -28.520621495396195,
+            "AC_RMS_dBFS": -28.522032707505012
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_dBFS": -28.520621495396195,
+            "AC_RMS_dBFS": -28.522032707505012
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          -3.5735964313165347,
+          -3.5735964313165347
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 0.25,
+        "start_frame": 252287,
+        "end_frame": 261888,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 0.5,
+        "start_frame": 276289,
+        "end_frame": 285890,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 1,
+        "start_frame": 324293,
+        "end_frame": 333894,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 2,
+        "start_frame": 420301,
+        "end_frame": 429902,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 4,
+        "start_frame": 612317,
+        "end_frame": 621918,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      }
+    ],
+    "zero_level_representation": "digital_zero=true and RMS_dBFS=null means exact zero (-infinity dBFS), not a finite attenuation",
+    "not_a_T60_measurement": true
+  },
+  "left_right_PCM_exact": true,
+  "normalization": false,
+  "gain_applied": 1,
+  "resampling": false,
+  "matching_RTL_reference": null,
+  "native_execution_identity_verified": false
+}

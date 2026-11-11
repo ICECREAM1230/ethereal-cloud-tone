@@ -1,0 +1,13 @@
+{
+  "version": "0.10.0",
+  "package": "cn.fpgasynth.control",
+  "variant": "main",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "compileSdk": 36,
+  "buildTools": "36.0.0",
+  "java": "17.0.20.1+1",
+  "signing": "Development-signed APK; the public certificate is carried in the APK. The private keystore is not distributed.",
+  "apk_bytes": 2765442,
+  "apk_sha256": "c43e176ba807da8f439fb34f332e9a076037444f467bf8d6b4f3ab5722243225"
+}

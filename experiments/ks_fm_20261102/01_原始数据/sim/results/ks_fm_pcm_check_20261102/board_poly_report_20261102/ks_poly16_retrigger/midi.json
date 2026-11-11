@@ -1,0 +1,7231 @@
+{
+  "version": 1,
+  "url": "http://192.168.4.1",
+  "pcm_capture": false,
+  "sample_accurate": false,
+  "ack_scope": "fpga_raw_byte",
+  "started_utc": "2026-11-02T04:05:47.107005+00:00",
+  "http": [
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 0.04265300231054425,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 1488673525,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 190815,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            1488673525,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            22,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            22,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 101.18996299570426
+    },
+    {
+      "method": "GET",
+      "path": "/api/audio/routes",
+      "at_ms": 101.23970099084545,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "available": true,
+        "valid": true,
+        "ready": true,
+        "busy": false,
+        "pending": false,
+        "error": false,
+        "pt8211": 0,
+        "pcm_a": 1,
+        "pcm_b": 3,
+        "sequence": 0,
+        "generation": 0
+      },
+      "elapsed_ms": 71.67002301139291
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/effects/reverb",
+      "at_ms": 172.91313299210742,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "contract_version": 1,
+        "available": true,
+        "valid": true,
+        "pending": false,
+        "fault": 0,
+        "wet_q15": 0,
+        "damp_q15": 0,
+        "applied_sequence": 0,
+        "generation": 1,
+        "request": null,
+        "result": null,
+        "applied": null,
+        "confirmation": "synth_parameters"
+      },
+      "elapsed_ms": 89.23573700303677
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 262.153613002738,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 0,
+          "queued_bytes": 0,
+          "sent_bytes": 602,
+          "dropped_bytes": 0,
+          "flushes": 54,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 73.49268299003597
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 335.65233398985583,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 1488673525,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 190831,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            1488673525,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            22,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            22,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 104.63444600463845
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/session",
+      "at_ms": 440.29017799766734,
+      "status": 201,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "token": 2769757661,
+        "client": 0,
+        "lease_ms": 1200,
+        "context_epoch": 4
+      },
+      "elapsed_ms": 66.02581299375743
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 506.33085099980235,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 1,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 77.5069520022953
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 583.8415009930031,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 1,
+            "processed": 1,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 1,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 190844,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            1,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            0,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 100.86130400304683
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 684.7122359904461,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 2,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 78.12541000021156
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 762.8419649990974,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 2,
+            "processed": 2,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 2,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 190853,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 111.63826499250717
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 874.4844939938048,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 2,
+            "processed": 2,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 2,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 190858,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 114.38384599750862
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 988.8793689897284,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 0,
+          "queued_bytes": 0,
+          "sent_bytes": 602,
+          "dropped_bytes": 0,
+          "flushes": 54,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 71.40548300230876
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 1060.3098759893328,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 3
+      },
+      "elapsed_ms": 78.96965900727082
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 1139.2837320017861,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 605,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 69.5383860002039
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 1208.836858990253,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 605,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 70.44162999955006
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 1279.3445759889437,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 18
+      },
+      "elapsed_ms": 69.54944701283239
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 1348.907904990483,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 623,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 53.71416900015902
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 1603.7442209926667,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 623,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 59.35737199615687
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 1663.131355002406,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 48
+      },
+      "elapsed_ms": 83.43012198747601
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 1746.5648669895018,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": true,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 2,
+          "sent_bytes": 668,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 74.00081800005864
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 1840.7386889884947,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 671,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 62.950791005278006
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 2053.7282820005203,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 671,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 66.52427799417637
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 2120.2745659975335,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 48
+      },
+      "elapsed_ms": 85.46026199474
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 2205.739345998154,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": true,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 3,
+          "sent_bytes": 715,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 75.4868619987974
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 2301.407172999461,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 719,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 69.00320199201815
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 2603.6708030005684,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 719,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 65.61524199787527
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 2669.315879989881,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 48
+      },
+      "elapsed_ms": 72.36874700174667
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 2741.687875997741,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": true,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 4,
+          "sent_bytes": 762,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 80.62402599898633
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 2842.5006749894237,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 767,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 59.3420170043828
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 3053.7612039915984,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 767,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 65.36037600017153
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 3119.140516995685,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 48
+      },
+      "elapsed_ms": 80.08119800069835
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 3199.229532998288,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": true,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 7,
+          "sent_bytes": 807,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 76.9038790022023
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 3296.3428929942893,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 815,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 55.70398499548901
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 3603.661386994645,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 815,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 60.141984999063425
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 3663.8659029995324,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 48
+      },
+      "elapsed_ms": 71.68142400041688
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 3735.5516300012823,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": true,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 8,
+          "sent_bytes": 854,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 74.51719799428247
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 3830.2855499932775,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 863,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 36.11915399960708
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 4053.7809660017956,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 863,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 66.75230599648785
+    },
+    {
+      "method": "POST",
+      "path": "/api/debug/midi",
+      "at_ms": 4120.566838988452,
+      "status": 202,
+      "response": {
+        "accepted": true,
+        "queued_bytes": 48
+      },
+      "elapsed_ms": 69.47507600125391
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 4190.047059993958,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": true,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 8,
+          "sent_bytes": 902,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 78.61504700849764
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 4288.881232001586,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 63.834756991127506
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 4440.21589399199,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 11,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 69.14065300952643
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 4509.3596869992325,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 11,
+            "processed": 11,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 11,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191032,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            11,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 95.6279509991873
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 4604.99422698922,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 70.4462730063824
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 4759.565132990247,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 12,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 68.68753200978972
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 4828.256504988531,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 12,
+            "processed": 12,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 12,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191048,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            12,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 85.02153800509404
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 4913.284294001642,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 62.77343900001142
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 5078.475000991602,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 13,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 73.75826100178529
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 5152.2354639892,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 13,
+            "processed": 13,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 13,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191064,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            13,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 88.65275200514589
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 5240.891695997561,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 65.81958399328869
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 5402.439937999588,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 14,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 67.85921799018979
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 5470.303459995193,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 14,
+            "processed": 14,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 14,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191080,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            14,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 108.91164200438652
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 5579.220596002415,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 63.96785398828797
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 5720.469987994875,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 15,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 59.424035003758036
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 5779.896544991061,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 15,
+            "processed": 15,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 15,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191096,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            15,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 111.3166200084379
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 5891.216785996221,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 73.03874200442806
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 6029.963020992,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 16,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 69.3470420083031
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 6099.3129199923715,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 16,
+            "processed": 16,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 16,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191111,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            16,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 93.98312600387726
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 6193.299890990602,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 70.69431900163181
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 6349.485380997066,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 17,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 76.68945299519692
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 6426.177222994738,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 17,
+            "processed": 17,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 17,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191127,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            17,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 110.38857999665197
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 6536.568985000486,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 73.80072599335108
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 6676.341872997,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 18,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 54.817921001813374
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 6731.162711992511,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 18,
+            "processed": 18,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 18,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191141,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            18,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 107.14754099899437
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 6838.313362997724,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 73.46535699616652
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 6981.336154989549,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 19,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 57.37636001140345
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 7038.7152939947555,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 19,
+            "processed": 19,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 19,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191156,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            19,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 107.38643699733075
+    },
+    {
+      "method": "GET",
+      "path": "/api/debug/midi",
+      "at_ms": 7146.107212989591,
+      "status": 200,
+      "response": {
+        "version": 1,
+        "max_bytes": 256,
+        "lease_ms": 1200,
+        "context_epoch": 4,
+        "ready": true,
+        "available": true,
+        "enabled": true,
+        "inflight": false,
+        "fault": 0,
+        "reset_count": 0,
+        "ack_scope": "fpga_raw_byte",
+        "pcm_capture": false,
+        "web": {
+          "session": 2769757661,
+          "queued_bytes": 0,
+          "sent_bytes": 911,
+          "dropped_bytes": 0,
+          "flushes": 55,
+          "fault": 5
+        }
+      },
+      "elapsed_ms": 68.06783001229633
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 7214.179610993597,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 19,
+            "processed": 19,
+            "parameter_processed": 2,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 19,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 1
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191165,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            19,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            2,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 86.5590909961611
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/fdc",
+      "at_ms": 7300.742849998642,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "contract_version": 1,
+        "available": true,
+        "valid": true,
+        "fresh": true,
+        "status_word": 4257335843,
+        "revision": 202,
+        "eligible": true,
+        "requested_enable": false,
+        "driver_enabled": false,
+        "busy": false,
+        "driver_fault": true,
+        "local_error": false,
+        "user_config_active": false,
+        "pending": false,
+        "request": null,
+        "result": null,
+        "confirmation": "transport_only",
+        "raw": {
+          "version": 1,
+          "supported": true,
+          "valid": true,
+          "fresh": false,
+          "sample_valid": false,
+          "sample_fresh": false,
+          "ch0": null,
+          "ch1": null,
+          "gain_q16": 0,
+          "gain_percent": 0.0,
+          "sequence": 0,
+          "revision": 39113,
+          "quality_ch0": 0,
+          "quality_ch1": 0,
+          "muted": false,
+          "pitch_stale": true,
+          "volume_stale": true
+        }
+      },
+      "elapsed_ms": 81.32220100378618
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/command",
+      "at_ms": 7382.079089991748,
+      "status": 202,
+      "response": {
+        "api_major": 2,
+        "accepted": 20,
+        "stage": "received",
+        "context_epoch": 4,
+        "fpga": "unverified"
+      },
+      "elapsed_ms": 61.69509200844914
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 7443.778169996222,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 20,
+            "processed": 20,
+            "parameter_processed": 20,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 20,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191175,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            20,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            20,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 101.9131240027491
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/state",
+      "at_ms": 7545.696007000515,
+      "status": 200,
+      "response": {
+        "api_major": 2,
+        "api_minor": 0,
+        "context_epoch": 4,
+        "mode": {
+          "requested": 0,
+          "applied": 0,
+          "switching": false,
+          "recovering": false
+        },
+        "clients": [
+          {
+            "token": 2769757661,
+            "received": 20,
+            "processed": 20,
+            "parameter_processed": 20,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 20,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 4291906351,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 3767170919,
+            "received": 22,
+            "processed": 22,
+            "parameter_processed": 22,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 22,
+            "result_code": 0,
+            "result_context_epoch": 4,
+            "midi_channel": 0
+          },
+          {
+            "token": 0,
+            "received": 0,
+            "processed": 0,
+            "parameter_processed": 0,
+            "stop_processed": 0,
+            "keys": 0,
+            "result_sequence": 0,
+            "result_code": 0,
+            "result_context_epoch": 0,
+            "midi_channel": 0
+          }
+        ],
+        "fm": {
+          "available": false,
+          "valid": false,
+          "phase": 0,
+          "reason": "capability_not_verified",
+          "backend_id": 0,
+          "profile_id": 0,
+          "session_id": 0,
+          "engine_epoch": 0,
+          "topology_generation": 0,
+          "profile_version": null,
+          "profile_sha256": null,
+          "voice_count": 0,
+          "patch_operator_count": 0,
+          "operators_per_voice": [],
+          "source_rate": null,
+          "output_rate": null,
+          "flags": null,
+          "features": null,
+          "accepted": null,
+          "completed": null,
+          "result": null,
+          "panic": null,
+          "parameter_values": [],
+          "voice_generations": []
+        },
+        "local_control": {
+          "supported": false,
+          "valid": false,
+          "active": false,
+          "busy": false,
+          "ready": false,
+          "revision": 0,
+          "completed": 0,
+          "fault": 0,
+          "engine_mask": 0
+        },
+        "flute": {
+          "available": false,
+          "valid": false,
+          "selected": false,
+          "ready": false,
+          "busy": false,
+          "active": false,
+          "preset": 0,
+          "accepted_word": 0,
+          "fault": 0,
+          "reject_count": 0,
+          "deadline_count": 0,
+          "frame_count": 0
+        },
+        "legacy": {
+          "ready": true,
+          "revision": 191180,
+          "panic": 2,
+          "rendering": false,
+          "test_tone": false,
+          "fpga": "unverified",
+          "tokens": [
+            2769757661,
+            4291906351,
+            3767170919,
+            0
+          ],
+          "processed": [
+            20,
+            22,
+            22,
+            0
+          ],
+          "parameter_processed": [
+            20,
+            22,
+            22,
+            0
+          ],
+          "stop_processed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "engine": {
+            "available": false,
+            "valid": false,
+            "requested": 0,
+            "applied": 0,
+            "switching": false,
+            "busy": false,
+            "recovering": false,
+            "fault": 0,
+            "recoveries": 0,
+            "timeouts": 0,
+            "active": 0,
+            "init": 0,
+            "release": 0,
+            "accepted": 0,
+            "mode_sequence": 0,
+            "rejects": 0,
+            "frames": 0,
+            "deadlines": 0,
+            "started": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "diagnostics": {
+              "mode_generation": 0,
+              "mode_sent_generation": 0,
+              "inflight_sequence": 0,
+              "inflight_op": 0,
+              "wait_reason": 0,
+              "wait_ms": 0,
+              "fault_sequence": 0,
+              "fault_op": 0,
+              "gate_off_pending": 0,
+              "shadow_gate_pending": 0,
+              "control_status": 0,
+              "control_status_valid": false,
+              "owner_pending": false,
+              "bank_pending": false,
+              "flushing": false
+            }
+          },
+          "ks_decay_ms": 3000,
+          "osc": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              -12,
+              0,
+              0
+            ]
+          ],
+          "voice": 1,
+          "mix": 0,
+          "detune": 6,
+          "spread": 127,
+          "volume": 207,
+          "pan": 0,
+          "filter": [
+            0,
+            512,
+            0,
+            1,
+            64
+          ],
+          "cutoff_offset": 0,
+          "resonance_offset": 0,
+          "amp": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod": [
+            152,
+            32,
+            240,
+            40
+          ],
+          "mod_depth": 2048,
+          "lfo": [
+            [
+              2,
+              350,
+              16,
+              0
+            ],
+            [
+              2,
+              350,
+              0,
+              0
+            ]
+          ],
+          "velocity": [
+            64,
+            64
+          ],
+          "inputs": {
+            "version": 1,
+            "available": true,
+            "initialized": true,
+            "enabled": true,
+            "ready": true,
+            "fault": 0,
+            "capabilities_known": true,
+            "independent_usb": true,
+            "usb_configured": false,
+            "usb_error": false,
+            "stop_requested": 2,
+            "stop_completed": 2,
+            "stop_fault": 0,
+            "stop_pending": false
+          }
+        },
+        "cpu_mode": {
+          "version": 1,
+          "route_only": true,
+          "valid": true,
+          "sequence": 0,
+          "desired": 0,
+          "applied": 0,
+          "ready": true,
+          "busy": false,
+          "fault": false,
+          "pending": false,
+          "channel_routes": true
+        },
+        "sub_patch": {
+          "version": 1,
+          "required": true,
+          "supported": true,
+          "valid": true
+        }
+      },
+      "elapsed_ms": 104.15935999481007
+    }
+  ],
+  "events": [
+    {
+      "sequence": 5,
+      "bytes": [
+        145,
+        48,
+        100,
+        145,
+        49,
+        100,
+        145,
+        50,
+        100,
+        145,
+        51,
+        100,
+        145,
+        52,
+        100,
+        145,
+        53,
+        100,
+        145,
+        54,
+        100,
+        145,
+        55,
+        100,
+        145,
+        56,
+        100,
+        145,
+        57,
+        100,
+        145,
+        58,
+        100,
+        145,
+        59,
+        100,
+        145,
+        60,
+        100,
+        145,
+        61,
+        100,
+        145,
+        62,
+        100,
+        145,
+        63,
+        100
+      ],
+      "planned_ms": 50,
+      "dispatch_ms": 1663.1077189958887,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 1903.6945330008166
+    },
+    {
+      "sequence": 6,
+      "bytes": [
+        129,
+        48,
+        0,
+        129,
+        49,
+        0,
+        129,
+        50,
+        0,
+        129,
+        51,
+        0,
+        129,
+        52,
+        0,
+        129,
+        53,
+        0,
+        129,
+        54,
+        0,
+        129,
+        55,
+        0,
+        129,
+        56,
+        0,
+        129,
+        57,
+        0,
+        129,
+        58,
+        0,
+        129,
+        59,
+        0,
+        129,
+        60,
+        0,
+        129,
+        61,
+        0,
+        129,
+        62,
+        0,
+        129,
+        63,
+        0
+      ],
+      "planned_ms": 500,
+      "dispatch_ms": 2120.257329996093,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 2370.417660000385
+    },
+    {
+      "sequence": 7,
+      "bytes": [
+        145,
+        48,
+        100,
+        145,
+        49,
+        100,
+        145,
+        50,
+        100,
+        145,
+        51,
+        100,
+        145,
+        52,
+        100,
+        145,
+        53,
+        100,
+        145,
+        54,
+        100,
+        145,
+        55,
+        100,
+        145,
+        56,
+        100,
+        145,
+        57,
+        100,
+        145,
+        58,
+        100,
+        145,
+        59,
+        100,
+        145,
+        60,
+        100,
+        145,
+        61,
+        100,
+        145,
+        62,
+        100,
+        145,
+        63,
+        100
+      ],
+      "planned_ms": 1050,
+      "dispatch_ms": 2669.291122991126,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 2901.8502940016333
+    },
+    {
+      "sequence": 8,
+      "bytes": [
+        129,
+        48,
+        0,
+        129,
+        49,
+        0,
+        129,
+        50,
+        0,
+        129,
+        51,
+        0,
+        129,
+        52,
+        0,
+        129,
+        53,
+        0,
+        129,
+        54,
+        0,
+        129,
+        55,
+        0,
+        129,
+        56,
+        0,
+        129,
+        57,
+        0,
+        129,
+        58,
+        0,
+        129,
+        59,
+        0,
+        129,
+        60,
+        0,
+        129,
+        61,
+        0,
+        129,
+        62,
+        0,
+        129,
+        63,
+        0
+      ],
+      "planned_ms": 1500,
+      "dispatch_ms": 3119.12635799672,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 3352.052312999149
+    },
+    {
+      "sequence": 9,
+      "bytes": [
+        145,
+        48,
+        100,
+        145,
+        49,
+        100,
+        145,
+        50,
+        100,
+        145,
+        51,
+        100,
+        145,
+        52,
+        100,
+        145,
+        53,
+        100,
+        145,
+        54,
+        100,
+        145,
+        55,
+        100,
+        145,
+        56,
+        100,
+        145,
+        57,
+        100,
+        145,
+        58,
+        100,
+        145,
+        59,
+        100,
+        145,
+        60,
+        100,
+        145,
+        61,
+        100,
+        145,
+        62,
+        100,
+        145,
+        63,
+        100
+      ],
+      "planned_ms": 2050,
+      "dispatch_ms": 3663.8321919890586,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 3866.4127369993366
+    },
+    {
+      "sequence": 10,
+      "bytes": [
+        129,
+        48,
+        0,
+        129,
+        49,
+        0,
+        129,
+        50,
+        0,
+        129,
+        51,
+        0,
+        129,
+        52,
+        0,
+        129,
+        53,
+        0,
+        129,
+        54,
+        0,
+        129,
+        55,
+        0,
+        129,
+        56,
+        0,
+        129,
+        57,
+        0,
+        129,
+        58,
+        0,
+        129,
+        59,
+        0,
+        129,
+        60,
+        0,
+        129,
+        61,
+        0,
+        129,
+        62,
+        0,
+        129,
+        63,
+        0
+      ],
+      "planned_ms": 2500,
+      "dispatch_ms": 4120.5404679931235,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 4352.722369992989
+    }
+  ],
+  "initial_state": {
+    "api_major": 2,
+    "api_minor": 0,
+    "context_epoch": 4,
+    "mode": {
+      "requested": 0,
+      "applied": 0,
+      "switching": false,
+      "recovering": false
+    },
+    "clients": [
+      {
+        "token": 1488673525,
+        "received": 22,
+        "processed": 22,
+        "parameter_processed": 22,
+        "stop_processed": 0,
+        "keys": 0,
+        "result_sequence": 22,
+        "result_code": 0,
+        "result_context_epoch": 4,
+        "midi_channel": 0
+      },
+      {
+        "token": 4291906351,
+        "received": 22,
+        "processed": 22,
+        "parameter_processed": 22,
+        "stop_processed": 0,
+        "keys": 0,
+        "result_sequence": 22,
+        "result_code": 0,
+        "result_context_epoch": 4,
+        "midi_channel": 0
+      },
+      {
+        "token": 3767170919,
+        "received": 22,
+        "processed": 22,
+        "parameter_processed": 22,
+        "stop_processed": 0,
+        "keys": 0,
+        "result_sequence": 22,
+        "result_code": 0,
+        "result_context_epoch": 4,
+        "midi_channel": 0
+      },
+      {
+        "token": 0,
+        "received": 0,
+        "processed": 0,
+        "parameter_processed": 0,
+        "stop_processed": 0,
+        "keys": 0,
+        "result_sequence": 0,
+        "result_code": 0,
+        "result_context_epoch": 0,
+        "midi_channel": 0
+      }
+    ],
+    "fm": {
+      "available": false,
+      "valid": false,
+      "phase": 0,
+      "reason": "capability_not_verified",
+      "backend_id": 0,
+      "profile_id": 0,
+      "session_id": 0,
+      "engine_epoch": 0,
+      "topology_generation": 0,
+      "profile_version": null,
+      "profile_sha256": null,
+      "voice_count": 0,
+      "patch_operator_count": 0,
+      "operators_per_voice": [],
+      "source_rate": null,
+      "output_rate": null,
+      "flags": null,
+      "features": null,
+      "accepted": null,
+      "completed": null,
+      "result": null,
+      "panic": null,
+      "parameter_values": [],
+      "voice_generations": []
+    },
+    "local_control": {
+      "supported": false,
+      "valid": false,
+      "active": false,
+      "busy": false,
+      "ready": false,
+      "revision": 0,
+      "completed": 0,
+      "fault": 0,
+      "engine_mask": 0
+    },
+    "flute": {
+      "available": false,
+      "valid": false,
+      "selected": false,
+      "ready": false,
+      "busy": false,
+      "active": false,
+      "preset": 0,
+      "accepted_word": 0,
+      "fault": 0,
+      "reject_count": 0,
+      "deadline_count": 0,
+      "frame_count": 0
+    },
+    "legacy": {
+      "ready": true,
+      "revision": 190831,
+      "panic": 2,
+      "rendering": false,
+      "test_tone": false,
+      "fpga": "unverified",
+      "tokens": [
+        1488673525,
+        4291906351,
+        3767170919,
+        0
+      ],
+      "processed": [
+        22,
+        22,
+        22,
+        0
+      ],
+      "parameter_processed": [
+        22,
+        22,
+        22,
+        0
+      ],
+      "stop_processed": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "engine": {
+        "available": false,
+        "valid": false,
+        "requested": 0,
+        "applied": 0,
+        "switching": false,
+        "busy": false,
+        "recovering": false,
+        "fault": 0,
+        "recoveries": 0,
+        "timeouts": 0,
+        "active": 0,
+        "init": 0,
+        "release": 0,
+        "accepted": 0,
+        "mode_sequence": 0,
+        "rejects": 0,
+        "frames": 0,
+        "deadlines": 0,
+        "started": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "diagnostics": {
+          "mode_generation": 0,
+          "mode_sent_generation": 0,
+          "inflight_sequence": 0,
+          "inflight_op": 0,
+          "wait_reason": 0,
+          "wait_ms": 0,
+          "fault_sequence": 0,
+          "fault_op": 0,
+          "gate_off_pending": 0,
+          "shadow_gate_pending": 0,
+          "control_status": 0,
+          "control_status_valid": false,
+          "owner_pending": false,
+          "bank_pending": false,
+          "flushing": false
+        }
+      },
+      "ks_decay_ms": 3000,
+      "osc": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          -12,
+          0,
+          0
+        ]
+      ],
+      "voice": 1,
+      "mix": 0,
+      "detune": 6,
+      "spread": 127,
+      "volume": 207,
+      "pan": 0,
+      "filter": [
+        0,
+        512,
+        0,
+        1,
+        64
+      ],
+      "cutoff_offset": 0,
+      "resonance_offset": 0,
+      "amp": [
+        152,
+        32,
+        240,
+        40
+      ],
+      "mod": [
+        152,
+        32,
+        240,
+        40
+      ],
+      "mod_depth": 2048,
+      "lfo": [
+        [
+          2,
+          350,
+          16,
+          0
+        ],
+        [
+          2,
+          350,
+          0,
+          0
+        ]
+      ],
+      "velocity": [
+        64,
+        64
+      ],
+      "inputs": {
+        "version": 1,
+        "available": true,
+        "initialized": true,
+        "enabled": true,
+        "ready": true,
+        "fault": 0,
+        "capabilities_known": true,
+        "independent_usb": true,
+        "usb_configured": false,
+        "usb_error": false,
+        "stop_requested": 2,
+        "stop_completed": 2,
+        "stop_fault": 0,
+        "stop_pending": false
+      }
+    },
+    "cpu_mode": {
+      "version": 1,
+      "route_only": true,
+      "valid": true,
+      "sequence": 0,
+      "desired": 0,
+      "applied": 0,
+      "ready": true,
+      "busy": false,
+      "fault": false,
+      "pending": false,
+      "channel_routes": true
+    },
+    "sub_patch": {
+      "version": 1,
+      "required": true,
+      "supported": true,
+      "valid": true
+    }
+  },
+  "session": {
+    "api_major": 2,
+    "api_minor": 0,
+    "token": 2769757661,
+    "client": 0,
+    "lease_ms": 1200,
+    "context_epoch": 4
+  },
+  "setup_events": [
+    {
+      "sequence": 3,
+      "bytes": [
+        177,
+        120,
+        0
+      ],
+      "planned_ms": null,
+      "dispatch_ms": 1060.290900990367,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 1208.8295819994528
+    },
+    {
+      "sequence": 4,
+      "bytes": [
+        177,
+        7,
+        127,
+        177,
+        10,
+        64,
+        177,
+        11,
+        127,
+        177,
+        1,
+        0,
+        177,
+        64,
+        0,
+        225,
+        0,
+        64
+      ],
+      "planned_ms": null,
+      "dispatch_ms": 1279.2916749895085,
+      "stage": "fpga_byte_ack",
+      "acknowledged_ms": 1402.6295649964595
+    }
+  ],
+  "replay_start_ms": 1553.5538519907277,
+  "status": "PASS"
+}

@@ -1,0 +1,464 @@
+{
+  "case": "ks_chord_ceg",
+  "engine": "ks",
+  "notes": [
+    60,
+    64,
+    67
+  ],
+  "velocity": 100,
+  "MIDI_channel_zero_based": 1,
+  "owner_metadata_verified": true,
+  "raw_channel_bytes_verified": true,
+  "ack_scope": "fpga_raw_byte",
+  "capture": {
+    "path": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_chord_ceg/capture/audio.wav",
+    "SHA256": "3c83e459e3a7270399621f11bb9d896efdaf597620d6d7b0def1552621eebc5c",
+    "frames": 768768,
+    "WAV_rate_Hz": 96008,
+    "channels": 2,
+    "container_bits": 32,
+    "PCM24_common_trailing_zero_bits": 0,
+    "low8_zero_verified": true,
+    "zero_channel": [
+      false,
+      false
+    ]
+  },
+  "transport": {
+    "status": "PASS",
+    "raw_SHA256": "1cf71168e6c850402552e14f254abef55a250743c4a90acace5a6e65ac07fdb1",
+    "raw_bytes": 7028736,
+    "parser_SHA256": "d354b786e33befce15182ff61518f64143578e87f762ea788e5197d96a07e2f8",
+    "parser": {
+      "bytes_discarded": 0,
+      "frames_valid": 12012,
+      "frames_invalid": 0,
+      "resync_count": 0,
+      "seq_jumps": 0,
+      "sample_rate_changes": 0,
+      "crc_nonzero": 0,
+      "padding_bytes": 710424
+    },
+    "raw_payload_WAV_exact": true,
+    "native_sample_index_verified": false,
+    "CRC_verified": false,
+    "FPGA_drop_counter_verified": false
+  },
+  "onset": {
+    "method": "96-frame AC-RMS, 3 consecutive windows",
+    "threshold_FS": 0.0005,
+    "preroll_AC_RMS_FS": 0.0,
+    "start_search_frame": 25536,
+    "substantial_attack_detected": true
+  },
+  "detected_onset_frame": 190752,
+  "host_event_seconds": [
+    1.9407084340200527,
+    2.3942679110186873
+  ],
+  "host_event_frame_estimates": [
+    186324,
+    229869
+  ],
+  "onset_minus_host_NoteOn_seconds": 0.04612115657028581,
+  "planned_hold_ms": 450,
+  "actual_dispatch_hold_ms": 453.55947699863464,
+  "ks_decay_ms": 3000,
+  "routes": {
+    "version": 1,
+    "available": true,
+    "valid": true,
+    "ready": true,
+    "busy": false,
+    "pending": false,
+    "error": false,
+    "pt8211": 0,
+    "pcm_a": 1,
+    "pcm_b": 3,
+    "sequence": 0,
+    "generation": 0
+  },
+  "reverb": {
+    "api_major": 2,
+    "contract_version": 1,
+    "available": true,
+    "valid": true,
+    "pending": false,
+    "fault": 0,
+    "wet_q15": 0,
+    "damp_q15": 0,
+    "applied_sequence": 0,
+    "generation": 1,
+    "request": null,
+    "result": null,
+    "applied": null,
+    "confirmation": "synth_parameters"
+  },
+  "audio": {
+    "frames": 768768,
+    "duration_s": 8.007332722273144,
+    "onset_frame": 190752,
+    "held_start_frame": 203233,
+    "held_end_frame": 229155,
+    "NFFT": 8192,
+    "window": "Hann, per-window/channel mean removed; RMS-averaged spectral power",
+    "normalization": false,
+    "tail_noteoff_coordinate_assumption_s_after_onset": 0.45,
+    "channels": [
+      {
+        "channel": "L",
+        "peak24": 2705179,
+        "peak_dBFS": -9.829877857686846,
+        "hold_RMS_dBFS": -26.74792770711164,
+        "hold_AC_RMS_dBFS": -26.748087264041096,
+        "hold_DC_FS": -0.00027871818493181667,
+        "rail_samples": 0,
+        "whole_zero": false,
+        "spectral_trusted": true,
+        "band_power_fraction_gt_Hz": {
+          "2000": 0.30465130976094223,
+          "5000": 0.006681900125463862,
+          "10000": 1.8791845699281865e-05,
+          "20000": 1.3490340839155277e-08
+        },
+        "spectral_centroid_Hz": 1555.5665003819818,
+        "strongest_local_peaks": [
+          {
+            "frequency_Hz": 656.3046874999999,
+            "amplitude_dBFS": -31.09747928679798
+          },
+          {
+            "frequency_Hz": 328.15234374999994,
+            "amplitude_dBFS": -34.44074678504999
+          },
+          {
+            "frequency_Hz": 2613.4990234374995,
+            "amplitude_dBFS": -35.00291761142324
+          },
+          {
+            "frequency_Hz": 1570.4433593749998,
+            "amplitude_dBFS": -35.646547331765824
+          },
+          {
+            "frequency_Hz": 1980.6337890624998,
+            "amplitude_dBFS": -35.81634813140414
+          },
+          {
+            "frequency_Hz": 2355.6650390624995,
+            "amplitude_dBFS": -35.98478517335969
+          },
+          {
+            "frequency_Hz": 1043.0556640624998,
+            "amplitude_dBFS": -36.79649756697268
+          },
+          {
+            "frequency_Hz": 386.75097656249994,
+            "amplitude_dBFS": -38.00167539440712
+          },
+          {
+            "frequency_Hz": 527.3876953124999,
+            "amplitude_dBFS": -38.742412321486945
+          },
+          {
+            "frequency_Hz": 984.4570312499999,
+            "amplitude_dBFS": -39.83995373284923
+          },
+          {
+            "frequency_Hz": 3293.2431640624995,
+            "amplitude_dBFS": -40.0993918347201
+          },
+          {
+            "frequency_Hz": 785.2216796874999,
+            "amplitude_dBFS": -40.1766512754391
+          }
+        ],
+        "C4_harmonic_envelope": [],
+        "C4_envelope_slope_dB_per_octave_h2_h16": null,
+        "tail_windows": [
+          {
+            "seconds_after_assumed_NoteOff": 0,
+            "RMS_dBFS": -37.722650019040586
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.25,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.5,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.9,
+            "RMS_dBFS": -300.0
+          }
+        ]
+      },
+      {
+        "channel": "R",
+        "peak24": 2726573,
+        "peak_dBFS": -9.761455409883641,
+        "hold_RMS_dBFS": -26.67954012320413,
+        "hold_AC_RMS_dBFS": -26.67969964782765,
+        "hold_DC_FS": -0.00028089286920308937,
+        "rail_samples": 0,
+        "whole_zero": false,
+        "spectral_trusted": true,
+        "band_power_fraction_gt_Hz": {
+          "2000": 0.30465185624732266,
+          "5000": 0.006681837708537727,
+          "10000": 1.878867224592716e-05,
+          "20000": 1.351184212476678e-08
+        },
+        "spectral_centroid_Hz": 1555.5674169665983,
+        "strongest_local_peaks": [
+          {
+            "frequency_Hz": 656.3046874999999,
+            "amplitude_dBFS": -31.02908245438926
+          },
+          {
+            "frequency_Hz": 328.15234374999994,
+            "amplitude_dBFS": -34.37237409484722
+          },
+          {
+            "frequency_Hz": 2613.4990234374995,
+            "amplitude_dBFS": -34.93453256560143
+          },
+          {
+            "frequency_Hz": 1570.4433593749998,
+            "amplitude_dBFS": -35.57815485613574
+          },
+          {
+            "frequency_Hz": 1980.6337890624998,
+            "amplitude_dBFS": -35.74795900836201
+          },
+          {
+            "frequency_Hz": 2355.6650390624995,
+            "amplitude_dBFS": -35.91638605732861
+          },
+          {
+            "frequency_Hz": 1043.0556640624998,
+            "amplitude_dBFS": -36.72811995659936
+          },
+          {
+            "frequency_Hz": 386.75097656249994,
+            "amplitude_dBFS": -37.93334372208561
+          },
+          {
+            "frequency_Hz": 527.3876953124999,
+            "amplitude_dBFS": -38.674069920338674
+          },
+          {
+            "frequency_Hz": 984.4570312499999,
+            "amplitude_dBFS": -39.77148851027383
+          },
+          {
+            "frequency_Hz": 3293.2431640624995,
+            "amplitude_dBFS": -40.03102992886454
+          },
+          {
+            "frequency_Hz": 785.2216796874999,
+            "amplitude_dBFS": -40.10822603287895
+          }
+        ],
+        "C4_harmonic_envelope": [],
+        "C4_envelope_slope_dB_per_octave_h2_h16": null,
+        "tail_windows": [
+          {
+            "seconds_after_assumed_NoteOff": 0,
+            "RMS_dBFS": -37.65427469673614
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.25,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.5,
+            "RMS_dBFS": -300.0
+          },
+          {
+            "seconds_after_assumed_NoteOff": 0.9,
+            "RMS_dBFS": -300.0
+          }
+        ]
+      }
+    ]
+  },
+  "pitch": null,
+  "noteoff": {
+    "coordinate": "Actual HTTP dispatch NoteOff mapped to WAV via host monotonic timestamps; no native sample tags",
+    "estimated_NoteOff_frame": 229869,
+    "window_seconds": 0.1,
+    "windows": [
+      {
+        "seconds_relative_to_host_NoteOff": -0.1,
+        "start_frame": 220268,
+        "end_frame": 229869,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_dBFS": -29.641582849132952,
+            "AC_RMS_dBFS": -29.642780636278452
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_dBFS": -29.57320620330128,
+            "AC_RMS_dBFS": -29.574403539258004
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 0,
+        "start_frame": 229869,
+        "end_frame": 239470,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": false,
+            "RMS_dBFS": -34.30231992412497,
+            "AC_RMS_dBFS": -34.302966696083715
+          },
+          {
+            "channel": "R",
+            "digital_zero": false,
+            "RMS_dBFS": -34.233920086070874,
+            "AC_RMS_dBFS": -34.23456713935609
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          -4.660737074992021,
+          -4.6607138827695955
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 0.25,
+        "start_frame": 253871,
+        "end_frame": 263472,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 0.5,
+        "start_frame": 277873,
+        "end_frame": 287474,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 1,
+        "start_frame": 325877,
+        "end_frame": 335478,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 2,
+        "start_frame": 421885,
+        "end_frame": 431486,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      },
+      {
+        "seconds_relative_to_host_NoteOff": 4,
+        "start_frame": 613901,
+        "end_frame": 623502,
+        "channels": [
+          {
+            "channel": "L",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          },
+          {
+            "channel": "R",
+            "digital_zero": true,
+            "RMS_dBFS": null,
+            "AC_RMS_dBFS": null
+          }
+        ],
+        "RMS_difference_from_preOff_dB": [
+          null,
+          null
+        ]
+      }
+    ],
+    "zero_level_representation": "digital_zero=true and RMS_dBFS=null means exact zero (-infinity dBFS), not a finite attenuation",
+    "not_a_T60_measurement": true
+  },
+  "left_right_PCM_exact": false,
+  "normalization": false,
+  "gain_applied": 1,
+  "resampling": false,
+  "matching_RTL_reference": null,
+  "native_execution_identity_verified": false
+}

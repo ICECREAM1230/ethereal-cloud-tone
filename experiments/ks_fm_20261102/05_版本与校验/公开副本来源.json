@@ -1,0 +1,294 @@
+{
+  "record_type": "public_copy_provenance",
+  "source_date": "2026-11-02",
+  "publication_copy_date": "2026-11-12",
+  "source_zip_sha256": "f3855194f5af7a9555909bd565cc11903d9262df043e894c29000ea24b19ab4a",
+  "source_zip_bytes": 32207645,
+  "source_regular_files": 606,
+  "source_uncompressed_bytes": 223821166,
+  "excluded_files": [],
+  "raw_data_and_analysis_graphics_byte_policy": "All source bytes preserved in 01_原始数据, 03_分析结果, 04_报告图稿 and all .wav/.pcm/.bin/.png/.pdf members",
+  "modifications": {
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/LICENSE": [
+      "license_filename_normalized",
+      "MIT_reauthorization_with_original_author_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/config/sdkconfig.esp32s3": [
+      "public_identity_and_CONFIG_ECT_prefix"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/contract/midi/dds-template.md": [
+      "public_identity_and_CONFIG_ECT_prefix"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/CMakeLists.txt": [
+      "public_identity_and_CONFIG_ECT_prefix"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/Kconfig.projbuild": [
+      "public_identity_and_CONFIG_ECT_prefix"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/additive_link.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/additive_patch.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/ble_midi.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/ble_midi.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_document.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_document.h": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_factory.inc.h": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_files.c": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_files.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_patch_units.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_patch_units.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_presets.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/dds_presets.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/engine_link.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/engine_link.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/event_bus.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/event_bus.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/http_dds.inc.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/main.c": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_feedback.c": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_in.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_in.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_log.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_log.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_parser.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_parser.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/midi_templates.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/patch.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/patch.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/slider.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/slider.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/spi_regs.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/spi_regs.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/stress_test.c": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/stress_test.h": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/voice_alloc.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/voice_alloc.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/main/wifi_web.c": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/sdkconfig.defaults": [
+      "public_identity_and_CONFIG_ECT_prefix"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/storage/Patches/Factory/Pads/Galaxy.toml": [
+      "authorized_MIT_license_comment_update"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/storage/Patches/Factory/Pads/Supersaw.toml": [
+      "authorized_MIT_license_comment_update"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/storage/Patches/User/Bass/Synth Bass.toml": [
+      "authorized_MIT_license_comment_update"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/storage/Patches/User/Leads/Synth Lead.toml": [
+      "authorized_MIT_license_comment_update"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/storage/Patches/User/Pads/Warm Pad.toml": [
+      "authorized_MIT_license_comment_update"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/tests/host/dds_preset_dump.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/tests/host/http_stubs/sdkconfig.h": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/tests/host/test_midi_templates.c": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/tools/build_fm_only.sh": [
+      "public_identity_and_CONFIG_ECT_prefix"
+    ],
+    "02_代码/experiment_project/control_migration/esp32/esp32s3/tools/generate_dds_factory.py": [
+      "public_identity_and_CONFIG_ECT_prefix",
+      "authorized_MIT_license_comment_update"
+    ],
+    "02_代码/experiment_project/control_migration/rtl/ae350_voice_backend.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/rtl/ae350_voice_backend_fm.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/control_migration/rtl/ae350_voice_backend_ks.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/firmware/control_compile.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/firmware/control_data/control_boot_tables.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/firmware/control_data/sub_boot_supersaw.h": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/fm/control/midi_fm_performance.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/karplus_strong/control/ks_boot_template.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/karplus_strong/control/ks_clock_bridge.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/karplus_strong/control/ks_control_bridge.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/karplus_strong/control/ks_timbre_bank.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/karplus_strong/control/ks_timbre_performance.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "02_代码/experiment_project/src/synthesizers/karplus_strong/control/midi_ks_performance.sv": [
+      "authorized_MIT_license_comment_update",
+      "publisher_copyright_added_authors_retained"
+    ],
+    "05_版本与校验/原文件到归档映射.json": [
+      "historical_paths_replaced_by_source_ZIP_member_hashes"
+    ],
+    "05_版本与校验/代码来源.csv": [
+      "source_paths_removed_historical_SHA_labels_retained"
+    ],
+    "05_版本与校验/ESP32编译来源.json": [
+      "historical_provenance_paths_replaced_by_member_SHA_index"
+    ],
+    "README.md": [
+      "public_historical_scope_reading_entry_and_license_notice"
+    ]
+  },
+  "current_hash_manifest": "文件清单_SHA256.csv",
+  "historical_member_hash_index": "原ZIP成员_SHA256.csv",
+  "historical_hash_notice": "原始成员SHA和历史固件/位流SHA仅描述旧版本，不代表迁移后源码的新构建或实板验证。",
+  "scope": "Historical KS/FM captures; no new analysis, simulation, EDA, measurement or device access",
+  "license_boundary": "Authorized relevant original synthesizer portions use MIT, with original authors retained; GPL/Gowin/tomlc17 notices remain applicable"
+}

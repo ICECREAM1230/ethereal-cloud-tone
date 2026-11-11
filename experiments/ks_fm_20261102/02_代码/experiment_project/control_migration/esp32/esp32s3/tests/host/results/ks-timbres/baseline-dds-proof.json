@@ -1,0 +1,7 @@
+{
+  "baseline_exit": 1,
+  "fixed_exit": 0,
+  "fix": "Only restored missing copyright comment in Galaxy.toml. Production dds_factory.inc.h byte-identical to baseline.",
+  "production_header_unchanged": true,
+  "green_output": "DDS Factory: embedded Supersaw/Galaxy exactly match TOML seed inputs\n"
+}

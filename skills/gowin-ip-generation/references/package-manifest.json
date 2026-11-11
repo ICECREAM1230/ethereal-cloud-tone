@@ -1,0 +1,19 @@
+{
+  "host": "Linux x86_64",
+  "gowin_version": "V1.9.12.04",
+  "files": {
+    "build_bridge.py": "862338e5137d907c031f06ce9af9dcdd3634d9d5257e450eff06f19ac3debabf",
+    "gowin_ip.py": "635be29ff1d73b7ce275c2f4ea23b89559557351e07c3d984cfd17d3f1ee7755",
+    "src/bridge.cpp": "cf7db015cff08cb5a294e9bccea0186ca9061e272ebac8a32005ea5239a40c37",
+    "bin/libgowin_ip_bridge.so": "e7c23bfb2c300f48b8e437306a131072303c2c84a2338376f21f5ab8b090d85c",
+    "bin/vendor-runner": "cde362e3cbbb5dd6b84a2c08029e15fb77d877b660f11343ec349b5713844d09",
+    "bin/gowin-ip-ai": "a96758b7ff50e3b82d2f47dfeef3f99bd7c954a841e64865f5aab7d35c60f8d7",
+    "tests/test_ai_ip.py": "c6a59ea8799642b56ba8bf3132cd2fb55cacf9417aa8fd684aeacfa1f87cb8d5"
+  },
+  "validation": {
+    "unit_tests_passed": 16,
+    "representative_integration_cases_matched": 7,
+    "packaged_fft_generation": "GENERATED; IPC INPUT_WIDTH=18; four files present",
+    "full_271_recertification": false
+  }
+}

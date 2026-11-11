@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "sample_frames": 768768,
+  "frames_valid": 12012,
+  "raw_bytes": 7028736,
+  "trailing_bytes": 0,
+  "hardware_capture": true,
+  "crc_verified": false,
+  "dropped": null,
+  "output": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_pcm_check_20261102/board_20261102Tksfm01/ks_single_c4_repeat1/capture",
+  "started_utc": "2026-11-02T03:50:29.673550+00:00",
+  "device_flash_write": false,
+  "require_pattern": false,
+  "usb_timeouts": 0,
+  "source": "CH569 USB 359f:3001 / EP 0x82",
+  "input_format": "hspi",
+  "sample_rate": 96008,
+  "usb_info": {
+    "bus": 4,
+    "address": 35,
+    "interface": 0,
+    "endpoint": 130,
+    "read_only": true,
+    "start_request_sent": false,
+    "max_packet_bytes": 1024
+  },
+  "channel_count": 2,
+  "container_bits": 32,
+  "valid_sample_bits": null,
+  "first_index": null,
+  "last_index": null,
+  "build_word": null,
+  "sample_index_verified": false,
+  "protocol_version": 1,
+  "blocks_valid": 1716,
+  "ended_utc": "2026-11-02T03:50:37.677733+00:00",
+  "wall_seconds": 8.002937796001788,
+  "audio_seconds": 8.007332722273144,
+  "channels": [
+    {
+      "channel": "L",
+      "peak": 0.15555763244628906,
+      "rms": 0.00794230863708639,
+      "peak_dbfs": -16.162173506857826,
+      "rms_dbfs": -42.001064806336394,
+      "dc": 6.877320073979162e-06,
+      "full_scale_samples": 0
+    },
+    {
+      "channel": "R",
+      "peak": 0.15678691864013672,
+      "rms": 0.008005088478772774,
+      "peak_dbfs": -16.093803501322277,
+      "rms_dbfs": -41.93267727082012,
+      "dc": 6.931327479385035e-06,
+      "full_scale_samples": 0
+    }
+  ],
+  "display_buffer_frames": 131072
+}

@@ -1,0 +1,1088 @@
+{
+  "scope": "actual compiled worker plus resolved shared-core routes and BLE sinks",
+  "callgraphs": [
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ble_control.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ble_control_codec.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ble_midi.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ble_midi_unframer.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/control_api.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/control_source.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/engine_link.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/event_bus.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/fdc_control.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ks_timbre_control.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ks_timbre_document.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/ks_timbre_params.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/midi_feedback_guard.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/parameter_cc.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/raw_midi.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/vendor/tomlc17/tomlc17.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/voice_alloc.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/web_control.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/web_raw_midi.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/web_raw_queue.c.ci",
+    "$BUILD_DIR/esp-idf/main/CMakeFiles/__idf_main.dir/wifi_web.c.ci"
+  ],
+  "indirect_route_candidates": [
+    "core_state",
+    "core_session",
+    "core_command",
+    "core_v2_capabilities",
+    "core_v2_state",
+    "core_v2_session",
+    "core_v2_command",
+    "core_reverb_get",
+    "core_reverb_post",
+    "core_midi_raw_post",
+    "core_midi_raw_post",
+    "core_midi_debug_get",
+    "core_v2_catalog",
+    "core_v2_fm_diagnostics",
+    "core_dds_list_http",
+    "core_dds_command_http",
+    "core_dds_status_http",
+    "core_dds_result_http",
+    "core_audio_routes_get",
+    "core_audio_routes_post",
+    "core_fdc_get",
+    "core_fdc_post",
+    "core_ks_timbre_get",
+    "core_ks_timbre_post",
+    "core_ks_presets_get",
+    "core_ks_presets_post",
+    "core_ks_load_post",
+    "core_ks_document_get",
+    "core_ks_document_post",
+    "core_ks_startup_post"
+  ],
+  "emit_route_candidates": [
+    "core_state",
+    "core_v2_capabilities",
+    "core_v2_state",
+    "core_reverb_get",
+    "core_v2_catalog",
+    "core_v2_fm_diagnostics"
+  ],
+  "route_count": 30,
+  "verified_recursion_bounds": {
+    "toml_containers": 4,
+    "json_value_calls": 7,
+    "key_parts": 10,
+    "toml_global_tree_calls": 72
+  },
+  "task_stack_bytes": 8192,
+  "external_and_context_reserve": 1024,
+  "maximum_compiled_worker_bytes": 5952,
+  "nominal_remaining_bytes": 1216,
+  "http_stack_bytes": 8192,
+  "maximum_compiled_http_bytes": 6000,
+  "http_enabled": true,
+  "http_nominal_remaining_bytes": 1168,
+  "midi_rx_stack_bytes": 3072,
+  "maximum_compiled_midi_rx_bytes": 816,
+  "midi_rx_nominal_remaining_bytes": 1232,
+  "callback_scope": "local compiled subtrees; complete NimBLE/Timer caller stacks not measured",
+  "chains": {
+    "control_worker": {
+      "compiled_bytes": 5952,
+      "path": [
+        {
+          "function": "control_worker",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "execute",
+          "bytes": 112,
+          "allocation": "static"
+        },
+        {
+          "function": "control_api_prepare",
+          "bytes": 96,
+          "allocation": "static"
+        },
+        {
+          "function": "core_ks_document_post",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "core_ks_post",
+          "bytes": 1008,
+          "allocation": "static"
+        },
+        {
+          "function": "ks_timbre_request_parse",
+          "bytes": 384,
+          "allocation": "static"
+        },
+        {
+          "function": "ks_timbre_document_parse",
+          "bytes": 1024,
+          "allocation": "static"
+        },
+        {
+          "function": "toml_parse",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "toml_parse_named",
+          "bytes": 576,
+          "allocation": "static"
+        },
+        {
+          "function": "parse_keyvalue_expr",
+          "bytes": 304,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "cell_free",
+          "bytes": 32,
+          "allocation": "static"
+        }
+      ]
+    },
+    "notify_event": {
+      "compiled_bytes": 688,
+      "path": [
+        {
+          "function": "notify_event",
+          "bytes": 576,
+          "allocation": "static"
+        },
+        {
+          "function": "current",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "current_locked",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "ble_control_link_matches",
+          "bytes": 32,
+          "allocation": "static"
+        }
+      ]
+    },
+    "access_request": {
+      "compiled_bytes": 800,
+      "path": [
+        {
+          "function": "access_request",
+          "bytes": 560,
+          "allocation": "static"
+        },
+        {
+          "function": "close_link",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "control_api_peer_invalidate",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "control_source_revoke",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "valid_locked",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "control_source_same",
+          "bytes": 48,
+          "allocation": "static"
+        }
+      ]
+    },
+    "start_deferred": {
+      "compiled_bytes": 288,
+      "path": [
+        {
+          "function": "start_deferred",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "close_link",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "control_api_peer_invalidate",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "control_source_revoke",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "valid_locked",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "control_source_same",
+          "bytes": 48,
+          "allocation": "static"
+        }
+      ]
+    },
+    "ble_rx_task": {
+      "compiled_bytes": 816,
+      "path": [
+        {
+          "function": "ble_rx_task",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "process_ble_midi_pkt",
+          "bytes": 576,
+          "allocation": "static"
+        },
+        {
+          "function": "ble_raw_loss",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "ble_raw_invalidate_locked",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "raw_midi_flush",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "clear_remote",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "clear_stream",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "source_supported",
+          "bytes": 32,
+          "allocation": "static"
+        }
+      ]
+    },
+    "ble_midi_feedback_notify_event": {
+      "compiled_bytes": 112,
+      "path": [
+        {
+          "function": "ble_midi_feedback_notify_event",
+          "bytes": 48,
+          "allocation": "static"
+        },
+        {
+          "function": "midi_feedback_owner_state_matches",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "midi_feedback_owner_guard_matches",
+          "bytes": 32,
+          "allocation": "static"
+        }
+      ]
+    },
+    "http_control": {
+      "compiled_bytes": 6000,
+      "path": [
+        {
+          "function": "ks_document_post",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "http_control",
+          "bytes": 176,
+          "allocation": "static"
+        },
+        {
+          "function": "control_api_prepare",
+          "bytes": 96,
+          "allocation": "static"
+        },
+        {
+          "function": "core_ks_document_post",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "core_ks_post",
+          "bytes": 1008,
+          "allocation": "static"
+        },
+        {
+          "function": "ks_timbre_request_parse",
+          "bytes": 384,
+          "allocation": "static"
+        },
+        {
+          "function": "ks_timbre_document_parse",
+          "bytes": 1024,
+          "allocation": "static"
+        },
+        {
+          "function": "toml_parse",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "toml_parse_named",
+          "bytes": 576,
+          "allocation": "static"
+        },
+        {
+          "function": "parse_keyvalue_expr",
+          "bytes": 304,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "datum_free",
+          "bytes": 32,
+          "allocation": "static"
+        },
+        {
+          "function": "cell_free",
+          "bytes": 32,
+          "allocation": "static"
+        }
+      ]
+    }
+  },
+  "passed": true
+}

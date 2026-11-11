@@ -1,0 +1,16 @@
+{
+  "status": "OFFLINE_VALIDATED_AND_FROZEN",
+  "scope": "KS/FM",
+  "raw_totals": {
+    "cases": 10,
+    "raw_bytes": 70377472,
+    "valid_frames": 120274,
+    "stereo_sample_pairs": 7697536
+  },
+  "mapped_original_files": 590,
+  "original_source_hashes_unchanged_at_finalization": true,
+  "offline_analysis_and_figure_export": "PASS",
+  "hardware_access": false,
+  "created_utc": "2026-11-02T04:53:05.014049+00:00",
+  "manifest_excludes_itself": true
+}

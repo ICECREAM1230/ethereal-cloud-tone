@@ -1,0 +1,38 @@
+{
+  "sample_frames": 9600,
+  "sample_rate": 96008,
+  "valid_sample_bits": null,
+  "container_bits": 32,
+  "channel_count": 2,
+  "fft_size": 8192,
+  "channels": [
+    {
+      "channel": "L",
+      "peak": 0.0,
+      "rms": 0.0,
+      "dc": 0.0,
+      "peak_dbfs": null,
+      "rms_dbfs": null,
+      "full_scale_samples": 0,
+      "ac_rms_dbfs": null,
+      "spectral_trusted": false,
+      "strongest_bins": []
+    },
+    {
+      "channel": "R",
+      "peak": 0.0,
+      "rms": 0.0,
+      "dc": 0.0,
+      "peak_dbfs": null,
+      "rms_dbfs": null,
+      "full_scale_samples": 0,
+      "ac_rms_dbfs": null,
+      "spectral_trusted": false,
+      "strongest_bins": []
+    }
+  ],
+  "window": "Hann; latest window; DC removed",
+  "spectrum_units": "single-sided peak amplitude dBFS, not PSD",
+  "level_window_frames": 9600,
+  "frequency_bin_hz": 11.7197265625
+}

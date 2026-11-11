@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "analysis": [
+    {
+      "suite": "basic",
+      "totals": {
+        "takes": 8,
+        "raw_bytes": 56274944,
+        "valid_frames": 96173,
+        "stereo_pairs": 6155072,
+        "frames_invalid": 0,
+        "seq_jumps": 0,
+        "resync_count": 0,
+        "sample_rate_changes": 0,
+        "bytes_discarded": 0
+      },
+      "all_case_results_equal_except_capture_path": true,
+      "numeric_and_boolean_fields_compared": 2958,
+      "summary_SHA256": "1e77b821b38e057a12111be624d50733896c842e708b977f29de6fb38fc22b81",
+      "archived_input_hashes_unchanged": true
+    },
+    {
+      "suite": "poly",
+      "totals": {
+        "takes": 2,
+        "rounds": 6,
+        "raw_bytes": 14102528,
+        "valid_frames": 24101,
+        "stereo_sample_pairs": 1542464,
+        "frames_invalid": 0,
+        "seq_jumps": 0,
+        "resync_count": 0,
+        "sample_rate_changes": 0,
+        "bytes_discarded": 0
+      },
+      "all_case_results_equal_except_capture_path": true,
+      "numeric_and_boolean_fields_compared": 808,
+      "summary_SHA256": "e92cadcf3d06cf6f23e1619826ec4c7c91ff7d3e676a5a5afddb06f3352020e8",
+      "archived_input_hashes_unchanged": true
+    }
+  ],
+  "figure_export": {
+    "PNG_count": 12,
+    "PDF_count": 12,
+    "all_12_PNGs_byte_identical_to_published": true
+  },
+  "hardware_access": false,
+  "network_access": false,
+  "normalization": false,
+  "gain_applied": 1,
+  "resampling": false,
+  "validation_output_directory": "/media/ice/D;/PROJECT_improve/ae350_subtractive_upstream_lab_20261101T213935/project/sim/results/ks_fm_archive_validation_20261102",
+  "matching_RTL_reference_available": false,
+  "bit_exact_against_RTL_claimed": false
+}

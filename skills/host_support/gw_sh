@@ -1,0 +1,9 @@
+#!/bin/bash
+ide="${GOWIN_IDE:-$HOME/Gowin/V1.9.12.04/IDE}"
+exec /usr/bin/env -u DISPLAY -u WAYLAND_DISPLAY \
+    PATH="$ide/bin:$PATH" \
+    LD_PRELOAD=/lib/x86_64-linux-gnu/libfreetype.so.6 \
+    LD_LIBRARY_PATH="$ide/lib" \
+    QT_QPA_PLATFORM=offscreen \
+    QT_QPA_PLATFORM_PLUGIN_PATH="$ide/plugins/qt/platforms" \
+    "$ide/bin/gw_sh" "$@"
