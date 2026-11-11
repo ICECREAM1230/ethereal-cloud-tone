@@ -45,17 +45,17 @@
 ### 1. 获取源码与主机基础工具
 
 ```bash
+# Ubuntu：先准备Git及基础工具，需要本机管理员权限。
+sudo apt-get update
+sudo apt-get install git wget build-essential flex bison gperf \
+  python3 python3-pip python3-venv python3-tk cmake ninja-build ccache \
+  libffi-dev libssl-dev libusb-1.0-0 libfreetype6 libfontconfig1 dfu-util gnome-terminal
+
 git clone https://github.com/ICECREAM1230/ethereal-cloud-tone.git
 cd ethereal-cloud-tone
 export ECT_ROOT="$PWD"
 export ECT_BUILD_ROOT="/tmp/ect-build"
 mkdir -p "$ECT_BUILD_ROOT"
-
-# Ubuntu：按需要安装；需要本机管理员权限。
-sudo apt-get update
-sudo apt-get install git wget build-essential flex bison gperf \
-  python3 python3-pip python3-venv python3-tk cmake ninja-build ccache \
-  libffi-dev libssl-dev libusb-1.0-0 libfreetype6 libfontconfig1 dfu-util gnome-terminal
 
 # 标准库只读检查，不启动构建、不访问设备。
 python3 -B tools/verify_project.py
