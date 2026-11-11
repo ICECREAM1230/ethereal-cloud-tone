@@ -1,0 +1,7 @@
+﻿item,from,to,net,action,note
+138K supply,138K own power source,138K original power input,+5V_138K,own_source_only,Keep existing entry; no cross-feed to Nano
+20K supply,independent USB source,Nano USB-C VBUS,+5V_20K,own_source_only,Default first revision; include USB plug/cable clearance in center placement
+Shared ground,H1.6 GND / carrier GND,Nano J5.2 GND,GND_COMMON,connect,Fixed ground; do not put on ownership-selection switch
+Nano 5V header,Nano J5.1,138K/carrier +5V_138K,+5V_20K vs +5V_138K,do_not_connect,USB energizes Nano J5.1; carrier-side pad must remain isolated from 138K 5V
+3.3V outputs,Nano J5.16 or J6.19,138K / AMS1117 3.3V output,+3V3_20K vs +3V3_138K,do_not_connect,No parallel regulator outputs
+Old 20-pin spare,old signal pins,GND or positive supply,existing signal nets,do_not_repurpose_without_rerouting,Old 20P has neither power nor ground; never short an existing FPGA signal to ground

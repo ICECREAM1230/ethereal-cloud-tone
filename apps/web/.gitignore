@@ -1,0 +1,6 @@
+node_modules/
+dist/
+artifacts/*
+!artifacts/fm-v2-runtime-20261011/
+artifacts/fm-v2-runtime-20261011/*
+!artifacts/fm-v2-runtime-20261011/inputs/

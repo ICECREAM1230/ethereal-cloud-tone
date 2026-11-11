@@ -1,0 +1,79 @@
+{
+  "result": "PASS",
+  "portable_root": "/home/ice/Project/my_project/development/用户界面开发/app/build/ae350-service-capture/portability/app",
+  "portable_run_exit": 0,
+  "restored_check_exit": 0,
+  "negative_checks": [
+    {
+      "case": "changed-fixture",
+      "expected_rejection": true,
+      "exit_code": 1,
+      "last_error": "ValueError: frozen SHA256/length drift: fixtures/session.json"
+    },
+    {
+      "case": "missing-fixture",
+      "expected_rejection": true,
+      "exit_code": 1,
+      "last_error": "ValueError: frozen file set changed: missing=['fixtures/session.json']; extra=[]"
+    },
+    {
+      "case": "extra-file",
+      "expected_rejection": true,
+      "exit_code": 1,
+      "last_error": "ValueError: frozen file set changed: missing=[]; extra=['unexpected.txt']"
+    },
+    {
+      "case": "linked-fixture",
+      "expected_rejection": true,
+      "exit_code": 1,
+      "last_error": "ValueError: linked frozen input: /home/ice/Project/my_project/development/用户界面开发/app/build/ae350-service-capture/portability/app/contracts/ae350-service-20261102/fixtures/session.json"
+    },
+    {
+      "case": "changed-wrapper",
+      "expected_rejection": true,
+      "exit_code": 1,
+      "last_error": "ValueError: capture script differs from its frozen binding"
+    }
+  ],
+  "boundary": "Copied App-only minimal closure compiled with no --verify-origin; normal path has no dependency on live source path. No source tree or device writes.",
+  "cleanup": "Removed only task-created duplicate input files via their manifest; portable output JSON/logs/summary retained.",
+  "verified_c_run_summary": {
+    "boundary": "Production core prepare/emit; all owner observations are explicit HOST OWNER MODEL. No physical FPGA adoption, device discovery, or audio claim.",
+    "source_set_sha256": "7092d93daa4be2d84518d432af2b9281890a5232ba16736165dfb3c628276bf5",
+    "started_at_utc": "2026-11-02T07:10:01.795985+00:00",
+    "result": "PASS",
+    "runs": [
+      {
+        "group": "original-core",
+        "exact_files": 12,
+        "exit_code": 0
+      },
+      {
+        "group": "http-v2",
+        "exact_files": 8,
+        "exit_code": 0
+      },
+      {
+        "group": "fixtures",
+        "exact_files": 43,
+        "exit_code": 0
+      }
+    ],
+    "service_requests": 42,
+    "origin_verified": true,
+    "semantics": "PASS",
+    "cleanup_removed": [
+      "original-core.host",
+      "http-v2.host",
+      "fixtures.host",
+      "tmp/"
+    ]
+  },
+  "additional_cleanup_removed": [
+    "bootstrap/original-core",
+    "bootstrap/http-v2",
+    "bootstrap/fixtures",
+    "bootstrap/tmp/",
+    "freeze/tmp/"
+  ]
+}

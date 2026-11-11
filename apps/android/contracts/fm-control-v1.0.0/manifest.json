@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "abi": {
+    "major": 1,
+    "minor": 1
+  },
+  "schema_sha256": "5bf9e83b4f156f998d7fc7cada35815d3ca802c303f31c875e1888adf7378d36",
+  "profiles_sha256": "51a6af55646fe2adb54bf4f9f3d06e2d262bd830ec5f30f80c0e5bfa2eadf49f",
+  "combined_contract_sha256": "c3b8c4d73ac466b5b726a1cf1a7a346ce742ff61cec8ee1a9258b0c4d3651930",
+  "provider_root": "/home/ice/Project/my_project/development/tang_mega_138k_synth/interfaces/fm_control",
+  "frozen_contract_hardware_not_integrated": true,
+  "http_contract_frozen": false,
+  "product_scope": "generated Java compiled; FM UI/transport disabled until real S3/FPGA capability",
+  "files": [
+    {
+      "path": "schema/fm-control.schema.json",
+      "bytes": 11984,
+      "sha256": "5bf9e83b4f156f998d7fc7cada35815d3ca802c303f31c875e1888adf7378d36"
+    },
+    {
+      "path": "schema/backend-profiles.json",
+      "bytes": 23579,
+      "sha256": "51a6af55646fe2adb54bf4f9f3d06e2d262bd830ec5f30f80c0e5bfa2eadf49f"
+    },
+    {
+      "path": "tools/gen_fm_contract.py",
+      "bytes": 27465,
+      "sha256": "0d127411723ae287972383b64eb4c32bf2ddb54a0820314e003560b771e161d3"
+    },
+    {
+      "path": "tools/fm_codegen_v1.py",
+      "bytes": 45017,
+      "sha256": "20a6238ca879fc262ae22835f524237417f96d2acd178401ffbf49c5d20db1b8"
+    },
+    {
+      "path": "tests/stage2-fixtures.json",
+      "bytes": 7123,
+      "sha256": "e570fa279e17b02212056013647ccd3cf643ec67025e0ad25f77c9b39dcad97e"
+    },
+    {
+      "path": "docs/生成器使用.md",
+      "bytes": 10071,
+      "sha256": "195ed89a2bbed59d4cb132e89d60c7209620d50b6fbf6c2333badf9309665a25"
+    },
+    {
+      "path": "generated/c/fm_contract.h",
+      "bytes": 20215,
+      "sha256": "2c484d077d3f14d28aa2b5cb5c01d8a67b3e35e39069abcb48ca74b7133e51c9"
+    },
+    {
+      "path": "generated/sv/fm_contract_pkg.sv",
+      "bytes": 41536,
+      "sha256": "79748340796d74b9c867a024bfd31a8baea8b76f663b06fba386f293b181f0da"
+    },
+    {
+      "path": "generated/js/fm-contract.mjs",
+      "bytes": 24475,
+      "sha256": "13db7267f58ae512bfd06ecac6d01b5bc9d8b4f0bcb1bf10601976098c96a88e"
+    },
+    {
+      "path": "generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "bytes": 26907,
+      "sha256": "deeb550d218b95a59c313a874a8418d72ed74f742ed17b6cd713fe150145ce04"
+    },
+    {
+      "path": "generated/python/fm_contract.py",
+      "bytes": 24209,
+      "sha256": "f3c5a079ea2132ce3698bc36cc66191e60b4c04b831f752c99c7858e49924b8e"
+    }
+  ],
+  "app_generated_files": [
+    {
+      "path": "core/src/generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "source": "generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "sha256": "deeb550d218b95a59c313a874a8418d72ed74f742ed17b6cd713fe150145ce04"
+    }
+  ]
+}

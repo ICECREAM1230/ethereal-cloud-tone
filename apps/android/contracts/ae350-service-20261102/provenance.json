@@ -1,0 +1,846 @@
+{
+  "format": 1,
+  "captured_at_utc": "2026-11-02T07:04:52.944396+00:00",
+  "origin_root": "/media/ice/D;/PROJECT_improve/ae350_fpga_menu_lab_20261028/control_migration/esp32/esp32s3",
+  "origin_git_branch": "main",
+  "origin_git_head": null,
+  "origin_git_status_sha256": "e6f09b00018c42695b768be0fbe94cb5c7c068df3bcc31f643fa6b2a8496d6ad",
+  "app_git_head_before": "c654e4bc3e74d44da6634d00ac73c1a569f2e78c",
+  "app_owned_paths_preexisting": false,
+  "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "compiler_dependency_flags": [
+    "-std=gnu17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-misleading-indentation",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-DCONFIG_FPGA_AE350_CONTROL=1",
+    "-Itests/host/http_stubs",
+    "-Itests/host/stubs",
+    "-Imain"
+  ],
+  "translation_units": [
+    "tests/host/test_http_v2.c",
+    "tests/host/capture_control_api.c",
+    "main/control_source.c",
+    "main/web_control.c",
+    "main/patch.c",
+    "main/web_raw_queue.c",
+    "main/web_raw_midi.c",
+    "main/fdc_control.c",
+    "main/ks_timbre_control.c",
+    "main/ks_timbre_params.c",
+    "main/ks_timbre_document.c",
+    "main/vendor/tomlc17/tomlc17.c",
+    "tests/host/fake_queue.c",
+    "tests/host/fake_dds_presets.c"
+  ],
+  "build_dependency_paths": [
+    "contract/fm/generated/c/fm_contract.h",
+    "contract/ks_timbre/generated/c/ks_timbre_contract.h",
+    "contract/midi/midi_raw_contract.h",
+    "main/ae350_control.h",
+    "main/control_api.c",
+    "main/control_api.h",
+    "main/control_source.c",
+    "main/control_source.h",
+    "main/dds_document.h",
+    "main/dds_presets.h",
+    "main/engine_link.h",
+    "main/event_bus.h",
+    "main/fdc_control.c",
+    "main/fdc_control.h",
+    "main/fm_contract.h",
+    "main/fm_diagnostics.h",
+    "main/fm_engine.h",
+    "main/fm_only_contract.h",
+    "main/http_audio_routes.inc.h",
+    "main/http_dds.inc.h",
+    "main/http_fdc.inc.h",
+    "main/http_fm_diagnostics.inc.h",
+    "main/http_inputs.inc.h",
+    "main/http_ks_timbre.inc.h",
+    "main/http_performance.inc.h",
+    "main/http_raw_midi.inc.h",
+    "main/http_reverb.inc.h",
+    "main/http_v2.inc.h",
+    "main/ks_timbre_contract.h",
+    "main/ks_timbre_control.c",
+    "main/ks_timbre_control.h",
+    "main/ks_timbre_document.c",
+    "main/ks_timbre_params.c",
+    "main/ks_timbre_params.h",
+    "main/midi_parser.h",
+    "main/midi_template_link.h",
+    "main/midi_templates.h",
+    "main/patch.c",
+    "main/patch.h",
+    "main/raw_midi.h",
+    "main/reverb_control.h",
+    "main/reverb_control_contract.h",
+    "main/status_led.h",
+    "main/status_led_pattern.h",
+    "main/sub_patch1.h",
+    "main/vendor/tomlc17/tomlc17.c",
+    "main/vendor/tomlc17/tomlc17.h",
+    "main/web_asset.inc.h",
+    "main/web_control.c",
+    "main/web_control.h",
+    "main/web_control_v2.h",
+    "main/web_raw_midi.c",
+    "main/web_raw_midi.h",
+    "main/web_raw_queue.c",
+    "main/web_raw_queue.h",
+    "main/wifi_web.c",
+    "main/wifi_web.h",
+    "tests/host/capture_control_api.c",
+    "tests/host/fake_dds_presets.c",
+    "tests/host/fake_queue.c",
+    "tests/host/http_stubs/esp_err.h",
+    "tests/host/http_stubs/esp_event.h",
+    "tests/host/http_stubs/esp_http_server.h",
+    "tests/host/http_stubs/esp_netif.h",
+    "tests/host/http_stubs/esp_random.h",
+    "tests/host/http_stubs/esp_wifi.h",
+    "tests/host/http_stubs/miniz.h",
+    "tests/host/http_stubs/nvs.h",
+    "tests/host/http_stubs/sdkconfig.h",
+    "tests/host/stubs/esp_log.h",
+    "tests/host/stubs/esp_timer.h",
+    "tests/host/stubs/freertos/FreeRTOS.h",
+    "tests/host/stubs/freertos/queue.h",
+    "tests/host/stubs/freertos/task.h",
+    "tests/host/test_http_api.c",
+    "tests/host/test_http_v2.c"
+  ],
+  "semantic_evidence_paths": [
+    "main/voice_alloc.c",
+    "main/owner_local.inc.h"
+  ],
+  "source_freeze_before_after_equal": true,
+  "dependency_sets_before_after_equal": true,
+  "files": [
+    {
+      "origin_path": "LICENSE",
+      "bundle_path": "source/LICENSE",
+      "bytes": 1069,
+      "sha256_before": "ba2facea18e93ff001f716076f8df7c1207906ec850d7dd901cdb75ac56352b7",
+      "sha256_after": "ba2facea18e93ff001f716076f8df7c1207906ec850d7dd901cdb75ac56352b7",
+      "compiler_dependency": false,
+      "historical_origin_sha256_before": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a",
+      "historical_origin_sha256_after": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a",
+      "historical_origin_bytes": 13419
+    },
+    {
+      "origin_path": "contract/fm/generated/c/fm_contract.h",
+      "bundle_path": "source/contract/fm/generated/c/fm_contract.h",
+      "bytes": 23413,
+      "sha256_before": "ee9d40b4985875b6b9349d20d92a17c1c1ccb9d72b5e0e9b8c2729edf0370b30",
+      "sha256_after": "ee9d40b4985875b6b9349d20d92a17c1c1ccb9d72b5e0e9b8c2729edf0370b30",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "contract/ks_timbre/generated/c/ks_timbre_contract.h",
+      "bundle_path": "source/contract/ks_timbre/generated/c/ks_timbre_contract.h",
+      "bytes": 2143,
+      "sha256_before": "e776c5bd23197e4c02e03fbbcc21953f37600a610dccc782fec35e979c7e75e6",
+      "sha256_after": "e776c5bd23197e4c02e03fbbcc21953f37600a610dccc782fec35e979c7e75e6",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "contract/midi/midi_raw_contract.h",
+      "bundle_path": "source/contract/midi/midi_raw_contract.h",
+      "bytes": 1375,
+      "sha256_before": "adf9fe0b11286cf2f9337af3c0ad5185d7c390e41d9c52c0bf8d23424b8f96b5",
+      "sha256_after": "adf9fe0b11286cf2f9337af3c0ad5185d7c390e41d9c52c0bf8d23424b8f96b5",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "docs/手机App适配接入AE350-20261101.md",
+      "bundle_path": "source/docs/手机App适配接入AE350-20261101.md",
+      "bytes": 7432,
+      "sha256_before": "0a8244b94277f677b44ac7e5833b2a814942b0160141ada27fdbe4cef4f2f520",
+      "sha256_after": "0a8244b94277f677b44ac7e5833b2a814942b0160141ada27fdbe4cef4f2f520",
+      "compiler_dependency": false
+    },
+    {
+      "origin_path": "main/ae350_control.h",
+      "bundle_path": "source/main/ae350_control.h",
+      "bytes": 784,
+      "sha256_before": "a75076d3042edc1128cf1750572cab6ac163642424b18d416b687e71eedb2783",
+      "sha256_after": "a75076d3042edc1128cf1750572cab6ac163642424b18d416b687e71eedb2783",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/control_api.c",
+      "bundle_path": "source/main/control_api.c",
+      "bytes": 30994,
+      "sha256_before": "74d0595c4a664aaa1913383516ab550091416d77d5b4b64d85ccc55141a28210",
+      "sha256_after": "74d0595c4a664aaa1913383516ab550091416d77d5b4b64d85ccc55141a28210",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/control_api.h",
+      "bundle_path": "source/main/control_api.h",
+      "bytes": 3524,
+      "sha256_before": "c8c32c44b70df935d40baebb92bc3324598fa04fd817185a33994d172c63b29d",
+      "sha256_after": "c8c32c44b70df935d40baebb92bc3324598fa04fd817185a33994d172c63b29d",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/control_source.c",
+      "bundle_path": "source/main/control_source.c",
+      "bytes": 6487,
+      "sha256_before": "381e9466959bddac6c11d8a7e9a1c9a50566f3a014780d8dac81ed180097a817",
+      "sha256_after": "381e9466959bddac6c11d8a7e9a1c9a50566f3a014780d8dac81ed180097a817",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/control_source.h",
+      "bundle_path": "source/main/control_source.h",
+      "bytes": 3391,
+      "sha256_before": "7df1bcf90cceda7b5c066962ae7b962ed82b2e905f6e93aa0630d439fd513010",
+      "sha256_after": "7df1bcf90cceda7b5c066962ae7b962ed82b2e905f6e93aa0630d439fd513010",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/dds_document.h",
+      "bundle_path": "source/main/dds_document.h",
+      "bytes": 1507,
+      "sha256_before": "668936c87005a779c509bd494e466dca4f0c12f5243440e5954835fd10daa5fc",
+      "sha256_after": "668936c87005a779c509bd494e466dca4f0c12f5243440e5954835fd10daa5fc",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "03eb839b70ace51ded26351453a356bcef277abdaa155b30e16e63149502f83b",
+      "historical_origin_sha256_after": "03eb839b70ace51ded26351453a356bcef277abdaa155b30e16e63149502f83b",
+      "historical_origin_bytes": 1469
+    },
+    {
+      "origin_path": "main/dds_presets.h",
+      "bundle_path": "source/main/dds_presets.h",
+      "bytes": 2911,
+      "sha256_before": "41451467f98c9bebd14f6820134a70693632a6affd3557ee85657f8cca637df1",
+      "sha256_after": "41451467f98c9bebd14f6820134a70693632a6affd3557ee85657f8cca637df1",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "5f6dd32ca45466b486887a335a929f27349e9529c3c7682e3b6721eb706f1f65",
+      "historical_origin_sha256_after": "5f6dd32ca45466b486887a335a929f27349e9529c3c7682e3b6721eb706f1f65",
+      "historical_origin_bytes": 2886
+    },
+    {
+      "origin_path": "main/engine_link.h",
+      "bundle_path": "source/main/engine_link.h",
+      "bytes": 10802,
+      "sha256_before": "da14c7e88245a4f830e3f91806a2caf3a180409736fdda40cdc4f9151bd49363",
+      "sha256_after": "da14c7e88245a4f830e3f91806a2caf3a180409736fdda40cdc4f9151bd49363",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "d930369b48394cba04d91412f3adb48ea3b0f9648ceb0f1b5bc230be1b7da1bf",
+      "historical_origin_sha256_after": "d930369b48394cba04d91412f3adb48ea3b0f9648ceb0f1b5bc230be1b7da1bf",
+      "historical_origin_bytes": 10777
+    },
+    {
+      "origin_path": "main/event_bus.h",
+      "bundle_path": "source/main/event_bus.h",
+      "bytes": 3559,
+      "sha256_before": "47c68291a8fec888e5bbdf962cde2de5d0d18d0968e2eb8dfcbd289905edd829",
+      "sha256_after": "47c68291a8fec888e5bbdf962cde2de5d0d18d0968e2eb8dfcbd289905edd829",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "4262c64b27c1610d3e603be464963c9cfc058d48c3aa31a60543468880c9a54e",
+      "historical_origin_sha256_after": "4262c64b27c1610d3e603be464963c9cfc058d48c3aa31a60543468880c9a54e",
+      "historical_origin_bytes": 3534
+    },
+    {
+      "origin_path": "main/fdc_control.c",
+      "bundle_path": "source/main/fdc_control.c",
+      "bytes": 2488,
+      "sha256_before": "d9dd804d900a81aa732576fd269c9586cf98c81a9c46f53e8ec21430a1c8bda6",
+      "sha256_after": "d9dd804d900a81aa732576fd269c9586cf98c81a9c46f53e8ec21430a1c8bda6",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/fdc_control.h",
+      "bundle_path": "source/main/fdc_control.h",
+      "bytes": 1995,
+      "sha256_before": "6dcc6a9729b269340e36d35327038f6d6c0dfefb743239020e6538aafbb8153b",
+      "sha256_after": "6dcc6a9729b269340e36d35327038f6d6c0dfefb743239020e6538aafbb8153b",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/fm_contract.h",
+      "bundle_path": "source/main/fm_contract.h",
+      "bytes": 147,
+      "sha256_before": "62e6ba9455054369ee11ef96f6938795ae76707ed09229cc7d1f118c1c8a3a17",
+      "sha256_after": "62e6ba9455054369ee11ef96f6938795ae76707ed09229cc7d1f118c1c8a3a17",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/fm_diagnostics.h",
+      "bundle_path": "source/main/fm_diagnostics.h",
+      "bytes": 1434,
+      "sha256_before": "fd180a238a48003e3833928f56dca577125dac662510adf7240de47d6b6d6ff5",
+      "sha256_after": "fd180a238a48003e3833928f56dca577125dac662510adf7240de47d6b6d6ff5",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/fm_engine.h",
+      "bundle_path": "source/main/fm_engine.h",
+      "bytes": 3350,
+      "sha256_before": "0520d49d775d95695d9dac469503cb1da659b0d189cd771ce6e04b6c28f08a8b",
+      "sha256_after": "0520d49d775d95695d9dac469503cb1da659b0d189cd771ce6e04b6c28f08a8b",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/fm_only_contract.h",
+      "bundle_path": "source/main/fm_only_contract.h",
+      "bytes": 1001,
+      "sha256_before": "ec7c016b7ae8768ea16f19c328a48a3022dcfb3319b3d1892e58a6b34c8bbc81",
+      "sha256_after": "ec7c016b7ae8768ea16f19c328a48a3022dcfb3319b3d1892e58a6b34c8bbc81",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_audio_routes.inc.h",
+      "bundle_path": "source/main/http_audio_routes.inc.h",
+      "bytes": 1956,
+      "sha256_before": "f4239b7921b7906407f7943b1c25c4965067e7dca46151a80bbaba259d8fbd4c",
+      "sha256_after": "f4239b7921b7906407f7943b1c25c4965067e7dca46151a80bbaba259d8fbd4c",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_dds.inc.h",
+      "bundle_path": "source/main/http_dds.inc.h",
+      "bytes": 7799,
+      "sha256_before": "0b72bfa928f1858b37e5f9b2234c549c7231b59550f48cb60503787bc42ea755",
+      "sha256_after": "0b72bfa928f1858b37e5f9b2234c549c7231b59550f48cb60503787bc42ea755",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "231641881a35154851ce8fee687830b9fef2d5555cd44f5a9a43076aa2929fcd",
+      "historical_origin_sha256_after": "231641881a35154851ce8fee687830b9fef2d5555cd44f5a9a43076aa2929fcd",
+      "historical_origin_bytes": 7774
+    },
+    {
+      "origin_path": "main/http_fdc.inc.h",
+      "bundle_path": "source/main/http_fdc.inc.h",
+      "bytes": 7550,
+      "sha256_before": "ff0669a44b66ef61d01479d484752e9f1cb0f945e0c766e3e40280b0592b288b",
+      "sha256_after": "ff0669a44b66ef61d01479d484752e9f1cb0f945e0c766e3e40280b0592b288b",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_fm_diagnostics.inc.h",
+      "bundle_path": "source/main/http_fm_diagnostics.inc.h",
+      "bytes": 6518,
+      "sha256_before": "46ce81a19897e686baa0814dcda02f6f7189c30bd85ec2fe3af227da2331ad44",
+      "sha256_after": "46ce81a19897e686baa0814dcda02f6f7189c30bd85ec2fe3af227da2331ad44",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_inputs.inc.h",
+      "bundle_path": "source/main/http_inputs.inc.h",
+      "bytes": 1041,
+      "sha256_before": "7be3f2d43efe1824edadc7971e437655746233ac08b0b3813519b4b072702a27",
+      "sha256_after": "7be3f2d43efe1824edadc7971e437655746233ac08b0b3813519b4b072702a27",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_ks_timbre.inc.h",
+      "bundle_path": "source/main/http_ks_timbre.inc.h",
+      "bytes": 9752,
+      "sha256_before": "8bdb8541800e05ba81292de5a7b953f6bb9cdfaf6c9633ab7e543a950d2d144f",
+      "sha256_after": "8bdb8541800e05ba81292de5a7b953f6bb9cdfaf6c9633ab7e543a950d2d144f",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_performance.inc.h",
+      "bundle_path": "source/main/http_performance.inc.h",
+      "bytes": 1643,
+      "sha256_before": "7176f0127174d6db3c38c82670dfe4dd7664213cb96f74da1739afc8c10db31d",
+      "sha256_after": "7176f0127174d6db3c38c82670dfe4dd7664213cb96f74da1739afc8c10db31d",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_raw_midi.inc.h",
+      "bundle_path": "source/main/http_raw_midi.inc.h",
+      "bytes": 5988,
+      "sha256_before": "1d87515ac48bb01b998313dcdaa1873006c7915a9ba5d64b1d05325a67eb4c68",
+      "sha256_after": "1d87515ac48bb01b998313dcdaa1873006c7915a9ba5d64b1d05325a67eb4c68",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_reverb.inc.h",
+      "bundle_path": "source/main/http_reverb.inc.h",
+      "bytes": 6032,
+      "sha256_before": "f1694872e552592588f5c60a19ce8f73bbe0fee34ddbebe6320d5ad6e218055b",
+      "sha256_after": "f1694872e552592588f5c60a19ce8f73bbe0fee34ddbebe6320d5ad6e218055b",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/http_v2.inc.h",
+      "bundle_path": "source/main/http_v2.inc.h",
+      "bytes": 26251,
+      "sha256_before": "af2327a703c71795627a5185a2206d42471675f50b20c451aefd1e9896f43acf",
+      "sha256_after": "af2327a703c71795627a5185a2206d42471675f50b20c451aefd1e9896f43acf",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/ks_timbre_contract.h",
+      "bundle_path": "source/main/ks_timbre_contract.h",
+      "bytes": 156,
+      "sha256_before": "8782529db4b19fd2143bf90b6d9ccf95ccc59a81e7c39e005c5e7aa8ba7f64f3",
+      "sha256_after": "8782529db4b19fd2143bf90b6d9ccf95ccc59a81e7c39e005c5e7aa8ba7f64f3",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/ks_timbre_control.c",
+      "bundle_path": "source/main/ks_timbre_control.c",
+      "bytes": 8766,
+      "sha256_before": "8aee1cf699755fdeb495b5935983a34b4688beb672630ab642a8967791bc4880",
+      "sha256_after": "8aee1cf699755fdeb495b5935983a34b4688beb672630ab642a8967791bc4880",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/ks_timbre_control.h",
+      "bundle_path": "source/main/ks_timbre_control.h",
+      "bytes": 2833,
+      "sha256_before": "f3575adc514a725c8a65d7450817152e1909ad1ec4ebcf7f56daaf028c23b116",
+      "sha256_after": "f3575adc514a725c8a65d7450817152e1909ad1ec4ebcf7f56daaf028c23b116",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/ks_timbre_document.c",
+      "bundle_path": "source/main/ks_timbre_document.c",
+      "bytes": 14237,
+      "sha256_before": "418218dc9acecebe1ac42c25a0c5c231bf3c89241e78035bc960b53ce046e8b1",
+      "sha256_after": "418218dc9acecebe1ac42c25a0c5c231bf3c89241e78035bc960b53ce046e8b1",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/ks_timbre_params.c",
+      "bundle_path": "source/main/ks_timbre_params.c",
+      "bytes": 7755,
+      "sha256_before": "4fd78c0ce8800ae00d29d1132b94303ce6330b30a62765d27389c02b4a9da000",
+      "sha256_after": "4fd78c0ce8800ae00d29d1132b94303ce6330b30a62765d27389c02b4a9da000",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/ks_timbre_params.h",
+      "bundle_path": "source/main/ks_timbre_params.h",
+      "bytes": 2455,
+      "sha256_before": "f9622937439773faf404bcea3a69184bdee225d28d28ace9a29a8dc01e8e7edc",
+      "sha256_after": "f9622937439773faf404bcea3a69184bdee225d28d28ace9a29a8dc01e8e7edc",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/midi_parser.h",
+      "bundle_path": "source/main/midi_parser.h",
+      "bytes": 2375,
+      "sha256_before": "d096a4c503bf999af952e2acddd9255b14296012e73d96ce0674b6374a767ff0",
+      "sha256_after": "d096a4c503bf999af952e2acddd9255b14296012e73d96ce0674b6374a767ff0",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "553b66303f3eaf0cf8deebb5c84124adc7ff8e58216f7972eba9bdcbd5721cb8",
+      "historical_origin_sha256_after": "553b66303f3eaf0cf8deebb5c84124adc7ff8e58216f7972eba9bdcbd5721cb8",
+      "historical_origin_bytes": 2350
+    },
+    {
+      "origin_path": "main/midi_template_link.h",
+      "bundle_path": "source/main/midi_template_link.h",
+      "bytes": 3123,
+      "sha256_before": "63688ae415245caa640ee71fe930174246d6f8b1fe49bedb16af6d447810d0f1",
+      "sha256_after": "63688ae415245caa640ee71fe930174246d6f8b1fe49bedb16af6d447810d0f1",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/midi_templates.h",
+      "bundle_path": "source/main/midi_templates.h",
+      "bytes": 1401,
+      "sha256_before": "b7caba717e0703924b66e4d66689efb6dd2a98c8cc63f8011d91a2d8313538c2",
+      "sha256_after": "b7caba717e0703924b66e4d66689efb6dd2a98c8cc63f8011d91a2d8313538c2",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/owner_local.inc.h",
+      "bundle_path": "source/main/owner_local.inc.h",
+      "bytes": 10826,
+      "sha256_before": "2c0dbf7c2bcc706ab13036f560d0d86166f8402aabfc9a45d945d05f32471457",
+      "sha256_after": "2c0dbf7c2bcc706ab13036f560d0d86166f8402aabfc9a45d945d05f32471457",
+      "compiler_dependency": false
+    },
+    {
+      "origin_path": "main/patch.c",
+      "bundle_path": "source/main/patch.c",
+      "bytes": 6905,
+      "sha256_before": "0dbabb535de63d7183d53092f8cffe4299aee0c688e929372b7efe88ebae4682",
+      "sha256_after": "0dbabb535de63d7183d53092f8cffe4299aee0c688e929372b7efe88ebae4682",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "9548d029168fd0c1ab35d54c36dcc7ce987323b288ef9c00ff90051ac7ccfbad",
+      "historical_origin_sha256_after": "9548d029168fd0c1ab35d54c36dcc7ce987323b288ef9c00ff90051ac7ccfbad",
+      "historical_origin_bytes": 6880
+    },
+    {
+      "origin_path": "main/patch.h",
+      "bundle_path": "source/main/patch.h",
+      "bytes": 8587,
+      "sha256_before": "13f2017dfebcbee48bb99da4f9bb893b9a4be66d5edda22cc9afa8f65a980109",
+      "sha256_after": "13f2017dfebcbee48bb99da4f9bb893b9a4be66d5edda22cc9afa8f65a980109",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "d5bb423f16ff758457a78062ce9a4e69cb7998c0f993b155b9513de654d307e1",
+      "historical_origin_sha256_after": "d5bb423f16ff758457a78062ce9a4e69cb7998c0f993b155b9513de654d307e1",
+      "historical_origin_bytes": 8562
+    },
+    {
+      "origin_path": "main/raw_midi.h",
+      "bundle_path": "source/main/raw_midi.h",
+      "bytes": 2215,
+      "sha256_before": "2867987beef507556ec2da13e8b5730e428f3289bb7cf572940f933f7dc4b67d",
+      "sha256_after": "2867987beef507556ec2da13e8b5730e428f3289bb7cf572940f933f7dc4b67d",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/reverb_control.h",
+      "bundle_path": "source/main/reverb_control.h",
+      "bytes": 736,
+      "sha256_before": "eca905daafb14f465cf4f0437052d36d8aef07c1b6bca7b646d06729529b0a6e",
+      "sha256_after": "eca905daafb14f465cf4f0437052d36d8aef07c1b6bca7b646d06729529b0a6e",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/reverb_control_contract.h",
+      "bundle_path": "source/main/reverb_control_contract.h",
+      "bytes": 889,
+      "sha256_before": "f8757e04d5ed21910d8fac370ea7237b628b36926c5d29d2d7f2333051cbe845",
+      "sha256_after": "f8757e04d5ed21910d8fac370ea7237b628b36926c5d29d2d7f2333051cbe845",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/status_led.h",
+      "bundle_path": "source/main/status_led.h",
+      "bytes": 800,
+      "sha256_before": "b72621fa8ccf89178358348c94d7fa32282a0a9a67060d836be11d23e47b59dc",
+      "sha256_after": "b72621fa8ccf89178358348c94d7fa32282a0a9a67060d836be11d23e47b59dc",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/status_led_pattern.h",
+      "bundle_path": "source/main/status_led_pattern.h",
+      "bytes": 737,
+      "sha256_before": "522572fb0dca7de0217b2d9c727e563b8be01ebebe139aca23fdb7fb52fd2a6c",
+      "sha256_after": "522572fb0dca7de0217b2d9c727e563b8be01ebebe139aca23fdb7fb52fd2a6c",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/sub_patch1.h",
+      "bundle_path": "source/main/sub_patch1.h",
+      "bytes": 714,
+      "sha256_before": "51e43569147809babfee9708ff4e8c6adac63127f64515f6bd07d5f7f8b20e34",
+      "sha256_after": "51e43569147809babfee9708ff4e8c6adac63127f64515f6bd07d5f7f8b20e34",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/vendor/tomlc17/LICENSE",
+      "bundle_path": "source/main/vendor/tomlc17/LICENSE",
+      "bytes": 1069,
+      "sha256_before": "f949d0976f85076c96fc5122f0632b5a1b806d8b2badbe968c42c97230e6e79e",
+      "sha256_after": "f949d0976f85076c96fc5122f0632b5a1b806d8b2badbe968c42c97230e6e79e",
+      "compiler_dependency": false
+    },
+    {
+      "origin_path": "main/vendor/tomlc17/README.md",
+      "bundle_path": "source/main/vendor/tomlc17/README.md",
+      "bytes": 210,
+      "sha256_before": "be1a5a0acd18d5e65f2fb95a3f75c4d0b2896f5eba00661987d9490e659ba2e0",
+      "sha256_after": "be1a5a0acd18d5e65f2fb95a3f75c4d0b2896f5eba00661987d9490e659ba2e0",
+      "compiler_dependency": false
+    },
+    {
+      "origin_path": "main/vendor/tomlc17/tomlc17.c",
+      "bundle_path": "source/main/vendor/tomlc17/tomlc17.c",
+      "bytes": 87597,
+      "sha256_before": "8df630f202c102c52a66027d8aa537e9006ea146bde744d6561adf0401517bc1",
+      "sha256_after": "8df630f202c102c52a66027d8aa537e9006ea146bde744d6561adf0401517bc1",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/vendor/tomlc17/tomlc17.h",
+      "bundle_path": "source/main/vendor/tomlc17/tomlc17.h",
+      "bytes": 9302,
+      "sha256_before": "281708fa05b805c32c117fc6033b0f4248257fce3440b1ac3391853bfc8f8bb5",
+      "sha256_after": "281708fa05b805c32c117fc6033b0f4248257fce3440b1ac3391853bfc8f8bb5",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/voice_alloc.c",
+      "bundle_path": "source/main/voice_alloc.c",
+      "bytes": 104089,
+      "sha256_before": "24f31a758ff40888043ffde6ac7d363aebc20a2e8e81f9ad94b10dad4667e101",
+      "sha256_after": "24f31a758ff40888043ffde6ac7d363aebc20a2e8e81f9ad94b10dad4667e101",
+      "compiler_dependency": false,
+      "historical_origin_sha256_before": "20a5e69f69e4e39b2131b1ebea262810582c25f77bda5c32e7d26712987f38da",
+      "historical_origin_sha256_after": "20a5e69f69e4e39b2131b1ebea262810582c25f77bda5c32e7d26712987f38da",
+      "historical_origin_bytes": 104064
+    },
+    {
+      "origin_path": "main/web_asset.inc.h",
+      "bundle_path": "source/main/web_asset.inc.h",
+      "bytes": 1711,
+      "sha256_before": "f41cfbc3a3bd43e05f8edd2b7b55ba9fa7188ca535b1c4323b31e351a5cbb04d",
+      "sha256_after": "f41cfbc3a3bd43e05f8edd2b7b55ba9fa7188ca535b1c4323b31e351a5cbb04d",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_control.c",
+      "bundle_path": "source/main/web_control.c",
+      "bytes": 5852,
+      "sha256_before": "09ee3c42c64dda07b3aac965af6c520595fb5f767d29c10e976663b444d686a7",
+      "sha256_after": "09ee3c42c64dda07b3aac965af6c520595fb5f767d29c10e976663b444d686a7",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_control.h",
+      "bundle_path": "source/main/web_control.h",
+      "bytes": 2685,
+      "sha256_before": "434245d4ba8319107c4599c0a5a79a3df80291c314e013ceca07b38641c1d09d",
+      "sha256_after": "434245d4ba8319107c4599c0a5a79a3df80291c314e013ceca07b38641c1d09d",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_control_v2.h",
+      "bundle_path": "source/main/web_control_v2.h",
+      "bytes": 233,
+      "sha256_before": "f4fba3f120bff21f05755c3560510af25139f66304dcefaa3c96f6e8463cc937",
+      "sha256_after": "f4fba3f120bff21f05755c3560510af25139f66304dcefaa3c96f6e8463cc937",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_raw_midi.c",
+      "bundle_path": "source/main/web_raw_midi.c",
+      "bytes": 5212,
+      "sha256_before": "603dfbb7513b98234b9bd2721b1c63bbda307012a833995696aa9bee2937ed19",
+      "sha256_after": "603dfbb7513b98234b9bd2721b1c63bbda307012a833995696aa9bee2937ed19",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_raw_midi.h",
+      "bundle_path": "source/main/web_raw_midi.h",
+      "bytes": 726,
+      "sha256_before": "bf0db8975aca3900d19ab543245432d22b92fe6769dc7d7817a563c4d90ec4ca",
+      "sha256_after": "bf0db8975aca3900d19ab543245432d22b92fe6769dc7d7817a563c4d90ec4ca",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_raw_queue.c",
+      "bundle_path": "source/main/web_raw_queue.c",
+      "bytes": 1525,
+      "sha256_before": "fe2fcda6266e55fe1a9aadfdb81886c64caa09ad6ecd5b66213c3b5358974351",
+      "sha256_after": "fe2fcda6266e55fe1a9aadfdb81886c64caa09ad6ecd5b66213c3b5358974351",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/web_raw_queue.h",
+      "bundle_path": "source/main/web_raw_queue.h",
+      "bytes": 545,
+      "sha256_before": "033d57c448d6db5045bf185aab663bb793bc9c300dc0588fc666f28f1c65f46a",
+      "sha256_after": "033d57c448d6db5045bf185aab663bb793bc9c300dc0588fc666f28f1c65f46a",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "main/wifi_web.c",
+      "bundle_path": "source/main/wifi_web.c",
+      "bytes": 19100,
+      "sha256_before": "6dcf921a6b889e0f3100b591e6504fcd30e0453b0f1183d050bc0ce88329bc58",
+      "sha256_after": "6dcf921a6b889e0f3100b591e6504fcd30e0453b0f1183d050bc0ce88329bc58",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "6493b9b576fe22b81464626aae7e1b16ef39a80dffbb0eb793f2011175514e3c",
+      "historical_origin_sha256_after": "6493b9b576fe22b81464626aae7e1b16ef39a80dffbb0eb793f2011175514e3c",
+      "historical_origin_bytes": 19121
+    },
+    {
+      "origin_path": "main/wifi_web.h",
+      "bundle_path": "source/main/wifi_web.h",
+      "bytes": 40,
+      "sha256_before": "e4801a20057229a55942a0f9b30451651544db9f6982020a7c7b40ef2fd2c509",
+      "sha256_after": "e4801a20057229a55942a0f9b30451651544db9f6982020a7c7b40ef2fd2c509",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/capture_control_api.c",
+      "bundle_path": "source/tests/host/capture_control_api.c",
+      "bytes": 4698,
+      "sha256_before": "b10d796618ebfc0537181cb225b13430b8d2d2bf63b96aae8b01a9dc7b337aa1",
+      "sha256_after": "b10d796618ebfc0537181cb225b13430b8d2d2bf63b96aae8b01a9dc7b337aa1",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/fake_dds_presets.c",
+      "bundle_path": "source/tests/host/fake_dds_presets.c",
+      "bytes": 2071,
+      "sha256_before": "10b259e8eeddf2f53f57aac3f25817b70d98cac90caf81408204c02c7554c208",
+      "sha256_after": "10b259e8eeddf2f53f57aac3f25817b70d98cac90caf81408204c02c7554c208",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/fake_queue.c",
+      "bundle_path": "source/tests/host/fake_queue.c",
+      "bytes": 811,
+      "sha256_before": "40200ef91d893df301703f706da80e1b2393b2388aa943f9663d5b3571b7abdf",
+      "sha256_after": "40200ef91d893df301703f706da80e1b2393b2388aa943f9663d5b3571b7abdf",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/esp_err.h",
+      "bundle_path": "source/tests/host/http_stubs/esp_err.h",
+      "bytes": 240,
+      "sha256_before": "a4cf1878ae4affbb68424c60420b9a29a1f212582c01b02886e8a5a450a78cf0",
+      "sha256_after": "a4cf1878ae4affbb68424c60420b9a29a1f212582c01b02886e8a5a450a78cf0",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/esp_event.h",
+      "bundle_path": "source/tests/host/http_stubs/esp_event.h",
+      "bytes": 563,
+      "sha256_before": "b2dfaf0ec7e0ff50108a7f5db4747b3358eb5af4e28d85268c149c44b16c9a0e",
+      "sha256_after": "b2dfaf0ec7e0ff50108a7f5db4747b3358eb5af4e28d85268c149c44b16c9a0e",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/esp_http_server.h",
+      "bundle_path": "source/tests/host/http_stubs/esp_http_server.h",
+      "bytes": 1932,
+      "sha256_before": "757179487514b2bfa5c3e02ec19469957977c034f0337dbef023232c52826ecd",
+      "sha256_after": "757179487514b2bfa5c3e02ec19469957977c034f0337dbef023232c52826ecd",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/esp_netif.h",
+      "bundle_path": "source/tests/host/http_stubs/esp_netif.h",
+      "bytes": 211,
+      "sha256_before": "5697375c849cde22bf1f5509bac7c9e29e75fe70e76764fcaaf78f722f01cfa2",
+      "sha256_after": "5697375c849cde22bf1f5509bac7c9e29e75fe70e76764fcaaf78f722f01cfa2",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/esp_random.h",
+      "bundle_path": "source/tests/host/http_stubs/esp_random.h",
+      "bytes": 60,
+      "sha256_before": "8fe8d167b1dac059c8febc7de0235c7eae8599033b44bcb6556df6cb444b9288",
+      "sha256_after": "8fe8d167b1dac059c8febc7de0235c7eae8599033b44bcb6556df6cb444b9288",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/esp_wifi.h",
+      "bundle_path": "source/tests/host/http_stubs/esp_wifi.h",
+      "bytes": 930,
+      "sha256_before": "bf9ec689c8fb797bf296830cd7fa42a4b8c65791ba29e17394b1c5d8c501930c",
+      "sha256_after": "bf9ec689c8fb797bf296830cd7fa42a4b8c65791ba29e17394b1c5d8c501930c",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/miniz.h",
+      "bundle_path": "source/tests/host/http_stubs/miniz.h",
+      "bytes": 1148,
+      "sha256_before": "475829cc605d139ee09719a5bec643ebf3cac0efa67ce2761661d95deeb97a28",
+      "sha256_after": "475829cc605d139ee09719a5bec643ebf3cac0efa67ce2761661d95deeb97a28",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/nvs.h",
+      "bundle_path": "source/tests/host/http_stubs/nvs.h",
+      "bytes": 364,
+      "sha256_before": "efb080aef8642194fcf4f0babb00ccd7327458f3feb2ec1742cf18d6d0c26378",
+      "sha256_after": "efb080aef8642194fcf4f0babb00ccd7327458f3feb2ec1742cf18d6d0c26378",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/http_stubs/sdkconfig.h",
+      "bundle_path": "source/tests/host/http_stubs/sdkconfig.h",
+      "bytes": 175,
+      "sha256_before": "91882f2c45899945d18368fd5d18c5f1fcb386101b307a21f12116b22fcde49b",
+      "sha256_after": "91882f2c45899945d18368fd5d18c5f1fcb386101b307a21f12116b22fcde49b",
+      "compiler_dependency": true,
+      "historical_origin_sha256_before": "53e079c0f93c77ba52641df1bf179806922178fbda591afa59f2bf9531b146f8",
+      "historical_origin_sha256_after": "53e079c0f93c77ba52641df1bf179806922178fbda591afa59f2bf9531b146f8",
+      "historical_origin_bytes": 187
+    },
+    {
+      "origin_path": "tests/host/stubs/esp_log.h",
+      "bundle_path": "source/tests/host/stubs/esp_log.h",
+      "bytes": 226,
+      "sha256_before": "71a027990cdbd5df6cebb4cc74354ba473ebfd5b92da8a3bb4e5cefa8122d526",
+      "sha256_after": "71a027990cdbd5df6cebb4cc74354ba473ebfd5b92da8a3bb4e5cefa8122d526",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/stubs/esp_timer.h",
+      "bundle_path": "source/tests/host/stubs/esp_timer.h",
+      "bytes": 357,
+      "sha256_before": "da878fcc6e8088f6fabc6e4ba6e2b6a1a87bebcdfe0ccbfb13051a0246893d19",
+      "sha256_after": "da878fcc6e8088f6fabc6e4ba6e2b6a1a87bebcdfe0ccbfb13051a0246893d19",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/stubs/freertos/FreeRTOS.h",
+      "bundle_path": "source/tests/host/stubs/freertos/FreeRTOS.h",
+      "bytes": 395,
+      "sha256_before": "9b02cb5f1073b823f1649b236fb9dfdcf165fd113f3e0a2ac5055e57c38f1f66",
+      "sha256_after": "9b02cb5f1073b823f1649b236fb9dfdcf165fd113f3e0a2ac5055e57c38f1f66",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/stubs/freertos/queue.h",
+      "bundle_path": "source/tests/host/stubs/freertos/queue.h",
+      "bytes": 281,
+      "sha256_before": "2b5ab80394bcec33b91c58eb31971bf35080dc6b1a6b57071eb304702c1a3b44",
+      "sha256_after": "2b5ab80394bcec33b91c58eb31971bf35080dc6b1a6b57071eb304702c1a3b44",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/stubs/freertos/task.h",
+      "bundle_path": "source/tests/host/stubs/freertos/task.h",
+      "bytes": 329,
+      "sha256_before": "9bc456fb6d37640c52433adc553a7ac9826cc1e69f2bae624c75e0c3818d85af",
+      "sha256_after": "9bc456fb6d37640c52433adc553a7ac9826cc1e69f2bae624c75e0c3818d85af",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/test_http_api.c",
+      "bundle_path": "source/tests/host/test_http_api.c",
+      "bytes": 14192,
+      "sha256_before": "a77db61bbbe7c0c48eac29ccef9ce354c5ea8e5488cfbb5548096242e9882d6d",
+      "sha256_after": "a77db61bbbe7c0c48eac29ccef9ce354c5ea8e5488cfbb5548096242e9882d6d",
+      "compiler_dependency": true
+    },
+    {
+      "origin_path": "tests/host/test_http_v2.c",
+      "bundle_path": "source/tests/host/test_http_v2.c",
+      "bytes": 9486,
+      "sha256_before": "c1582a6a5b967bf6de92558b8c9ba043ccd81ac56d669970e0933fd5c57c37c4",
+      "sha256_after": "c1582a6a5b967bf6de92558b8c9ba043ccd81ac56d669970e0933fd5c57c37c4",
+      "compiler_dependency": true
+    }
+  ],
+  "boundary": "Unchanged production prepare/emit plus firmware SDK-boundary host test. Owner observations are explicit host model; no hardware, HTTP traffic, serial, FPGA adoption or audio claim.",
+  "tomlc17": {
+    "repository": "https://github.com/cktan/tomlc17",
+    "commit": "e0e8868546b4611a86fcdb284819e60866a3480b",
+    "license": "MIT; included source/main/vendor/tomlc17/LICENSE"
+  },
+  "publication_migration": {
+    "date": "2026-11-12",
+    "project": "空灵云音",
+    "historical_source_set_sha256": "7092d93daa4be2d84518d432af2b9281890a5232ba16736165dfb3c628276bf5",
+    "scope": "Authorized branding and MIT license notices; source fixtures retain behavior. Historical origin fields and hashes remain evidence of the archived capture, while the active sha256_before/after fields bind this stable publication source.",
+    "changed_source_paths": [
+      "source/LICENSE",
+      "source/main/dds_document.h",
+      "source/main/dds_presets.h",
+      "source/main/engine_link.h",
+      "source/main/event_bus.h",
+      "source/main/http_dds.inc.h",
+      "source/main/midi_parser.h",
+      "source/main/patch.c",
+      "source/main/patch.h",
+      "source/main/voice_alloc.c",
+      "source/main/wifi_web.c",
+      "source/tests/host/http_stubs/sdkconfig.h"
+    ],
+    "current_stable_source_reads_equal": true,
+    "hardware_validation": false
+  }
+}

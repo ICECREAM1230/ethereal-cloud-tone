@@ -1,0 +1,7 @@
+﻿ref,proposed_x,proposed_y,note
+激光测距1,108.0,112.0,left side above fixed FDC; revise module body keepout
+激光测距2,108.0,88.0,left upper sensor area
+超声模块1,188.0,80.0,right upper area
+超声模块2,188.0,98.0,right sensor area
+OV5640,196.647,124.567,138K local; retain original as first candidate
+编码器模块,151.054,63.226,"optional test/expansion, do not force SPI to detour through it"

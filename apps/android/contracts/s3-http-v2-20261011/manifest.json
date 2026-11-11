@@ -1,0 +1,356 @@
+{
+  "manifest_format": 1,
+  "date": "2026-10-11",
+  "source": {
+    "root": "/home/ice/Project/my_project/development/ESP32/ESP32_development/esp32s3",
+    "repository": "/home/ice/Project/my_project",
+    "head": "446ef90ba330dc99b183f8679cd67d4d9b7db481",
+    "branch": "main",
+    "source_bytes_stable_before_and_after_copy": true,
+    "original_file_count": 40,
+    "original_bytes": 143830
+  },
+  "identity": {
+    "schema_version": "1.0.1",
+    "abi_major": 1,
+    "abi_minor": 1,
+    "api_major": 2,
+    "api_minor": 0,
+    "profile_id": 1,
+    "backend_id": 1,
+    "profile_version": 65536,
+    "schema_sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73",
+    "profiles_sha256": "51a6af55646fe2adb54bf4f9f3d06e2d262bd830ec5f30f80c0e5bfa2eadf49f",
+    "contract_sha256": "86aa104f60f3e8fc586a9f64052032e45b24d7148f43610b3ef0e86c9e5fed38"
+  },
+  "fixtures": [
+    "v2-capabilities.json",
+    "v2-state.json",
+    "v2-catalog.json",
+    "v2-catalog-page-8.json",
+    "v2-profile.json",
+    "v2-presets.json",
+    "v2-live-capabilities.json",
+    "v2-live-state.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "kind": "closure_documentation",
+      "bytes": 4807,
+      "sha256": "05ae060f10f9ad81ea56fee27d858736649c8aa1bc892b894d48cafb66d7b6b4"
+    },
+    {
+      "path": "bridge/HttpV2ParseBridge.c",
+      "kind": "app_adapter_copy",
+      "bytes": 1397,
+      "sha256": "1fa1937bb5e5025f86a4b3eacf6c4b67b0f75f6022264d99fd5cfa2e701ecbec"
+    },
+    {
+      "path": "parser-vectors.json",
+      "kind": "fixed_validation_vectors",
+      "bytes": 14633,
+      "sha256": "4312ded8b5b5c013ead999b2ce3481407b98216b1ae0e096b449681d32e59da5"
+    },
+    {
+      "path": "s3/contract/fm/generated/c/fm_contract.h",
+      "kind": "s3_original",
+      "source_relative_path": "contract/fm/generated/c/fm_contract.h",
+      "bytes": 21348,
+      "sha256": "a9d4f0bfa6bbf80aadfecef4a6acdf7365661c2b10b65849f017720728241765"
+    },
+    {
+      "path": "s3/docs/fm/HTTP-v2-contract.md",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/HTTP-v2-contract.md",
+      "bytes": 12241,
+      "sha256": "696ccedb31066d7816413d6e17955528c4b39a54ce887428a5a4a789fef9e35f"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-capabilities.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-capabilities.json",
+      "bytes": 740,
+      "sha256": "6a9b4a206978d001f2fad5665edcfdef109d13e62e7759c10019afb949c50175"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-catalog-page-8.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-catalog-page-8.json",
+      "bytes": 827,
+      "sha256": "d50bba46c13583839797581cc04da68b320ada5a96b554704684f4dc2cc8fb06"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-catalog.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-catalog.json",
+      "bytes": 1180,
+      "sha256": "57161f28720bc35df93b35c03c39fab1ca8b5a4afe46938076395b19db587935"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-live-capabilities.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-live-capabilities.json",
+      "bytes": 718,
+      "sha256": "f24e357d4bd06b009a09f6b66513b40a7b63dc0c12ffbf4873ac8914022089df"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-live-state.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-live-state.json",
+      "bytes": 2376,
+      "sha256": "08e61e7abcaa50650216dc36ca585e2f9bfaafdbd9e090ef10cfd13e1f46fadb"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-presets.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-presets.json",
+      "bytes": 472,
+      "sha256": "68c6c7e2b3b346780a8ce34b99aedf7b7e8e31918c8b180d152e39fb97b191f6"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-profile.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-profile.json",
+      "bytes": 356,
+      "sha256": "9b0150143639cc2c358748115099490dc59fc3ad0e657312abd0fadf42f87d18"
+    },
+    {
+      "path": "s3/docs/fm/http-v2-fixtures/v2-state.json",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/http-v2-fixtures/v2-state.json",
+      "bytes": 1975,
+      "sha256": "0ae9a87f17d413423cbaf6e250002e189d208a72e2b015674a24fec532837bdb"
+    },
+    {
+      "path": "s3/docs/fm/运行期桥接交付-20261011.md",
+      "kind": "s3_original",
+      "source_relative_path": "docs/fm/运行期桥接交付-20261011.md",
+      "bytes": 8030,
+      "sha256": "db6ccca6ed6cf549fe3007895c5adf95fce26b0100ee97b84c34d6371996ffae"
+    },
+    {
+      "path": "s3/main/engine_link.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/engine_link.h",
+      "bytes": 7620,
+      "sha256": "fb706c076304b9df13165ea643e98ec18b00f05a0cd9e972cf136d686cf66ae5"
+    },
+    {
+      "path": "s3/main/event_bus.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/event_bus.h",
+      "bytes": 2959,
+      "sha256": "413ad2dc90a54a87e7a387615e776bf6733834f103f9a7295e9c53cecdfce38e"
+    },
+    {
+      "path": "s3/main/fm_contract.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/fm_contract.h",
+      "bytes": 147,
+      "sha256": "62e6ba9455054369ee11ef96f6938795ae76707ed09229cc7d1f118c1c8a3a17"
+    },
+    {
+      "path": "s3/main/fm_engine.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/fm_engine.h",
+      "bytes": 2112,
+      "sha256": "ce1e672a536f8ade5710261cf5fb2b22d91d0d761f7f8f77e7ea60cd159229b1"
+    },
+    {
+      "path": "s3/main/http_v2.inc.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/http_v2.inc.h",
+      "bytes": 19563,
+      "sha256": "74243b347f9b643fdc183987f6436cf9f8e37daa4f22e2f88d0260ab96c9dad6"
+    },
+    {
+      "path": "s3/main/midi_parser.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/midi_parser.h",
+      "bytes": 2375,
+      "sha256": "d096a4c503bf999af952e2acddd9255b14296012e73d96ce0674b6374a767ff0"
+    },
+    {
+      "path": "s3/main/patch.c",
+      "kind": "s3_original",
+      "source_relative_path": "main/patch.c",
+      "bytes": 6670,
+      "sha256": "9895729b596ce1172a5153db8b2daba44cc83b419a67710534bb952a035b8be3"
+    },
+    {
+      "path": "s3/main/patch.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/patch.h",
+      "bytes": 8281,
+      "sha256": "6cf143e5203067c95ae3e612a828dd6915e460b2750b9910fb85748e6d4112ab"
+    },
+    {
+      "path": "s3/main/status_led.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/status_led.h",
+      "bytes": 800,
+      "sha256": "b72621fa8ccf89178358348c94d7fa32282a0a9a67060d836be11d23e47b59dc"
+    },
+    {
+      "path": "s3/main/status_led_pattern.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/status_led_pattern.h",
+      "bytes": 737,
+      "sha256": "522572fb0dca7de0217b2d9c727e563b8be01ebebe139aca23fdb7fb52fd2a6c"
+    },
+    {
+      "path": "s3/main/web_control.c",
+      "kind": "s3_original",
+      "source_relative_path": "main/web_control.c",
+      "bytes": 4105,
+      "sha256": "10fe5323a8849e47bddf1eb09f72f8aa0a3cbad51b43ddbec8d63fe8ea054095"
+    },
+    {
+      "path": "s3/main/web_control.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/web_control.h",
+      "bytes": 1343,
+      "sha256": "f89cff803cf94331492ba7b19689484b4cdc28ca12a9b8d0a27e3c0bf35bcae2"
+    },
+    {
+      "path": "s3/main/web_control_v2.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/web_control_v2.h",
+      "bytes": 233,
+      "sha256": "f4fba3f120bff21f05755c3560510af25139f66304dcefaa3c96f6e8463cc937"
+    },
+    {
+      "path": "s3/main/wifi_web.c",
+      "kind": "s3_original",
+      "source_relative_path": "main/wifi_web.c",
+      "bytes": 16837,
+      "sha256": "9adad6ba47119e5b0925a3ab649b552b2f4ff1dc1e7947efa5eaff1c3e8274cb"
+    },
+    {
+      "path": "s3/main/wifi_web.h",
+      "kind": "s3_original",
+      "source_relative_path": "main/wifi_web.h",
+      "bytes": 40,
+      "sha256": "e4801a20057229a55942a0f9b30451651544db9f6982020a7c7b40ef2fd2c509"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_err.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/esp_err.h",
+      "bytes": 215,
+      "sha256": "4d74025ab1731044f564f6db8e2b6fca95cfed135b94c73929f778b69eb99127"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_event.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/esp_event.h",
+      "bytes": 563,
+      "sha256": "b2dfaf0ec7e0ff50108a7f5db4747b3358eb5af4e28d85268c149c44b16c9a0e"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_http_server.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/esp_http_server.h",
+      "bytes": 1737,
+      "sha256": "6be077b907e581b5e59172bb034fa99f2da412d5f146110e52bf707dd53b900a"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_netif.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/esp_netif.h",
+      "bytes": 211,
+      "sha256": "5697375c849cde22bf1f5509bac7c9e29e75fe70e76764fcaaf78f722f01cfa2"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_random.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/esp_random.h",
+      "bytes": 60,
+      "sha256": "8fe8d167b1dac059c8febc7de0235c7eae8599033b44bcb6556df6cb444b9288"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_wifi.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/esp_wifi.h",
+      "bytes": 904,
+      "sha256": "1ca5c5f6f5919717225f5ac061d1b2de6d440bf305472e5df090bd450f673406"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/nvs.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/nvs.h",
+      "bytes": 364,
+      "sha256": "efb080aef8642194fcf4f0babb00ccd7327458f3feb2ec1742cf18d6d0c26378"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/sdkconfig.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/http_stubs/sdkconfig.h",
+      "bytes": 175,
+      "sha256": "91882f2c45899945d18368fd5d18c5f1fcb386101b307a21f12116b22fcde49b"
+    },
+    {
+      "path": "s3/tests/host/stubs/esp_log.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/stubs/esp_log.h",
+      "bytes": 172,
+      "sha256": "b2186181b13c06d88d1e008b076b7750c64894cbd02a6c5ffa0e307e2ec50f84"
+    },
+    {
+      "path": "s3/tests/host/stubs/esp_timer.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/stubs/esp_timer.h",
+      "bytes": 357,
+      "sha256": "da878fcc6e8088f6fabc6e4ba6e2b6a1a87bebcdfe0ccbfb13051a0246893d19"
+    },
+    {
+      "path": "s3/tests/host/stubs/freertos/FreeRTOS.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/stubs/freertos/FreeRTOS.h",
+      "bytes": 395,
+      "sha256": "9b02cb5f1073b823f1649b236fb9dfdcf165fd113f3e0a2ac5055e57c38f1f66"
+    },
+    {
+      "path": "s3/tests/host/stubs/freertos/queue.h",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/stubs/freertos/queue.h",
+      "bytes": 281,
+      "sha256": "2b5ab80394bcec33b91c58eb31971bf35080dc6b1a6b57071eb304702c1a3b44"
+    },
+    {
+      "path": "s3/tests/host/test_http_api.c",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/test_http_api.c",
+      "bytes": 7721,
+      "sha256": "8086eb34312e4cae3ffb34b58d4f8e20aa67e14cb0a15485cb00c2946cfe0133"
+    },
+    {
+      "path": "s3/tests/host/test_http_v2.c",
+      "kind": "s3_original",
+      "source_relative_path": "tests/host/test_http_v2.c",
+      "bytes": 6680,
+      "sha256": "a4d0e35399a5ba96556d5435bc22fa83970ebe188c5cb7558653a76acc2cddcd"
+    }
+  ],
+  "app_tools": [
+    {
+      "path": "tools/HttpV2ParseBridge.c",
+      "bytes": 1397,
+      "sha256": "1fa1937bb5e5025f86a4b3eacf6c4b67b0f75f6022264d99fd5cfa2e701ecbec",
+      "frozen_copy": "bridge/HttpV2ParseBridge.c"
+    },
+    {
+      "path": "tools/test_http_v2_handler.py",
+      "bytes": 14866,
+      "sha256": "163333002f96b89520d9c749fec4f1c19ed02b7aa72234fc2e0e847fc34be2ec"
+    }
+  ],
+  "validation_boundary": "实际生产C handler与parser；原SDK boundary host输入，无设备发现／SPI／声音验证。",
+  "publication_migration": {
+    "date": "2026-11-12",
+    "project": "空灵云音",
+    "historical_manifest_sha256": "902df9aa3e9721141356b52169d8ac5c79cef3ef575130c215c347511f6c9246",
+    "scope": "Rebind renamed MIT publication source and license paths to actual file bytes; response fixtures and protocol identities unchanged."
+  }
+}

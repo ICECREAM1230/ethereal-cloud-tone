@@ -1,0 +1,101 @@
+{
+  "result": "PASS",
+  "boundary": "Production core prepare/emit; all owner observations are explicit HOST OWNER MODEL. No physical FPGA adoption, device discovery, or audio claim.",
+  "source_set_sha256": "7092d93daa4be2d84518d432af2b9281890a5232ba16736165dfb3c628276bf5",
+  "capture_commands": [
+    {
+      "group": "original-core",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "log": "AE350 fixture capture: real core serializer, explicit host owner adoption, global SUB0 retained across client channel0/2/1 PASS\n",
+      "exact_generated_files": 12
+    },
+    {
+      "group": "http-v2",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "log": "HTTP JSON: bounded 2 KiB writes, intact escaped strings and failed-response isolation PASS\nHTTP FM flags: 0x5 capability/explicit SELECT allowed; BUSY SELECT and MUTED keys/parameters rejected without sequence consumption PASS\nHTTP v2: actual handlers, isolated sessions, epoch fencing, no unavailable FM writes, generated catalog pagination and state PASS\n",
+      "exact_generated_files": 8
+    },
+    {
+      "group": "fixtures",
+      "compile_exit": 0,
+      "run_exit": 0,
+      "log": "AE350 service capture PASS: actual prepare/emit, explicit HOST OWNER MODEL, global SUB0 retained; no FPGA/audio claim\n",
+      "exact_generated_files": 43
+    }
+  ],
+  "service_requests": 42,
+  "production_handoff_fixture_matches": [
+    {
+      "file": "capabilities-channel-routes.json",
+      "present": true,
+      "byte_equal": false
+    },
+    {
+      "file": "channel-0-received.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "channel-1-received.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "channel-2-received.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "legacy-state-global-sub.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "session.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "state-channel-0-global-sub.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "state-channel-1-global-sub.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "state-channel-2-global-sub.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "state-global-sub-client-ks.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "sub-parameter-owner-adopted.json",
+      "present": true,
+      "byte_equal": true
+    },
+    {
+      "file": "sub-parameter-received.json",
+      "present": true,
+      "byte_equal": true
+    }
+  ],
+  "historical_difference": {
+    "file": "capabilities-channel-routes.json",
+    "changed_fields": [
+      "profiles_sha256",
+      "contract_sha256"
+    ],
+    "old_profiles_sha256": "3557827b9bd78b2ac23283b21a05a0f083acdc4b24dd6b6778c02e852e333d25",
+    "old_contract_sha256": "5701b9f820a9755951ca3ae43bffd518f3b4e4c91d297c391abac4922c57e137",
+    "interpretation": "Pre-freeze origin change since prior handoff; no source drift during this freeze."
+  }
+}

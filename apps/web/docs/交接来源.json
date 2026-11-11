@@ -1,0 +1,279 @@
+{
+  "recorded_at": "2026-10-05T02:16:49.840347+09:00",
+  "target_project": "/home/ice/文档/ChatGPT/用户界面前端开发",
+  "target_baseline": "master：尚无提交，交接前工作树为空",
+  "target_status_before": "## No commits yet on master\n",
+  "source_worktree": "/home/ice/Project/synth-review-work-20261003",
+  "source_head": "54f0a1b3bcb01211b2ab2c7b28561545f7d980af",
+  "source_branch": "work/review-integration-20261003",
+  "source_status_before": " M .ai/changes.md\n M .ai/decisions.md\n M .ai/issues.md\n M .ai/progress.md\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/impl/tang_mega_138k_synth_process_config.json\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/sim/tb_ect_board.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/ect/spi/spi_bus.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/ect/top.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/tang_mega_138k_synth.cst\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/tang_mega_138k_synth_top.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/tang_mega_138k_synth.gprj\n M development/tang_mega_138k_synth/esp32c3/main/CMakeLists.txt\n M development/tang_mega_138k_synth/esp32c3/main/Kconfig.projbuild\n M development/tang_mega_138k_synth/esp32c3/main/ble_midi.c\n M development/tang_mega_138k_synth/esp32c3/main/engine_link.c\n M development/tang_mega_138k_synth/esp32c3/main/engine_link.h\n M development/tang_mega_138k_synth/esp32c3/main/event_bus.c\n M development/tang_mega_138k_synth/esp32c3/main/event_bus.h\n M development/tang_mega_138k_synth/esp32c3/main/main.c\n M development/tang_mega_138k_synth/esp32c3/main/midi_in.c\n M development/tang_mega_138k_synth/esp32c3/main/midi_log.c\n M development/tang_mega_138k_synth/esp32c3/main/midi_source.h\n M development/tang_mega_138k_synth/esp32c3/main/stress_test.c\n M development/tang_mega_138k_synth/esp32c3/main/voice_alloc.c\n M development/tang_mega_138k_synth/esp32s3/README.md\n M development/tang_mega_138k_synth/esp32s3/sdkconfig.defaults\n M development/tang_mega_138k_synth/physical_modeling/README.md\n M development/tang_mega_138k_synth/physical_modeling/physical_model_top.sv\n M development/tang_mega_138k_synth/physical_modeling/reference_model.py\n M development/tang_mega_138k_synth/physical_modeling/test_reference_model.py\n M docs/next-design-roadmap-20261003.md\n M docs/physical-modeling/README.md\n M docs/physical-modeling/ip-handoff.md\n M docs/physical-modeling/source-manifest.json\n M docs/review-snapshot-index-20261003.md\n M tools/ci/run-module-tests.sh\n M tools/skills/gowin-project-navigation/SKILL.md\n M tools/skills/gowin-project-navigation/references/cst-physical-constraints.md\n M tools/skills/gowin-project-navigation/references/gowin-ip-checks.md\n M tools/skills/gowin-project-navigation/references/project-inspection.md\n M tools/skills/gowin-project-navigation/references/tcl-project-build.md\n M tools/skills/gowin-project-navigation/scripts/find-gowin-project.ps1\n M tools/skills/gowin-project-navigation/scripts/find_gowin_project.py\n M tools/skills/gowin-project-navigation/scripts/test-find-gowin-project.ps1\n M tools/skills/gowin-project-navigation/scripts/test_find_gowin_project.py\n M tools/tests/firmware/run.sh\n M tools/tests/firmware/test_engine_order.c\n M tools/tests/rtl/check_active_project.py\n?? development/tang_mega_138k_synth/audio_i2s/eda_proj/sim/tb_ks_board.sv\n?? development/tang_mega_138k_synth/audio_i2s/eda_proj/sim/tb_ks_control_bridge.sv\n?? development/tang_mega_138k_synth/esp32c3/main/engine_ks.inc.h\n?? development/tang_mega_138k_synth/esp32c3/main/ks_params.c\n?? development/tang_mega_138k_synth/esp32c3/main/ks_params.h\n?? development/tang_mega_138k_synth/esp32c3/main/ks_voice.c\n?? development/tang_mega_138k_synth/esp32c3/main/ks_voice.h\n?? development/tang_mega_138k_synth/esp32c3/main/web/\n?? development/tang_mega_138k_synth/esp32c3/main/web_control.c\n?? development/tang_mega_138k_synth/esp32c3/main/web_control.h\n?? development/tang_mega_138k_synth/esp32c3/main/wifi_web.c\n?? development/tang_mega_138k_synth/esp32c3/main/wifi_web.h\n?? development/tang_mega_138k_synth/fm_synthesis/\n?? development/tang_mega_138k_synth/physical_modeling/ip/\n?? development/tang_mega_138k_synth/physical_modeling/ip_generation_20261003/\n?? development/tang_mega_138k_synth/physical_modeling/ks_control_bridge.sv\n?? development/tang_mega_138k_synth/physical_modeling/ks_golden.py\n?? development/tang_mega_138k_synth/physical_modeling/ks_mean_divider.sv\n?? development/tang_mega_138k_synth/physical_modeling/sim/\n?? development/tang_mega_138k_synth/physical_modeling/test_ks_golden.py\n?? docs/fm-synthesis/\n?? docs/ks-integration-20261003.md\n?? docs/physical-modeling/bit-exact-ks.md\n?? docs/physical-modeling/ks-control-protocol.md\n?? docs/snapshots/\n?? docs/wifi-web-control-20261003.md\n?? docs/wifi-web-control-evidence-20261003/\n?? releases/\n?? tools/skills/gowin-project-navigation/references/gowin-ip-generation.md\n?? tools/tests/firmware/fake_ks_engine.c\n?? tools/tests/firmware/ks_parameter_dump.c\n?? tools/tests/firmware/ks_parameters_expected.csv\n?? tools/tests/firmware/test_ks_engine.c\n?? tools/tests/firmware/test_ks_voice.c\n?? tools/tests/firmware/test_ks_web.c\n?? tools/tests/firmware/test_web_control.c\n?? tools/tests/firmware/test_web_page.js\n?? tools/tests/firmware/web_preview.py\n?? tools/tests/physical_modeling/\n?? tools/tests/rtl/check_esp32_pin_safety.py\n?? tools/tests/rtl/check_gowin_timing.py\n?? tools/tests/rtl/run_ks_integration.sh\n",
+  "source_note": "当前接口包含未提交和未跟踪文件，不能只用 source_head 恢复；下面的 reference 复制了所列路径在本次交接时的实际内容。并非完整工程备份。",
+  "reference_files": [
+    {
+      "path": "development/tang_mega_138k_synth/LICENSE",
+      "bytes": 13419,
+      "sha256": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32s3/README.md",
+      "bytes": 8638,
+      "sha256": "fd3322e7792a0f8a8460e68b8293a9d1be3cb8f4c8628c1e5d4240ee3532a7d7"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32s3/CMakeLists.txt",
+      "bytes": 285,
+      "sha256": "284c81d8f965363e22a8ad8449310f4df7c777f394db523beca7e27668a51398"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32s3/sdkconfig.defaults",
+      "bytes": 1765,
+      "sha256": "9a998a8347e5e1bddc8a5cbafda9b2e877c3cb8a5dc2cb20bdec353bfe72eeb7"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/CMakeLists.txt",
+      "bytes": 934,
+      "sha256": "94a92768ff2351ade5474c5fcdff4b957deceab1393e6cc2ec8cd57ec6987d1d"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/Kconfig.projbuild",
+      "bytes": 1273,
+      "sha256": "6c0bd7cf9414343a764c391f0bad24fb00098046c9a4919a41c6dd4f2b908446"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/wifi_web.c",
+      "bytes": 12489,
+      "sha256": "1e0f7aca73d5839c1b35dc37a0a2f9b8806c3a3f05bf5a359229490734e68000"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/wifi_web.h",
+      "bytes": 40,
+      "sha256": "e4801a20057229a55942a0f9b30451651544db9f6982020a7c7b40ef2fd2c509"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/web_control.c",
+      "bytes": 2080,
+      "sha256": "ba00270429353abc11230f852b6ec2460d075310308f0d04313ffbe75051e94a"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/web_control.h",
+      "bytes": 1057,
+      "sha256": "edf3b188bdf66fa5b205819c2d96b004835f68b133d42649f5cd243dce8dc4d9"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/web/index.html",
+      "bytes": 19394,
+      "sha256": "696de0177c5df26e54e64ddea9e99d4ee01038ba6d39bbd217cb730f9201a53d"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/event_bus.h",
+      "bytes": 2690,
+      "sha256": "0c09795997b27d47e3a24b624ec06bb70bddd9f5a62d61b3a3f818ed4953cd10"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/event_bus.c",
+      "bytes": 5206,
+      "sha256": "db590c0cb745e17687fd450b0673387cdc4f5bb1bed57f5396d24b42803fa2fe"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/patch.c",
+      "bytes": 6645,
+      "sha256": "8981ad31a60959c8cac95d5e98a6c77c0aeabac58ba9da488eeb8c5e8bfcf327"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/patch.h",
+      "bytes": 8256,
+      "sha256": "25148527cd55f46e8858395ec4eb96a1262a14965c186665bcc0c24f2202d1bc"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/voice_alloc.c",
+      "bytes": 61312,
+      "sha256": "36050490991bdec0aab7d32450723fc4c029b0960873198f8b5428cfba2de71f"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/engine_link.c",
+      "bytes": 14638,
+      "sha256": "7e034bb9a9e9e286deafd674004f2f9d60d6e156832756421f629a2817647f90"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/engine_link.h",
+      "bytes": 7595,
+      "sha256": "6aaf67a6009a0ca19229d8a601b017a34de4e7962f6a904a970a3c9645158d7c"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/engine_ks.inc.h",
+      "bytes": 12473,
+      "sha256": "949361fd8b0e496b07e0077f4180324a3b73b1455e9ab5a7bb327bb13e7beef5"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/ks_params.c",
+      "bytes": 1787,
+      "sha256": "a004ad283a4ac6ae137a5731205d3b1f350b0499f43074ad342fa746c1366c00"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/ks_params.h",
+      "bytes": 468,
+      "sha256": "39572274677a22e84ad7aa97e1119396faa45c82c595d5e28aacfab8ae05085e"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/ks_voice.c",
+      "bytes": 3845,
+      "sha256": "c21ca1267b1a36328b2c4fab492d8cf6849126b536daeacd98f37ead34b2acdf"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/ks_voice.h",
+      "bytes": 709,
+      "sha256": "5637984b4900191cd0fdc99c529009df8567f08aba4fc8b9b0d4701e4da3aed7"
+    },
+    {
+      "path": "docs/wifi-web-control-20261003.md",
+      "bytes": 9011,
+      "sha256": "a80445f04048f86c96571c9845b8551348198ef9c14dacfd4d976c9f28eb70dd"
+    },
+    {
+      "path": "docs/ks-integration-20261003.md",
+      "bytes": 7812,
+      "sha256": "0d02c8b357ed43507b266440da494c2b9869d9e18a6893aa77e4eeee64a2ef8e"
+    },
+    {
+      "path": "docs/physical-modeling/ks-control-protocol.md",
+      "bytes": 2824,
+      "sha256": "389dd6895a7a0003caa8d8804cf07fc061c5aa4424bcb891c80d48517253b5fb"
+    },
+    {
+      "path": "docs/next-design-roadmap-20261003.md",
+      "bytes": 5411,
+      "sha256": "c18bd6b3a05926172845d40d6ae160921a0c4994cc8a355b15da46e57edba7f4"
+    },
+    {
+      "path": "docs/音频产生流水线与后续任务清单.md",
+      "bytes": 24661,
+      "sha256": "0a129d07edb5f5f19c2192e4a1591effdda5fd4f88280576ed5e4ca086bb1863"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_source.h",
+      "bytes": 1767,
+      "sha256": "452cd1eacde6bd4d0471f34d8f1a21350d73db038c28aa94400bada836263838"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/main.c",
+      "bytes": 7417,
+      "sha256": "102c6c9d0f3e06a9b4d659095784f1034d7b62708ea17d154885f4d915e7cd87"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/voice_alloc.h",
+      "bytes": 881,
+      "sha256": "239027960c319a5d14ccb28073426eee629a96cae8134822bb778eae8cefd061"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/ble_midi.c",
+      "bytes": 18136,
+      "sha256": "f387f2e8ced2ac4ceffcb64fab2d058c481442aa26ddfe476635c5ceb629b6e2"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_parser.c",
+      "bytes": 3252,
+      "sha256": "87d2dc83c018dece7c4c585dd0f0822735c3317914a539973d3d4ead1b4d71d3"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_parser.h",
+      "bytes": 2350,
+      "sha256": "553b66303f3eaf0cf8deebb5c84124adc7ff8e58216f7972eba9bdcbd5721cb8"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_in.c",
+      "bytes": 7005,
+      "sha256": "ae35e36d892e27937d800746b206f3cf8231bbf5145af2d743b120d882d870d0"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/spi_regs.c",
+      "bytes": 11466,
+      "sha256": "07a9b40494527ccd63a9ec3eb886894f2151182c7ce57fd3e2217260c791637b"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/spi_regs.h",
+      "bytes": 4057,
+      "sha256": "ce36a968212e6f9ce1e71b673b7d977f152535bbe66218c50beda1ba0a299d4e"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_log.c",
+      "bytes": 4274,
+      "sha256": "46b67fabb0c703ddb4d84172f8bb9c5e1731ce9cd9236388eba9522152afb063"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/stress_test.c",
+      "bytes": 2542,
+      "sha256": "9a0749a36a63f4428485b782064d60e496c7d49a1e3bb8b1fc183c8998194929"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/slider.c",
+      "bytes": 12032,
+      "sha256": "716c5e86355b3f0d587900b9f7bb7aa13721ddc463af7b08de3114bf75086ffa"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/slider.h",
+      "bytes": 1343,
+      "sha256": "c6577d631d11ed8493b03962163dd1a5ed5fe0a876ceed9c9c9455f5b00ca66a"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/ble_midi.h",
+      "bytes": 676,
+      "sha256": "377802e65979ccc0329c5a2e662f31d8a8301f025c326ee398a15930d9789c54"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_log.h",
+      "bytes": 457,
+      "sha256": "111e0ee99f7ad886b03b4babee69548724dfc6dc027a4ad3f03fcb6917cb7f12"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/midi_in.h",
+      "bytes": 1000,
+      "sha256": "4e59bfbb00789ea6e55e8eef402accd7c14d2d4e5cbb959c32141cd1ecdf3540"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/main/stress_test.h",
+      "bytes": 530,
+      "sha256": "e038d3d695db3aba511502a0c1fab49709e4dc15af4173756a3beae4715c5920"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32s3/.gitignore",
+      "bytes": 70,
+      "sha256": "62f9d799bed2d9fa742b01b03dac3ac4ab036341f3b5695ec9a416e8b4d117bd"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/.gitignore",
+      "bytes": 70,
+      "sha256": "62f9d799bed2d9fa742b01b03dac3ac4ab036341f3b5695ec9a416e8b4d117bd"
+    },
+    {
+      "path": "development/tang_mega_138k_synth/esp32c3/README.md",
+      "bytes": 2099,
+      "sha256": "5a5f66100a65e3b38e969f808a73e9e2e541df3d71e227ba49fb6270eb6da3ae"
+    },
+    {
+      "path": "tools/tests/firmware/test_web_page.js",
+      "bytes": 6616,
+      "sha256": "f17bf3c7f1ae3b8c71fc658befa7ce8178e4c2b7539390c6cc701232aeade8a9"
+    },
+    {
+      "path": "tools/tests/firmware/test_web_control.c",
+      "bytes": 6363,
+      "sha256": "3ac23482a536cec48370d3fd51b7cb345b4674db5d81c35e3049c327e0f9d878"
+    },
+    {
+      "path": "tools/tests/firmware/test_ks_web.c",
+      "bytes": 4930,
+      "sha256": "6bdc52be7d225f84f477485be4bc48d7aa16630d62c2db7d57a1c11aee3ffa6a"
+    },
+    {
+      "path": "tools/tests/firmware/web_preview.py",
+      "bytes": 8826,
+      "sha256": "7231404886a759b7391546883288a08fe22781302a537209021c79a4e1658bf8"
+    },
+    {
+      "path": "tools/tests/firmware/run.sh",
+      "bytes": 3555,
+      "sha256": "a6f889bb14d2f4c601ebb6c7b5df7f97022320d9d9d2c39719e55aa91f5ab9ed"
+    }
+  ],
+  "source_status_after": " M .ai/changes.md\n M .ai/decisions.md\n M .ai/issues.md\n M .ai/progress.md\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/impl/tang_mega_138k_synth_process_config.json\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/sim/tb_ect_board.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/ect/spi/spi_bus.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/ect/top.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/tang_mega_138k_synth.cst\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/src/tang_mega_138k_synth_top.sv\n M development/tang_mega_138k_synth/audio_i2s/eda_proj/tang_mega_138k_synth.gprj\n M development/tang_mega_138k_synth/esp32c3/main/CMakeLists.txt\n M development/tang_mega_138k_synth/esp32c3/main/Kconfig.projbuild\n M development/tang_mega_138k_synth/esp32c3/main/ble_midi.c\n M development/tang_mega_138k_synth/esp32c3/main/engine_link.c\n M development/tang_mega_138k_synth/esp32c3/main/engine_link.h\n M development/tang_mega_138k_synth/esp32c3/main/event_bus.c\n M development/tang_mega_138k_synth/esp32c3/main/event_bus.h\n M development/tang_mega_138k_synth/esp32c3/main/main.c\n M development/tang_mega_138k_synth/esp32c3/main/midi_in.c\n M development/tang_mega_138k_synth/esp32c3/main/midi_log.c\n M development/tang_mega_138k_synth/esp32c3/main/midi_source.h\n M development/tang_mega_138k_synth/esp32c3/main/stress_test.c\n M development/tang_mega_138k_synth/esp32c3/main/voice_alloc.c\n M development/tang_mega_138k_synth/esp32s3/README.md\n M development/tang_mega_138k_synth/esp32s3/sdkconfig.defaults\n M development/tang_mega_138k_synth/physical_modeling/README.md\n M development/tang_mega_138k_synth/physical_modeling/physical_model_top.sv\n M development/tang_mega_138k_synth/physical_modeling/reference_model.py\n M development/tang_mega_138k_synth/physical_modeling/test_reference_model.py\n M docs/next-design-roadmap-20261003.md\n M docs/physical-modeling/README.md\n M docs/physical-modeling/ip-handoff.md\n M docs/physical-modeling/source-manifest.json\n M docs/review-snapshot-index-20261003.md\n M tools/ci/run-module-tests.sh\n M tools/skills/gowin-project-navigation/SKILL.md\n M tools/skills/gowin-project-navigation/references/cst-physical-constraints.md\n M tools/skills/gowin-project-navigation/references/gowin-ip-checks.md\n M tools/skills/gowin-project-navigation/references/project-inspection.md\n M tools/skills/gowin-project-navigation/references/tcl-project-build.md\n M tools/skills/gowin-project-navigation/scripts/find-gowin-project.ps1\n M tools/skills/gowin-project-navigation/scripts/find_gowin_project.py\n M tools/skills/gowin-project-navigation/scripts/test-find-gowin-project.ps1\n M tools/skills/gowin-project-navigation/scripts/test_find_gowin_project.py\n M tools/tests/firmware/run.sh\n M tools/tests/firmware/test_engine_order.c\n M tools/tests/rtl/check_active_project.py\n?? development/tang_mega_138k_synth/audio_i2s/eda_proj/sim/tb_ks_board.sv\n?? development/tang_mega_138k_synth/audio_i2s/eda_proj/sim/tb_ks_control_bridge.sv\n?? development/tang_mega_138k_synth/esp32c3/main/engine_ks.inc.h\n?? development/tang_mega_138k_synth/esp32c3/main/ks_params.c\n?? development/tang_mega_138k_synth/esp32c3/main/ks_params.h\n?? development/tang_mega_138k_synth/esp32c3/main/ks_voice.c\n?? development/tang_mega_138k_synth/esp32c3/main/ks_voice.h\n?? development/tang_mega_138k_synth/esp32c3/main/web/\n?? development/tang_mega_138k_synth/esp32c3/main/web_control.c\n?? development/tang_mega_138k_synth/esp32c3/main/web_control.h\n?? development/tang_mega_138k_synth/esp32c3/main/wifi_web.c\n?? development/tang_mega_138k_synth/esp32c3/main/wifi_web.h\n?? development/tang_mega_138k_synth/fm_synthesis/\n?? development/tang_mega_138k_synth/physical_modeling/ip/\n?? development/tang_mega_138k_synth/physical_modeling/ip_generation_20261003/\n?? development/tang_mega_138k_synth/physical_modeling/ks_control_bridge.sv\n?? development/tang_mega_138k_synth/physical_modeling/ks_golden.py\n?? development/tang_mega_138k_synth/physical_modeling/ks_mean_divider.sv\n?? development/tang_mega_138k_synth/physical_modeling/sim/\n?? development/tang_mega_138k_synth/physical_modeling/test_ks_golden.py\n?? docs/fm-synthesis/\n?? docs/ks-integration-20261003.md\n?? docs/physical-modeling/bit-exact-ks.md\n?? docs/physical-modeling/ks-control-protocol.md\n?? docs/snapshots/\n?? docs/wifi-web-control-20261003.md\n?? docs/wifi-web-control-evidence-20261003/\n?? releases/\n?? tools/skills/gowin-project-navigation/references/gowin-ip-generation.md\n?? tools/tests/firmware/fake_ks_engine.c\n?? tools/tests/firmware/ks_parameter_dump.c\n?? tools/tests/firmware/ks_parameters_expected.csv\n?? tools/tests/firmware/test_ks_engine.c\n?? tools/tests/firmware/test_ks_voice.c\n?? tools/tests/firmware/test_ks_web.c\n?? tools/tests/firmware/test_web_control.c\n?? tools/tests/firmware/test_web_page.js\n?? tools/tests/firmware/web_preview.py\n?? tools/tests/physical_modeling/\n?? tools/tests/rtl/check_esp32_pin_safety.py\n?? tools/tests/rtl/check_gowin_timing.py\n?? tools/tests/rtl/run_ks_integration.sh\n"
+}

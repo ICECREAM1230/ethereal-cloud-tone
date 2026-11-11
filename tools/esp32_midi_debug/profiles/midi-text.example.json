@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "name": "UNCONFIRMED text MIDI example",
+  "confirmed": false,
+  "command_template": "midi {hex}",
+  "line_ending": "lf"
+}

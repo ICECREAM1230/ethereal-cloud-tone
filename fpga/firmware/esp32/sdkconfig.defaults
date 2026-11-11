@@ -1,0 +1,42 @@
+# YD-ESP32-S3 variants in the supplied reference have at least 8 MB Flash.
+# PSRAM is left disabled because the shared controller does not require it.
+CONFIG_IDF_TARGET="esp32s3"
+CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+
+# GPIO1/2 are status LEDs; panel MIDI RX is GPIO42 and slider ADC is GPIO8.
+# Keep native USB/JTAG for logs and slider calibration/BLE console keys.
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_SECONDARY_NONE=y
+
+# BLE MIDI (ble-midi branch): NimBLE peripheral hosting the standard
+# MIDI 1.0 over BLE service (03B80E5A-EDE8-4B33-A751-6CE34EC4C700).
+CONFIG_BT_ENABLED=y
+CONFIG_BT_NIMBLE_ENABLED=y
+CONFIG_BT_NIMBLE_ROLE_PERIPHERAL=y
+CONFIG_BT_NIMBLE_ROLE_BROADCASTER=y
+CONFIG_BT_NIMBLE_MAX_CONNECTIONS=1
+# BLE MIDI packets ride the full ATT MTU; prefer the 4.2 maximum.
+CONFIG_BT_NIMBLE_ATT_PREFERRED_MTU=517
+# No bonding on this device — nothing to persist.
+CONFIG_BT_NIMBLE_NVS_PERSIST=y
+# Static (non-heap) NimBLE services. The dynamic path leaves the GAP
+# service defs pointing at a NULL ctx until the host allocator comes
+# up - ble_svc_gap_init() then walks a NULL+4 pointer and the chip
+# load-access-faults in a boot loop (seen on silicon). Static it is.
+CONFIG_BT_NIMBLE_STATIC_TO_DYNAMIC=n
+
+# Debug instrumentation for the engine_link watchdog crash (#70).
+# TASK_WDT_PANIC turns a task watchdog failure into a panic with diagnostics.
+# ESP_SYSTEM_USE_FRAME_POINTER is RISC-V only in ESP-IDF v6.1, so it is not
+# available for this Xtensa-based ESP32-S3 target.
+CONFIG_ESP_TASK_WDT_PANIC=y
+
+# Local phone controller. C3 defaults keep this disabled.
+CONFIG_ECT_WIFI_WEB=y
+CONFIG_ECT_WIFI_SSID="FPGA_Project"
+CONFIG_ESP_COEX_SW_COEXIST_ENABLE=y
+
+# Wi-Fi + NimBLE exceeds the original 1 MiB factory slot.
+CONFIG_PARTITION_TABLE_SINGLE_APP_LARGE=y
+
+CONFIG_FPGA_AE350_CONTROL=y

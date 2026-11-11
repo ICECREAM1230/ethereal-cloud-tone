@@ -1,0 +1,129 @@
+// Copyright (c) 2026 ICECREAM1230
+// synth_pkg.sv — shared design parameters
+//
+// Copyright © 2026 Thor H. Linløkken <thj@thj.no>
+// License: MIT
+//
+// The single home for the design's constants (Thor: modules should
+// not carry hardcoded numbers). Modules import what they need; module
+// parameters default from here so testbenches can still override.
+
+package synth_pkg;
+
+    localparam int SAMPLE_RATE = 96000;
+    // 768 x 96 kHz. Stepped down from 98.304 MHz (1024 slots) after
+    // five ear-verified silicon timing failures that STA passed: the
+    // fabric has no margin for our 36x36 DSP cascades at ~100 MHz,
+    // and 25% more slack protects the paths we haven't found yet.
+    localparam int SYS_CLK_HZ  = 73_728_000;
+
+    //--- Drum (SCMO) scheduling -------------------------------------
+    localparam int DRUM_CYCLES  = 768;    // SYS_CLK_HZ / SAMPLE_RATE
+    localparam int DRUM_W       = 10;     // $clog2(DRUM_CYCLES)
+    localparam int CELL_DIV     = 6;      // SPDIF cell = 6 sysclk (768 = 128 x 6)
+
+    //--- Elements and lanes (design doc terminology) ----------------
+    // The FPGA generates ELEMENTS (256 of them), technically via
+    // LANES — time-multiplexed passes through the pipeline. The
+    // ESP32 groups elements into voices; the FPGA never sees that.
+    localparam int NUM_ELEMENTS = 256;
+    localparam int ELEM_W       = 8;      // $clog2(NUM_ELEMENTS)
+    localparam int UNISON       = 8;      // firmware convention only
+    localparam int POLYPHONY    = 32;     // firmware convention only
+
+    // Drum slot where element 0 enters the pipeline
+    localparam int LANE_BASE    = 0;
+    // DDS has two phase stages plus nine phase-to-amplitude stages.
+    // The other lane boundaries contribute 22 clocks to writeback.
+    localparam int DDS_LATENCY = 11;
+    localparam int LANE_LATENCY = 22 + DDS_LATENCY;
+    localparam int LANE_STAGES  = LANE_LATENCY + 1;
+    // Contiguous drum span occupied by the lane pipeline
+    localparam int LANE_SPAN    = NUM_ELEMENTS + LANE_STAGES - 1;
+
+    // Drum slot where a pending ping-pong bank swap executes: the
+    // pipeline is drained there (LANE_BASE + LANE_SPAN <= SWAP_SLOT), so every
+    // sample reads one consistent bank generation.
+    localparam int SWAP_SLOT    = 512;
+
+    //--- SPI memory map (docs/memory_map.md) ------------------------
+    localparam int          MAP_AW_BACKED   = 11;       // 2048-word window
+    localparam logic [7:0]  SPI_ID_BYTE     = 8'hA5;
+    localparam logic [15:0] MAP_CTRL_ADDR   = 16'h0002; // bit 0: swap request
+    localparam logic [15:0] MAP_ELEM_BASE   = 16'h2000; // per-element params
+    localparam int          MAP_ELEM_STRIDE = 64;       // words per element
+
+    //--- Bus fabric (docs/bus_architecture.md) ----------------------
+    localparam logic [15:0] MAP_BUS_BASE = 16'h0800;    // bus base registers
+    localparam int          DMEM_WORDS    = 512;         // uniform pool (#134)
+    localparam int          BUS_W        = 18;          // signed Q8.10
+
+    //--- Instruction table (B4/B5) -------------------------------------
+    // 128 entries x 3 words, stride 4, at 0x0100-0x02FF. Config is
+    // wiring, so it rides the ping-pong banks (law 4).
+    //   +0 CFG:   [3:0] type (0 off, 1 LFO, 2 ADSR), [5:4] LFO shape
+    //             (osc_core: saw/pulse/tri/sine), [15:6] target bus,
+    //             LFO: [31:16] rate (low 16 bits of the UQ0.24 phase
+    //                  increment — 5.7 mHz steps, 375 Hz max)
+    //             ADSR: [25:16] gate bus (watched, level-sensitive:
+    //                   value > 0 = held)
+    //   +1 RATES (ADSR): [7:0] attack, [15:8] decay, [23:16] SUSTAIN
+    //             (level fraction, 8 bits), [31:24] RELEASE — byte
+    //             order matches patch_adsr_word(), the pipeline
+    //             decode and memory_map.md (a swapped S/R in this
+    //             comment was issue #105). Rates are 8-bit log2:
+    //             increment = (16+frac) << oct on the 22-bit level
+    //   +2 DEPTH: [17:0] signed Q8.10 contribution amplitude
+    // A instruction's OUTPUT uses the previous sample's state (the
+    // one-sample lag keeps every multiply's operands registered).
+    // Pool 256, FULL RATE (#145): the CSP retires one instruction per
+    // cycle, so all 256 entries execute every sample — 256 of the
+    // sample's 768 cycles — and every source updates at 96 kHz. This
+    // replaces the half-rate sequencer (#100, Thor 2026-09-11), which
+    // walked alternate halves for 48 kHz effective because an
+    // instruction then cost three cycles. Its allocator rule — a chain
+    // (sources + their sends sharing a target) must live within ONE
+    // half — is retired with it; a chain now tolerates gaps of up to
+    // three slots, the depth of the accumulator's forwarding history.
+    // Region 0x0100..0x04FF (stride 4). INSTR_PER_PASS is gone: a pass
+    // is the whole table.
+    localparam logic [15:0] MAP_IMEM_BASE = 16'h0100;
+    localparam int          NUM_INSTR = 256;
+
+    // CSP opcode = a bitmask of enables (#145), not an enum. Each bit turns
+    // on one part of the datapath, so decode is enables rather than a mux
+    // tree and a new instruction is an encoding rather than a new case.
+    localparam int OPC_SOURCE = 0;   // reads a source operand (SEND, ADSR gate)
+    localparam int OPC_STATE  = 1;   // has persistent state (LFO, ADSR)
+    localparam int OPC_MUL    = 2;   // multiplies the operand by DEPTH
+    localparam int OPC_ACCUM  = 3;   // accumulates onto the target, vs load init
+    // An envelope is the instruction that watches a gate, so STATE+SOURCE
+    // means envelope and STATE alone means phase accumulator -- no fifth bit
+    // is needed and the opcode still fits CFG[3:0].
+    localparam logic [3:0] OPC_OFF  = 4'h0;
+    localparam logic [3:0] OPC_LFO  = 4'hE;  // state + mul + accum
+    localparam logic [3:0] OPC_ADSR = 4'hF;  // source + state + mul + accum
+    localparam logic [3:0] OPC_SEND = 4'hD;  // source + mul + accum
+
+    //--- Filter cutoff ceiling -----------------------------------------
+    // Preserve the existing 14.4-kHz user range (code 0x2B20).
+    // The active K ROM prewarps it with tan(pi*fc/fs); g <= 0.510 and
+    // the fixed-point reciprocal denominator remains in [1,2).
+    // The old measured instability limits used the linear pi*fc/fs
+    // approximation and are not hardware evidence for this coefficient set.
+    localparam logic [13:0] FC_MAX = 14'h2B20;
+
+    //--- Number formats (design doc) ---------------------------------
+    localparam int OSC_W = 24;       // UQ0.24 phase accumulator
+    typedef logic signed [OSC_W-1:0] osc_t;
+
+    localparam int CTRL_W = 14;      // UQ4.10 pitch/cutoff
+
+    localparam int AUDIO_W = 18;     // Q4.14 audio transport (#63)
+    typedef logic signed [AUDIO_W-1:0] sample_t;
+
+    localparam int SVF_W = 36;       // Q8.28 filter states
+
+    localparam int AUDIO_SHIFT = 14;
+
+endpackage

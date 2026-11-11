@@ -1,0 +1,20 @@
+# Gowin outputs; retain its project process configuration.
+/impl/*
+!/impl/ethereal_cloud_tone_process_config.json
+/logs/*
+!/logs/.gitkeep
+*.gprj.user
+
+# Local build and test outputs.
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+/tests/results/
+/tests/.work/
+/sim/results/
+/firmware/esp32/build/
+/firmware/ae350/images/*.elf
+/firmware/ae350/images/*.map
+/firmware/ae350/images/*.su
+.DS_Store

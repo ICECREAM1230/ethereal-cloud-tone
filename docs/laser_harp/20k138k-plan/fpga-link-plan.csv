@@ -1,0 +1,6 @@
+﻿signal,old_20p_alias_pin,fpga138_ball,fixed_header_ref,fixed_header_pin,nano_chip_pin,nano_header,nano_header_pin,direct_endpoint_distance_mm,route_via_old_20p,direction,ground_reference_138k,ground_reference_20k,positive_supply_between_boards,power_off_protection
+SPI_SCLK,9,A19,H2,12,42,J5,5,21.869,False,138K_to_20K,H1.6 GND,J5.2 GND,not_connected,required_not_implemented
+SPI_MOSI,10,A18,H1,12,41,J5,6,21.572,False,138K_to_20K,H1.6 GND,J5.2 GND,not_connected,required_not_implemented
+SPI_MISO,11,C17,H2,11,48,J5,10,12.962,False,20K_to_138K,H1.6 GND,J5.2 GND,not_connected,required_not_implemented
+SPI_CS_N,12,D17,H1,11,54,J5,8,17.054,False,138K_to_20K,H1.6 GND,J5.2 GND,not_connected,required_not_implemented
+DATA_READY_N,13,B18,H2,10,56,J5,7,14.826,False,20K_to_138K,H1.6 GND,J5.2 GND,not_connected,required_not_implemented

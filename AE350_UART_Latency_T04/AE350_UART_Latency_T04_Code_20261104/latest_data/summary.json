@@ -1,0 +1,60 @@
+{
+  "status": "USER_SELECTED_LATEST_DATA_VERIFIED_WITH_ONE_INVALID_MEASUREMENT",
+  "source_file": "/media/ice/D;/PROJECT_improve/ae350_midi_pcm_latency_lab_20261030/sim/results/uart_half_counts_20261104/20261104T024956Z/uart.txt",
+  "source_sha256": "03065c2fec9f5ce9628f8fae244c99ebd1c64982c3abf1b1538a7846b2497b08",
+  "source_bytes": 11214,
+  "record_version": "N201",
+  "format": "N20/267B/CRC16",
+  "lines": 42,
+  "unique_ids": 20,
+  "identical_repeats": 22,
+  "qualified": 19,
+  "invalid_ids": [
+    13
+  ],
+  "stream_integrity": "PASS",
+  "measurement_status": "CAPTURED_WITH_INVALID_MEASUREMENTS",
+  "engine": "SUB",
+  "qualified_source": "RAW1",
+  "clock_hz_in_file": 50000000,
+  "measurement_policy": "legacy_abs_pcm16_gt1",
+  "provenance": "Byte-identical to the previous offline counter-divided-by-2 and CRC-recomputed export; supplied by user as latest file; not a newly acquired AT04 capture",
+  "transformation_from_original_capture": "unsigned integer division by 2, floor; combine u64 low/high before division",
+  "statistics": {
+    "input_assembly": {
+      "count": 19,
+      "sum_cycles": 1745407,
+      "mean_cycles_fraction": "1745407/19",
+      "mean_cycles": 91863.52631578948,
+      "mean_microseconds_fraction": "1745407/950",
+      "mean_microseconds": 1837.2705263157895,
+      "mean_ms": 1.8372705263157896,
+      "min_ms": 0.98504,
+      "max_ms": 3.9695
+    },
+    "complete_note_on_to_pair": {
+      "count": 19,
+      "sum_cycles": 4765902,
+      "mean_cycles_fraction": "4765902/19",
+      "mean_cycles": 250836.94736842104,
+      "mean_microseconds_fraction": "2382951/475",
+      "mean_microseconds": 5016.738947368421,
+      "mean_ms": 5.016738947368421,
+      "min_ms": 4.86252,
+      "max_ms": 5.2565
+    },
+    "first_input_to_pair": {
+      "count": 19,
+      "sum_cycles": 6511309,
+      "mean_cycles_fraction": "6511309/19",
+      "mean_cycles": 342700.4736842105,
+      "mean_microseconds_fraction": "6511309/950",
+      "mean_microseconds": 6854.00947368421,
+      "mean_ms": 6.8540094736842105,
+      "min_ms": 5.92338,
+      "max_ms": 8.83642
+    }
+  },
+  "current_T04_scope": "Current code remains T04/48MHz/full-PCM24-first-nonzero; this N201 data uses its own decoder and policy",
+  "original_file_unchanged": true
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "esp32-midi-debug",
+  "version": "0.1.0",
+  "description": "Local AI skill and JSON CLI for ESP32 serial debugging, MIDI encoding and evidence capture.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ESP32 MIDI Debug",
+        "shortDescription": "ESP32 MIDI 串口调试",
+        "longDescription": "通过本地 Python 工具预览和发送串口调试命令，编码 MIDI，保存原始收发日志。适用于电脑经 ESP32、SPI 控制 FPGA 的调试链路。",
+        "capabilities": []
+      }
+    }
+  }
+}

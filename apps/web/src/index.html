@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9eef1">
+  <title>声场 · FPGA 合成器</title>
+  <style>/* STYLE_SLOT */</style>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <a href="#perform" class="brand" aria-label="声场首页"><span class="brand-mark" aria-hidden="true">≋</span><span>声场</span></a>
+      <div class="topbar-actions"><div class="status-pill" id="connection" role="status"><span class="status-dot"></span><span id="connectionText">加载中</span></div><button type="button" id="panic" class="panic" aria-label="全来源停止" disabled>STOP</button></div>
+    </header>
+    <script>/* STARTUP_SLOT */</script>
+    <div class="simulation-banner" id="simulation" hidden>本地模拟 · 不产生设备声音</div>
+    <nav class="tabs" aria-label="页面导航"><a class="active" href="#perform">演奏</a><a href="#sound">音色</a><a href="#theremin">特雷门琴</a><a href="#connect">连接</a></nav>
+
+
+    <div id="regularPages">
+    <section id="perform" class="instrument" aria-labelledby="performTitle">
+      <div class="instrument-top"><h2 id="performTitle">演奏</h2><span class="voice-tag" id="voiceTag">界面资源加载中</span></div>
+      <div class="engine-switch" role="group" aria-label="声音引擎"><button type="button" id="dds" class="selected" disabled>减法 <small>32 声部</small></button><button type="button" id="ks" disabled>KS 拨弦 <small>16 声部</small></button><button type="button" id="fm" disabled>FM <small>合成器</small></button></div>
+      <p class="engine-note" id="engineStatus">界面资源加载中，请稍候。</p>
+      <div class="performance-controls"><label for="velocity">力度 <output id="velocityValue" for="velocity">100</output><input id="velocity" disabled type="range" min="1" max="127" value="100" step="1"></label><div id="master" class="controls master-controls"></div></div>
+
+      <div class="ks-decay" id="ksControls" hidden><label for="decay">余音 T60 <output id="decayValue" for="decay">—</output><input id="decay" type="range" min="200" max="8000" step="1" disabled></label><p>0.2–8 秒，下一次拨弦生效</p></div>
+      <section id="stringsPanel" class="strings-panel" aria-label="KS 拨弦演奏面" hidden>
+        <div class="strings-toolbar"><div id="stringsLayout" class="layout-switch" role="group" aria-label="拨弦布局"><button type="button" data-layout="chords" class="selected" aria-pressed="true">和弦</button><button type="button" data-layout="chromatic" aria-pressed="false">全音域</button></div><span>C3–C5</span></div>
+        <div id="strings" aria-label="多指拨弦，点击单音或上下滑动跨弦"></div>
+      </section>
+      <div class="piano-window" id="pianoWindow"><div id="keyboard" class="piano" aria-label="25 键多点触控琴键，C3 到 C5"></div></div>
+      <div class="keyboard-view" id="keyboardView"><label for="view">键盘视野 <span>C3</span><input type="range" id="view" disabled min="0" max="100" value="0" aria-label="左右移动键盘视野"><span>C5</span></label></div>
+      <div class="keyboard-footer"><p id="playHint">多指演奏，松开保留尾音</p><button type="button" id="release" class="quiet" disabled>松开我的音符</button></div>
+      <div class="feedback-row"><span class="feedback-icon" aria-hidden="true">●</span><p id="feedback" aria-live="polite">界面资源加载中。</p></div>
+      <p id="testWarning" class="test-warning" hidden>诊断测试音已启用，按 STOP 关闭。</p>
+      <details class="performance-extra"><summary>弯音</summary><div class="midi-controls"><label for="bend"><span>弯音</span><output id="bendValue" for="bend">居中</output><input id="bend" type="range" min="0" max="16383" value="8192" step="1" disabled></label><button id="bendCenter" type="button" class="quiet" disabled>回中</button></div></details>
+    </section>
+
+    <section id="sound" class="sound-section" aria-labelledby="soundTitle"><div class="section-heading"><h2 id="soundTitle">音色</h2><span id="soundNote">跟随设备当前音色</span></div>
+      <p id="subPatchNote" class="engine-note" hidden></p>
+      <section id="ddsPresetsPanel" class="panel dds-presets" aria-labelledby="ddsPresetsTitle" hidden>
+        <div class="reverb-heading"><div><h3 id="ddsPresetsTitle">减法音色库</h3><p>加载会停止当前演奏，请重新按键。</p></div><button id="ddsRefresh" type="button" disabled>刷新列表</button></div>
+        <label for="ddsPresetList">内置与我的音色</label><select id="ddsPresetList" disabled><option value="">等待设备音色列表</option></select>
+        <div class="dds-actions"><button id="ddsLoad" type="button" disabled>加载音色</button><button id="ddsExport" type="button" disabled>导出 TOML</button><button id="ddsMore" type="button" disabled hidden>读取更多</button></div>
+        <p id="ddsLoadedPreset">尚未通过本页面加载音色。</p>
+        <section class="dds-import" aria-labelledby="ddsImportTitle">
+          <h4 id="ddsImportTitle">导入 TOML</h4><p>保存到我的音色库后，需手动加载。</p>
+          <label for="ddsImportFile">TOML 文件（最多 16 KiB）</label><input id="ddsImportFile" type="file" accept=".toml" aria-describedby="ddsImportSelected" disabled>
+          <p id="ddsImportSelected" role="status">尚未选择文件。</p>
+          <div class="dds-save-fields"><label for="ddsImportCategory">分类<input id="ddsImportCategory" type="text" value="我的音色" disabled></label><label for="ddsImportName">音色名称<input id="ddsImportName" type="text" placeholder="从文件名填写" disabled></label></div>
+          <p id="ddsImportTarget">目标：请先选择文件或填写名称。</p>
+          <div class="dds-actions"><button id="ddsImport" type="button" disabled>导入音色</button></div>
+          <div id="ddsImportConflict" class="dds-import-conflict" hidden><p id="ddsImportConflictText"></p><div class="dds-actions"><button id="ddsImportReplace" type="button" disabled>确认替换此文件</button><button id="ddsImportCancel" type="button">取消替换</button></div></div>
+          <p>选择文件不会上传；同名替换需再次确认。</p>
+        </section>
+        <details><summary>保存当前减法音色</summary><div class="dds-save-fields"><label for="ddsCategory">分类<input id="ddsCategory" type="text" value="我的音色" disabled></label><label for="ddsName">音色名称<input id="ddsName" type="text" placeholder="例如：柔和铺底" disabled></label></div>
+          <p>同名文件会覆盖；内置音色只读。</p>
+          <div class="dds-actions"><button id="ddsSave" type="button" disabled>保存当前减法音色</button></div>
+        </details>
+        <details><summary>开机音色设置</summary><div class="dds-actions"><button id="ddsDefault" type="button" disabled>设为开机音色</button><button id="ddsDefaultReset" type="button" disabled>恢复开机默认</button></div><p>下次启动生效。</p></details>
+        <p id="ddsStorage">等待存储状态。</p><p id="ddsPresetStatus" role="status" aria-live="polite">连接设备后读取减法音色库。</p>
+      </section>
+      <section id="reverbPanel" class="panel reverb-panel" aria-labelledby="reverbTitle">
+        <div class="reverb-heading"><div><h3 id="reverbTitle">混响</h3><p>各引擎共用</p></div><button id="reverbOff" type="button" disabled>关闭混响</button></div>
+        <div class="controls">
+          <div class="control"><label for="reverbWet">混响量 <output id="reverbWetValue" for="reverbWet">—</output></label><input id="reverbWet" type="range" min="0" max="32768" step="1" value="0" disabled aria-describedby="reverbWetHint reverbStatus"><small id="reverbWetHint">0% 直达声，100% 混响声。</small></div>
+          <div class="control"><label for="reverbDamp">阻尼 <output id="reverbDampValue" for="reverbDamp">—</output></label><input id="reverbDamp" type="range" min="0" max="28672" step="1" value="0" disabled aria-describedby="reverbDampHint reverbStatus"><small id="reverbDampHint">越高，尾音越柔和。</small></div>
+        </div>
+        <p id="reverbStatus" class="reverb-status" role="status">连接设备后读取混响状态。</p><p id="reverbReadback" class="reverb-readback">等待设备当前参数。</p>
+      </section>
+
+      <p id="ksSoundNote" class="ks-sound-note" hidden>KS 的余音、力度和输出在演奏区调整。</p>
+      <div id="fmSound" hidden><div class="fm-choice"><label for="fmBackend">FM 后端</label><select id="fmBackend" disabled><option value="">尚无匹配后端</option></select><p id="fmAvailability">等待设备能力</p></div><p id="fmEmpty" class="ks-sound-note"></p><div class="fm-preset"><label for="fmPreset">预置目录</label><select id="fmPreset" disabled><option value="">选择预置</option></select><button type="button" id="applyPreset" disabled>应用预置</button><p id="fmPresetDescription">选择后点击应用；应用会停止所有来源的演奏，请重新按键。</p></div><div id="fmPanel"></div></div>
+      <div id="ddsPanels" class="sound-grid">
+        <section class="panel"><div class="panel-title"><h3>振荡器</h3><b>OSC</b></div><div id="osc" class="controls"></div><details><summary>振荡器音高与脉冲宽度</summary><div class="tune-grid"><div><h4>振荡器 1</h4><div id="tune1" class="controls"></div></div><div><h4>振荡器 2</h4><div id="tune2" class="controls"></div></div></div></details></section>
+        <section class="panel"><div class="panel-title"><h3>滤波器</h3><b>FILTER</b></div><div id="filter" class="controls"></div></section>
+        <section class="panel"><div class="panel-title"><h3>音量包络</h3><b>ADSR</b></div><div id="amp" class="controls"></div></section>
+        <section class="panel"><div class="panel-title"><h3>调制包络</h3><b>MOD</b></div><div id="mod" class="controls"></div></section>
+        <section class="panel"><div class="panel-title"><h3>振音</h3><b>LFO 1</b></div><div id="lfo1" class="controls"></div></section>
+        <section class="panel"><div class="panel-title"><h3>可路由调制</h3><b>LFO 2</b></div><div id="lfo2" class="controls"></div></section>
+      </div>
+    </section>
+
+    <section id="connect" class="connection-guide" aria-labelledby="guideTitle"><div class="guide-header"><h2 id="guideTitle">连接</h2><button type="button" id="reconnect" disabled>重新连接</button></div>
+      <p class="connection-summary">连接设备 Wi-Fi 后，打开设备地址。</p>
+      <details class="connection-details"><summary>查看连接步骤</summary>
+        <ol class="guide-steps"><li><span>1</span><div><h3>加入 Wi-Fi</h3><p><b>FPGA_Project</b>，提示无互联网时仍保持连接。</p></div></li><li><span>2</span><div><h3>输入密码</h3><p>演示配置：<code>Fpga-Synth-2026</code>。已重新配置的设备使用实际密码。</p></div></li><li><span>3</span><div><h3>打开地址</h3><p><a href="http://192.168.4.1">http://192.168.4.1</a><br>蓝牙 MIDI：<b>FPGA_Bluetooth</b></p></div></li></ol>
+        <p class="guide-foot">失焦、后台或断网会释放本页音符；网络不可达时由 1.2 秒租约释放。重连后请重新演奏。</p>
+      </details>
+    </section>
+    <details class="diagnostics"><summary>连接诊断与原始状态</summary><p>“已接收”表示 HTTP 请求进入事件总线；“已采用”表示 ESP32 控制任务采用。MIDI 排队回执仅表示请求已入队，不代表 FPGA 已解析、采用或已经发声。计数属于当前网页绑定；重新绑定后从空按键确认开始，旧上下文的结果不能确认新输入。FPGA 最近 accepted / completed / result 保留原 session / epoch / sequence，与 HTTP 序号无逐条映射。参数显示 owner 完成缓存，不是芯片寄存器读回。实际声音需设备确认。</p><dl><dt>当前页面来源</dt><dd id="origin">—</dd><dt>会话 / 序号</dt><dd id="sessionInfo">—</dd><dt>当前绑定接收 / 采用</dt><dd id="receiptInfo">—</dd><dt>HTTP owner / result</dt><dd id="ownerInfo">—</dd><dt>FPGA 原生最近确认</dt><dd id="nativeInfo">—</dd><dt>独立 Panic 原身份</dt><dd id="panicInfo">—</dd><dt>演奏链路 / USB / STOP</dt><dd id="inputInfo">等待设备状态…</dd><dt>MIDI 排队回执</dt><dd id="midiInfo">尚无 MIDI 排队回执</dd></dl><pre id="raw">等待设备状态…</pre></details>
+    </div>
+    <section id="theremin" class="theremin-view" aria-labelledby="thereminTitle" hidden>
+      <div class="theremin-heading"><h2 id="thereminTitle">特雷门琴</h2><p id="thereminVoice">等待配套特雷门固件</p></div>
+      <p class="engine-note">音高天线控制连续音高，音量天线控制音量。启用后持续发声，靠近音量天线可静音。</p>
+      <section id="fdcPanel" class="panel fdc-panel" aria-labelledby="fdcTitle">
+        <div class="reverb-heading"><div><h3 id="fdcTitle">演奏与标定</h3><p>减法合成器持续演奏；开机保持关闭</p></div><button id="fdcRefresh" type="button" disabled>刷新状态</button></div>
+        <p id="fdcObserved">尚无新鲜有效的设备状态。</p><p id="fdcHealth"></p><p id="fdcRaw" aria-live="polite">原始数据尚未读取。</p>
+        <div class="dds-actions"><button id="fdcEnable" type="button" disabled>启用特雷门琴</button><button id="fdcDisable" type="button" disabled>关闭特雷门琴</button><button id="fdcRestart" type="button" disabled>重启传感器并保持关闭</button></div>
+        <p id="fdcStatus" role="status" aria-live="polite">连接设备后读取 FDC 状态。</p>
+        <details><summary>手动输入校准值</summary><p>近点可高于或低于远点。每组跨度至少 64 原码，且不少于 20 倍噪声 sigma；以下值不会自动采集。</p>
+          <fieldset id="fdcCalibration" disabled><legend>完整六字段校准</legend><div class="fdc-fields">
+            <label>音高远点原码<input name="pitch_far" type="number" min="1" max="67108863" step="1" inputmode="numeric" placeholder="手动测得的整数"></label>
+            <label>音高近点原码<input name="pitch_near" type="number" min="1" max="67108863" step="1" inputmode="numeric" placeholder="手动测得的整数"></label>
+            <label>音量远点原码<input name="volume_far" type="number" min="1" max="67108863" step="1" inputmode="numeric" placeholder="手动测得的整数"></label>
+            <label>音量近点原码<input name="volume_near" type="number" min="1" max="67108863" step="1" inputmode="numeric" placeholder="手动测得的整数"></label>
+            <label>音高噪声 sigma<input name="pitch_sigma" type="number" min="0" step="any" inputmode="decimal" placeholder="非负有限数值"></label>
+            <label>音量噪声 sigma<input name="volume_sigma" type="number" min="0" step="any" inputmode="decimal" placeholder="非负有限数值"></label>
+          </div><button id="fdcApply" type="button" disabled>提交六字段校准并保持关闭</button></fieldset>
+        </details><p class="fdc-note">排队或传输已发送，不代表 CPU 采用、原生声部完成或已发声。STOP 会另排队关闭 FDC；MIDI 停止确认不代表 FDC 已停止，请核对当前观察状态。</p>
+      </section>
+    </section>
+    <footer><span>声场</span><span>本地 Wi-Fi 控制</span></footer>
+  </main>
+  <script>/* SCRIPT_SLOT */</script>
+</body>
+</html>

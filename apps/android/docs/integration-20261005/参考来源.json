@@ -1,0 +1,298 @@
+{
+  "purpose": "frozen App ABI regression inputs only; not firmware integration candidate",
+  "source_worktree": "/home/ice/Project/synth-review-work-20261003",
+  "source_head": "54f0a1b3bcb01211b2ab2c7b28561545f7d980af",
+  "source_dirty_at_freeze": true,
+  "archive": "app-api-reference.tar.gz",
+  "archive_sha256": "0d763912e8bbb3935c0d450d370840888411fe89a2a1d5dde10198d259609e7b",
+  "files": [
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/LICENSE",
+      "bytes": 1069,
+      "sha256": "ba2facea18e93ff001f716076f8df7c1207906ec850d7dd901cdb75ac56352b7"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/.gitignore",
+      "bytes": 70,
+      "sha256": "62f9d799bed2d9fa742b01b03dac3ac4ab036341f3b5695ec9a416e8b4d117bd"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/README.md",
+      "bytes": 2095,
+      "sha256": "d482991ea8d2bef34a75b4295dc0c8c149745b2161d72cf63116633e3e6394f2"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/CMakeLists.txt",
+      "bytes": 931,
+      "sha256": "a475c1609f6e32b9d42cea1ff12a635c461a020500c4fc7bd58044048d91849b"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/Kconfig.projbuild",
+      "bytes": 1268,
+      "sha256": "1e5b942a549ff3facca93cccbe6d8bb9f456c562bb396648c0b00ab669e723a0"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/ble_midi.c",
+      "bytes": 18126,
+      "sha256": "49e4085db09cd70f86b021d79ffe4b81dcb8e7b8ee9b06ec82ab7b0b53b13d1f"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/ble_midi.h",
+      "bytes": 679,
+      "sha256": "345b360b17ce1bc2f0f2de7aa516079b678b2dd64d13a1a309f2ca7ddc9654f7"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/engine_ks.inc.h",
+      "bytes": 12473,
+      "sha256": "949361fd8b0e496b07e0077f4180324a3b73b1455e9ab5a7bb327bb13e7beef5"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/engine_link.c",
+      "bytes": 14628,
+      "sha256": "d9817b4e3c119488e8a59adfda528f51327ba9f54b9aa2ab257d8da4a5154109"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/engine_link.h",
+      "bytes": 7585,
+      "sha256": "c50fb096710ac0039aa150265541a0475bb1e56e4daed419d558a506fa21feec"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/event_bus.c",
+      "bytes": 5196,
+      "sha256": "4f0c3212677c3f7eb2a66f0e95ef206de065d3633949ef01d77b62b1cae7bafe"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/event_bus.h",
+      "bytes": 2680,
+      "sha256": "05bdfbe09e089294b72cf4b38b1fd5f84ad810cca78d60c380cdf5157421ef33"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/ks_params.c",
+      "bytes": 1787,
+      "sha256": "a004ad283a4ac6ae137a5731205d3b1f350b0499f43074ad342fa746c1366c00"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/ks_params.h",
+      "bytes": 468,
+      "sha256": "39572274677a22e84ad7aa97e1119396faa45c82c595d5e28aacfab8ae05085e"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/ks_voice.c",
+      "bytes": 3845,
+      "sha256": "c21ca1267b1a36328b2c4fab492d8cf6849126b536daeacd98f37ead34b2acdf"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/ks_voice.h",
+      "bytes": 709,
+      "sha256": "5637984b4900191cd0fdc99c529009df8567f08aba4fc8b9b0d4701e4da3aed7"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/main.c",
+      "bytes": 7401,
+      "sha256": "dd6c6f7293645f4c4505f2d7d0c8fd91c85a79244b4730b5dd646ea97dcf4f34"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_in.c",
+      "bytes": 6995,
+      "sha256": "ef72792c5d80dbcd76b280113a74ca2adc8879560b8572436d7749b248beb57b"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_in.h",
+      "bytes": 990,
+      "sha256": "7e57d80b39b44c451d116c48f9001849d7d1c00dabf29cdda79356bcaf534d03"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_log.c",
+      "bytes": 4264,
+      "sha256": "ba92bdb9c91fb5ab37eb6c4950714fabdc1c177134da2f3594dfb7ddf3832048"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_log.h",
+      "bytes": 447,
+      "sha256": "78a010e31fd9c777f0c99d24adffc376f3c8a0a7bf719d3671fc88f9024346bc"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_parser.c",
+      "bytes": 3242,
+      "sha256": "5a90c6d3156f92d45bcc1cd59db9f3b3c73973b57a7bf5f98e6685bf8c7f3b8d"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_parser.h",
+      "bytes": 2340,
+      "sha256": "b912b99d9eff8c4312817093dfe962f8b80fcd30e38ce6f751382419cd5b08a5"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/midi_source.h",
+      "bytes": 1767,
+      "sha256": "452cd1eacde6bd4d0471f34d8f1a21350d73db038c28aa94400bada836263838"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/patch.c",
+      "bytes": 6635,
+      "sha256": "563b102f39ae79664452b8f1573027e13936d65124e363d78bdcab82736eb774"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/patch.h",
+      "bytes": 8246,
+      "sha256": "eccb951b25146ecd60977237d70f94cdc002deca324faf493765e4c4f068442d"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/slider.c",
+      "bytes": 12022,
+      "sha256": "2e0d4834be5d8c8680bd1d2cedc17d84cb5c5ba09b966cdd2cfd03f5574e6ba8"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/slider.h",
+      "bytes": 1333,
+      "sha256": "b53c61e99c0eba5e3ab7b7bb33716d251f42a489be8589c6e5f8e6da90c471cd"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/spi_regs.c",
+      "bytes": 11456,
+      "sha256": "557fc6aa65e300e106cdc2b387b3de8acb08dd052ebc5d93c11df9f8952dc6dd"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/spi_regs.h",
+      "bytes": 4047,
+      "sha256": "8468cc0d67ca2a4cb8cc8c39d98b0494d92be4e5a936185423c6525e1665138d"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/stress_test.c",
+      "bytes": 2529,
+      "sha256": "104ce78c50069d461674cd57956d30d57492de331c921ff31a2fcf4aebd95227"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/stress_test.h",
+      "bytes": 517,
+      "sha256": "fa3a9d9a25ddcd1fa388679a7e3661ba5e4c598fc5165d11a975d918d82dc3b0"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/voice_alloc.c",
+      "bytes": 61302,
+      "sha256": "e881f042988a85b0952d3cf1005d68abd4373da078b5964d3ec502435edc4ca9"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/voice_alloc.h",
+      "bytes": 871,
+      "sha256": "7f627a46ed8b224037c20f4e909ef2c5948c0e659065ec7f6d3de04967b685dd"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/web/index.html",
+      "bytes": 19394,
+      "sha256": "696de0177c5df26e54e64ddea9e99d4ee01038ba6d39bbd217cb730f9201a53d"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/web_control.c",
+      "bytes": 2080,
+      "sha256": "ba00270429353abc11230f852b6ec2460d075310308f0d04313ffbe75051e94a"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/web_control.h",
+      "bytes": 1057,
+      "sha256": "edf3b188bdf66fa5b205819c2d96b004835f68b133d42649f5cd243dce8dc4d9"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/wifi_web.c",
+      "bytes": 12468,
+      "sha256": "d790b9e4f1ad69d5ca7674a26c46d9da8e118fc48803ef0fc1c1ee7b3bbde572"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32c3/main/wifi_web.h",
+      "bytes": 40,
+      "sha256": "e4801a20057229a55942a0f9b30451651544db9f6982020a7c7b40ef2fd2c509"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32s3/.gitignore",
+      "bytes": 70,
+      "sha256": "62f9d799bed2d9fa742b01b03dac3ac4ab036341f3b5695ec9a416e8b4d117bd"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32s3/CMakeLists.txt",
+      "bytes": 298,
+      "sha256": "286182b92a99ce5fb7b35cd6c123b03aa4eb2eca5e4168feddd25b9a239d4648"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32s3/README.md",
+      "bytes": 8648,
+      "sha256": "9451de821d38396677be094be856dd339108d99d747de65218b1a6721898b101"
+    },
+    {
+      "path": "handoff/reference/development/tang_mega_138k_synth/esp32s3/sdkconfig.defaults",
+      "bytes": 1759,
+      "sha256": "7b154a347869c01f8ff0fd20800e297f1d3cbec8f40f43e0e83255fe53a70f1c"
+    },
+    {
+      "path": "handoff/reference/docs/ks-integration-20261003.md",
+      "bytes": 7812,
+      "sha256": "0d02c8b357ed43507b266440da494c2b9869d9e18a6893aa77e4eeee64a2ef8e"
+    },
+    {
+      "path": "handoff/reference/docs/next-design-roadmap-20261003.md",
+      "bytes": 5411,
+      "sha256": "c18bd6b3a05926172845d40d6ae160921a0c4994cc8a355b15da46e57edba7f4"
+    },
+    {
+      "path": "handoff/reference/docs/physical-modeling/ks-control-protocol.md",
+      "bytes": 2824,
+      "sha256": "389dd6895a7a0003caa8d8804cf07fc061c5aa4424bcb891c80d48517253b5fb"
+    },
+    {
+      "path": "handoff/reference/docs/wifi-web-control-20261003.md",
+      "bytes": 9011,
+      "sha256": "a80445f04048f86c96571c9845b8551348198ef9c14dacfd4d976c9f28eb70dd"
+    },
+    {
+      "path": "handoff/reference/docs/音频产生流水线与后续任务清单.md",
+      "bytes": 24647,
+      "sha256": "a8ef3380ba8d7c2aa449cd9c12d8cc1400835291972ce6b5e6906d12742e08f7"
+    },
+    {
+      "path": "handoff/reference/tools/tests/firmware/run.sh",
+      "bytes": 3555,
+      "sha256": "a6f889bb14d2f4c601ebb6c7b5df7f97022320d9d9d2c39719e55aa91f5ab9ed"
+    },
+    {
+      "path": "handoff/reference/tools/tests/firmware/test_ks_web.c",
+      "bytes": 4930,
+      "sha256": "6bdc52be7d225f84f477485be4bc48d7aa16630d62c2db7d57a1c11aee3ffa6a"
+    },
+    {
+      "path": "handoff/reference/tools/tests/firmware/test_web_control.c",
+      "bytes": 6363,
+      "sha256": "3ac23482a536cec48370d3fd51b7cb345b4674db5d81c35e3049c327e0f9d878"
+    },
+    {
+      "path": "handoff/reference/tools/tests/firmware/test_web_page.js",
+      "bytes": 6616,
+      "sha256": "f17bf3c7f1ae3b8c71fc658befa7ce8178e4c2b7539390c6cc701232aeade8a9"
+    },
+    {
+      "path": "handoff/reference/tools/tests/firmware/web_preview.py",
+      "bytes": 8826,
+      "sha256": "7231404886a759b7391546883288a08fe22781302a537209021c79a4e1658bf8"
+    },
+    {
+      "path": "handoff/任务交接-20261005.md",
+      "bytes": 6780,
+      "sha256": "4151d7d0d4b3410c2d215ee0b18663f3b69d76db1a0b3f2a18b9df43a1ace055"
+    },
+    {
+      "path": "handoff/基线与来源-20261005.json",
+      "bytes": 21474,
+      "sha256": "53fa30cf50f97c15d4d12a9cee22b7663bb47906bf71e87459b324ab50ca35ab"
+    },
+    {
+      "path": "handoff/接口约定-20261005.md",
+      "bytes": 5898,
+      "sha256": "d61a70f4ad899bf719386f3369d55ba5fe57d257419da5e5021438d5bdb411fe"
+    }
+  ],
+  "identity_migration": {
+    "date": "2026-11-12",
+    "reason": "Owner-authorized project-name and MIT license normalization only; original ABI parser code and expected protocol vectors retained",
+    "original_archive_sha256": "76554dfc9d2cb470b1ed0cb342f22d8e7778346f5a368c20cdf60b37f6efa834",
+    "original_reference_metadata_sha256": "6ca973f3e2270445a6d303520bb3c800bdd618d17f9f04c41e4b4b90911a7689",
+    "abi_parser_functions_sha256": "465bd3eb1093fa23a5071c9a2bf5a73d725dffafe6dd9241b6924e91ca2bb4e6",
+    "abi_parser_functions_byte_identical": true
+  }
+}

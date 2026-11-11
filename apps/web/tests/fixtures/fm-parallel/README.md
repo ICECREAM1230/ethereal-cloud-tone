@@ -1,0 +1,1 @@
+Actual ESP32 GET /api/v2/capabilities and /api/v2/state captured on 2026-11-02. AE350 channel_routes=true; global mode0; independent FM ready. Client tokens/counters/held keys are cleared and client MIDI channel is2 (FM, zero-based). Original captures and hashes remain in sim/results/fm_web_parallel_fix_20261102. No catalog identity is rewritten.

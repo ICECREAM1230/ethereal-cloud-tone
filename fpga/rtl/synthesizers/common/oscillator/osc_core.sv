@@ -1,0 +1,118 @@
+// Copyright (c) 2026 ICECREAM1230
+//--------------------------------------------------------------------
+// osc_core.sv — combinational oscillator core (waveform generation)
+//
+// Copyright © 2026 Thor H. Linløkken <thj@thj.no>
+// License: MIT
+//
+// Pure combinational function of the ALREADY-ADVANCED phase — no
+// accumulators, no registers (the pipeline owns the phase register).
+// Phase and duty are Q0.24 signed.
+//
+//   sample_out — selected waveform, scaled Q0.24 → Q2.16
+//
+// #128: the phase adder used to live HERE, and its phase_next output
+// was left unconnected at all three call sites while element_pipeline
+// computed `s3_phase + delta` a SECOND time for the writeback — two
+// 24-bit adders for one value. Worse, keeping the adder inside meant
+// one cycle had to carry BSRAM read -> octave shift -> 24-bit add ->
+// sine LUT read -> 4:1 mux, which was this design's critical path
+// (13.04 ns against a 13.56 ns period, i.e. 4% margin). The adder now
+// belongs to the caller, which can register its result before asking
+// for a waveform. Callers that advance phase elsewhere just pass their
+// own phase in.
+//--------------------------------------------------------------------
+`default_nettype none
+module osc_core (
+    input wire logic signed [23:0] phase_next, // advanced phase (Q0.24)
+    input wire logic signed [23:0] duty,       // PWM duty cycle (Q0.24, signed)
+    input wire logic        [1:0]  wave,       // 0 saw, 1 pulse, 2 tri, 3 sine (LUT)
+
+    output logic signed [17:0] sample_out  // Q2.16
+);
+
+    //----------------------------------------------------------------
+    // Sawtooth: phase passthrough (signed Q0.24)
+    //----------------------------------------------------------------
+    logic signed [23:0] saw;
+    assign saw = phase_next;
+
+    //----------------------------------------------------------------
+    // Pulse: signed comparator — phase < duty
+    //   duty = -1.0 → never high, 0.0 → 50%, +1.0 → always high
+    //
+    // #154: DC-FREE AT EVERY DUTY. A bare comparator is only centred at 50%.
+    // phase_next sweeps the full signed range, so the comparator is true for
+    // frac = (duty + 2^23)/2^24 of the cycle and the mean of a ±2^23 square
+    // with that duty is
+    //
+    //     2^23 · (2·frac − 1)  =  duty
+    //
+    // exactly — the offset IS the duty word, so removing it is one subtract
+    // and no multiply. At CC 25 = 127 firmware sends duty = +7549747, which is
+    // 0.9 of full scale of pure DC: tens of thousands of PCM units, scaled by
+    // the amp envelope on its way out, which is why it read as an envelope
+    // leaking into the offset. Largely inaudible, but it spent headroom
+    // permanently and a lowered cutoff removes the pulse and leaves the offset
+    // behind.
+    //
+    // At duty 0 the correction subtracts nothing, so a square is bit-identical
+    // to before.
+    //
+    // 25 bits because a corrected narrow pulse reaches ~2^24. After the >>> 8
+    // below that is at most ±2^16, and Q2.16 spans ±2.0 against a nominal
+    // oscillator's ±0.5, so it fits without a clamp — and no clamp is added on
+    // purpose, since one here would mask a width error instead of showing it.
+    //----------------------------------------------------------------
+    logic signed [24:0] pul;
+    assign pul = ((phase_next < duty) ? 25'sd8388607 : -25'sd8388608)
+                 - 25'(duty);
+
+    //----------------------------------------------------------------
+    // Triangle: fold sawtooth at midpoint (phase = 2^23)
+    //----------------------------------------------------------------
+    logic signed [23:0] triw;
+    assign triw = (phase_next < 24'h800000)
+        ? (phase_next << 1) - 24'h800000
+        : 24'h7FFFFF - ((phase_next - 24'h800000) << 1);
+
+    //----------------------------------------------------------------
+    // Sine: true sine from a quarter-wave LUT (issue #65 — the old
+    // y=4x(1-x) parabola read as a noisy tone on hardware). One
+    // quarter lives in sine_lut[0..255] as Q0.24 magnitude; the full
+    // cycle is rebuilt from the top two phase bits — quadrant[0]
+    // mirrors the falling quarters, quadrant[1] negates the lower
+    // half. Full-scale like saw/tri (the parabola sat ~6 dB low).
+    // (A real parabolic waveform returns as its own type in #66.)
+    //----------------------------------------------------------------
+    reg [23:0] sine_lut [0:255];
+    initial $readmemh("rtl/synthesizers/common/oscillator/data/sine_lut.hex", sine_lut);
+
+    logic [1:0]  quadrant;
+    logic [7:0]  q_idx;
+    logic [23:0] q_mag;
+    assign quadrant = phase_next[23:22];
+    assign q_idx    = quadrant[0] ? ~phase_next[21:14] : phase_next[21:14];
+    assign q_mag    = sine_lut[q_idx];
+
+    logic signed [23:0] sine;
+    assign sine = quadrant[1] ? -$signed(q_mag) : $signed(q_mag);
+
+    //----------------------------------------------------------------
+    // Waveform select
+    //----------------------------------------------------------------
+    // 25 bits so the DC-corrected pulse (#154) survives the mux; the other
+    // three are sign-extended and unchanged.
+    logic signed [24:0] muxed;
+    always_comb begin
+        case (wave)
+            2'd0:    muxed = 25'(saw);
+            2'd1:    muxed = pul;
+            2'd2:    muxed = 25'(triw);
+            default: muxed = 25'(sine);
+        endcase
+    end
+
+    assign sample_out = 18'(muxed >>> 8);   // Q0.24 → Q2.16
+
+endmodule

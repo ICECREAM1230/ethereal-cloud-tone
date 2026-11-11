@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+set(IDF_TARGET esp32s3 CACHE STRING "This standalone project targets ESP32-S3")
+if(NOT DEFINED SDKCONFIG_DEFAULTS)
+    set(SDKCONFIG_DEFAULTS "sdkconfig.defaults;config/usb.defaults")
+endif()
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(fdc2214_raw_debug)

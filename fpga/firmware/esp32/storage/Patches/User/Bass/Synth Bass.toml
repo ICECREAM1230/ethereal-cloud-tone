@@ -1,0 +1,64 @@
+# Synth Bass: original preset for the current FPGA subtractive engine.
+# License: MIT
+# Seconds; amp sustain/volume in dB; cutoff in Hz at MIDI 60; resonance = Q.
+# Module-level RTL audition verified; physical DAC/listening acceptance pending.
+format = 1
+
+[voice]
+structure = "1+1"
+osc_mix = -30
+unison_detune = 0
+unison_stereo = 0
+
+[[osc]]
+wave = "saw"
+tune = 0
+pulse_width = 50
+
+[[osc]]
+wave = "pulse"
+tune = -12
+pulse_width = 50
+
+[filter]
+type = "lowpass"
+slope = 24
+cutoff = 420
+resonance = 1.1
+key_track = 75
+
+[amp_env]
+attack = 0.004
+sustain = -5
+decay = 0.25
+release = 0.09
+velocity = 35
+
+[mod_env]
+attack = 0.003
+sustain = 0
+decay = 0.18
+release = 0.09
+velocity = 35
+destination = "cutoff"
+depth = 24
+
+[[lfo]]
+shape = "triangle"
+rate = 5
+destination = "pitch"
+depth = 0
+
+[[lfo]]
+shape = "triangle"
+rate = 0.25
+destination = "cutoff"
+depth = 0
+
+[part]
+volume = -3
+pan = 0
+bend_range = 2
+wheel_vibrato_depth = 0
+touch_cutoff_depth = 1
+touch_resonance_depth = 15

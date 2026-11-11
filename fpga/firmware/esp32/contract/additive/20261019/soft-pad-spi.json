@@ -1,0 +1,325 @@
+{
+  "preset": "soft-pad",
+  "sample_rate": {
+    "numerator": 91015625,
+    "denominator": 948
+  },
+  "hardware_writes_performed": false,
+  "before": "Poll 0x0709 until bit31=0, then write this entire shadow transaction.",
+  "writes": [
+    {
+      "address": "0xA001",
+      "value": "0x00000000"
+    },
+    {
+      "address": "0xA002",
+      "value": "0x00000000"
+    },
+    {
+      "address": "0xA003",
+      "value": "0x80004000"
+    },
+    {
+      "address": "0xA004",
+      "value": "0x00000002"
+    },
+    {
+      "address": "0xA010",
+      "value": "0x00030003"
+    },
+    {
+      "address": "0xA014",
+      "value": "0x0003CCCC"
+    },
+    {
+      "address": "0xA011",
+      "value": "0x00030004"
+    },
+    {
+      "address": "0xA015",
+      "value": "0x00039999"
+    },
+    {
+      "address": "0xA012",
+      "value": "0x00030004"
+    },
+    {
+      "address": "0xA016",
+      "value": "0x00046666"
+    },
+    {
+      "address": "0xA013",
+      "value": "0x00030005"
+    },
+    {
+      "address": "0xA017",
+      "value": "0x00053333"
+    },
+    {
+      "address": "0xA100",
+      "value": "0x00010000"
+    },
+    {
+      "address": "0xA101",
+      "value": "0x0000FFFF"
+    },
+    {
+      "address": "0xA104",
+      "value": "0x00020000"
+    },
+    {
+      "address": "0xA105",
+      "value": "0x000070F5"
+    },
+    {
+      "address": "0xA108",
+      "value": "0x00030000"
+    },
+    {
+      "address": "0xA109",
+      "value": "0x00004275"
+    },
+    {
+      "address": "0xA10C",
+      "value": "0x00040000"
+    },
+    {
+      "address": "0xA10D",
+      "value": "0x00002BFC"
+    },
+    {
+      "address": "0xA110",
+      "value": "0x00050000"
+    },
+    {
+      "address": "0xA111",
+      "value": "0x00001F0E"
+    },
+    {
+      "address": "0xA114",
+      "value": "0x00060000"
+    },
+    {
+      "address": "0xA115",
+      "value": "0x000016D6"
+    },
+    {
+      "address": "0xA118",
+      "value": "0x00070000"
+    },
+    {
+      "address": "0xA119",
+      "value": "0x00001146"
+    },
+    {
+      "address": "0xA11C",
+      "value": "0x00080000"
+    },
+    {
+      "address": "0xA11D",
+      "value": "0x00000D57"
+    },
+    {
+      "address": "0xA120",
+      "value": "0x00090000"
+    },
+    {
+      "address": "0xA121",
+      "value": "0x00010A77"
+    },
+    {
+      "address": "0xA124",
+      "value": "0x000A0000"
+    },
+    {
+      "address": "0xA125",
+      "value": "0x00010850"
+    },
+    {
+      "address": "0xA128",
+      "value": "0x000B0000"
+    },
+    {
+      "address": "0xA129",
+      "value": "0x000106AB"
+    },
+    {
+      "address": "0xA12C",
+      "value": "0x000C0000"
+    },
+    {
+      "address": "0xA12D",
+      "value": "0x00010565"
+    },
+    {
+      "address": "0xA130",
+      "value": "0x000D0000"
+    },
+    {
+      "address": "0xA131",
+      "value": "0x00010465"
+    },
+    {
+      "address": "0xA134",
+      "value": "0x000E0000"
+    },
+    {
+      "address": "0xA135",
+      "value": "0x0001039A"
+    },
+    {
+      "address": "0xA138",
+      "value": "0x000F0000"
+    },
+    {
+      "address": "0xA139",
+      "value": "0x000102F7"
+    },
+    {
+      "address": "0xA13C",
+      "value": "0x00100000"
+    },
+    {
+      "address": "0xA13D",
+      "value": "0x00010274"
+    },
+    {
+      "address": "0xA140",
+      "value": "0x00110000"
+    },
+    {
+      "address": "0xA141",
+      "value": "0x0002020A"
+    },
+    {
+      "address": "0xA144",
+      "value": "0x00120000"
+    },
+    {
+      "address": "0xA145",
+      "value": "0x000201B3"
+    },
+    {
+      "address": "0xA148",
+      "value": "0x00130000"
+    },
+    {
+      "address": "0xA149",
+      "value": "0x0002016C"
+    },
+    {
+      "address": "0xA14C",
+      "value": "0x00140000"
+    },
+    {
+      "address": "0xA14D",
+      "value": "0x00020131"
+    },
+    {
+      "address": "0xA150",
+      "value": "0x00150000"
+    },
+    {
+      "address": "0xA151",
+      "value": "0x00020100"
+    },
+    {
+      "address": "0xA154",
+      "value": "0x00160000"
+    },
+    {
+      "address": "0xA155",
+      "value": "0x000200D8"
+    },
+    {
+      "address": "0xA158",
+      "value": "0x00170000"
+    },
+    {
+      "address": "0xA159",
+      "value": "0x000200B6"
+    },
+    {
+      "address": "0xA15C",
+      "value": "0x00180000"
+    },
+    {
+      "address": "0xA15D",
+      "value": "0x0002009A"
+    },
+    {
+      "address": "0xA160",
+      "value": "0x00190000"
+    },
+    {
+      "address": "0xA161",
+      "value": "0x00030083"
+    },
+    {
+      "address": "0xA164",
+      "value": "0x001A0000"
+    },
+    {
+      "address": "0xA165",
+      "value": "0x0003006F"
+    },
+    {
+      "address": "0xA168",
+      "value": "0x001B0000"
+    },
+    {
+      "address": "0xA169",
+      "value": "0x0003005E"
+    },
+    {
+      "address": "0xA16C",
+      "value": "0x001C0000"
+    },
+    {
+      "address": "0xA16D",
+      "value": "0x00030050"
+    },
+    {
+      "address": "0xA170",
+      "value": "0x001D0000"
+    },
+    {
+      "address": "0xA171",
+      "value": "0x00030044"
+    },
+    {
+      "address": "0xA174",
+      "value": "0x001E0000"
+    },
+    {
+      "address": "0xA175",
+      "value": "0x0003003A"
+    },
+    {
+      "address": "0xA178",
+      "value": "0x001F0000"
+    },
+    {
+      "address": "0xA179",
+      "value": "0x00030032"
+    },
+    {
+      "address": "0xA17C",
+      "value": "0x00200000"
+    },
+    {
+      "address": "0xA17D",
+      "value": "0x0003002B"
+    },
+    {
+      "address": "0xA000",
+      "value": "0x00000003"
+    },
+    {
+      "address": "0xA0FF",
+      "value": "0x00000001"
+    }
+  ],
+  "after": "Poll 0x0709 until bit31=0 and bits30:0=1. Global MIDI performance must be enabled separately.",
+  "envelope_law": "16-bit linear increments per actual sample; durations are quantized full-scale traversal times."
+}

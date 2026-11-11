@@ -1,0 +1,103 @@
+// Copyright (c) 2026 ICECREAM1230
+//--------------------------------------------------------------------
+// drum.sv — SCMO timing core ("the drum")
+//
+// Copyright © 2026 Thor H. Linløkken <thj@thj.no>
+// License: MIT
+//
+// Single timebase for the whole synth: a free-running counter wrapping
+// every DRUM_CYCLES sysclk cycles (768 = 73.728 MHz / 96 kHz).  All
+// time-multiplexed operations are scheduled against this counter —
+// there is no other sample-rate timing source in the design.
+//
+//   sample_tick : high during slot 0 of each sample period.
+//                 "A new sample is ready": consumers latch the mix
+//                 output and the mix accumulators are cleared on it.
+//   lane_enter  : high during the NUM_LANES slots in which an element
+//                 enters the pipeline (slot 0..255).
+//   cell_tick   : high during the first slot of every CELL_DIV — the
+//                 SPDIF cell boundary (768 = 128 cells × 6). Counted
+//                 from the same reset and realigned at every wrap
+//                 (CYCLES % CELL_DIV == 0), so it coincides with
+//                 sample_tick by construction; the drum really is the
+//                 sole timebase, output stages included.
+//   slot        : current drum slot (scheduling / debug).
+//   sample_tick48 / cell_tick48 : the same pair at HALF rate for the
+//                 48 kHz test S/PDIF output (#101): sample boundary
+//                 every second wrap (1536 sysclk), cell boundary every
+//                 second cell (12 sysclk). Derived from the same
+//                 counters, so 1536 = 128 cells × 12 and sample_tick48
+//                 coincides with a cell_tick48 by construction — the
+//                 drum stays the sole timebase.
+//--------------------------------------------------------------------
+`default_nettype none
+module drum #(
+    parameter int CYCLES    = synth_pkg::DRUM_CYCLES,
+    parameter int NUM_LANES = synth_pkg::NUM_ELEMENTS,
+    parameter int CELLDIV   = synth_pkg::CELL_DIV
+) (
+    input wire logic                   clk,
+    input wire logic                   rst_n,
+
+    output logic                   sample_tick,
+    output logic                   lane_enter,
+    output logic                   cell_tick,
+    output logic                   sample_tick48,
+    output logic                   cell_tick48,
+    output logic [$clog2(CYCLES)-1:0] slot
+);
+
+    localparam int SLOT_W = $clog2(CYCLES);
+
+    logic [SLOT_W-1:0] slot_r;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            slot_r <= '0;
+        else
+            slot_r <= (slot_r == CYCLES - 1) ? '0 : slot_r + 1'b1;
+    end
+
+    logic [$clog2(CELLDIV)-1:0] cell_cnt;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            cell_cnt <= '0;
+        else if (slot_r == CYCLES - 1)          // realign at wrap (no-op
+            cell_cnt <= '0;                     // while CYCLES % CELLDIV == 0)
+        else
+            cell_cnt <= (cell_cnt == CELLDIV - 1) ? '0 : cell_cnt + 1'b1;
+    end
+
+    // ── 48 kHz derivation (#101): two half toggles ──
+    // half48: which CYCLES-long period of the 48 kHz frame this is
+    // (0 = first). cell_half48: which CELLDIV-long cell of the
+    // doubled cell this is (0 = first). Both flip at their boundary;
+    // the wrap realign is a no-op while the ratios divide evenly,
+    // same defensive style as cell_cnt above.
+    logic half48, cell_half48;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            half48 <= 1'b0;
+        else if (slot_r == CYCLES - 1)
+            half48 <= ~half48;
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n)
+            cell_half48 <= 1'b0;
+        else if (slot_r == CYCLES - 1)
+            cell_half48 <= half48 ? 1'b0 : ~cell_half48;
+        else if (cell_cnt == CELLDIV - 1)
+            cell_half48 <= ~cell_half48;
+    end
+
+    assign slot          = slot_r;
+    assign sample_tick   = (slot_r == '0);
+    assign lane_enter    = (slot_r < NUM_LANES);
+    assign cell_tick     = (cell_cnt == '0);
+    assign sample_tick48 = sample_tick && !half48;
+    assign cell_tick48   = cell_tick   && !cell_half48;
+
+endmodule

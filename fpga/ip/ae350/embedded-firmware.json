@@ -1,0 +1,26 @@
+{
+  "status": "OFFICIAL_GENERATION_AND_PLAINTEXT_ITCM_VERIFIED",
+  "binary_bytes": 55228,
+  "binary_SHA256": "6be9ead8f0ceb6efbe6bb0d6c451bdcca701e9050c83a57d41bc6f189b6cfe39",
+  "ipc_SHA256": "b9224495d889fd8ed7e0c38a210c1d0f7716f3abcf52620e1febff48889e1eb9",
+  "generator_delivery": "docs/provenance/ae350-generation.log",
+  "generator_delivery_SHA256": "58ecd4f59c07061987e2e37eedbc007a26d1736319b317f2719c9f1da871eeaa",
+  "configuration_and_nonITCM_netlist_equal_previous": true,
+  "method": "Official IPC import; 32SP/64KiB verify; generated V/VO copied verbatim; nonITCM comparison excludes only ITCM INIT lines and Created Time comment",
+  "ITCM_lanes": {
+    "itcm0": "2d72639f41df656dc9c17e3be3c34def27466192efa72eb781e68b39a19a8b1f",
+    "itcm1": "01b96a230f31e3ae9279d8859c012775ebacf4c14f65e1ff3351bf8a42217e29",
+    "itcm2": "89ab37636754d1f375b811c1526793d3e289dd7dd967327c51b3eb8ec15de508",
+    "itcm3": "9a75b512cfcc55e457060f99d84d9473ce1a531747d38ea5880fbccb98be818e"
+  },
+  "outputs": {
+    "RiscV_AE350_SOC_Top.v": "9d0d045b304e45c117a0a41f1616b6c193303e5e9ebe1dcd6da7d8946a9bae19",
+    "RiscV_AE350_SOC_Top.vo": "e3b8c8f71568d062dcdd0e66e1b37dd93b40f4c3ca6ec1c53ee64aa7daebb538"
+  },
+  "relocation": {
+    "operation": "directory and path references only; IP was not regenerated",
+    "original_receipt": "docs/provenance/original-embedded-firmware.json",
+    "generated_V_VO_unchanged": true,
+    "initialization_reference_base": "project root; generator path-base behavior not revalidated"
+  }
+}

@@ -1,0 +1,24 @@
+﻿group,signal,nano_chip_pin,nano_header,nano_header_pin,direction_from_nano,onboard_load,status
+bridge,SPI_SCLK,42,J5,5,in,LCD_R3,center_layout_v2_proposal_not_implemented
+bridge,SPI_MOSI,41,J5,6,in,LCD_R4,center_layout_v2_proposal_not_implemented
+bridge,SPI_MISO,48,J5,10,out,LCD_DE,center_layout_v2_proposal_not_implemented
+bridge,SPI_CS_N,54,J5,8,in,I2S_DIN,center_layout_v2_proposal_not_implemented
+bridge,DATA_READY_N,56,J5,7,open_drain_out,I2S_BCLK,center_layout_v2_proposal_not_implemented
+FDC,FDC_SCL,27,J6,8,open_drain,LCD_B7,center_layout_v2_proposal_not_implemented
+FDC,FDC_SDA,28,J6,9,bidirectional_open_drain,LCD_B6,center_layout_v2_proposal_not_implemented
+FDC,FDC_ADDR,15,J6,6,out,LED0,center_layout_v2_proposal_not_implemented
+FDC,FDC_SD,16,J6,7,out,LED1,center_layout_v2_proposal_not_implemented
+FDC,FDC_INT_N,31,J6,14,in,LCD_B3,center_layout_v2_proposal_not_implemented
+ToF1,TOF1_SCL,29,J6,12,open_drain,LCD_B5,center_layout_v2_proposal_not_implemented
+ToF1,TOF1_SDA,30,J6,13,bidirectional_open_drain,LCD_B4,center_layout_v2_proposal_not_implemented
+ToF1,TOF1_XSHUT,17,J6,15,open_drain_out,LED2 / LCD_INIT3,center_layout_v2_proposal_not_implemented
+ToF1,TOF1_INT_N,85,J6,4,in,microSD DAT1,center_layout_v2_proposal_not_implemented
+ToF2,TOF2_SCL,73,J6,1,open_drain,HSPI_DIN2；排针 GPIO,center_layout_v2_proposal_not_implemented
+ToF2,TOF2_SDA,74,J6,2,bidirectional_open_drain,HSPI_DIN3；排针 GPIO,center_layout_v2_proposal_not_implemented
+ToF2,TOF2_XSHUT,18,J6,18,open_drain_out,LED3 / LCD_INIT0,center_layout_v2_proposal_not_implemented
+ToF2,TOF2_INT_N,80,J5,4,in,microSD DAT2,center_layout_v2_proposal_not_implemented
+ultrasound1,US1_TRIG,19,J6,17,out,LED4 / LCD_INIT1,center_layout_v2_proposal_not_implemented
+ultrasound1,US1_ECHO,77,J6,5,in,LCD 像素时钟 LCD_CK,center_layout_v2_proposal_not_implemented
+ultrasound2,US2_TRIG,20,J6,16,out,LED5 / LCD_INIT2,center_layout_v2_proposal_not_implemented
+ultrasound2,US2_ECHO,72,J5,17,in,HSPI_DIN1；排针 GPIO,center_layout_v2_proposal_not_implemented
+local,LOCAL_PA_SD,51,J5,9,out_hold_low,PA_SD/EN,center_layout_v2_proposal_not_implemented

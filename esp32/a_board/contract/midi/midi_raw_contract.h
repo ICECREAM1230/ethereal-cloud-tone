@@ -1,0 +1,34 @@
+/* SPDX-License-Identifier: MIT */
+#ifndef MIDI_RAW_CONTRACT_H
+#define MIDI_RAW_CONTRACT_H
+#include <stdint.h>
+#define MIDI_RAW_ABI_MAGIC UINT32_C(0x4d494431)
+#define MIDI_RAW_REG_MAGIC UINT16_C(0x0700)
+#define MIDI_RAW_REG_COMMAND UINT16_C(0x0701)
+#define MIDI_RAW_REG_STATUS UINT16_C(0x0702)
+#define MIDI_RAW_REG_ACCEPT_COUNT UINT16_C(0x0703)
+#define MIDI_RAW_REG_REJECT_COUNT UINT16_C(0x0704)
+#define MIDI_RAW_REG_EVENT_COUNT UINT16_C(0x0705)
+#define MIDI_RAW_REG_USB_STATUS UINT16_C(0x0706)
+#define MIDI_RAW_REG_DDS_TEMPLATE_STATUS UINT16_C(0x0707)
+#define MIDI_RAW_REG_KS_TEMPLATE_STATUS UINT16_C(0x0708)
+#define MIDI_RAW_REG_INPUT_CAPABILITIES UINT16_C(0x070a)
+#define MIDI_RAW_CAP_INDEPENDENT_USB UINT32_C(1)
+#define MIDI_RAW_CAP_NATIVE_SENSOR3 UINT32_C(2)
+#define MIDI_RAW_STATUS_BUSY UINT32_C(1)
+#define MIDI_RAW_STATUS_ENABLED UINT32_C(2)
+#define MIDI_RAW_SOURCE_USB 0u
+#define MIDI_RAW_SOURCE_WEB 1u
+#define MIDI_RAW_SOURCE_BLE 2u
+#define MIDI_RAW_SOURCE_SENSOR 3u
+/* Historical images only; native-sensor capability rejects RAW/FLUSH source3. */
+#define MIDI_RAW_SOURCE_DIN 3u
+#define MIDI_RAW_SOURCE_ALL 255u
+#define MIDI_RAW_OP_BYTE 1u
+#define MIDI_RAW_OP_FLUSH 2u
+#define MIDI_RAW_OP_ENABLE 3u
+static inline uint32_t midi_raw_command(uint8_t op, uint8_t source, uint8_t payload)
+{
+    return ((uint32_t)op << 24) | ((uint32_t)source << 16) | payload;
+}
+#endif

@@ -1,0 +1,88 @@
+{
+  "spec": "docs/fm-synthesis/接口代码生成与并行协作-20261011.md",
+  "abi": {"major": 1, "minor": 1},
+  "command_fields": ["opcode_id", "scope_id", "target_word", "parameter_id", "value_u32", "arg0_u32", "arg1_u32", "session_id", "engine_epoch", "topology_generation", "voice_generation", "sequence_id"],
+  "command_register_addresses": [1552, 1553, 1554, 1555, 1556, 1557, 1558, 1559, 1560, 1561, 1562, 1563],
+  "commit_register_address": 1564,
+  "commands": [
+    {
+      "name": "asymmetric_command",
+      "command": {"opcode_id": 6, "scope_id": 4, "target_word": 4294901762, "parameter_id": 17, "value_u32": 127, "arg0_u32": 287454020, "arg1_u32": 2864434397, "session_id": 305419896, "engine_epoch": 2147483647, "topology_generation": 2147483648, "voice_generation": 4294967294, "sequence_id": 4294967295},
+      "words": [6, 4, 4294901762, 17, 127, 287454020, 2864434397, 305419896, 2147483647, 2147483648, 4294967294, 4294967295]
+    },
+    {
+      "name": "all_zero_codec_only",
+      "command": {"opcode_id": 0, "scope_id": 0, "target_word": 0, "parameter_id": 0, "value_u32": 0, "arg0_u32": 0, "arg1_u32": 0, "session_id": 0, "engine_epoch": 0, "topology_generation": 0, "voice_generation": 0, "sequence_id": 0},
+      "words": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "name": "all_uint32_max_codec_only",
+      "command": {"opcode_id": 4294967295, "scope_id": 4294967295, "target_word": 4294967295, "parameter_id": 4294967295, "value_u32": 4294967295, "arg0_u32": 4294967295, "arg1_u32": 4294967295, "session_id": 4294967295, "engine_epoch": 4294967295, "topology_generation": 4294967295, "voice_generation": 4294967295, "sequence_id": 4294967295},
+      "words": [4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295]
+    },
+    {
+      "name": "distinct_byte_patterns",
+      "command": {"opcode_id": 16909060, "scope_id": 286397204, "target_word": 555885348, "parameter_id": 825373492, "value_u32": 1094861636, "arg0_u32": 1364349780, "arg1_u32": 1633837924, "session_id": 1903326068, "engine_epoch": 2172814212, "topology_generation": 2442302356, "voice_generation": 2711790500, "sequence_id": 2981278644},
+      "words": [16909060, 286397204, 555885348, 825373492, 1094861636, 1364349780, 1633837924, 1903326068, 2172814212, 2442302356, 2711790500, 2981278644]
+    }
+  ],
+  "invalid_uint32": [-1, 4294967296, 1.5, true, null, "1"],
+  "invalid_word_counts": [0, 1, 11, 13, 24],
+  "jt51": {
+    "backend_id": 1,
+    "profile_version": 65536,
+    "parameter_count": 13,
+    "preset_count": 3,
+    "voice_count": 8,
+    "operators_per_voice": [4, 4, 4, 4, 4, 4, 4, 4],
+    "patch_operator_count": 4,
+    "native_register_slots": [0, 2, 1, 3],
+    "native_key_on_bits": [3, 4, 5, 6],
+    "parameters": [
+      {"id": 1, "key": "algorithm", "scope": 3, "min": 0, "max": 7},
+      {"id": 2, "key": "feedback", "scope": 3, "min": 0, "max": 7},
+      {"id": 16, "key": "multiplier", "scope": 4, "min": 0, "max": 15},
+      {"id": 17, "key": "total_level", "scope": 4, "min": 0, "max": 127},
+      {"id": 18, "key": "attack_rate", "scope": 4, "min": 0, "max": 31},
+      {"id": 19, "key": "decay1_rate", "scope": 4, "min": 0, "max": 31},
+      {"id": 20, "key": "decay2_rate", "scope": 4, "min": 0, "max": 31},
+      {"id": 21, "key": "sustain_level", "scope": 4, "min": 0, "max": 15},
+      {"id": 22, "key": "release_rate", "scope": 4, "min": 0, "max": 15},
+      {"id": 23, "key": "detune1", "scope": 4, "min": 0, "max": 7},
+      {"id": 24, "key": "detune2", "scope": 4, "min": 0, "max": 3},
+      {"id": 25, "key": "rate_scaling", "scope": 4, "min": 0, "max": 3},
+      {"id": 26, "key": "am_enable", "scope": 4, "min": 0, "max": 1}
+    ],
+    "presets": [0, 1, 2],
+    "unit": "chip_code",
+    "effect": "next_note"
+  },
+  "msfa_reference": {"backend_id": 2, "profile_version": 65536, "parameter_count": 0, "preset_count": 0, "voice_count": 8, "operators_per_voice": [2, 2, 2, 2, 2, 2, 2, 2], "patch_operator_count": 2, "runtime_available": false},
+  "synthetic_profiles": [
+    {"backend_key": "test_future_16x6", "backend_id": 100, "profile_version": 1, "parameter_count": 14, "preset_count": 0, "voice_count": 16, "operators_per_voice": [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], "patch_operator_count": 6, "native_register_slots": [0, 2, 1, 3, 5, 4], "native_key_on_bits": [3, 4, 5, 6, 7, 8], "runtime_available": false},
+    {"backend_key": "test_heterogeneous", "backend_id": 101, "profile_version": 1, "parameter_count": 14, "preset_count": 0, "voice_count": 4, "operators_per_voice": [2, 4, 6, 0], "patch_operator_count": 3, "native_register_slots": [0, 2, 1, 3, 5, 4], "native_key_on_bits": [3, 4, 5, 6, 7, 8], "runtime_available": false}
+  ],
+  "profile_targets": [
+    {"name": "jt51_last_valid", "backend_id": 1, "scope": 2, "target": 458755, "expected": true},
+    {"name": "jt51_voice8_invalid", "backend_id": 1, "scope": 2, "target": 524288, "expected": false},
+    {"name": "jt51_op4_invalid", "backend_id": 1, "scope": 2, "target": 458756, "expected": false},
+    {"name": "msfa_last_valid", "backend_id": 2, "scope": 2, "target": 458753, "expected": true},
+    {"name": "msfa_op2_invalid", "backend_id": 2, "scope": 2, "target": 458754, "expected": false},
+    {"name": "future_last_valid", "backend_id": 100, "scope": 2, "target": 983045, "expected": true},
+    {"name": "future_voice16_invalid", "backend_id": 100, "scope": 2, "target": 1048576, "expected": false},
+    {"name": "future_op6_invalid", "backend_id": 100, "scope": 2, "target": 983046, "expected": false},
+    {"name": "heterogeneous_voice0_op1_valid", "backend_id": 101, "scope": 2, "target": 1, "expected": true},
+    {"name": "heterogeneous_voice0_op2_invalid", "backend_id": 101, "scope": 2, "target": 2, "expected": false},
+    {"name": "heterogeneous_voice1_op3_valid", "backend_id": 101, "scope": 2, "target": 65539, "expected": true},
+    {"name": "heterogeneous_voice1_op4_invalid", "backend_id": 101, "scope": 2, "target": 65540, "expected": false},
+    {"name": "heterogeneous_voice2_op5_valid", "backend_id": 101, "scope": 2, "target": 131077, "expected": true},
+    {"name": "heterogeneous_voice2_op6_invalid", "backend_id": 101, "scope": 2, "target": 131078, "expected": false},
+    {"name": "heterogeneous_voice3_op0_invalid", "backend_id": 101, "scope": 2, "target": 196608, "expected": false},
+    {"name": "heterogeneous_voice3_none_valid", "backend_id": 101, "scope": 1, "target": 262143, "expected": true},
+    {"name": "heterogeneous_patch2_valid", "backend_id": 101, "scope": 4, "target": 4294901762, "expected": true},
+    {"name": "heterogeneous_patch3_invalid", "backend_id": 101, "scope": 4, "target": 4294901763, "expected": false},
+    {"name": "heterogeneous_engine_valid", "backend_id": 101, "scope": 0, "target": 4294967295, "expected": true},
+    {"name": "unknown_profile_invalid", "backend_id": 999, "scope": 0, "target": 4294967295, "expected": false},
+    {"name": "unknown_scope_invalid", "backend_id": 1, "scope": 5, "target": 4294967295, "expected": false}
+  ]
+}

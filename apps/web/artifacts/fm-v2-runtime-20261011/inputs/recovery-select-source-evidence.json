@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-10-11T01:53:33.027659+00:00",
+  "reason": "needs_select owner recovery fence requires explicit SELECT after native READY returns",
+  "read_only_sources": [
+    {
+      "path": "/home/ice/Project/my_project/development/ESP32/ESP32_development/esp32s3/main/engine_fm.inc.h",
+      "sha256": "6b62de5883e6a1e5c7f05216fb9b7d9315320b9b36521b8a667c34366c246ecb",
+      "lines": [
+        62,
+        73
+      ],
+      "excerpt": "bool engine_link_fm_mode(uint32_t backend)\n{\n    portENTER_CRITICAL(&s_lock);\n    bool allowed=s_fm.status.available && s_fm.status.valid && s_fm.status.ready &&\n        (backend==FM_BACKEND_UNBOUND || backend==s_fm.status.backend_id);\n    if(allowed) {\n        fm_clear_intents();s_fm.status.requested_backend=backend;s_fm.status.switching=true;\n        s_fm.status.needs_select=false;s_fm_mode_pending=true;s_fm_mode_revision++;\n        if(s_fm.status.selected || s_fm_inflight.active)s_fm_panic_pending=true;\n    }\n    portEXIT_CRITICAL(&s_lock);return allowed;\n}"
+    },
+    {
+      "path": "/home/ice/Project/my_project/development/ESP32/ESP32_development/esp32s3/main/engine_fm.inc.h",
+      "sha256": "6b62de5883e6a1e5c7f05216fb9b7d9315320b9b36521b8a667c34366c246ecb",
+      "lines": [
+        152,
+        166
+      ],
+      "excerpt": "static void fm_fault(unsigned reason)\n{\n    portENTER_CRITICAL(&s_lock);bool notify=!s_fm.status.needs_select;\n    fm_clear_intents();s_fm_inflight.active=false;s_fm_mode_pending=false;\n    s_fm_fault_panic=s_fm.status.selected || s_fm.status.session_id;\n    s_fm_panic_pending=s_fm_fault_panic;s_fm_panic.sequence_id=0;\n    s_fm.status.available=s_fm.status.valid=s_fm.status.ready=false;\n    s_fm.status.needs_select=s_fm.status.recovering=s_fm.status.switching=true;\n    if(!s_fm.status.selected)s_fm.status.applied_backend=FM_BACKEND_UNBOUND;\n    s_fm.status.reason=reason;s_fm_owner_pending|=notify;s_fm_probe_at=0;\n    s_fm.parameter_count=0;memset(s_fm_parameters,0,sizeof(s_fm_parameters));\n    portEXIT_CRITICAL(&s_lock);\n    if(notify){const evt_t e={.kind=EVT_PANIC};event_bus_publish(&e);}\n}\nstatic bool fm_probe(void)"
+    },
+    {
+      "path": "/home/ice/Project/my_project/development/ESP32/ESP32_development/esp32s3/main/engine_fm.inc.h",
+      "sha256": "6b62de5883e6a1e5c7f05216fb9b7d9315320b9b36521b8a667c34366c246ecb",
+      "lines": [
+        357,
+        373
+      ],
+      "excerpt": "        if(s_fm.status.available && s_fm_coherent_at && now-s_fm_coherent_at>=FM_CONFIRM_TIMEOUT_US)fm_fault(FM_LINK_TIMEOUT);\n        return;\n    }\n    if(s_fm_panic.sequence_id) {\n        if(now-s_fm_panic_at>=FM_CONFIRM_TIMEOUT_US)fm_fault(FM_LINK_TIMEOUT);\n        return;\n    }\n    portENTER_CRITICAL(&s_lock);\n    if(s_fm_fault_panic && !s_fm.status.session_id && !s_fm.status.selected) {\n        // Native reset already cleared the backend. Keep the explicit SELECT\n        // fence, without writing a Panic into the fresh unbound session.\n        s_fm_fault_panic=s_fm_panic_pending=false;\n    }\n    bool panic=s_fm_panic_pending && (!s_fm.status.needs_select || s_fm_fault_panic);\n    if(panic) {\n        s_fm_panic_pending=false;s_fm_inflight.active=false;\n        if(++s_fm_panic_sequence==0)++s_fm_panic_sequence;"
+    },
+    {
+      "path": "/home/ice/Project/my_project/development/ESP32/ESP32_development/esp32s3/main/engine_fm.inc.h",
+      "sha256": "6b62de5883e6a1e5c7f05216fb9b7d9315320b9b36521b8a667c34366c246ecb",
+      "lines": [
+        384,
+        402
+      ],
+      "excerpt": "        if(s_fm_inflight.retry && !(s_fm.status.flags&FM_FLAG_BUSY))fm_commit();\n        return;\n    }\n    if(s_fm.status.needs_select || s_fm_owner_pending || !s_fm.status.ready || (s_fm.status.flags&FM_FLAG_BUSY))return;\n    fm_command_t c={.scope_id=FM_SCOPE_ENGINE,.target_word=UINT32_MAX,\n        .session_id=s_fm.status.session_id,.engine_epoch=s_fm.status.engine_epoch,.topology_generation=s_fm.status.topology_generation};\n    unsigned slot=0;uint32_t revision=0,cancel_revision;bool found=false;\n    portENTER_CRITICAL(&s_lock);\n    cancel_revision=s_fm_cancel_revision;\n    if(s_fm_mode_pending && (other_engines_silent || !s_fm.status.requested_backend)) {\n        c.opcode_id=FM_SPI_OPCODE_SELECT_BACKEND;c.value_u32=s_fm.status.requested_backend;\n        do{s_fm_nonce=esp_random();}while(!s_fm_nonce || s_fm_nonce==s_fm.status.session_id);\n        c.arg0_u32=s_fm_nonce;revision=s_fm_mode_revision;found=true;\n    } else if(!s_fm_mode_pending && s_fm.status.selected) {\n        if(s_fm_preset_pending) {c.opcode_id=FM_SPI_OPCODE_APPLY_PRESET;c.scope_id=FM_SCOPE_PATCH;c.value_u32=s_fm_preset_id;revision=s_fm_preset_revision;found=true;}\n        else {\n            // Off for any voice precedes all NoteOn and parameter work.\n            for(unsigned n=0;n<ENGINE_FM_VOICES;n++) {unsigned v=(s_fm_cursor+n)%ENGINE_FM_VOICES;\n                if(s_fm_notes[v].off){slot=v;c.opcode_id=FM_SPI_OPCODE_NOTE_OFF;found=true;break;}}"
+    }
+  ]
+}

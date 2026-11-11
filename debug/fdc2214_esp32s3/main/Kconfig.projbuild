@@ -1,0 +1,119 @@
+menu "FDC2214 standalone raw debug"
+config FDC_WIRING_CONFIRMED
+    bool "I have confirmed 3.3 V logic, pull-ups, wiring and bus ownership"
+    default n
+    help
+        Leave disabled until the user supplies the actual wiring. Disabled means
+        no FDC GPIO or I2C initialization and no peripheral transactions.
+config FDC_SDA_GPIO
+    int "SDA GPIO (-1 means unassigned)"
+    range -1 48
+    default -1
+config FDC_SCL_GPIO
+    int "SCL GPIO (-1 means unassigned)"
+    range -1 48
+    default -1
+config FDC_SD_GPIO
+    int "Optional SD output GPIO (-1 means externally held low)"
+    range -1 48
+    default -1
+config FDC_ADDR_GPIO
+    int "Optional ADDR output GPIO (-1 means externally strapped)"
+    range -1 48
+    default -1
+config FDC_I2C_ADDRESS
+    hex "7-bit I2C address (0x2A low ADDR, 0x2B high ADDR)"
+    range 0x2A 0x2B
+    default 0x2A
+config FDC_I2C_HZ
+    int "I2C frequency (Hz)"
+    range 10000 400000
+    default 100000
+choice FDC_CLOCK_SOURCE
+    prompt "Confirmed FDC reference clock source"
+    default FDC_CLOCK_UNCONFIRMED
+config FDC_CLOCK_UNCONFIRMED
+    bool "Unconfirmed: no peripheral initialization"
+config FDC_CLOCK_EXTERNAL
+    bool "External CLKIN (must be supplied by the module/clock source)"
+config FDC_CLOCK_INTERNAL
+    bool "Internal oscillator (CLKIN wiring must match the datasheet)"
+endchoice
+config FDC_EXTERNAL_CLOCK_HZ
+    int "External clock frequency (Hz, external source only)"
+    range 2000000 40000000
+    default 40000000
+config FDC_EXTERNAL_FREF_DIVIDER
+    int "External source FREF divider"
+    range 1 1023
+    default 1
+config FDC_INTERNAL_FREF_DIVIDER
+    int "Internal source FREF divider (55 MHz worst case / divider <= 40 MHz)"
+    range 2 1023
+    default 2
+config FDC_RCOUNT
+    hex "RCOUNT for all four channels"
+    range 0x0009 0xFFFF
+    default 0x1000
+config FDC_SETTLECOUNT
+    hex "SETTLECOUNT for all four channels"
+    range 0x0004 0xFFFF
+    default 0x0100
+config FDC_IDRIVE_CH0
+    int "CH0 IDRIVE (initial value only; tune for the actual LC circuit)"
+    range 0 31
+    default 15
+config FDC_IDRIVE_CH1
+    int "CH1 IDRIVE"
+    range 0 31
+    default 15
+config FDC_IDRIVE_CH2
+    int "CH2 IDRIVE"
+    range 0 31
+    default 15
+config FDC_IDRIVE_CH3
+    int "CH3 IDRIVE"
+    range 0 31
+    default 15
+config FDC_TRANSACTION_TIMEOUT_MS
+    int "Per I2C transaction timeout (ms)"
+    range 10 1000
+    default 50
+config FDC_DATA_TIMEOUT_MS
+    int "No complete four-channel frame timeout (ms)"
+    range 100 10000
+    default 500
+config FDC_OUTPUT_INTERVAL_MS
+    int "Minimum interval between CSV sample output (ms)"
+    range 50 5000
+    default 100
+endmenu
+
+menu "FDC volume calibration and I2S test"
+config FDC_AUDIO_ENABLE
+    bool "Build volume calibration console and four-signal I2S test output"
+    default n
+    help
+        Standalone 440 Hz test tone, not the FPGA/AE350 production synthesizer.
+        Output starts silent. External standard I2S DAC/amplifier required.
+config FDC_AUDIO_MCLK_GPIO
+    int "MCLK GPIO (-1 omits MCLK for DACs that do not need it)"
+    range -1 48
+    default 15
+    depends on FDC_AUDIO_ENABLE
+config FDC_AUDIO_BCLK_GPIO
+    int "BCLK GPIO"
+    range 1 48
+    default 5
+    depends on FDC_AUDIO_ENABLE
+config FDC_AUDIO_WS_GPIO
+    int "LRCLK/WS GPIO"
+    range 1 48
+    default 6
+    depends on FDC_AUDIO_ENABLE
+config FDC_AUDIO_DOUT_GPIO
+    int "DOUT GPIO (connect to DAC DIN)"
+    range 1 48
+    default 7
+    depends on FDC_AUDIO_ENABLE
+endmenu

@@ -1,0 +1,156 @@
+IO_LOC  "sys_clk"   V22;
+IO_PORT "sys_clk"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC  "sys_rst_n" AA13;
+IO_PORT "sys_rst_n" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// Local power-up chord control: Key0 toggle, Key1 stop (active low).
+IO_LOC  "Key_in[1]" Y12;
+IO_LOC  "Key_in[0]" AB13;
+IO_PORT "Key_in[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "Key_in[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// GPIO-to-ball mapping corrected by the user on 2026-10-11; Bank 4, 3.3 V.
+// GPIO21/J8.6 -> AB20 CS, GPIO47/J8.5 -> AA19 SCLK,
+// GPIO13/J8.8 -> AA21 MOSI, GPIO14/J8.7 <- AA20 MISO.
+// Single-ended SPI mode 0; P/N route pairing does not imply LVDS.
+IO_LOC  "ESP_SPI_SCLK" AA19;
+IO_LOC  "ESP_SPI_CS_N" AB20;
+IO_LOC  "ESP_SPI_MOSI" AA21;
+IO_LOC  "ESP_SPI_MISO" AA20;
+IO_PORT "ESP_SPI_SCLK" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "ESP_SPI_CS_N" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "ESP_SPI_MOSI" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "ESP_SPI_MISO" IO_TYPE=LVCMOS33 DRIVE=8 BANK_VCCIO=3.3;
+
+// Reserve unused adapter routes as input-only, without internal pulls.
+// The new adapter does not connect GPIO19/20 USB or GPIO0 BOOT to FPGA.
+IO_LOC  "ESP_PMOD1_PASSIVE[0]" AB22; // J8.10 GPIO12
+IO_LOC  "ESP_PMOD1_PASSIVE[1]" AB21; // J8.9  GPIO11
+IO_LOC  "ESP_PMOD1_PASSIVE[2]" Y22;  // J8.12 GPIO10
+IO_LOC  "ESP_PMOD1_PASSIVE[3]" Y21;  // J8.11 GPIO9
+IO_PORT "ESP_PMOD1_PASSIVE[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "ESP_PMOD1_PASSIVE[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "ESP_PMOD1_PASSIVE[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "ESP_PMOD1_PASSIVE[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+// 2026-10-24: ESP32 uses only J8/PMOD1 (the AB21/Y21 group).
+// FM diagnostics disabled; retain the previous J9/PMOD0 wiring as comments.
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[0]" T18; // J9.6
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[1]" R18; // J9.5
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[2]" R17; // J9.8
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[3]" P16; // J9.7
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[4]" U21; // J9.10
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[5]" T21; // J9.9
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[6]" R19; // J9.12
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_LOC "FM_DIAG_LED[7]" P19; // J9.11
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[0]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[1]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[2]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[3]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[4]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[5]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[6]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// DISABLED [SYNTH_FM_DIAG_LEDS undefined]: IO_PORT "FM_DIAG_LED[7]" IO_TYPE=LVCMOS33 DRIVE=4 PULL_MODE=NONE BANK_VCCIO=3.3;
+// PCM5102A three-wire I2S, simultaneous with the existing PT8211.
+IO_LOC "PCM_WS" A15;
+IO_LOC "PCM_DIN" B20;
+IO_LOC "PCM_BCK" B21;
+IO_PORT "PCM_WS" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "PCM_DIN" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "PCM_BCK" IO_TYPE=LVCMOS33 DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+// 2026-10-24：传感器原接线预案，全部仅作注释，暂不生效。
+// FM_DIAG_LED 已禁用并注释；PCM5102A 继续使用现有引脚。
+// 名称对应主顶层的 SYNTH_SENSOR_I2C_PORTS 条件端口，默认不声明这些 I/O。
+// ENABLE_SENSOR_I2C=0 默认移除采集电路；完成接线/约束后再声明端口并设为 1。
+// FDC 的四项 LED 冲突和激光 1 的三项 DAC 冲突见逐项说明。
+// 全部 13 路须在最终接线、端口名称和电气条件核对后统一启用；
+// 不得只取消注释后与当前 LED/DAC 约束重叠，也不得留下未约束的新 I/O。
+// FDC2214 / bus0
+// IO_LOC "scl_io"         P19; // 冲突：FM_DIAG_LED[7]（诊断灯现已禁用）
+// IO_LOC "sda_io"         T21; // 冲突：FM_DIAG_LED[5]（诊断灯现已禁用）
+// IO_LOC "fdc_addr_o"     P16; // 冲突：FM_DIAG_LED[3]（诊断灯现已禁用）
+// IO_LOC "fdc_int_ni"     R18; // 冲突：FM_DIAG_LED[1]（诊断灯现已禁用）
+// IO_LOC "fdc_sd_o"       V17;
+// VL53L0X 1 / bus1
+// IO_LOC "tof1_scl_io"    B15;
+// IO_LOC "tof1_sda_io"    A15; // 冲突：PCM_WS，保留 PCM5102A
+// IO_LOC "tof1_xshut_io"  B21; // 冲突：PCM_BCK，保留 PCM5102A
+// IO_LOC "tof1_int_ni"    B20; // 冲突：PCM_DIN，保留 PCM5102A
+// VL53L0X 2 / bus2
+// IO_LOC "tof2_scl_io"    U17;
+// IO_LOC "tof2_sda_io"    N15;
+// IO_LOC "tof2_xshut_io"  AB18;
+// IO_LOC "tof2_int_ni"    Y18;
+// I²C / XSHUT 只拉低或释放，需模块兼容电压的外部上拉；+5V 仅为模块供电。
+// IO_PORT "scl_io"        IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "sda_io"        IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "fdc_addr_o"    IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "fdc_int_ni"    IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "fdc_sd_o"      IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof1_scl_io"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof1_sda_io"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof1_xshut_io" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof1_int_ni"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof2_scl_io"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof2_sda_io"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof2_xshut_io" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+// IO_PORT "tof2_int_ni"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+IO_LOC  "HP_BCK"    Y17;
+IO_LOC  "HP_WS"     AB17;
+IO_LOC  "HP_DIN"    AA16;
+IO_LOC  "PA_EN"     AB16;
+IO_PORT "HP_BCK"    IO_TYPE=LVCMOS33;
+IO_PORT "HP_WS"     IO_TYPE=LVCMOS33;
+IO_PORT "HP_DIN"    IO_TYPE=LVCMOS33;
+IO_PORT "PA_EN"     IO_TYPE=LVCMOS33;
+
+// Scope HDMI outputs only. Append to current CST, preserving new SPI/PMOD.
+IO_LOC "tmds_clk_p" G15;
+IO_LOC "tmds_clk_n" G16;
+IO_LOC "tmds_data_p[0]" J14;
+IO_LOC "tmds_data_n[0]" H14;
+IO_LOC "tmds_data_p[1]" J15;
+IO_LOC "tmds_data_n[1]" H15;
+IO_LOC "tmds_data_p[2]" K17;
+IO_LOC "tmds_data_n[2]" J17;
+IO_PORT "tmds_clk_p" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_clk_n" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_data_p[0]" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_data_n[0]" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_data_p[1]" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_data_n[1]" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_data_p[2]" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "tmds_data_n[2]" IO_TYPE=LVCMOS33D DRIVE=8 PULL_MODE=NONE BANK_VCCIO=3.3;
+// SUG1541-1.0E section2.4. These constraints belong to the scope PHY.
+// Keep each RESET launch FF next to its actual output lane; recovery/removal
+// stay timed. Current25 run001 omitted them and had -2.346ns recovery.
+// The three-stage PCLK falling-edge chain drives RESET from reset_sync[2].
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[0].u_phy/reset_sync_2_s1" R101C181[0][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[1].u_phy/reset_sync_2_s1" R101C180[0][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[2].u_phy/reset_sync_2_s1" R59C181[0][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/pixel_ready_q_1_s0" R80C177[0][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/pixel_ready_q_0_s0" R80C177[0][B];
+
+// Keep all lane reset stages in the HDMI bottom-right clock region.
+// Unconstrained early stages in the top half activate a longer cross-half GCLK tree.
+
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[0].u_phy/reset_sync_0_s1" R101C181[1][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[1].u_phy/reset_sync_0_s1" R101C180[1][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[2].u_phy/reset_sync_0_s1" R59C181[1][A];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[0].u_phy/reset_sync_1_s1" R101C181[0][B];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[1].u_phy/reset_sync_1_s1" R101C180[0][B];
+// DISABLED [ENABLE_HDMI=0; restore with HDMI constraints]: INS_LOC "u_system/g_hdmi.u_display/u_hdmi/lanes[2].u_phy/reset_sync_1_s1" R59C181[0][B];
+
+// Native Full-Speed MIDI Host; physically tested H13/G13 mapping.
+IO_LOC "USB_MIDI_DP" H13;
+IO_LOC "USB_MIDI_DM" G13;
+IO_PORT "USB_MIDI_DP" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_PORT "USB_MIDI_DM" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// MIDI diagnostics: same tested WS2812/UART pads; adapter routes stay passive.
+IO_LOC "MIDI_STATUS_LED" J16;
+IO_PORT "MIDI_STATUS_LED" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "MIDI_DEBUG_TX" U15;
+IO_PORT "MIDI_DEBUG_TX" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;

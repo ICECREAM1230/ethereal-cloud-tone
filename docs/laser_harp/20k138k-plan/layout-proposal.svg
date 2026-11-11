@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1060">
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="55.00" y="44.00" font-family="Noto Sans CJK SC,sans-serif" font-size="24" fill="#233247">20K 中置方案：锁定两组 40-pin 与 FDC</text>
+<text x="55.00" y="73.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">顶视图 · 原板外形保持候选 · 蓝色 Nano 与灰色 138K 板体区域在 XY 重叠，Z 高度尚未验收</text>
+<rect x="111.50" y="136.02" width="630.00" height="630.00" fill="#ffffff" stroke="#52677f" stroke-width="2"/>
+<rect x="231.20" y="275.10" width="352.80" height="352.80" fill="#edf0f5" stroke="#a6b0bd" stroke-width="1"/>
+<text x="256.40" y="239.90" font-family="Noto Sans CJK SC,sans-serif" font-size="12" fill="#233247">138K 板体占位（非已验证轮廓）</text>
+<rect x="336.48" y="281.42" width="142.09" height="340.46" fill="#d9ecff" stroke="#2774af" stroke-width="2"/>
+<text x="378.57" y="448.30" font-family="Noto Sans CJK SC,sans-serif" font-size="22" fill="#233247">Nano</text>
+<text x="383.57" y="488.10" font-family="Noto Sans CJK SC,sans-serif" font-size="24" fill="#233247">20K</text>
+<text x="373.57" y="270.42" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">USB ↑</text>
+<circle cx="567.65" cy="297.96" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="313.96" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="329.97" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="345.97" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="361.97" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="377.97" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="393.97" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="409.98" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="425.98" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="441.98" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="457.98" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="473.98" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="489.99" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="505.99" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="521.99" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="537.99" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="553.99" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="570.00" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="586.00" r="2.7" fill="#527d57"/>
+<circle cx="567.65" cy="602.00" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="297.96" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="313.96" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="329.97" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="345.97" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="361.97" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="377.97" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="393.97" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="409.98" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="425.98" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="441.98" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="457.98" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="473.98" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="489.99" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="505.99" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="521.99" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="537.99" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="553.99" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="570.00" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="586.00" r="2.7" fill="#527d57"/>
+<circle cx="551.63" cy="602.00" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="601.77" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="585.77" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="569.76" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="553.76" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="537.76" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="521.76" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="505.76" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="489.75" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="473.75" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="457.75" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="441.75" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="425.75" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="409.74" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="393.74" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="377.74" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="361.74" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="345.74" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="329.73" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="313.73" r="2.7" fill="#527d57"/>
+<circle cx="263.51" cy="297.73" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="601.77" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="585.77" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="569.76" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="553.76" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="537.76" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="521.76" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="505.76" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="489.75" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="473.75" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="457.75" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="441.75" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="425.75" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="409.74" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="393.74" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="377.74" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="361.74" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="345.74" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="329.73" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="313.73" r="2.7" fill="#527d57"/>
+<circle cx="247.52" cy="297.73" r="2.7" fill="#527d57"/>
+<circle cx="184.31" cy="706.57" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="690.57" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="674.57" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="658.57" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="642.57" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="626.56" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="610.56" r="2.7" fill="#cf6f24"/>
+<circle cx="184.31" cy="594.56" r="2.7" fill="#cf6f24"/>
+<text x="117.80" y="723.80" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#cf6f24">FDC 固定</text>
+<circle cx="471.58" cy="297.85" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="313.85" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="329.85" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="345.85" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="361.85" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="377.86" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="393.86" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="409.86" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="425.86" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="441.86" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="457.87" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="473.87" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="489.87" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="505.87" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="521.87" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="537.88" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="553.88" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="569.88" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="585.88" r="2.3" fill="#2774af"/>
+<circle cx="471.58" cy="601.88" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="297.85" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="313.85" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="329.85" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="345.85" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="361.85" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="377.86" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="393.86" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="409.86" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="425.86" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="441.86" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="457.87" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="473.87" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="489.87" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="505.87" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="521.87" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="537.88" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="553.88" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="569.88" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="585.88" r="2.3" fill="#2774af"/>
+<circle cx="343.57" cy="601.88" r="2.3" fill="#2774af"/>
+<text x="313.57" y="291.85" font-family="Noto Sans CJK SC,sans-serif" font-size="12" fill="#233247">J6.1</text>
+<text x="476.58" y="291.85" font-family="Noto Sans CJK SC,sans-serif" font-size="12" fill="#233247">J5.1</text>
+<line x1="551.63" y1="473.98" x2="471.58" y2="361.85" stroke="#c8596b" stroke-width="2"/>
+<line x1="567.65" y1="473.98" x2="471.58" y2="377.86" stroke="#c8596b" stroke-width="2"/>
+<line x1="551.63" y1="457.98" x2="471.58" y2="441.86" stroke="#c8596b" stroke-width="2"/>
+<line x1="567.65" y1="457.98" x2="471.58" y2="409.86" stroke="#c8596b" stroke-width="2"/>
+<line x1="551.63" y1="441.98" x2="471.58" y2="393.86" stroke="#c8596b" stroke-width="2"/>
+<circle cx="161.90" cy="464.10" r="4" fill="#268970"/>
+<text x="168.90" y="485.10" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#268970">测距1候选</text>
+<circle cx="161.90" cy="312.90" r="4" fill="#268970"/>
+<text x="168.90" y="333.90" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#268970">测距2候选</text>
+<circle cx="665.90" cy="262.50" r="4" fill="#268970"/>
+<text x="593.90" y="283.50" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#268970">超声1候选</text>
+<circle cx="665.90" cy="375.90" r="4" fill="#268970"/>
+<text x="593.90" y="396.90" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#268970">超声2候选</text>
+<circle cx="720.38" cy="543.27" r="4" fill="#995e2a"/>
+<text x="648.38" y="564.27" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#995e2a">OV5640</text>
+<circle cx="433.14" cy="156.82" r="4" fill="#8c78a4"/>
+<text x="357.14" y="180.82" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#8c78a4">20P 调试/扩展候选</text>
+<circle cx="625.96" cy="150.42" r="2.3" fill="#8d68ac"/>
+<circle cx="609.96" cy="150.42" r="2.3" fill="#8d68ac"/>
+<circle cx="593.96" cy="150.42" r="2.3" fill="#8d68ac"/>
+<circle cx="577.96" cy="150.42" r="2.3" fill="#8d68ac"/>
+<circle cx="561.96" cy="150.42" r="2.3" fill="#8d68ac"/>
+<circle cx="545.95" cy="150.42" r="2.3" fill="#8d68ac"/>
+<text x="562.96" y="147.42" font-family="Noto Sans CJK SC,sans-serif" font-size="12" fill="#8d68ac">PCM A</text>
+<circle cx="310.72" cy="152.02" r="2.3" fill="#8d68ac"/>
+<circle cx="294.72" cy="152.02" r="2.3" fill="#8d68ac"/>
+<circle cx="278.72" cy="152.02" r="2.3" fill="#8d68ac"/>
+<circle cx="262.72" cy="152.02" r="2.3" fill="#8d68ac"/>
+<circle cx="246.72" cy="152.02" r="2.3" fill="#8d68ac"/>
+<circle cx="230.71" cy="152.02" r="2.3" fill="#8d68ac"/>
+<text x="247.72" y="149.02" font-family="Noto Sans CJK SC,sans-serif" font-size="12" fill="#8d68ac">PCM B</text>
+<text x="795.00" y="133.00" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#233247">固定锚点：H1 / H2 / H3 / H4 / FDC</text>
+<text x="795.00" y="176.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">Nano方向</text>
+<text x="795.00" y="199.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">USB向上；左J6、右J5；每排20针</text>
+<text x="795.00" y="242.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">Nano排针</text>
+<text x="795.00" y="265.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">2.54 mm 同排；20.32 mm 跨排</text>
+<text x="795.00" y="308.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">中置中心（排针阵列）</text>
+<text x="795.00" y="331.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">(146.995750, 109.740500) mm</text>
+<text x="795.00" y="374.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">Nano左上针 J6.1</text>
+<text x="795.00" y="397.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">(136.835750, 85.610500)</text>
+<text x="795.00" y="440.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">Nano右上针 J5.1</text>
+<text x="795.00" y="463.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">(157.155750, 85.610500)</text>
+<text x="795.00" y="506.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">内侧排针列间距</text>
+<text x="795.00" y="529.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">45.7335 mm；Nano板宽约22.554 mm</text>
+<text x="795.00" y="572.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">左右平面余量</text>
+<text x="795.00" y="595.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">各约11.58 / 11.60 mm，到排针中心线</text>
+<text x="795.00" y="638.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">SPI直连端点距离</text>
+<text x="795.00" y="661.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">约12.96–21.87 mm；不是实际布线长度</text>
+<text x="795.00" y="704.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">关键限制</text>
+<text x="795.00" y="727.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">Nano处于138K投影内，必须核Z间隙</text>
+<text x="795.00" y="770.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">安装候选</text>
+<text x="795.00" y="793.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">同面分层；若高度不够则背装并镜像针序</text>
+<text x="795.00" y="836.00" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">可调整</text>
+<text x="795.00" y="859.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#526477">其他模块、安装孔、测试口、走线</text>
+<text x="90.00" y="858.00" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#233247">同面分层的侧视示意（不按比例）</text>
+<rect x="100.00" y="962.00" width="580.00" height="10.00" fill="#d8d4ba" stroke="#6c7367" stroke-width="1"/>
+<text x="690.00" y="967.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#233247">底板</text>
+<rect x="250.00" y="918.00" width="225.00" height="11.00" fill="#b4d7ed" stroke="#2774af" stroke-width="1"/>
+<rect x="270.00" y="897.00" width="50.00" height="20.00" fill="#d9ecff" stroke="#2774af" stroke-width="1"/>
+<text x="330.00" y="908.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#233247">20K及最高器件</text>
+<rect x="180.00" y="866.00" width="420.00" height="12.00" fill="#b4c4b4" stroke="#527d57" stroke-width="1"/>
+<rect x="210.00" y="879.00" width="45.00" height="10.00" fill="#d4dfd4" stroke="#527d57" stroke-width="1"/>
+<text x="610.00" y="875.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#233247">138K（底部器件也需计入）</text>
+<line x1="279.00" y1="890.00" x2="279.00" y2="896.00" stroke="#c8596b" stroke-width="2"/>
+<text x="795.00" y="932.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#9a4b4b">间隙条件见文档；插座高度未定，图不证明已装得下。</text>
+<text x="90.00" y="1019.00" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#233247">红线=通信端点示意；绿/橙固定焊盘；其他圆点为可移动模块中心候选，不含模块板体边界。</text>
+</svg>

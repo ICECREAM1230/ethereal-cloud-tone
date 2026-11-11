@@ -1,0 +1,2729 @@
+{
+  "revision": 4,
+  "correction": "Withdraw the earlier assertion of six hardware GPIO overlaps. It mixed schematic label interpretation for lasers with header-reference conversion for encoders. Converting both groups using the same reference yields no overlap.",
+  "project": "/home/ice/文档/LCEDA-Pro/projects/1激光竖琴",
+  "sheet": "/home/ice/文档/LCEDA-Pro/projects/1激光竖琴/sch/光敏电阻原理图/排插.esch2",
+  "basis": "Saved source plus user-supplied J1/J2 pin drawing. Both laser inputs and encoders are converted by the same H1/J1 and H2/J2 pin-number correspondence aligned by VDD33/GND. Original IOxx labels are retained separately as source annotations.",
+  "source_sha256": {
+    "/home/ice/文档/LCEDA-Pro/projects/1激光竖琴/sch/光敏电阻原理图/排插.esch2": "3b68c3e2e70e8a3b75bfdef7e4f065dc1768db98ca48a5ce1bd2fb4d8a0caf09",
+    "/home/ice/文档/LCEDA-Pro/projects/1激光竖琴/pcb/光敏电阻PCB.epcb2": "57f7c2955feacefda8a469ec192487532a94af73f5e648a1a6ca0e722f644438"
+  },
+  "reference_image": "/home/ice/文档/ChatGPT/EDA设计/激光竖琴-EC11排插连接-2026-10-30/用户提供-ESP32排针GPIO对照.png",
+  "reference_image_sha256": "072662c2d55258a000653800d1c79e4e65ab8b4b121fb436edf1724331b9e66f",
+  "paths": [
+    {
+      "encoder": "SW4",
+      "encoder_index": 1,
+      "encoder_pin": "A",
+      "signal": "ENC_A1",
+      "series_resistor": "R69",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R64"
+      ],
+      "filter_capacitors": [
+        "C18"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 13,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H1",
+      "header_pin": "19",
+      "net_names": [
+        "ENC_A1"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW4",
+        "num": "A",
+        "name": "A",
+        "point": [
+          1025.0,
+          670.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW4.A",
+          "R64.1",
+          "R69.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_A1",
+        "line": 4277,
+        "component_id": "bb93dc382dfa80d3"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_A1",
+          "line": 6410,
+          "component_id": "7571795270bef634"
+        },
+        "2": {
+          "net": "$5N73",
+          "line": 6409,
+          "component_id": "7571795270bef634"
+        }
+      }
+    },
+    {
+      "encoder": "SW4",
+      "encoder_index": 1,
+      "encoder_pin": "B",
+      "signal": "ENC_B1",
+      "series_resistor": "R70",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R67"
+      ],
+      "filter_capacitors": [
+        "C19"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 14,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H1",
+      "header_pin": "20",
+      "net_names": [
+        "ENC_B1"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW4",
+        "num": "B",
+        "name": "B",
+        "point": [
+          1045.0,
+          670.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW4.B",
+          "R67.1",
+          "R70.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_B1",
+        "line": 4278,
+        "component_id": "bb93dc382dfa80d3"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_B1",
+          "line": 6417,
+          "component_id": "2fc1c46b100d0f15"
+        },
+        "2": {
+          "net": "$5N90",
+          "line": 6416,
+          "component_id": "2fc1c46b100d0f15"
+        }
+      }
+    },
+    {
+      "encoder": "SW4",
+      "encoder_index": 1,
+      "encoder_pin": "D",
+      "signal": "ENC_SW1",
+      "series_resistor": "R71",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R68"
+      ],
+      "filter_capacitors": [
+        "C17"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 12,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H1",
+      "header_pin": "18",
+      "net_names": [
+        "ENC_SW1"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW4",
+        "num": "D",
+        "name": "D",
+        "point": [
+          1025.0,
+          730.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW4.D",
+          "R68.1",
+          "R71.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_SW1",
+        "line": 4276,
+        "component_id": "bb93dc382dfa80d3"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_SW1",
+          "line": 6424,
+          "component_id": "b5d3155eba17efc9"
+        },
+        "2": {
+          "net": "$5N85",
+          "line": 6423,
+          "component_id": "b5d3155eba17efc9"
+        }
+      }
+    },
+    {
+      "encoder": "SW5",
+      "encoder_index": 2,
+      "encoder_pin": "A",
+      "signal": "ENC_A2",
+      "series_resistor": "R75",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R65"
+      ],
+      "filter_capacitors": [
+        "C27"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 40,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "8",
+      "net_names": [
+        "ENC_A2"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW5",
+        "num": "A",
+        "name": "A",
+        "point": [
+          735.0,
+          380.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW5.A",
+          "R65.1",
+          "R75.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_A2",
+        "line": 4314,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_A2",
+          "line": 6438,
+          "component_id": "f5c26004b30e4fb7"
+        },
+        "2": {
+          "net": "$5N103",
+          "line": 6437,
+          "component_id": "f5c26004b30e4fb7"
+        }
+      }
+    },
+    {
+      "encoder": "SW5",
+      "encoder_index": 2,
+      "encoder_pin": "B",
+      "signal": "ENC_B2",
+      "series_resistor": "R76",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R66"
+      ],
+      "filter_capacitors": [
+        "C28"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 39,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "9",
+      "net_names": [
+        "ENC_B2"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW5",
+        "num": "B",
+        "name": "B",
+        "point": [
+          755.0,
+          380.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW5.B",
+          "R66.1",
+          "R76.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_B2",
+        "line": 4315,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_B2",
+          "line": 6445,
+          "component_id": "7c387a53846f0294"
+        },
+        "2": {
+          "net": "$5N96",
+          "line": 6444,
+          "component_id": "7c387a53846f0294"
+        }
+      }
+    },
+    {
+      "encoder": "SW5",
+      "encoder_index": 2,
+      "encoder_pin": "D",
+      "signal": "ENC_SW2",
+      "series_resistor": "R77",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R72"
+      ],
+      "filter_capacitors": [
+        "C20"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 41,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "7",
+      "net_names": [
+        "ENC_SW2"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW5",
+        "num": "D",
+        "name": "D",
+        "point": [
+          735.0,
+          440.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW5.D",
+          "R72.1",
+          "R77.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_SW2",
+        "line": 4313,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_SW2",
+          "line": 6452,
+          "component_id": "3c6a662ae21fb207"
+        },
+        "2": {
+          "net": "$5N97",
+          "line": 6451,
+          "component_id": "3c6a662ae21fb207"
+        }
+      }
+    },
+    {
+      "encoder": "SW6",
+      "encoder_index": 3,
+      "encoder_pin": "A",
+      "signal": "ENC_A3",
+      "series_resistor": "R81",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R78"
+      ],
+      "filter_capacitors": [
+        "C30"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 47,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "17",
+      "net_names": [
+        "ENC_A3"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW6",
+        "num": "A",
+        "name": "A",
+        "point": [
+          1060.0,
+          375.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW6.A",
+          "R78.1",
+          "R81.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_A3",
+        "line": 4323,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_A3",
+          "line": 6480,
+          "component_id": "f06a1ef69ec7eea7"
+        },
+        "2": {
+          "net": "$5N114",
+          "line": 6479,
+          "component_id": "f06a1ef69ec7eea7"
+        }
+      }
+    },
+    {
+      "encoder": "SW6",
+      "encoder_index": 3,
+      "encoder_pin": "B",
+      "signal": "ENC_B3",
+      "series_resistor": "R82",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R79"
+      ],
+      "filter_capacitors": [
+        "C31"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 21,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "18",
+      "net_names": [
+        "ENC_B3"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW6",
+        "num": "B",
+        "name": "B",
+        "point": [
+          1080.0,
+          375.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW6.B",
+          "R79.1",
+          "R82.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_B3",
+        "line": 4324,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_B3",
+          "line": 6487,
+          "component_id": "e76be02572b96ece"
+        },
+        "2": {
+          "net": "$5N107",
+          "line": 6486,
+          "component_id": "e76be02572b96ece"
+        }
+      }
+    },
+    {
+      "encoder": "SW6",
+      "encoder_index": 3,
+      "encoder_pin": "D",
+      "signal": "ENC_SW3",
+      "series_resistor": "R83",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R80"
+      ],
+      "filter_capacitors": [
+        "C29"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 38,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "10",
+      "net_names": [
+        "ENC_SW3"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW6",
+        "num": "D",
+        "name": "D",
+        "point": [
+          1060.0,
+          435.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW6.D",
+          "R80.1",
+          "R83.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_SW3",
+        "line": 4316,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_SW3",
+          "line": 6494,
+          "component_id": "63f935efcdc91df6"
+        },
+        "2": {
+          "net": "$5N108",
+          "line": 6493,
+          "component_id": "63f935efcdc91df6"
+        }
+      }
+    },
+    {
+      "encoder": "SW7",
+      "encoder_index": 4,
+      "encoder_pin": "A",
+      "signal": "ENC_A4",
+      "series_resistor": "R87",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R84"
+      ],
+      "filter_capacitors": [
+        "C33"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 2,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "5",
+      "net_names": [
+        "ENC_A4"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW7",
+        "num": "A",
+        "name": "A",
+        "point": [
+          335.0,
+          195.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW7.A",
+          "R84.1",
+          "R87.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_A4",
+        "line": 4311,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_A4",
+          "line": 6522,
+          "component_id": "e3cdac73e81b98da"
+        },
+        "2": {
+          "net": "$5N125",
+          "line": 6521,
+          "component_id": "e3cdac73e81b98da"
+        }
+      }
+    },
+    {
+      "encoder": "SW7",
+      "encoder_index": 4,
+      "encoder_pin": "B",
+      "signal": "ENC_B4",
+      "series_resistor": "R88",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R85"
+      ],
+      "filter_capacitors": [
+        "C34"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 42,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "6",
+      "net_names": [
+        "ENC_B4"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW7",
+        "num": "B",
+        "name": "B",
+        "point": [
+          355.0,
+          195.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW7.B",
+          "R85.1",
+          "R88.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_B4",
+        "line": 4312,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_B4",
+          "line": 6529,
+          "component_id": "d05011fa98c5568f"
+        },
+        "2": {
+          "net": "$5N118",
+          "line": 6528,
+          "component_id": "d05011fa98c5568f"
+        }
+      }
+    },
+    {
+      "encoder": "SW7",
+      "encoder_index": 4,
+      "encoder_pin": "D",
+      "signal": "ENC_SW4",
+      "series_resistor": "R89",
+      "series_value": "1K",
+      "pullup_resistors": [
+        "R86"
+      ],
+      "filter_capacitors": [
+        "C32"
+      ],
+      "schematic_explicit_gpio": null,
+      "gpio": 1,
+      "gpio_basis": "User-supplied drawing, same-number H1/J1 and H2/J2 aligned by supplies and ground.",
+      "header": "H2",
+      "header_pin": "4",
+      "net_names": [
+        "ENC_SW4"
+      ],
+      "encoder_pin_info": {
+        "ref": "SW7",
+        "num": "D",
+        "name": "D",
+        "point": [
+          335.0,
+          255.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW7.D",
+          "R86.1",
+          "R89.2"
+        ]
+      },
+      "pcb_header": {
+        "net": "ENC_SW4",
+        "line": 4310,
+        "component_id": "8f8f0798568ee6b1"
+      },
+      "pcb_series_pins": {
+        "1": {
+          "net": "ENC_SW4",
+          "line": 6536,
+          "component_id": "feb5d9fc3b93c6e4"
+        },
+        "2": {
+          "net": "$5N119",
+          "line": 6535,
+          "component_id": "feb5d9fc3b93c6e4"
+        }
+      }
+    }
+  ],
+  "header_pins": [
+    {
+      "ref": "H1",
+      "num": "1",
+      "name": "1",
+      "point": [
+        455.0,
+        790.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 250,
+      "names": [],
+      "endpoints": [
+        "H1.1"
+      ],
+      "reference_pin": "J1.1",
+      "reference_function": "VDD33"
+    },
+    {
+      "ref": "H1",
+      "num": "2",
+      "name": "2",
+      "point": [
+        455.0,
+        780.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 255,
+      "names": [
+        "+3.3V"
+      ],
+      "endpoints": [
+        "H1.2",
+        "R64.2",
+        "R67.2",
+        "R68.2",
+        "R65.2",
+        "R66.2",
+        "R72.2",
+        "R78.2",
+        "R79.2",
+        "R80.2",
+        "R84.2",
+        "R85.2",
+        "R86.2"
+      ],
+      "reference_pin": "J1.2",
+      "reference_function": "VDD33"
+    },
+    {
+      "ref": "H1",
+      "num": "3",
+      "name": "3",
+      "point": [
+        455.0,
+        770.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 260,
+      "names": [],
+      "endpoints": [
+        "H1.3"
+      ],
+      "reference_pin": "J1.3",
+      "reference_function": "CHIP_PU"
+    },
+    {
+      "ref": "H1",
+      "num": "4",
+      "name": "4",
+      "point": [
+        455.0,
+        760.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 265,
+      "names": [
+        "IO4"
+      ],
+      "endpoints": [
+        "H1.4"
+      ],
+      "reference_pin": "J1.4",
+      "reference_function": 4
+    },
+    {
+      "ref": "H1",
+      "num": "5",
+      "name": "5",
+      "point": [
+        455.0,
+        750.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 270,
+      "names": [
+        "IO5"
+      ],
+      "endpoints": [
+        "H1.5"
+      ],
+      "reference_pin": "J1.5",
+      "reference_function": 5
+    },
+    {
+      "ref": "H1",
+      "num": "6",
+      "name": "6",
+      "point": [
+        455.0,
+        740.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 275,
+      "names": [
+        "IO7"
+      ],
+      "endpoints": [
+        "H1.6"
+      ],
+      "reference_pin": "J1.6",
+      "reference_function": 6
+    },
+    {
+      "ref": "H1",
+      "num": "7",
+      "name": "7",
+      "point": [
+        455.0,
+        730.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 280,
+      "names": [
+        "IO16"
+      ],
+      "endpoints": [
+        "H1.7"
+      ],
+      "reference_pin": "J1.7",
+      "reference_function": 7
+    },
+    {
+      "ref": "H1",
+      "num": "8",
+      "name": "8",
+      "point": [
+        455.0,
+        720.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 285,
+      "names": [
+        "IO2"
+      ],
+      "endpoints": [
+        "H1.8"
+      ],
+      "reference_pin": "J1.8",
+      "reference_function": 15
+    },
+    {
+      "ref": "H1",
+      "num": "9",
+      "name": "9",
+      "point": [
+        455.0,
+        710.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 290,
+      "names": [
+        "IO41"
+      ],
+      "endpoints": [
+        "H1.9"
+      ],
+      "reference_pin": "J1.9",
+      "reference_function": 16
+    },
+    {
+      "ref": "H1",
+      "num": "10",
+      "name": "10",
+      "point": [
+        455.0,
+        700.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 295,
+      "names": [
+        "IO39"
+      ],
+      "endpoints": [
+        "H1.10"
+      ],
+      "reference_pin": "J1.10",
+      "reference_function": 17
+    },
+    {
+      "ref": "H1",
+      "num": "11",
+      "name": "11",
+      "point": [
+        455.0,
+        690.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 300,
+      "names": [
+        "IO15"
+      ],
+      "endpoints": [
+        "H1.11"
+      ],
+      "reference_pin": "J1.11",
+      "reference_function": 18
+    },
+    {
+      "ref": "H1",
+      "num": "12",
+      "name": "12",
+      "point": [
+        455.0,
+        680.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 305,
+      "names": [],
+      "endpoints": [
+        "H1.12"
+      ],
+      "reference_pin": "J1.12",
+      "reference_function": 8
+    },
+    {
+      "ref": "H1",
+      "num": "13",
+      "name": "13",
+      "point": [
+        455.0,
+        670.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 310,
+      "names": [],
+      "endpoints": [
+        "H1.13"
+      ],
+      "reference_pin": "J1.13",
+      "reference_function": 3
+    },
+    {
+      "ref": "H1",
+      "num": "14",
+      "name": "14",
+      "point": [
+        455.0,
+        660.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 315,
+      "names": [
+        "IO6"
+      ],
+      "endpoints": [
+        "H1.14"
+      ],
+      "reference_pin": "J1.14",
+      "reference_function": 46
+    },
+    {
+      "ref": "H1",
+      "num": "15",
+      "name": "15",
+      "point": [
+        455.0,
+        650.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 320,
+      "names": [
+        "IO1"
+      ],
+      "endpoints": [
+        "H1.15"
+      ],
+      "reference_pin": "J1.15",
+      "reference_function": 9
+    },
+    {
+      "ref": "H1",
+      "num": "16",
+      "name": "16",
+      "point": [
+        455.0,
+        640.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 325,
+      "names": [
+        "IO42"
+      ],
+      "endpoints": [
+        "H1.16"
+      ],
+      "reference_pin": "J1.16",
+      "reference_function": 10
+    },
+    {
+      "ref": "H1",
+      "num": "17",
+      "name": "17",
+      "point": [
+        455.0,
+        630.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 330,
+      "names": [
+        "IO40"
+      ],
+      "endpoints": [
+        "H1.17"
+      ],
+      "reference_pin": "J1.17",
+      "reference_function": 11
+    },
+    {
+      "ref": "H1",
+      "num": "18",
+      "name": "18",
+      "point": [
+        455.0,
+        620.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 335,
+      "names": [
+        "ENC_SW1"
+      ],
+      "endpoints": [
+        "H1.18",
+        "R71.1",
+        "C17.2"
+      ],
+      "reference_pin": "J1.18",
+      "reference_function": 12
+    },
+    {
+      "ref": "H1",
+      "num": "19",
+      "name": "19",
+      "point": [
+        455.0,
+        610.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 340,
+      "names": [
+        "ENC_A1"
+      ],
+      "endpoints": [
+        "H1.19",
+        "C18.2",
+        "R69.1"
+      ],
+      "reference_pin": "J1.19",
+      "reference_function": 13
+    },
+    {
+      "ref": "H1",
+      "num": "20",
+      "name": "20",
+      "point": [
+        455.0,
+        600.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 345,
+      "names": [
+        "ENC_B1"
+      ],
+      "endpoints": [
+        "H1.20",
+        "C19.2",
+        "R70.1"
+      ],
+      "reference_pin": "J1.20",
+      "reference_function": 14
+    },
+    {
+      "ref": "H1",
+      "num": "21",
+      "name": "21",
+      "point": [
+        455.0,
+        590.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 350,
+      "names": [],
+      "endpoints": [
+        "H1.21"
+      ],
+      "reference_pin": "J1.21",
+      "reference_function": "5V"
+    },
+    {
+      "ref": "H1",
+      "num": "22",
+      "name": "22",
+      "point": [
+        455.0,
+        580.0
+      ],
+      "component_line": 1444,
+      "symbol_pin_line": 355,
+      "names": [],
+      "endpoints": [
+        "H1.22"
+      ],
+      "reference_pin": "J1.22",
+      "reference_function": "GND"
+    },
+    {
+      "ref": "H2",
+      "num": "1",
+      "name": "1",
+      "point": [
+        615.0,
+        790.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 250,
+      "names": [],
+      "endpoints": [
+        "H2.1"
+      ],
+      "reference_pin": "J2.1",
+      "reference_function": "GND"
+    },
+    {
+      "ref": "H2",
+      "num": "2",
+      "name": "2",
+      "point": [
+        615.0,
+        780.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 255,
+      "names": [],
+      "endpoints": [
+        "H2.2"
+      ],
+      "reference_pin": "J2.2",
+      "reference_function": "U0TXD"
+    },
+    {
+      "ref": "H2",
+      "num": "3",
+      "name": "3",
+      "point": [
+        615.0,
+        770.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 260,
+      "names": [],
+      "endpoints": [
+        "H2.3"
+      ],
+      "reference_pin": "J2.3",
+      "reference_function": "U0RXD"
+    },
+    {
+      "ref": "H2",
+      "num": "4",
+      "name": "4",
+      "point": [
+        615.0,
+        760.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 265,
+      "names": [
+        "ENC_SW4"
+      ],
+      "endpoints": [
+        "H2.4",
+        "R89.1",
+        "C32.2"
+      ],
+      "reference_pin": "J2.4",
+      "reference_function": 1
+    },
+    {
+      "ref": "H2",
+      "num": "5",
+      "name": "5",
+      "point": [
+        615.0,
+        750.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 270,
+      "names": [
+        "ENC_A4"
+      ],
+      "endpoints": [
+        "H2.5",
+        "R87.1",
+        "C33.2"
+      ],
+      "reference_pin": "J2.5",
+      "reference_function": 2
+    },
+    {
+      "ref": "H2",
+      "num": "6",
+      "name": "6",
+      "point": [
+        615.0,
+        740.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 275,
+      "names": [
+        "ENC_B4"
+      ],
+      "endpoints": [
+        "H2.6",
+        "R88.1",
+        "C34.2"
+      ],
+      "reference_pin": "J2.6",
+      "reference_function": 42
+    },
+    {
+      "ref": "H2",
+      "num": "7",
+      "name": "7",
+      "point": [
+        615.0,
+        730.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 280,
+      "names": [
+        "ENC_SW2"
+      ],
+      "endpoints": [
+        "H2.7",
+        "R77.1",
+        "C20.2"
+      ],
+      "reference_pin": "J2.7",
+      "reference_function": 41
+    },
+    {
+      "ref": "H2",
+      "num": "8",
+      "name": "8",
+      "point": [
+        615.0,
+        720.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 285,
+      "names": [
+        "ENC_A2"
+      ],
+      "endpoints": [
+        "H2.8",
+        "R75.1",
+        "C27.2"
+      ],
+      "reference_pin": "J2.8",
+      "reference_function": 40
+    },
+    {
+      "ref": "H2",
+      "num": "9",
+      "name": "9",
+      "point": [
+        615.0,
+        710.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 290,
+      "names": [
+        "ENC_B2"
+      ],
+      "endpoints": [
+        "H2.9",
+        "R76.1",
+        "C28.2"
+      ],
+      "reference_pin": "J2.9",
+      "reference_function": 39
+    },
+    {
+      "ref": "H2",
+      "num": "10",
+      "name": "10",
+      "point": [
+        615.0,
+        700.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 295,
+      "names": [
+        "ENC_SW3"
+      ],
+      "endpoints": [
+        "H2.10",
+        "R83.1",
+        "C29.2"
+      ],
+      "reference_pin": "J2.10",
+      "reference_function": 38
+    },
+    {
+      "ref": "H2",
+      "num": "11",
+      "name": "11",
+      "point": [
+        615.0,
+        690.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 300,
+      "names": [],
+      "endpoints": [
+        "H2.11"
+      ],
+      "reference_pin": "J2.11",
+      "reference_function": 37
+    },
+    {
+      "ref": "H2",
+      "num": "12",
+      "name": "12",
+      "point": [
+        615.0,
+        680.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 305,
+      "names": [],
+      "endpoints": [
+        "H2.12"
+      ],
+      "reference_pin": "J2.12",
+      "reference_function": 36
+    },
+    {
+      "ref": "H2",
+      "num": "13",
+      "name": "13",
+      "point": [
+        615.0,
+        670.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 310,
+      "names": [],
+      "endpoints": [
+        "H2.13"
+      ],
+      "reference_pin": "J2.13",
+      "reference_function": 35
+    },
+    {
+      "ref": "H2",
+      "num": "14",
+      "name": "14",
+      "point": [
+        615.0,
+        660.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 315,
+      "names": [],
+      "endpoints": [
+        "H2.14"
+      ],
+      "reference_pin": "J2.14",
+      "reference_function": 0
+    },
+    {
+      "ref": "H2",
+      "num": "15",
+      "name": "15",
+      "point": [
+        615.0,
+        650.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 320,
+      "names": [],
+      "endpoints": [
+        "H2.15"
+      ],
+      "reference_pin": "J2.15",
+      "reference_function": 45
+    },
+    {
+      "ref": "H2",
+      "num": "16",
+      "name": "16",
+      "point": [
+        615.0,
+        640.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 325,
+      "names": [],
+      "endpoints": [
+        "H2.16"
+      ],
+      "reference_pin": "J2.16",
+      "reference_function": 48
+    },
+    {
+      "ref": "H2",
+      "num": "17",
+      "name": "17",
+      "point": [
+        615.0,
+        630.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 330,
+      "names": [
+        "ENC_A3"
+      ],
+      "endpoints": [
+        "H2.17",
+        "R81.1",
+        "C30.2"
+      ],
+      "reference_pin": "J2.17",
+      "reference_function": 47
+    },
+    {
+      "ref": "H2",
+      "num": "18",
+      "name": "18",
+      "point": [
+        615.0,
+        620.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 335,
+      "names": [
+        "ENC_B3"
+      ],
+      "endpoints": [
+        "H2.18",
+        "R82.1",
+        "C31.2"
+      ],
+      "reference_pin": "J2.18",
+      "reference_function": 21
+    },
+    {
+      "ref": "H2",
+      "num": "19",
+      "name": "19",
+      "point": [
+        615.0,
+        610.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 340,
+      "names": [],
+      "endpoints": [
+        "H2.19"
+      ],
+      "reference_pin": "J2.19",
+      "reference_function": 20
+    },
+    {
+      "ref": "H2",
+      "num": "20",
+      "name": "20",
+      "point": [
+        615.0,
+        600.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 345,
+      "names": [],
+      "endpoints": [
+        "H2.20"
+      ],
+      "reference_pin": "J2.20",
+      "reference_function": 19
+    },
+    {
+      "ref": "H2",
+      "num": "21",
+      "name": "21",
+      "point": [
+        615.0,
+        590.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 350,
+      "names": [],
+      "endpoints": [
+        "H2.21"
+      ],
+      "reference_pin": "J2.21",
+      "reference_function": "GND"
+    },
+    {
+      "ref": "H2",
+      "num": "22",
+      "name": "22",
+      "point": [
+        615.0,
+        580.0
+      ],
+      "component_line": 1455,
+      "symbol_pin_line": 355,
+      "names": [],
+      "endpoints": [
+        "H2.22"
+      ],
+      "reference_pin": "J2.22",
+      "reference_function": "GND"
+    }
+  ],
+  "declared_laser_gpio_labels": [
+    {
+      "source_label": "IO4",
+      "gpio": 4,
+      "header": "H1",
+      "pin": "4",
+      "reference_gpio": 4
+    },
+    {
+      "source_label": "IO5",
+      "gpio": 5,
+      "header": "H1",
+      "pin": "5",
+      "reference_gpio": 5
+    },
+    {
+      "source_label": "IO7",
+      "gpio": 7,
+      "header": "H1",
+      "pin": "6",
+      "reference_gpio": 6
+    },
+    {
+      "source_label": "IO16",
+      "gpio": 16,
+      "header": "H1",
+      "pin": "7",
+      "reference_gpio": 7
+    },
+    {
+      "source_label": "IO2",
+      "gpio": 2,
+      "header": "H1",
+      "pin": "8",
+      "reference_gpio": 15
+    },
+    {
+      "source_label": "IO41",
+      "gpio": 41,
+      "header": "H1",
+      "pin": "9",
+      "reference_gpio": 16
+    },
+    {
+      "source_label": "IO39",
+      "gpio": 39,
+      "header": "H1",
+      "pin": "10",
+      "reference_gpio": 17
+    },
+    {
+      "source_label": "IO15",
+      "gpio": 15,
+      "header": "H1",
+      "pin": "11",
+      "reference_gpio": 18
+    },
+    {
+      "source_label": "IO6",
+      "gpio": 6,
+      "header": "H1",
+      "pin": "14",
+      "reference_gpio": 46
+    },
+    {
+      "source_label": "IO1",
+      "gpio": 1,
+      "header": "H1",
+      "pin": "15",
+      "reference_gpio": 9
+    },
+    {
+      "source_label": "IO42",
+      "gpio": 42,
+      "header": "H1",
+      "pin": "16",
+      "reference_gpio": 10
+    },
+    {
+      "source_label": "IO40",
+      "gpio": 40,
+      "header": "H1",
+      "pin": "17",
+      "reference_gpio": 11
+    }
+  ],
+  "laser_inputs_by_reference": [
+    {
+      "channel": 1,
+      "pcb_net": "1OUT",
+      "source_label": "IO4",
+      "source_label_gpio": 4,
+      "gpio": 4,
+      "header": "H1",
+      "pin": "4",
+      "pcb_line": 4262
+    },
+    {
+      "channel": 2,
+      "pcb_net": "2OUT",
+      "source_label": "IO5",
+      "source_label_gpio": 5,
+      "gpio": 5,
+      "header": "H1",
+      "pin": "5",
+      "pcb_line": 4263
+    },
+    {
+      "channel": 3,
+      "pcb_net": "3OUT",
+      "source_label": "IO6",
+      "source_label_gpio": 6,
+      "gpio": 46,
+      "header": "H1",
+      "pin": "14",
+      "pcb_line": 4272
+    },
+    {
+      "channel": 4,
+      "pcb_net": "4OUT",
+      "source_label": "IO7",
+      "source_label_gpio": 7,
+      "gpio": 6,
+      "header": "H1",
+      "pin": "6",
+      "pcb_line": 4264
+    },
+    {
+      "channel": 5,
+      "pcb_net": "5OUT",
+      "source_label": "IO15",
+      "source_label_gpio": 15,
+      "gpio": 18,
+      "header": "H1",
+      "pin": "11",
+      "pcb_line": 4269
+    },
+    {
+      "channel": 6,
+      "pcb_net": "6OUT",
+      "source_label": "IO16",
+      "source_label_gpio": 16,
+      "gpio": 7,
+      "header": "H1",
+      "pin": "7",
+      "pcb_line": 4265
+    },
+    {
+      "channel": 7,
+      "pcb_net": "7OUT",
+      "source_label": "IO1",
+      "source_label_gpio": 1,
+      "gpio": 9,
+      "header": "H1",
+      "pin": "15",
+      "pcb_line": 4273
+    },
+    {
+      "channel": 8,
+      "pcb_net": "8OUT",
+      "source_label": "IO2",
+      "source_label_gpio": 2,
+      "gpio": 15,
+      "header": "H1",
+      "pin": "8",
+      "pcb_line": 4266
+    },
+    {
+      "channel": 9,
+      "pcb_net": "9OUT",
+      "source_label": "IO42",
+      "source_label_gpio": 42,
+      "gpio": 10,
+      "header": "H1",
+      "pin": "16",
+      "pcb_line": 4274
+    },
+    {
+      "channel": 10,
+      "pcb_net": "10OUT",
+      "source_label": "IO41",
+      "source_label_gpio": 41,
+      "gpio": 16,
+      "header": "H1",
+      "pin": "9",
+      "pcb_line": 4267
+    },
+    {
+      "channel": 11,
+      "pcb_net": "11OUT",
+      "source_label": "IO40",
+      "source_label_gpio": 40,
+      "gpio": 11,
+      "header": "H1",
+      "pin": "17",
+      "pcb_line": 4275
+    },
+    {
+      "channel": 12,
+      "pcb_net": "12OUT",
+      "source_label": "IO39",
+      "source_label_gpio": 39,
+      "gpio": 17,
+      "header": "H1",
+      "pin": "10",
+      "pcb_line": 4268
+    }
+  ],
+  "user_supplied_laser_gpio_order": [
+    11,
+    10,
+    9,
+    46,
+    18,
+    17,
+    16,
+    15,
+    7,
+    6,
+    5,
+    4
+  ],
+  "user_supplied_order_mapping": [
+    {
+      "channel": 11,
+      "pcb_net": "11OUT",
+      "source_label": "IO40",
+      "source_label_gpio": 40,
+      "gpio": 11,
+      "header": "H1",
+      "pin": "17",
+      "pcb_line": 4275
+    },
+    {
+      "channel": 9,
+      "pcb_net": "9OUT",
+      "source_label": "IO42",
+      "source_label_gpio": 42,
+      "gpio": 10,
+      "header": "H1",
+      "pin": "16",
+      "pcb_line": 4274
+    },
+    {
+      "channel": 7,
+      "pcb_net": "7OUT",
+      "source_label": "IO1",
+      "source_label_gpio": 1,
+      "gpio": 9,
+      "header": "H1",
+      "pin": "15",
+      "pcb_line": 4273
+    },
+    {
+      "channel": 3,
+      "pcb_net": "3OUT",
+      "source_label": "IO6",
+      "source_label_gpio": 6,
+      "gpio": 46,
+      "header": "H1",
+      "pin": "14",
+      "pcb_line": 4272
+    },
+    {
+      "channel": 5,
+      "pcb_net": "5OUT",
+      "source_label": "IO15",
+      "source_label_gpio": 15,
+      "gpio": 18,
+      "header": "H1",
+      "pin": "11",
+      "pcb_line": 4269
+    },
+    {
+      "channel": 12,
+      "pcb_net": "12OUT",
+      "source_label": "IO39",
+      "source_label_gpio": 39,
+      "gpio": 17,
+      "header": "H1",
+      "pin": "10",
+      "pcb_line": 4268
+    },
+    {
+      "channel": 10,
+      "pcb_net": "10OUT",
+      "source_label": "IO41",
+      "source_label_gpio": 41,
+      "gpio": 16,
+      "header": "H1",
+      "pin": "9",
+      "pcb_line": 4267
+    },
+    {
+      "channel": 8,
+      "pcb_net": "8OUT",
+      "source_label": "IO2",
+      "source_label_gpio": 2,
+      "gpio": 15,
+      "header": "H1",
+      "pin": "8",
+      "pcb_line": 4266
+    },
+    {
+      "channel": 6,
+      "pcb_net": "6OUT",
+      "source_label": "IO16",
+      "source_label_gpio": 16,
+      "gpio": 7,
+      "header": "H1",
+      "pin": "7",
+      "pcb_line": 4265
+    },
+    {
+      "channel": 4,
+      "pcb_net": "4OUT",
+      "source_label": "IO7",
+      "source_label_gpio": 7,
+      "gpio": 6,
+      "header": "H1",
+      "pin": "6",
+      "pcb_line": 4264
+    },
+    {
+      "channel": 2,
+      "pcb_net": "2OUT",
+      "source_label": "IO5",
+      "source_label_gpio": 5,
+      "gpio": 5,
+      "header": "H1",
+      "pin": "5",
+      "pcb_line": 4263
+    },
+    {
+      "channel": 1,
+      "pcb_net": "1OUT",
+      "source_label": "IO4",
+      "source_label_gpio": 4,
+      "gpio": 4,
+      "header": "H1",
+      "pin": "4",
+      "pcb_line": 4262
+    }
+  ],
+  "user_confirmed_encoder_gpio": {
+    "ENC_A1": 13,
+    "ENC_SW1": 12,
+    "ENC_B1": 14,
+    "ENC_B3": 21,
+    "ENC_A3": 47,
+    "ENC_SW3": 38,
+    "ENC_B2": 39,
+    "ENC_A2": 40,
+    "ENC_SW2": 41,
+    "ENC_B4": 42,
+    "ENC_A4": 2,
+    "ENC_SW4": 1
+  },
+  "encoder_confirmation_note": "User corrected ENC_A4 from a mistaken GPIO12 transcription to GPIO2; all 12 signals now match the reference-derived map.",
+  "laser_encoder_overlap_using_same_reference": [],
+  "mixed_basis_numeric_intersection_not_hardware_overlap": [
+    {
+      "gpio": 40,
+      "encoder_signal": "ENC_A2",
+      "encoder_header": "H2.8",
+      "laser_labels": [
+        {
+          "source_label": "IO40",
+          "gpio": 40,
+          "header": "H1",
+          "pin": "17",
+          "reference_gpio": 11
+        }
+      ]
+    },
+    {
+      "gpio": 39,
+      "encoder_signal": "ENC_B2",
+      "encoder_header": "H2.9",
+      "laser_labels": [
+        {
+          "source_label": "IO39",
+          "gpio": 39,
+          "header": "H1",
+          "pin": "10",
+          "reference_gpio": 17
+        }
+      ]
+    },
+    {
+      "gpio": 41,
+      "encoder_signal": "ENC_SW2",
+      "encoder_header": "H2.7",
+      "laser_labels": [
+        {
+          "source_label": "IO41",
+          "gpio": 41,
+          "header": "H1",
+          "pin": "9",
+          "reference_gpio": 16
+        }
+      ]
+    },
+    {
+      "gpio": 2,
+      "encoder_signal": "ENC_A4",
+      "encoder_header": "H2.5",
+      "laser_labels": [
+        {
+          "source_label": "IO2",
+          "gpio": 2,
+          "header": "H1",
+          "pin": "8",
+          "reference_gpio": 15
+        }
+      ]
+    },
+    {
+      "gpio": 42,
+      "encoder_signal": "ENC_B4",
+      "encoder_header": "H2.6",
+      "laser_labels": [
+        {
+          "source_label": "IO42",
+          "gpio": 42,
+          "header": "H1",
+          "pin": "16",
+          "reference_gpio": 10
+        }
+      ]
+    },
+    {
+      "gpio": 1,
+      "encoder_signal": "ENC_SW4",
+      "encoder_header": "H2.4",
+      "laser_labels": [
+        {
+          "source_label": "IO1",
+          "gpio": 1,
+          "header": "H1",
+          "pin": "15",
+          "reference_gpio": 9
+        }
+      ]
+    }
+  ],
+  "header_label_vs_reference_mismatches": [
+    {
+      "source_label": "IO7",
+      "gpio": 7,
+      "header": "H1",
+      "pin": "6",
+      "reference_gpio": 6
+    },
+    {
+      "source_label": "IO16",
+      "gpio": 16,
+      "header": "H1",
+      "pin": "7",
+      "reference_gpio": 7
+    },
+    {
+      "source_label": "IO2",
+      "gpio": 2,
+      "header": "H1",
+      "pin": "8",
+      "reference_gpio": 15
+    },
+    {
+      "source_label": "IO41",
+      "gpio": 41,
+      "header": "H1",
+      "pin": "9",
+      "reference_gpio": 16
+    },
+    {
+      "source_label": "IO39",
+      "gpio": 39,
+      "header": "H1",
+      "pin": "10",
+      "reference_gpio": 17
+    },
+    {
+      "source_label": "IO15",
+      "gpio": 15,
+      "header": "H1",
+      "pin": "11",
+      "reference_gpio": 18
+    },
+    {
+      "source_label": "IO6",
+      "gpio": 6,
+      "header": "H1",
+      "pin": "14",
+      "reference_gpio": 46
+    },
+    {
+      "source_label": "IO1",
+      "gpio": 1,
+      "header": "H1",
+      "pin": "15",
+      "reference_gpio": 9
+    },
+    {
+      "source_label": "IO42",
+      "gpio": 42,
+      "header": "H1",
+      "pin": "16",
+      "reference_gpio": 10
+    },
+    {
+      "source_label": "IO40",
+      "gpio": 40,
+      "header": "H1",
+      "pin": "17",
+      "reference_gpio": 11
+    }
+  ],
+  "encoder_duplicate_gpio": false,
+  "encoder_usb_gpio_overlap": false,
+  "encoder_pins": {
+    "SW4": {
+      "A": {
+        "ref": "SW4",
+        "num": "A",
+        "name": "A",
+        "point": [
+          1025.0,
+          670.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW4.A",
+          "R64.1",
+          "R69.2"
+        ]
+      },
+      "B": {
+        "ref": "SW4",
+        "num": "B",
+        "name": "B",
+        "point": [
+          1045.0,
+          670.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW4.B",
+          "R67.1",
+          "R70.2"
+        ]
+      },
+      "C": {
+        "ref": "SW4",
+        "num": "C",
+        "name": "C",
+        "point": [
+          1035.0,
+          670.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 387,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "D": {
+        "ref": "SW4",
+        "num": "D",
+        "name": "D",
+        "point": [
+          1025.0,
+          730.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW4.D",
+          "R68.1",
+          "R71.2"
+        ]
+      },
+      "E": {
+        "ref": "SW4",
+        "num": "E",
+        "name": "E",
+        "point": [
+          1045.0,
+          730.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 377,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "6": {
+        "ref": "SW4",
+        "num": "6",
+        "name": "6",
+        "point": [
+          1065.0,
+          700.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 372,
+        "names": [],
+        "endpoints": [
+          "SW4.6"
+        ]
+      },
+      "7": {
+        "ref": "SW4",
+        "num": "7",
+        "name": "7",
+        "point": [
+          1005.0,
+          700.0
+        ],
+        "component_line": 1656,
+        "symbol_pin_line": 367,
+        "names": [],
+        "endpoints": [
+          "SW4.7"
+        ]
+      }
+    },
+    "SW5": {
+      "A": {
+        "ref": "SW5",
+        "num": "A",
+        "name": "A",
+        "point": [
+          735.0,
+          380.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW5.A",
+          "R65.1",
+          "R75.2"
+        ]
+      },
+      "B": {
+        "ref": "SW5",
+        "num": "B",
+        "name": "B",
+        "point": [
+          755.0,
+          380.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW5.B",
+          "R66.1",
+          "R76.2"
+        ]
+      },
+      "C": {
+        "ref": "SW5",
+        "num": "C",
+        "name": "C",
+        "point": [
+          745.0,
+          380.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 387,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "D": {
+        "ref": "SW5",
+        "num": "D",
+        "name": "D",
+        "point": [
+          735.0,
+          440.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW5.D",
+          "R72.1",
+          "R77.2"
+        ]
+      },
+      "E": {
+        "ref": "SW5",
+        "num": "E",
+        "name": "E",
+        "point": [
+          755.0,
+          440.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 377,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "6": {
+        "ref": "SW5",
+        "num": "6",
+        "name": "6",
+        "point": [
+          775.0,
+          410.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 372,
+        "names": [],
+        "endpoints": [
+          "SW5.6"
+        ]
+      },
+      "7": {
+        "ref": "SW5",
+        "num": "7",
+        "name": "7",
+        "point": [
+          715.0,
+          410.0
+        ],
+        "component_line": 2036,
+        "symbol_pin_line": 367,
+        "names": [],
+        "endpoints": [
+          "SW5.7"
+        ]
+      }
+    },
+    "SW6": {
+      "A": {
+        "ref": "SW6",
+        "num": "A",
+        "name": "A",
+        "point": [
+          1060.0,
+          375.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW6.A",
+          "R78.1",
+          "R81.2"
+        ]
+      },
+      "B": {
+        "ref": "SW6",
+        "num": "B",
+        "name": "B",
+        "point": [
+          1080.0,
+          375.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW6.B",
+          "R79.1",
+          "R82.2"
+        ]
+      },
+      "C": {
+        "ref": "SW6",
+        "num": "C",
+        "name": "C",
+        "point": [
+          1070.0,
+          375.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 387,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "D": {
+        "ref": "SW6",
+        "num": "D",
+        "name": "D",
+        "point": [
+          1060.0,
+          435.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW6.D",
+          "R80.1",
+          "R83.2"
+        ]
+      },
+      "E": {
+        "ref": "SW6",
+        "num": "E",
+        "name": "E",
+        "point": [
+          1080.0,
+          435.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 377,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "6": {
+        "ref": "SW6",
+        "num": "6",
+        "name": "6",
+        "point": [
+          1100.0,
+          405.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 372,
+        "names": [],
+        "endpoints": [
+          "SW6.6"
+        ]
+      },
+      "7": {
+        "ref": "SW6",
+        "num": "7",
+        "name": "7",
+        "point": [
+          1040.0,
+          405.0
+        ],
+        "component_line": 2351,
+        "symbol_pin_line": 367,
+        "names": [],
+        "endpoints": [
+          "SW6.7"
+        ]
+      }
+    },
+    "SW7": {
+      "A": {
+        "ref": "SW7",
+        "num": "A",
+        "name": "A",
+        "point": [
+          335.0,
+          195.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 397,
+        "names": [],
+        "endpoints": [
+          "SW7.A",
+          "R84.1",
+          "R87.2"
+        ]
+      },
+      "B": {
+        "ref": "SW7",
+        "num": "B",
+        "name": "B",
+        "point": [
+          355.0,
+          195.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 392,
+        "names": [],
+        "endpoints": [
+          "SW7.B",
+          "R85.1",
+          "R88.2"
+        ]
+      },
+      "C": {
+        "ref": "SW7",
+        "num": "C",
+        "name": "C",
+        "point": [
+          345.0,
+          195.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 387,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "D": {
+        "ref": "SW7",
+        "num": "D",
+        "name": "D",
+        "point": [
+          335.0,
+          255.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 382,
+        "names": [],
+        "endpoints": [
+          "SW7.D",
+          "R86.1",
+          "R89.2"
+        ]
+      },
+      "E": {
+        "ref": "SW7",
+        "num": "E",
+        "name": "E",
+        "point": [
+          355.0,
+          255.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 377,
+        "names": [
+          "GND"
+        ],
+        "endpoints": [
+          "USB1.B12",
+          "USB1.A12",
+          "USB1.7",
+          "R73.2",
+          "R74.2",
+          "SW1.3",
+          "SW1.2",
+          "SW1.1",
+          "SW4.E",
+          "SW4.C",
+          "C18.1",
+          "C19.1",
+          "C17.1",
+          "SW5.E",
+          "SW5.C",
+          "C27.1",
+          "C28.1",
+          "C20.1",
+          "SW6.E",
+          "SW6.C",
+          "C30.1",
+          "C31.1",
+          "C29.1",
+          "SW7.E",
+          "SW7.C",
+          "C33.1",
+          "C34.1",
+          "C32.1"
+        ]
+      },
+      "6": {
+        "ref": "SW7",
+        "num": "6",
+        "name": "6",
+        "point": [
+          375.0,
+          225.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 372,
+        "names": [],
+        "endpoints": [
+          "SW7.6"
+        ]
+      },
+      "7": {
+        "ref": "SW7",
+        "num": "7",
+        "name": "7",
+        "point": [
+          315.0,
+          225.0
+        ],
+        "component_line": 2666,
+        "symbol_pin_line": 367,
+        "names": [],
+        "endpoints": [
+          "SW7.7"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FDC2214 · 原始数据监测</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><svg viewBox="0 0 36 36" aria-hidden="true"><rect x="1" y="1" width="34" height="34" rx="9"/><path d="M6 20h5l3-9 6 15 3-9h7"/></svg><div><strong>FDC2214</strong><span>原始数据监测</span></div></div>
+    <div class="side-section">
+      <div class="section-label">设备连接</div>
+      <label for="port">USB / 串口设备</label>
+      <div class="port-row"><select id="port" aria-label="选择串口"><option value="">正在查找设备…</option></select><button id="refresh" class="icon-button" title="刷新串口" aria-label="刷新串口">↻</button></div>
+      <button id="connect" class="primary">连接设备</button>
+      <p id="connection" class="connection" aria-live="polite"><i></i><span>尚未连接</span></p>
+      <p id="error" class="error" role="alert" hidden></p>
+    </div>
+    <div class="side-section settings">
+      <div class="section-label">显示设置</div>
+      <label for="window">曲线时间窗口</label>
+      <select id="window"><option value="10">最近 10 秒</option><option value="30" selected>最近 30 秒</option><option value="60">最近 60 秒</option></select>
+      <p class="hint">每路独立缩放，便于观察小幅变化。</p>
+    </div>
+    <details class="wiring"><summary>当前接线</summary><dl><dt>SCL</dt><dd>GPIO8</dd><dt>SDA</dt><dd>GPIO18</dd><dt>ADDR</dt><dd>GPIO17</dd><dt>SD</dt><dd>GPIO4</dd><dt>INT</dt><dd>GPIO16 · 轮询采集</dd><dt>参考时钟</dt><dd>外部 40 MHz</dd></dl></details>
+    <div class="side-bottom"><span class="chip-icon">4 CH</span><p>ESP32-S3<br><span>本机 USB 数据连接</span></p></div>
+  </aside>
+  <main>
+    <header class="page-header"><div><p class="eyebrow">传感器调试</p><h1>四通道实时读数</h1><p class="subtitle">直接观察原始码与变化趋势。</p></div><div class="actions"><button id="freeze" disabled>暂停显示</button><button id="clear" disabled>清空本窗口</button><button id="export" disabled>导出 CSV</button></div></header>
+    <div class="telemetry-bar"><span id="live" class="live"><i></i>等待设备数据</span><span>USB 数据 <strong id="visible-rate">—</strong> 帧/秒</span><span>设备采集 <strong id="device-rate">—</strong> 帧/秒</span><span id="sample-counter">已接收 0 帧</span></div>
+    <div id="notice" class="notice" role="status"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8"/><path d="M10 9v5m0-9v1"/></svg><span id="notice-text">连接设备后，这里将显示 CH0～CH3 的实时数据。</span></div>
+    <div id="channels" class="channel-grid" aria-label="四路原始数据与曲线"></div>
+    <p class="range-note">观测范围从连接或清空时开始累计，包含告警样本。清空本窗口保留设备累计统计；设备重启或重新连接会清除旧曲线。</p>
+    <section class="device-section"><div class="section-heading"><h2>设备累计统计</h2><span>仅统计有效样本 · 设备会持续采集，USB 显示已节流</span></div><div class="table-scroll"><table><thead><tr><th scope="col">通道</th><th scope="col">有效样本</th><th scope="col">异常样本</th><th scope="col">最小原始码</th><th scope="col">最大原始码</th><th scope="col">跨度</th></tr></thead><tbody id="device-ranges"></tbody></table></div></section>
+    <details class="event-section"><summary>最近设备日志</summary><pre id="events">等待设备日志…</pre></details>
+    <footer><span>数值单位：28 位原始码</span><span id="updated">尚未接收数据</span></footer>
+  </main>
+</body>
+</html>

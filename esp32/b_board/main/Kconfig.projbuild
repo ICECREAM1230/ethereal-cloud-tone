@@ -1,0 +1,112 @@
+menu "Laser Harp B board"
+config B_A_BOARD_BLE_NAME
+    string "A board advertised BLE name"
+    default "FPGA_Bluetooth"
+config B_MIDI_CHANNEL
+    int "Synth engine MIDI channel (1-16; wire ID is channel - 1)"
+    range 1 16
+    default 2
+    help
+        All twelve beams and encoder controllers share this MIDI channel.
+        The receiver selects the synthesis engine by MIDI channel; beam
+        identity is carried by note number. The laser harp defaults to
+        channel 2, which encodes wire channel ID 1 (in the range 0-15).
+        USB and BLE preserve the same channel. Saved NVS settings take
+        precedence over this build default.
+config B_FIRST_NOTE
+    int "First laser MIDI note (C4=60)"
+    range 24 92
+    default 60
+config B_VELOCITY_MIN
+    int "Note velocity at short shade (curve start)"
+    range 1 127
+    default 127
+config B_VELOCITY_MAX
+    int "Note velocity at long shade (curve end, may be lower)"
+    range 1 127
+    default 16
+config B_DURATION_MIN_MS
+    int "Shortest mapped shade duration (ms)"
+    range 1 59999
+    default 20
+config B_DURATION_MAX_MS
+    int "Longest mapped shade duration (ms)"
+    range 2 60000
+    default 500
+config B_NOTE_GATE_MS
+    int "Sound duration after beam release (ms)"
+    range 10 5000
+    default 200
+config B_LASER_ACTIVE_LEVEL
+    int "GPIO level when beam is interrupted (0 or 1)"
+    range 0 1
+    default 1
+choice B_ENCODER_DETENT
+    prompt "EC11 transitions per detent"
+    default B_ENCODER_HALF_STEP
+config B_ENCODER_HALF_STEP
+    bool "2 (15 pulses / 30 detents)"
+config B_ENCODER_FULL_STEP
+    bool "4 (one electrical cycle per detent)"
+endchoice
+config B_ENCODER_EDGES
+    int
+    default 2 if B_ENCODER_HALF_STEP
+    default 4
+config B_ENCODER_REVERSE_MASK
+    int "Reverse encoder direction, bit 0..3"
+    range 0 15
+    default 0
+config B_OUTPUT_MODE
+    int "Output mode (0=auto,1=USB,2=BLE,3=both)"
+    range 0 3
+    default 0
+config B_ENC1_A
+    int "Encoder 1 A GPIO (-1 means unconfigured)"
+    range -1 48
+    default 13
+config B_ENC1_B
+    int "Encoder 1 B GPIO (-1 means unconfigured)"
+    range -1 48
+    default 14
+config B_ENC1_SW
+    int "Encoder 1 SW GPIO (-1 means unconfigured)"
+    range -1 48
+    default 12
+config B_ENC2_A
+    int "Encoder 2 A GPIO (-1 means unconfigured)"
+    range -1 48
+    default 40
+config B_ENC2_B
+    int "Encoder 2 B GPIO (-1 means unconfigured)"
+    range -1 48
+    default 39
+config B_ENC2_SW
+    int "Encoder 2 SW GPIO (-1 means unconfigured)"
+    range -1 48
+    default 41
+config B_ENC3_A
+    int "Encoder 3 A GPIO (-1 means unconfigured)"
+    range -1 48
+    default 47
+config B_ENC3_B
+    int "Encoder 3 B GPIO (-1 means unconfigured)"
+    range -1 48
+    default 21
+config B_ENC3_SW
+    int "Encoder 3 SW GPIO (-1 means unconfigured)"
+    range -1 48
+    default 38
+config B_ENC4_A
+    int "Encoder 4 A GPIO (-1 means unconfigured)"
+    range -1 48
+    default 2
+config B_ENC4_B
+    int "Encoder 4 B GPIO (-1 means unconfigured)"
+    range -1 48
+    default 42
+config B_ENC4_SW
+    int "Encoder 4 SW GPIO (-1 means unconfigured)"
+    range -1 48
+    default 1
+endmenu

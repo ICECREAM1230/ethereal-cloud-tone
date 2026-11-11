@@ -1,0 +1,6 @@
+# Explicit opt-in overlay for the FMV1 ABI 1.0 validation FPGA image.
+# tools/build_fm_only.sh starts from config/sdkconfig.esp32s3 in its own build
+# directory. It never changes the maintained production sdkconfig.
+CONFIG_FPGA_FM_ONLY=y
+CONFIG_ECT_WIFI_WEB=y
+CONFIG_ECT_WIFI_SSID="FPGA_Project"

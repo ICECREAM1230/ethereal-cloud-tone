@@ -1,0 +1,7 @@
+# Proposed output wiring; connect after checking the external DAC's pin names.
+# Four signals plus shared GND. Keep FDC and UART pins unchanged.
+CONFIG_FDC_AUDIO_ENABLE=y
+CONFIG_FDC_AUDIO_MCLK_GPIO=15
+CONFIG_FDC_AUDIO_BCLK_GPIO=5
+CONFIG_FDC_AUDIO_WS_GPIO=6
+CONFIG_FDC_AUDIO_DOUT_GPIO=7

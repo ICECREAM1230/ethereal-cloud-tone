@@ -1,0 +1,101 @@
+{
+  "retired_at": "2026-10-21",
+  "baseline": "../../../frontend-before.tar.gz",
+  "removed_scripts": {
+    "test:additive-browser": "node tests/additive-browser.mjs",
+    "test:additive-panel": "node tests/additive-panel.browser.mjs",
+    "dev:additive": "node mock/additive-server.mjs"
+  },
+  "files": [
+    {
+      "original": "src/additive.mjs",
+      "retired": "tests/retired-additive/src/additive.mjs",
+      "sha256": "be4698f1ff60a9e268293db4db00b25e2f139593f6d504b3391ca8863de41cca"
+    },
+    {
+      "original": "src/additive-panel.mjs",
+      "retired": "tests/retired-additive/src/additive-panel.mjs",
+      "sha256": "f5c0289cb82a18256207b685b551300843dd2bab7ff49911abaff5504ca2ba32"
+    },
+    {
+      "original": "src/additive-panel.css",
+      "retired": "tests/retired-additive/src/additive-panel.css",
+      "sha256": "3c40747f7e6fe06fb8874385c3c96a9e2f0b6f10e50e1fb6e5fcfa1529d2dfc2"
+    },
+    {
+      "original": "src/generated/additive-presets.mjs",
+      "retired": "tests/retired-additive/src/generated/additive-presets.mjs",
+      "sha256": "b95eb6cc64f7a8c239a334369200da87c1947759c14e89accc847ecdf1f537f8"
+    },
+    {
+      "original": "mock/additive-device.mjs",
+      "retired": "tests/retired-additive/mock/additive-device.mjs",
+      "sha256": "95af7e3db9a816f363b0dbab197e4541939a3552645e535e037d64edb904b213"
+    },
+    {
+      "original": "mock/additive-server.mjs",
+      "retired": "tests/retired-additive/mock/additive-server.mjs",
+      "sha256": "78a9befb2066198f4d381c0663dfced386d98c268ca9533117ba329669055d81"
+    },
+    {
+      "original": "tests/additive.test.mjs",
+      "retired": "tests/retired-additive/tests/additive.test.mjs",
+      "sha256": "919058819b0b9faa0c8c8875ac864dfcdfcc16f42b79b44177a66e354258a6cb"
+    },
+    {
+      "original": "tests/additive-controller.test.mjs",
+      "retired": "tests/retired-additive/tests/additive-controller.test.mjs",
+      "sha256": "af26411cef7db48228d97c3b03c586c5cce822d6356010903e3fc72bfef362cf"
+    },
+    {
+      "original": "tests/additive-http.test.mjs",
+      "retired": "tests/retired-additive/tests/additive-http.test.mjs",
+      "sha256": "b9eb743a9363830fee854468a8dc15db97dfd4a8454c6de3e8a80570dd9a7ea9"
+    },
+    {
+      "original": "tests/additive-browser.mjs",
+      "retired": "tests/retired-additive/tests/additive-browser.mjs",
+      "sha256": "ae913a519aa7e74449906e98e59fede8e5dd1176c0349fb23a917c15db8197d3"
+    },
+    {
+      "original": "tests/additive-panel.browser.mjs",
+      "retired": "tests/retired-additive/tests/additive-panel.browser.mjs",
+      "sha256": "ec46af5f6537268743c667e052e1f9b2093697b34e109ffddcdad5987f1334cb"
+    },
+    {
+      "original": "tests/helpers/additive-device.mjs",
+      "retired": "tests/retired-additive/tests/helpers/additive-device.mjs",
+      "sha256": "1baddddaa140e2af33666d697d5637722def76ae275b55469c9aa8f8a0555359"
+    },
+    {
+      "original": "contracts/additive/20261019/bell-spi.json",
+      "retired": "tests/retired-additive/contracts/additive/20261019/bell-spi.json",
+      "sha256": "82d43ca057da34c51152e98f75577a1f3f4fdec1baa553bb110cda159e0d1fe7"
+    },
+    {
+      "original": "contracts/additive/20261019/http-extension-fixtures.json",
+      "retired": "tests/retired-additive/contracts/additive/20261019/http-extension-fixtures.json",
+      "sha256": "47f46b4f65b6372430489db6fccadafcb52c68fa6496c6f267f27b2a82ff2d00"
+    },
+    {
+      "original": "contracts/additive/20261019/organ-spi.json",
+      "retired": "tests/retired-additive/contracts/additive/20261019/organ-spi.json",
+      "sha256": "419acbe7f5ac703a8331f684ad7780ab33eddf7b895bfdb47342e3560dd2d051"
+    },
+    {
+      "original": "contracts/additive/20261019/presets.json",
+      "retired": "tests/retired-additive/contracts/additive/20261019/presets.json",
+      "sha256": "276c92abab8e1ab695409a6ba5639ce94de05ec28aa562d1cdd02532a8096c71"
+    },
+    {
+      "original": "contracts/additive/20261019/soft-pad-spi.json",
+      "retired": "tests/retired-additive/contracts/additive/20261019/soft-pad-spi.json",
+      "sha256": "a9dda73b3e727befc2213c0e01de2d01be99ff61b359c1a066cab428f6687cf3"
+    },
+    {
+      "original": "contracts/additive/20261019/source-manifest.json",
+      "retired": "tests/retired-additive/contracts/additive/20261019/source-manifest.json",
+      "sha256": "04482eb7d9966bbac20347c93d33d933952ec7bd5a5282633e42b7e55d9878f3"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-11T01:47:49.270445+00:00",
+  "reason": "MUTED includes !selected; READY/MUTED explicitly selectable, never automatically playable",
+  "read_only_sources": [
+    {
+      "path": "/home/ice/Project/my_project/development/tang_mega_138k_synth/audio_i2s/eda_proj/src/fm/fm_control_bridge.sv",
+      "sha256": "39389cf888803da2242c78bfb847cf1b86ad57f7b1addc5fa2545e55804f4436",
+      "lines": [
+        274,
+        286
+      ],
+      "excerpt": "        flags = (backend_ready_i ? FM_FLAG_READY : 32'd0) |\n            (selected_o ? FM_FLAG_SELECTED : 32'd0) | (mute_o ? FM_FLAG_MUTED : 32'd0) |\n            ((command_pending || panic_pending || recovering) ? FM_FLAG_BUSY : 32'd0) |\n            (backend_fault_i ? FM_FLAG_FAULT : 32'd0);\n        if (!profile_info.valid) phase = FM_PHASE_UNAVAILABLE;\n        else if (backend_fault_i) phase = FM_PHASE_BLOCKED;\n        else if (recovering || panic_pending) phase = FM_PHASE_RECOVERING;\n        else if (command_pending && active_command.opcode_id == FM_SPI_OPCODE_SELECT_BACKEND) phase = FM_PHASE_SWITCHING;\n        else if (!backend_ready_i) phase = FM_PHASE_INITIALIZING;\n        else phase = FM_PHASE_READY;\n    end\n    assign mute_o = !selected_o || !backend_ready_i || backend_fault_i || recovering || panic_pending ||\n        (command_pending && (active_command.opcode_id == FM_SPI_OPCODE_SELECT_BACKEND || active_command.opcode_id == FM_SPI_OPCODE_APPLY_PRESET));"
+    },
+    {
+      "path": "/home/ice/Project/my_project/development/ESP32/ESP32_development/esp32s3/main/engine_fm.inc.h",
+      "sha256": "6b62de5883e6a1e5c7f05216fb9b7d9315320b9b36521b8a667c34366c246ecb",
+      "lines": [
+        62,
+        73
+      ],
+      "excerpt": "bool engine_link_fm_mode(uint32_t backend)\n{\n    portENTER_CRITICAL(&s_lock);\n    bool allowed=s_fm.status.available && s_fm.status.valid && s_fm.status.ready &&\n        (backend==FM_BACKEND_UNBOUND || backend==s_fm.status.backend_id);\n    if(allowed) {\n        fm_clear_intents();s_fm.status.requested_backend=backend;s_fm.status.switching=true;\n        s_fm.status.needs_select=false;s_fm_mode_pending=true;s_fm_mode_revision++;\n        if(s_fm.status.selected || s_fm_inflight.active)s_fm_panic_pending=true;\n    }\n    portEXIT_CRITICAL(&s_lock);return allowed;\n}"
+    }
+  ]
+}

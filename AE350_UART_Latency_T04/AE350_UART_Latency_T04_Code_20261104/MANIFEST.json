@@ -1,0 +1,389 @@
+{
+  "format": "AE350_UART_LATENCY_COMPONENT_SOURCE_BUNDLE_V2_LATEST_DATA",
+  "created_jst": "2026-11-04T14:26:04.885044+09:00",
+  "source_project": ".",
+  "version": "T04/AT04; current USB padding fix source",
+  "scope": "Current T04 measurement source and integration reference; all packaged data examples/descriptions updated to user-selected N201 uart.txt; not a standalone FPGA project",
+  "source_files": {
+    "rtl/ae350_latency_capture.sv": {
+      "group": "measurement_core",
+      "bytes": 10673,
+      "sha256": "a264984592c263c7dfcb77bc59252060fb4339d1194c22e7cb7a8bd775498f6d"
+    },
+    "rtl/ae350_latency_apb.sv": {
+      "group": "measurement_core",
+      "bytes": 2918,
+      "sha256": "b42c91749231f7e36ebf9b402952f1c3cc7a9a5c00ea61f43e3635aeb9ace3f1"
+    },
+    "rtl/midi_pcm_latency_probe.sv": {
+      "group": "measurement_core",
+      "bytes": 23192,
+      "sha256": "f956a29ea5aa813b3bec114ffec1627a8c94874bb2e36d62b3cc64de861a9984"
+    },
+    "src/common/cdc/held_bus_cdc.sv": {
+      "group": "measurement_core",
+      "bytes": 5946,
+      "sha256": "285d97c739d397d0d7833c44cebe9985a055481ebc62a565f79b8323048487db"
+    },
+    "src/midi_decode/debug/midi_diag_tx.sv": {
+      "group": "measurement_core",
+      "bytes": 811,
+      "sha256": "acf49573b200a5b09e865f51ba21d39a01672c4a6937172be047348176da4efe"
+    },
+    "sim/tb/ae350_latency_capture_tb.sv": {
+      "group": "core_tests",
+      "bytes": 15825,
+      "sha256": "e2f7926404e88f28bb0cd0b45ba012697690d2d04f886934bcd3c2020ddf7dcd"
+    },
+    "sim/tb/ae350_latency_apb_tb.sv": {
+      "group": "core_tests",
+      "bytes": 7530,
+      "sha256": "1f036f05c2c1cec9d0fe1b9fff2c0de46801fc6b2aa3dc2ba890a20a80256fdb"
+    },
+    "sim/tb/t04_usb_padding_tb.sv": {
+      "group": "core_tests",
+      "bytes": 11272,
+      "sha256": "436b5815560ed0f21b452fa56f67d665e56e37078929d8167369b662147946e9"
+    },
+    "sim/config/run_ae350_latency_capture.py": {
+      "group": "core_tests",
+      "bytes": 5432,
+      "sha256": "aa16d60f5c06c65a2fd32ee8f67c3ae141ae47ee7dbac2cfe1787e9e394ebd41"
+    },
+    "sim/config/run_ae350_latency_apb.py": {
+      "group": "core_tests",
+      "bytes": 4485,
+      "sha256": "96d2a631f5897e26a802e8f2fe41f9de617a9651f2c4e5657d9e174c484437bb"
+    },
+    "sim/config/run_t04_usb_padding.py": {
+      "group": "core_tests",
+      "bytes": 6133,
+      "sha256": "605bb2fd0d40bbcdaf4dce7d502bf56b34b64139c1fe0b23cf8ae74e8534f03f"
+    },
+    "src/control_input/usb_midi/rtl/midi_packet_queue.sv": {
+      "group": "core_tests",
+      "bytes": 1282,
+      "sha256": "a9173bf5eb07b08cee99349a1d215b5ee3202b9f7f54eb91c759efaf762c02f0"
+    },
+    "src/control_input/usb_midi/midi_packet_cdc.sv": {
+      "group": "core_tests",
+      "bytes": 5853,
+      "sha256": "eab8df6aaad8650bf1b471a609d0362ab0703fec70ac44cd5528deb5fcee427d"
+    },
+    "src/midi_decode/parser/stream_fifo.sv": {
+      "group": "core_tests",
+      "bytes": 1472,
+      "sha256": "65c2e6e466286052f6b82d2602f4508cb9f178afb736793e5afbcdf06876369e"
+    },
+    "src/midi_decode/parser/usb_midi_ingress.sv": {
+      "group": "core_tests",
+      "bytes": 5771,
+      "sha256": "d94214d6f9159cbea593e9d4d36abc80045c034287827069e65af65106170c8d"
+    },
+    "control_migration/rtl/ae350_ingress_frontend.sv": {
+      "group": "core_tests",
+      "bytes": 6599,
+      "sha256": "33f1ee8fa756a524216524bb4ceffd1d7303999ae576e0738d597d8dde7f3157"
+    },
+    "firmware/control_latency.c": {
+      "group": "firmware_and_host_tools",
+      "bytes": 5908,
+      "sha256": "38c0038cdfaa34dd371ae4f1fd1d7da51c33d5a0d26d4e0f01ac8a771d7ff789"
+    },
+    "firmware/control_latency.h": {
+      "group": "firmware_and_host_tools",
+      "bytes": 1653,
+      "sha256": "f9ca3cd088a2548ba750db7ca80788a6168afbbdc0c8d84b8b590984a34d6fc7"
+    },
+    "scripts/read_ae350_t0t3.py": {
+      "group": "firmware_and_host_tools",
+      "bytes": 11933,
+      "sha256": "bcd13216e90ba6e60eca0d39f0886a7f09644d4cad0d215a4b8c2d3168851c89"
+    },
+    "scripts/read_debug_uart.py": {
+      "group": "firmware_and_host_tools",
+      "bytes": 4024,
+      "sha256": "fb2b3168bbe67583916659858d4c6158835d70ce5666afb08014fc8847a89d46"
+    },
+    "scripts/render_t04_report.py": {
+      "group": "firmware_and_host_tools",
+      "bytes": 15116,
+      "sha256": "e45e3845f655a2d51d144aeaf6abbd02e0990765c427993246f2864412af80fa"
+    },
+    "sim/tb/test_control_latency.c": {
+      "group": "firmware_and_host_tools",
+      "bytes": 8053,
+      "sha256": "47387978e7825ea10b9c90fd20f209bace7a4c49260eb204423b162f66b8135b"
+    },
+    "sim/tb/test_ae350_t0t3.py": {
+      "group": "firmware_and_host_tools",
+      "bytes": 8817,
+      "sha256": "0dd8252756aaa012f24a752dfbdde6dc65788efb72eeb13c4bb550bc37b14e4b"
+    },
+    "sim/config/run_control_latency.py": {
+      "group": "firmware_and_host_tools",
+      "bytes": 5786,
+      "sha256": "8d67703c067f2d259f15e8641df91eeb4a64966bcfef5d7a8707721fc1789b30"
+    },
+    "sim/tb/test_t04_idle.c": {
+      "group": "idle_service_dependencies",
+      "bytes": 2398,
+      "sha256": "315824274a0776b9f07043111c93f5079ee78ed39d73aed1e44102b3ba6a05d0"
+    },
+    "firmware/control_service.c": {
+      "group": "idle_service_dependencies",
+      "bytes": 17304,
+      "sha256": "42819d1b3ae66428175eb71b4be0a64321b3b7c87d9fae0d9952de688965e0d2"
+    },
+    "firmware/control_service.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 4203,
+      "sha256": "d94bc6c86a158ec68eb903b59e02ff53d75e5a2c2b7df6bd8d8c0c85d4fee1c5"
+    },
+    "firmware/control_compile.c": {
+      "group": "idle_service_dependencies",
+      "bytes": 17536,
+      "sha256": "6c09fc06370b631b145714ade32f3b75ed2c610cee17795684eab327daec7ca3"
+    },
+    "firmware/control_compile.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 3219,
+      "sha256": "94a4c30313a7eac4c1d74b6b66be23d47d597eabebee5b90b5e9b4a1167ab3d6"
+    },
+    "firmware/control_data/control_boot_tables.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 8902,
+      "sha256": "e2fb6080605933fc6b07886d22c76a677ab8096bcc2bde0b150cb1ffa706f33c"
+    },
+    "control_migration/firmware/control_runtime.c": {
+      "group": "idle_service_dependencies",
+      "bytes": 4014,
+      "sha256": "e1943896026baea6585877dea08bd128d8bcf8259b660ff2ebb9c9bdea30a91f"
+    },
+    "control_migration/firmware/control_runtime.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 1283,
+      "sha256": "e662e4567e8a5ddfa8a2d7d7e109f487333d1ed06951bbc71f45958bb980eb02"
+    },
+    "control_migration/firmware/midi_parser.c": {
+      "group": "idle_service_dependencies",
+      "bytes": 10347,
+      "sha256": "abd35482da06e28c14480e82f91f110fe2902d9ade294abb891a09a4efeab1a8"
+    },
+    "control_migration/firmware/midi_parser.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 2701,
+      "sha256": "d981b830d682bcf83bd7930fe38b5bb4f1e77d8d1da3017fb2d45cfb6d9f0170"
+    },
+    "control_migration/firmware/voice_manager.c": {
+      "group": "idle_service_dependencies",
+      "bytes": 21466,
+      "sha256": "7ee47c91ab1672a8c97be824af6a556247b8054ed4d0ddead25bfe8c224e3ddc"
+    },
+    "control_migration/firmware/voice_manager.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 4320,
+      "sha256": "9f7e2c32d81cb1b9842e974e0f174f7dd791d9d9076614c71560db513dbd4624"
+    },
+    "control_migration/include/control_event.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 950,
+      "sha256": "751de1d86972290b6f4f3c9238406b21305413e6c0f4188fe3599ba1060d1c3c"
+    },
+    "control_migration/include/prepared_control.h": {
+      "group": "idle_service_dependencies",
+      "bytes": 1086,
+      "sha256": "952b6297dac602c537da301fe2e9a0c2a13804c7a99f85119144ddaac16a3850"
+    },
+    "rtl/midi_pcm_latency_lab_top.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 1587,
+      "sha256": "80a8a20bbc0b5dee94094c66709cd0387c4664888918fa3bf8d5e2464c5c0c60"
+    },
+    "rtl/control_lab_top.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 19513,
+      "sha256": "b368f214ba660bf53d52d26d5ca8f4a535cdff9fa8717ccff8d6902eb1d7a374"
+    },
+    "src/board/synth_system.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 37752,
+      "sha256": "8953f0fbb2b1174d675bf819f864f81aa7174cd5cbed479a47b1b1e382651cd9"
+    },
+    "src/board/clock_reset.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 1747,
+      "sha256": "c9651fb4391514c714047e1cdb5bc96799d9842acb292fc15afc808cc3ba1bd1"
+    },
+    "src/control_input/control_input_frontend.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 7414,
+      "sha256": "37d0a665752000903ab3eb449b144713dbeec18fa3d2b109c0522eff38c9b347"
+    },
+    "src/control_input/usb_midi/midi_host_frontend.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 11371,
+      "sha256": "e5cc08317265c28d1e4987bcac6625f28c455d13765fbf1699d0bbcdf636a05d"
+    },
+    "src/pcm_post/pipeline/pcm_request_audio.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 16780,
+      "sha256": "36f33b516b573f50f40bfb364a9aa7ef43af1491b93ac7a2288e5ff547540971"
+    },
+    "src/audio_output/pt8211_tx.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 3293,
+      "sha256": "dcc91731e6cea2e93106de9d7e4e5621e5476ce336d37f73118401a197b5c5d8"
+    },
+    "src/common/reset/jt51_reset_sync.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 420,
+      "sha256": "a40953ff977c93dab6a6cc7aae1c1e34575764c6da9e947607b42f7339228ef1"
+    },
+    "control_migration/rtl/control_link_apb.sv": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 21752,
+      "sha256": "8a36c3c5ea6aaffdcf22058acbaf2978d59a8206963c3189f949f018c0614542"
+    },
+    "firmware/control_main.c": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 4279,
+      "sha256": "35ed896d043d393d21a7e394e29531ba0f8afd63d8059a238ca7e622d63510da"
+    },
+    "firmware/control_link.ld": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 937,
+      "sha256": "e38f740ffe09f71e4053c1addb1236d71cd295c154e15be497d16f1d29afa99e"
+    },
+    "firmware/start.S": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 1353,
+      "sha256": "0040f7f62b23ecc69be91aeaa3c48d677c7e36198d0b20a54be398f95fa6b6a3"
+    },
+    "scripts/build_control_firmware.py": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 2554,
+      "sha256": "2f7e3f3dd666bd61179e188bbd4d122451e0ea7514daad9c86dd506f9f6ec28a"
+    },
+    "constraints/latency_lab.sdc": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 21295,
+      "sha256": "48e4c54eb28c979a71b36bc95c43e7529bf67dde25577d2b4d0c97601030897f"
+    },
+    "constraints/latency_lab.cst": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 3458,
+      "sha256": "21a477d42b5b398051d0415c45d94de1cae3c58cd5244583bd893eec00a09a08"
+    },
+    "sim/config/check_note20_sdc.py": {
+      "group": "integration_reference_not_standalone",
+      "bytes": 6621,
+      "sha256": "05a2222e1149b192183202122a379154c1cff1bebb277997fbe0d452e5688536"
+    },
+    "docs/latency/current-measurement-principle-and-path-20261104.md": {
+      "group": "documentation",
+      "bytes": 35556,
+      "sha256": "52c8b13fd46cdc196525de863c4057f871ef684928689bfc2788151f829a7cf1"
+    },
+    "LICENSE": {
+      "group": "license",
+      "bytes": 1069,
+      "sha256": "ba2facea18e93ff001f716076f8df7c1207906ec850d7dd901cdb75ac56352b7"
+    },
+    "sim/results/uart_half_counts_20261104/20261104T024956Z/uart.txt": {
+      "group": "user_selected_latest_data",
+      "bytes": 11214,
+      "sha256": "03065c2fec9f5ce9628f8fae244c99ebd1c64982c3abf1b1538a7846b2497b08"
+    },
+    "scripts/read_note20_uart.py": {
+      "group": "latest_data_N201_decoder",
+      "bytes": 22681,
+      "sha256": "12da15519074b6285bcc4e813bdb940af2e4054fcba257e806f5bc8bf52bb420"
+    },
+    "sim/tb/test_note20_uart.py": {
+      "group": "latest_data_N201_decoder_test",
+      "bytes": 30550,
+      "sha256": "ea0818d907563fa14c15672f014fb2a0fcd559ecde6d0d6c20119450b1c0ea63"
+    }
+  },
+  "generated_files": [
+    "README.md",
+    "MANIFEST.json",
+    "SHA256SUMS",
+    "latest_data/uart.txt",
+    "latest_data/decoded.json",
+    "latest_data/summary.json",
+    "latest_data/raw-counts.csv",
+    "latest_data/README.md"
+  ],
+  "original_production_inputs": 320,
+  "original_support_inputs": 21,
+  "source_input_drift": [],
+  "omitted": [
+    "generated/protected AE350 IP",
+    "complete DSP design",
+    "bitstreams",
+    "Programmer and programming sessions",
+    "authentication logs",
+    "device libraries",
+    "old N20 recorders"
+  ],
+  "unchanged_source_bytes": false,
+  "latest_data": {
+    "file": "latest_data/uart.txt",
+    "source_file": "sim/results/uart_half_counts_20261104/20261104T024956Z/uart.txt",
+    "sha256": "03065c2fec9f5ce9628f8fae244c99ebd1c64982c3abf1b1538a7846b2497b08",
+    "bytes": 11214,
+    "version": "N201",
+    "frames": 42,
+    "unique_ids": 20,
+    "repeats": 22,
+    "qualified": 19,
+    "invalid_ids": [
+      13
+    ],
+    "provenance": "Byte-identical to the previous offline counter-divided-by-2 and CRC-recomputed export; supplied by user as latest file; not a newly acquired AT04 capture",
+    "statistics": {
+      "input_assembly": {
+        "count": 19,
+        "sum_cycles": 1745407,
+        "mean_cycles_fraction": "1745407/19",
+        "mean_cycles": 91863.52631578948,
+        "mean_microseconds_fraction": "1745407/950",
+        "mean_microseconds": 1837.2705263157895,
+        "mean_ms": 1.8372705263157896,
+        "min_ms": 0.98504,
+        "max_ms": 3.9695
+      },
+      "complete_note_on_to_pair": {
+        "count": 19,
+        "sum_cycles": 4765902,
+        "mean_cycles_fraction": "4765902/19",
+        "mean_cycles": 250836.94736842104,
+        "mean_microseconds_fraction": "2382951/475",
+        "mean_microseconds": 5016.738947368421,
+        "mean_ms": 5.016738947368421,
+        "min_ms": 4.86252,
+        "max_ms": 5.2565
+      },
+      "first_input_to_pair": {
+        "count": 19,
+        "sum_cycles": 6511309,
+        "mean_cycles_fraction": "6511309/19",
+        "mean_cycles": 342700.4736842105,
+        "mean_microseconds_fraction": "6511309/950",
+        "mean_microseconds": 6854.00947368421,
+        "mean_ms": 6.8540094736842105,
+        "min_ms": 5.92338,
+        "max_ms": 8.83642
+      }
+    }
+  },
+  "data_description_policy": "README and detailed principle data sections use only the latest user-selected file; superseded example data/images/status JSON are excluded from v2; project history and original ZIP remain unchanged",
+  "updated_jst": "2026-11-12T06:01:29.778024+09:00",
+  "publication_changes": [
+    "Copyright/license and project-name normalization authorized by owner",
+    "Portable host/RTL runner tool and output paths; host-only validation mode",
+    "Historical package origin is kept in the private release archive, not asserted as this repository build identity"
+  ]
+}

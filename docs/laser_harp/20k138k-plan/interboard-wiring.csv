@@ -1,0 +1,7 @@
+﻿signal,connection_138k,connection_20k,direction,kind,note
+SPI_SCLK,A19 / H2.12,42 / J5.5,138K_to_20K,signal,"3.3V logic; power-off protection required, not yet implemented"
+SPI_MOSI,A18 / H1.12,41 / J5.6,138K_to_20K,signal,"3.3V logic; power-off protection required, not yet implemented"
+SPI_MISO,C17 / H2.11,48 / J5.10,20K_to_138K,signal,"3.3V logic; power-off protection required, not yet implemented"
+SPI_CS_N,D17 / H1.11,54 / J5.8,138K_to_20K,signal,"3.3V logic; power-off protection required, not yet implemented"
+DATA_READY_N,B18 / H2.10,56 / J5.7,20K_to_138K,signal,"3.3V logic; power-off protection required, not yet implemented"
+GND_COMMON,H1.6 GND,J5.2 GND,common_reference,ground_not_gpio,Always connected; no 5V/3.3V conductor in the interboard harness

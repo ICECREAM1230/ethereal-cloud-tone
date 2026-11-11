@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-05",
+  "source_read_only": true,
+  "existing_sdkconfig": {
+    "path": "/home/ice/Project/synth-review-work-20261003/development/tang_mega_138k_synth/esp32s3/sdkconfig",
+    "sha256": "5e8840cb1ca0ed111009b43f4a881a78d2b1e8efabf40ac1d82b8b95dcd866fc",
+    "target": "esp32s3",
+    "flash_bytes": 8388608,
+    "partition_choice": "CONFIG_PARTITION_TABLE_SINGLE_APP=y",
+    "factory_bytes": 1048576,
+    "wifi_web_option_present": false
+  },
+  "frozen_defaults": {
+    "path": "handoff/reference/development/tang_mega_138k_synth/esp32s3/sdkconfig.defaults",
+    "wifi_web": true,
+    "partition_choice": "CONFIG_PARTITION_TABLE_SINGLE_APP_LARGE=y",
+    "factory_bytes": 1536000,
+    "partition_source": "/home/ice/esp/esp-idf-v6.1/components/partition_table/partitions_singleapp_large.csv"
+  },
+  "historical_release_only": {
+    "path": "/home/ice/Project/synth-review-work-20261003/releases/io-safety-20261004/firmware",
+    "app_bytes": 1173200,
+    "app_sha256": "e7d84b00e418880f46cd622d83f3543ec32fc50a5d9e9b17e109e57ccf438aad",
+    "factory_bytes": 1536000,
+    "factory_headroom_bytes": 362800,
+    "partition_decode_tool": "ESP-IDF v6.1 gen_esp32part.py",
+    "build_config_from_another_worktree": true
+  },
+  "new_html_firmware_fit_verified": false,
+  "reason": "未修改原固件、未嵌入本页面后链接；现有 sdkconfig 与冻结 defaults 不一致，历史应用余量不能替代最终构建验收。"
+}

@@ -1,0 +1,388 @@
+{
+  "name": "fpga-synth-fm-control",
+  "schema_version": "1.0.0",
+  "status": "contract_frozen_not_integrated",
+  "description": "ABI 1.1 统一FM接口已冻结；正式FPGA/SPI/HTTP尚未集成，禁止仅凭生成物操作设备。",
+  "constants": {
+    "ABI_MAJOR": 1,
+    "ABI_MINOR": 1,
+    "CAP_MAGIC": 1179468593,
+    "SPI_WORD_BASE": 1536,
+    "SPI_WINDOW_WORDS": 256,
+    "SPI_WORD_BITS": 32,
+    "TARGET_NONE": 65535,
+    "MAX_WIRE_INDEX": 65534,
+    "MAX_DESCRIPTOR_VOICES": 256,
+    "MAX_OPERATORS_PER_VOICE": 32,
+    "MAX_PARAMETERS": 256,
+    "MAX_PRESETS": 128,
+    "MAX_BACKEND_PROFILES": 16,
+    "HTTP_API_MAJOR": 2,
+    "HTTP_API_MINOR": 0,
+    "HTTP_COMMAND_MAX_BYTES": 95,
+    "PERFORMANCE_LEASE_MS": 1200
+  },
+  "target": {
+    "word_bits": 32,
+    "voice": {
+      "lsb": 16,
+      "width": 16
+    },
+    "operator": {
+      "lsb": 0,
+      "width": 16
+    },
+    "none_constant": "TARGET_NONE",
+    "scope_rules": {
+      "ENGINE": {
+        "voice": "none",
+        "operator": "none"
+      },
+      "VOICE": {
+        "voice": "required",
+        "operator": "none"
+      },
+      "VOICE_OPERATOR": {
+        "voice": "required",
+        "operator": "required"
+      },
+      "PATCH": {
+        "voice": "none",
+        "operator": "none"
+      },
+      "PATCH_OPERATOR": {
+        "voice": "none",
+        "operator": "required"
+      }
+    },
+    "notes": [
+      "voice/operator均为逻辑索引，由后端映射至芯片通道和slot。",
+      "PATCH_OPERATOR使用明确patch_operator_count；异构布局不允许猜测最小/最大算子数。",
+      "descriptor上限是当前软件解析资源预算，wire位宽不是实际硬件资源承诺。"
+    ],
+    "validation_rules": {
+      "voice_count_min": 1,
+      "voice_count_max_constant": "MAX_DESCRIPTOR_VOICES",
+      "selected_operator_count_min": 0,
+      "selected_operator_count_max_constant": "MAX_OPERATORS_PER_VOICE",
+      "patch_operator_count_min": 0,
+      "patch_operator_count_max_constant": "MAX_OPERATORS_PER_VOICE",
+      "selected_operator_count_meaning": "由该target.voice选择的实际算子数；不是backend最大值。未选声部时允许0。",
+      "unknown_scope": "reject",
+      "out_of_budget_descriptor": "reject"
+    }
+  },
+  "enums": {
+    "engine": {
+      "DDS": 0,
+      "KS": 1,
+      "FM": 2
+    },
+    "scope": {
+      "ENGINE": 0,
+      "VOICE": 1,
+      "VOICE_OPERATOR": 2,
+      "PATCH": 3,
+      "PATCH_OPERATOR": 4
+    },
+    "spi_opcode": {
+      "SELECT_BACKEND": 0,
+      "PANIC": 1,
+      "NOTE_ON": 2,
+      "NOTE_OFF": 3,
+      "SET_PITCH": 4,
+      "SET_GAIN_PAN": 5,
+      "SET_PARAMETER": 6,
+      "APPLY_PRESET": 7,
+      "RELEASE_ALL": 8
+    },
+    "http_opcode": {
+      "CC": 2,
+      "KEYS_UPDATE": 3,
+      "STOP": 4,
+      "ENGINE_SELECT": 5,
+      "KS_DECAY": 6,
+      "FM_PARAMETER": 7,
+      "FM_PRESET": 8
+    },
+    "result": {
+      "OK": 0,
+      "BUSY": 1,
+      "UNSUPPORTED": 2,
+      "BAD_TARGET": 3,
+      "BAD_VALUE": 4,
+      "STALE_EPOCH": 5,
+      "ABI_MISMATCH": 6,
+      "BACKEND_FAULT": 7,
+      "CANCELLED": 8,
+      "SEQUENCE_CONFLICT": 9,
+      "STALE_SEQUENCE": 10,
+      "STALE_SESSION": 11,
+      "STALE_TOPOLOGY": 12,
+      "STALE_VOICE": 13
+    },
+    "phase": {
+      "UNAVAILABLE": 0,
+      "INITIALIZING": 1,
+      "READY": 2,
+      "SWITCHING": 3,
+      "RECOVERING": 4,
+      "BLOCKED": 5
+    },
+    "backend": {
+      "UNBOUND": 0,
+      "JT51_OPM": 1,
+      "MSFA_TWO_OP_REFERENCE": 2
+    }
+  },
+  "spi": {
+    "address_unit": "word",
+    "native_registers_exposed_by_default": false,
+    "implemented_in_active_project": false,
+    "registers": {
+      "CAP_MAGIC": 0,
+      "ABI_VERSION": 1,
+      "BACKEND_ID": 2,
+      "VOICE_COUNT": 3,
+      "MAX_OPERATOR_COUNT": 4,
+      "FEATURES": 5,
+      "EPOCH": 6,
+      "PHASE": 7,
+      "ACCEPTED_SEQUENCE": 8,
+      "COMPLETED_SEQUENCE": 9,
+      "RESULT_SEQUENCE": 10,
+      "RESULT": 11,
+      "TOPOLOGY_GENERATION": 12,
+      "STATUS_GENERATION": 13,
+      "FLAGS": 14,
+      "SESSION": 15,
+      "CMD_OPCODE_ID": 16,
+      "CMD_SCOPE_ID": 17,
+      "CMD_TARGET_WORD": 18,
+      "CMD_PARAMETER_ID": 19,
+      "CMD_VALUE_U32": 20,
+      "CMD_ARG0_U32": 21,
+      "CMD_ARG1_U32": 22,
+      "CMD_SESSION_ID": 23,
+      "CMD_ENGINE_EPOCH": 24,
+      "CMD_TOPOLOGY_GENERATION": 25,
+      "CMD_VOICE_GENERATION": 26,
+      "CMD_SEQUENCE_ID": 27,
+      "CMD_COMMIT": 28,
+      "PANIC_SEQUENCE": 48,
+      "PANIC_ACCEPTED_SEQUENCE": 49,
+      "PANIC_COMPLETED_SEQUENCE": 50,
+      "SOURCE_RATE_NUMERATOR": 64,
+      "SOURCE_RATE_DENOMINATOR": 65,
+      "OUTPUT_RATE_NUMERATOR": 66,
+      "OUTPUT_RATE_DENOMINATOR": 67,
+      "PROFILE_VERSION": 68,
+      "PARAMETER_COUNT": 69,
+      "PRESET_COUNT": 70,
+      "VOICE_QUERY_INDEX": 71,
+      "VOICE_QUERY_GENERATION": 72,
+      "VOICE_QUERY_OPERATOR_COUNT": 73,
+      "PROFILE_SHA256_0": 96,
+      "PROFILE_SHA256_1": 97,
+      "PROFILE_SHA256_2": 98,
+      "PROFILE_SHA256_3": 99,
+      "PROFILE_SHA256_4": 100,
+      "PROFILE_SHA256_5": 101,
+      "PROFILE_SHA256_6": 102,
+      "PROFILE_SHA256_7": 103,
+      "RESULT_SESSION": 32,
+      "RESULT_EPOCH": 33,
+      "ACCEPTED_SESSION": 34,
+      "ACCEPTED_EPOCH": 35,
+      "COMPLETED_SESSION": 36,
+      "COMPLETED_EPOCH": 37,
+      "PANIC_SESSION": 38,
+      "PANIC_EPOCH": 39,
+      "PANIC_RESULT_SEQUENCE": 51,
+      "PANIC_RESULT": 52,
+      "PANIC_RESULT_SESSION": 53,
+      "PANIC_RESULT_EPOCH": 54
+    },
+    "notes": [
+      "ABI1.1要求精确版本匹配；word地址，不是byte地址。命令word MSB-first。",
+      "CMD_COMMIT最后写，值必须等于非零sequence_id；codec仅验证表示长度/uint32，不实现session/epoch/generation/sequence生命周期。",
+      "VOICE_QUERY_INDEX必须按实际voice_count验证，不能缩为3bit；跨域查询生效后以status_generation首尾一致围栏读取generation与operator_count。",
+      "Panic独立优先级通道；accept/completed不是同一状态；真实mailbox、CDC、稳定payload、BUSY、取消与PCM清理需RTL独立实现。",
+      "SELECT_BACKEND期待旧session_id/epoch(boot0/1)，arg0为新非零nonce；RESULT/ACCEPTED/COMPLETED的SESSION/EPOCH和序号必须配对读取。",
+      "同session+epoch中sequence严格递增不回绕；只允许最近相同载荷幂等重试，旧sequence返回STALE_SEQUENCE。NoteOn voice_generation为next current+1(0xffffffff后1)，其余voice命令匹配current。",
+      "PANIC_SESSION和PANIC_EPOCH先写shadow，最后PANIC_SEQUENCE提交；codec仅语法验证允许transport0，生命周期语义由RTL验收。",
+      "VOICE_QUERY_INDEX读回sysclk侧已经应用的query index；唯一设备写入owner序列化query。写索引后先轮询读回等于请求voice，再读取VOICE_QUERY_GENERATION/OPERATOR_COUNT并验证status_generation首尾相同；旧index不能因generation相同误判生效。",
+      "Panic使用独立PANIC_RESULT_SEQUENCE/RESULT/SESSION/EPOCH与last请求缓存，不覆盖普通RESULT；PANIC_ACCEPTED/COMPLETED与此Panic身份在同一snapshot读回，仅最后Panic结果允许幂等重试。"
+    ]
+  },
+  "http": {
+    "status": "proposal_not_frozen",
+    "command_fields": [
+      "token",
+      "sequence",
+      "engine_epoch",
+      "opcode",
+      "a",
+      "b",
+      "c"
+    ],
+    "parameter_mapping": {
+      "a": "parameter_id",
+      "b": "target_word",
+      "c": "value_u32"
+    },
+    "notes": [
+      "v1五整数DDS/KS接口保持原义，不向KS bool写2。",
+      "各字段unsigned decimal；i32参数用二补码uint32表达，但必须依据该参数value_type验证。",
+      "客户端不直接使用SPI寄存器地址；HTTP参数的目标字段复用生成target codec。"
+    ]
+  },
+  "codegen": {
+    "outputs": [
+      "c/fm_contract.h",
+      "sv/fm_contract_pkg.sv",
+      "js/fm-contract.mjs",
+      "java/cn/fpgasynth/control/generated/FmContract.java",
+      "python/fm_contract.py"
+    ],
+    "reproducibility": "SHA256基于schema原始字节；无时间戳；check模式拒绝缺失或漂移。",
+    "functions": [
+      "pack_target(voice, operator)",
+      "unpack_target(word)",
+      "validate_target(scope, word, voice_count, selected_operator_count, patch_operator_count)",
+      "serialize_command(command)",
+      "deserialize_command(words)",
+      "get_profile(profile_id)",
+      "get_parameter(profile_id, parameter_id)",
+      "get_preset(profile_id, preset_id)",
+      "profile_operator_count(profile_id, voice)",
+      "validate_parameter(profile_id, parameter_id, scope, target_word, value_u32)",
+      "abi_compatible(version_word)",
+      "profile_native_register_slot(profile_id, logical_operator)",
+      "profile_native_key_on_bit(profile_id, logical_operator)"
+    ]
+  },
+  "history": [
+    {
+      "schema_version": "0.1.0",
+      "abi": "1.0",
+      "status": "draft_not_integrated",
+      "note": "旧草案仅常量与target helper，从未正式接入；命令寄存器不承诺兼容。完整基线保存在20261011阶段2输入快照。"
+    }
+  ],
+  "command": {
+    "word_bits": 32,
+    "word_count": 12,
+    "word_byte_order": "msb_first",
+    "fields": [
+      {
+        "name": "opcode_id",
+        "word_index": 0,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_OPCODE_ID"
+      },
+      {
+        "name": "scope_id",
+        "word_index": 1,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_SCOPE_ID"
+      },
+      {
+        "name": "target_word",
+        "word_index": 2,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_TARGET_WORD"
+      },
+      {
+        "name": "parameter_id",
+        "word_index": 3,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_PARAMETER_ID"
+      },
+      {
+        "name": "value_u32",
+        "word_index": 4,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_VALUE_U32"
+      },
+      {
+        "name": "arg0_u32",
+        "word_index": 5,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_ARG0_U32"
+      },
+      {
+        "name": "arg1_u32",
+        "word_index": 6,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_ARG1_U32"
+      },
+      {
+        "name": "session_id",
+        "word_index": 7,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_SESSION_ID"
+      },
+      {
+        "name": "engine_epoch",
+        "word_index": 8,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_ENGINE_EPOCH"
+      },
+      {
+        "name": "topology_generation",
+        "word_index": 9,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_TOPOLOGY_GENERATION"
+      },
+      {
+        "name": "voice_generation",
+        "word_index": 10,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_VOICE_GENERATION"
+      },
+      {
+        "name": "sequence_id",
+        "word_index": 11,
+        "width_bits": 32,
+        "value_type": "u32",
+        "register": "CMD_SEQUENCE_ID"
+      }
+    ],
+    "commit_register": "CMD_COMMIT",
+    "commit_value_field": "sequence_id",
+    "codec_validation": "structure_and_uint32_only",
+    "identity_fields": [
+      "session_id",
+      "engine_epoch",
+      "topology_generation",
+      "voice_generation",
+      "sequence_id"
+    ]
+  },
+  "catalog": {
+    "file": "backend-profiles.json",
+    "units": {
+      "chip_code": 0
+    },
+    "apply_times": {
+      "next_note": 0
+    },
+    "value_types": {
+      "u32": 0
+    },
+    "identity_algorithm": "SHA256(b\"FM_CONTROL_IDENTITY_V1\\0\" + SHA256(raw_schema_bytes).digest() + SHA256(raw_profiles_bytes).digest())",
+    "capability_profile_digest": "FM_PROFILES_SHA256=SHA256(raw_backend_profiles_bytes); PROFILE_SHA256_0..7 are digest bytes[0:4]..[28:32] interpreted big-endian uint32, paired with BACKEND_ID and PROFILE_VERSION."
+  }
+}

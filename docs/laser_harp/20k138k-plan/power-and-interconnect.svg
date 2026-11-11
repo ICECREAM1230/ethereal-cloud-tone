@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="45" y="45" font-family="Noto Sans CJK SC,sans-serif" font-size="25" fill="#233247">独立供电、公共地：20K ↔ 138K 接线规划</text>
+<text x="45" y="73" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">两侧正电源不互接；5根逻辑信号之外，必须有公共GND。此图不是已实现电路。</text>
+<rect x="70" y="105" width="270" height="65" fill="#eee6f5" stroke="#8c68a4" stroke-width="2"/>
+<text x="104" y="142" font-family="Noto Sans CJK SC,sans-serif" font-size="22" fill="#233247">138K 独立电源</text>
+<rect x="840" y="105" width="270" height="65" fill="#e4eff9" stroke="#377bae" stroke-width="2"/>
+<text x="866" y="142" font-family="Noto Sans CJK SC,sans-serif" font-size="22" fill="#233247">20K 独立 USB 电源</text>
+<polyline points="205,170 205,224" fill="none" stroke="#8c68a4" stroke-width="3"/>
+<polygon points="205,224 201,216 209,216" fill="#8c68a4"/>
+<text x="78" y="200" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#75538c">+5V_138K</text>
+<polyline points="1075,170 1075,224" fill="none" stroke="#377bae" stroke-width="3"/>
+<polygon points="1075,224 1071,216 1079,216" fill="#377bae"/>
+<text x="846" y="200" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#2774af">USB VBUS / +5V_20K</text>
+<text x="430" y="146" font-family="Noto Sans CJK SC,sans-serif" font-size="22" fill="#a04444">5V 正极不互接</text>
+<text x="422" y="173" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#a04444">3.3V 稳压输出也不并联</text>
+<rect x="70" y="225" width="270" height="285" fill="#f0edf4" stroke="#8c68a4" stroke-width="2"/>
+<text x="167" y="260" font-family="Noto Sans CJK SC,sans-serif" font-size="25" fill="#233247">138K</text>
+<rect x="840" y="225" width="270" height="285" fill="#e8f2fb" stroke="#377bae" stroke-width="2"/>
+<text x="900" y="260" font-family="Noto Sans CJK SC,sans-serif" font-size="25" fill="#233247">Nano 20K</text>
+<text x="393" y="236" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#a04444">全部跨板信号需掉电保护（待实现）</text>
+<text x="83" y="293" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">A19 / H2.12</text>
+<text x="855" y="293" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">42 / J5.5</text>
+<polyline points="340,290 840,290" fill="none" stroke="#86577a" stroke-width="2"/>
+<polygon points="840,290 832,286 832,294" fill="#86577a"/>
+<text x="498" y="281" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#86577a">SPI_SCLK</text>
+<text x="83" y="333" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">A18 / H1.12</text>
+<text x="855" y="333" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">41 / J5.6</text>
+<polyline points="340,330 840,330" fill="none" stroke="#86577a" stroke-width="2"/>
+<polygon points="840,330 832,326 832,334" fill="#86577a"/>
+<text x="498" y="321" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#86577a">SPI_MOSI</text>
+<text x="83" y="373" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">C17 / H2.11</text>
+<text x="855" y="373" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">48 / J5.10</text>
+<polyline points="840,370 340,370" fill="none" stroke="#2774af" stroke-width="2"/>
+<polygon points="340,370 348,366 348,374" fill="#2774af"/>
+<text x="498" y="361" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#2774af">SPI_MISO</text>
+<text x="83" y="413" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">D17 / H1.11</text>
+<text x="855" y="413" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">54 / J5.8</text>
+<polyline points="340,410 840,410" fill="none" stroke="#86577a" stroke-width="2"/>
+<polygon points="840,410 832,406 832,414" fill="#86577a"/>
+<text x="498" y="401" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#86577a">SPI_CS_N</text>
+<text x="83" y="453" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">B18 / H2.10</text>
+<text x="855" y="453" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">56 / J5.7</text>
+<polyline points="840,450 340,450" fill="none" stroke="#2774af" stroke-width="2"/>
+<polygon points="340,450 348,446 348,454" fill="#2774af"/>
+<text x="498" y="441" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#2774af">DATA_READY_N</text>
+<text x="858" y="491" font-family="Noto Sans CJK SC,sans-serif" font-size="14" fill="#a04444">J5.1：底板侧不接138K 5V</text>
+<polyline points="205,510 205,580 975,580 975,510" fill="none" stroke="#32846c" stroke-width="4"/>
+<text x="80" y="547" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#226c57">H1.6 GND</text>
+<text x="850" y="547" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#226c57">J5.2 GND</text>
+<text x="418" y="614" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#226c57">GND_COMMON：固定共地，不随选路断开</text>
+<text x="60" y="671" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#a04444">138K未上电或20K未上电时，信号和上拉不得给掉电一侧反向供电。</text>
+<text x="60" y="704" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#233247">引脚及通信协议保持中置版分配；保护器件、使能逻辑、USB空间与实板验证尚未完成。</text>
+</svg>

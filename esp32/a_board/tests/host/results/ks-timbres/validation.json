@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-26",
+  "source_root": "/home/ice/Project/ks-timbres-20261026/work/repo",
+  "baseline": "03-实施前实际基线",
+  "head": "c654e4bc3e74d44da6634d00ac73c1a569f2e78c",
+  "idf": "v6.1",
+  "idf_commit": "fff9895c82d744c7237be8847347bdd1b07c6643",
+  "target": "esp32s3",
+  "config_unchanged": true,
+  "application_bin_bytes": 1381920,
+  "application_bin_sha256": "b9384a248baeb000bf6737f4118508950b093ffc86e6bee8da3d5ecb6bff20b4",
+  "app_partition_bytes": 1536000,
+  "app_partition_free_bytes": 154080,
+  "html_sha256": "d7a75ebecaff7166fe64f635e2eeb99d126563a3674d93a23e35b51d01a2dbb8",
+  "validation": {
+    "firmware-all-host.exit": 0,
+    "firmware-ks16-host.exit": 0,
+    "firmware-ks-ubsan.exit": 0,
+    "firmware-build.exit": 0,
+    "firmware-size.exit": 0
+  },
+  "logs": {
+    "firmware-all-host.log": {
+      "bytes": 17606,
+      "sha256": "889cfe4a3cb7c8bf82f24975118a7e7312d3a29836be50d99b9f04eb7a8f9f22"
+    },
+    "firmware-all-host.exit": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "firmware-ks16-host.log": {
+      "bytes": 764,
+      "sha256": "45809d8368ea0ef77a830d8f40c32fd88b61ff79d3654360ba61bc9489b1f192"
+    },
+    "firmware-ks16-host.exit": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "firmware-ks-ubsan.log": {
+      "bytes": 751,
+      "sha256": "c6af9ed600264c5904fba473643b830cde8080eb9eb863a163b156e9954d83fc"
+    },
+    "firmware-ks-ubsan.exit": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "firmware-build.log": {
+      "bytes": 4183,
+      "sha256": "f15eb44a885a849e4fd0251f905b5875fd44f2b0d7b383bec02accd8cebd6503"
+    },
+    "firmware-build.exit": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "firmware-size.log": {
+      "bytes": 6992,
+      "sha256": "c78732dc7c818c02ac2d3bf068af6b4631715df62d17aa63f3188dde76428cf9"
+    },
+    "firmware-size.exit": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "firmware-idf-env.log": {
+      "bytes": 574,
+      "sha256": "27070bce53a379eba4edcb86e5c5a23093e79c178ae55151a3c393f8b598883e"
+    },
+    "firmware-idf-version.log": {
+      "bytes": 13,
+      "sha256": "51a5d28a0d4f760eb29c35f557a5cac586cfcc7f1205dd4d81f0fef22803aa3c"
+    },
+    "firmware-baseline-dds-red.log": {
+      "bytes": 72,
+      "sha256": "9dbfcddb61cd3f54d4d3e5518558c0df8cf46cb04a79ee582a8a374da8a796b3"
+    },
+    "firmware-target-compile.log": {
+      "bytes": 165,
+      "sha256": "86a206c4fb291b981fc0b145bd2659d2c29730122be49c4072bf9c252005d3c7"
+    }
+  },
+  "not_validated": [
+    "physical hardware SPI/USB/BLE/NVS durability and sound",
+    "official FPGA synthesis/PnR/timing",
+    "owner stack runtime high-water and worst-case model compile latency"
+  ],
+  "programmed_hardware": false,
+  "git_mutations": false
+}

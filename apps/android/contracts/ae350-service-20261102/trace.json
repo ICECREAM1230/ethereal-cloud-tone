@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "boundary": "Production core prepare/emit; all owner observations are explicit HOST OWNER MODEL. No physical FPGA adoption, device discovery, or audio claim.",
+  "entries": [
+    {
+      "name": "capabilities",
+      "request": {
+        "path": "/api/v2/capabilities",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/capabilities.json",
+        "body_bytes": 880,
+        "sha256": "9d00b5484559588091abccd1184d9427525f625343071a9641f66edd6448bd0a"
+      },
+      "observation": "host-owner-initial",
+      "published_events": 0
+    },
+    {
+      "name": "session-get-rejected",
+      "request": {
+        "path": "/api/v2/session",
+        "body": null
+      },
+      "response": {
+        "code": 404,
+        "fixture": "fixtures/session-get-rejected.json",
+        "body_bytes": 37,
+        "sha256": "c38d9c60ac7a45e8bd970ef04aa2574f14986a06763c55238cb6f7f927f40352"
+      },
+      "observation": "null-means-get",
+      "published_events": 0
+    },
+    {
+      "name": "state-post-rejected",
+      "request": {
+        "path": "/api/v2/state",
+        "body": ""
+      },
+      "response": {
+        "code": 404,
+        "fixture": "fixtures/state-post-rejected.json",
+        "body_bytes": 37,
+        "sha256": "c38d9c60ac7a45e8bd970ef04aa2574f14986a06763c55238cb6f7f927f40352"
+      },
+      "observation": "empty-means-post",
+      "published_events": 0
+    },
+    {
+      "name": "session",
+      "request": {
+        "path": "/api/v2/session",
+        "body": ""
+      },
+      "response": {
+        "code": 201,
+        "fixture": "fixtures/session.json",
+        "body_bytes": 87,
+        "sha256": "11d5c143fb8640c075ea9eae402947c7eb4a3b0806113d143e27c55371cb1756"
+      },
+      "observation": "empty-means-post",
+      "published_events": 1
+    },
+    {
+      "name": "state-initial-client-ks",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-initial-client-ks.json",
+        "body_bytes": 3225,
+        "sha256": "65c7d1a616c1da4aad3998dd2ab88761045bd1490afac2f3ad7b8a8a43593b99"
+      },
+      "observation": "host-owner-session-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "clear-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 1 9 3 0 100 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/clear-received.json",
+        "body_bytes": 85,
+        "sha256": "0369a0156a9e5d02d9ad1e28ba527073f2b3f38b4e8d3c9db6bb60a66b610041"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        1,
+        9,
+        3,
+        0,
+        100,
+        0
+      ]
+    },
+    {
+      "name": "clear-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/clear-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "aad577c6dea19c41f6182a1d43f176ecd1917f27138b082aff595d15a029a75e"
+      },
+      "observation": "host-owner-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "select-sub-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 2 9 5 0 0 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/select-sub-received.json",
+        "body_bytes": 85,
+        "sha256": "a5f7665b8a22d3c30162774881f62ee3f6693c42dd59c7af548269866ca1d7dc"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        2,
+        9,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "select-sub-pending",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/select-sub-pending.json",
+        "body_bytes": 3225,
+        "sha256": "45c62e41585d8b633996fa9381b9e333b4fb3d757faf4535edbe5676bd06213a"
+      },
+      "observation": "host-owner-not-yet-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "select-sub-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/select-sub-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "9a8179347d13f48085bca0b1a090213975038af324210ee2ed2ad3a3a485aa3c"
+      },
+      "observation": "host-owner-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "keys-on-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 3 9 3 1 100 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/keys-on-received.json",
+        "body_bytes": 85,
+        "sha256": "d5fcc4498a246cb069cdfb4fed90d82f04c53f5c859f642b7b8f17e77cedc949"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        3,
+        9,
+        3,
+        1,
+        100,
+        0
+      ]
+    },
+    {
+      "name": "keys-on-pending",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/keys-on-pending.json",
+        "body_bytes": 3225,
+        "sha256": "284768305a3276a053744d7fb63cfd37e74c1be14327395e184a396052061356"
+      },
+      "observation": "host-owner-not-yet-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "keys-on-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/keys-on-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "5df49cf3e096e47d77688650d9e9747b519c61e99b300ed38692cecf592dbca2"
+      },
+      "observation": "host-owner-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "keys-off-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 4 9 3 0 100 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/keys-off-received.json",
+        "body_bytes": 85,
+        "sha256": "c9c374fa85142446cc77fcffe006fc02b32d56c58f3604f73228f2b553733d28"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        4,
+        9,
+        3,
+        0,
+        100,
+        0
+      ]
+    },
+    {
+      "name": "keys-off-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/keys-off-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "f5d82b6acfb664492fb9e4432cf72f3aba11f5c117d6a747a916afcf79ad6915"
+      },
+      "observation": "host-owner-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "cc7-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 5 9 2 7 96 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/cc7-received.json",
+        "body_bytes": 85,
+        "sha256": "22f80f0de9b5dcabd2e94efef1bd37f4dc8e58510076abf1dbfa06bf09c25e14"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        5,
+        9,
+        2,
+        7,
+        96,
+        0
+      ]
+    },
+    {
+      "name": "cc7-pending",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/cc7-pending.json",
+        "body_bytes": 3225,
+        "sha256": "592a6c64c5227b46259a0c6e4485d23733fab21fe34f1710f38bd867f5992b97"
+      },
+      "observation": "host-owner-not-yet-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "cc7-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/cc7-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "a56122febccb5c724a9f6d1c46e850493b9121f2932c54807525b721937ac8c7"
+      },
+      "observation": "host-owner-shared-patch-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "select-ks-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 6 9 5 1 0 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/select-ks-received.json",
+        "body_bytes": 85,
+        "sha256": "f61184a72c5fb00839b16fa980e00ecc23090edf3308ee189bd92195cbeee4e2"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        6,
+        9,
+        5,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "select-ks-pending",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/select-ks-pending.json",
+        "body_bytes": 3225,
+        "sha256": "6eeb93b58648ffc0a0272208653bd4bed432ea3f47cc849ef1af395db9560d72"
+      },
+      "observation": "host-owner-not-yet-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "select-ks-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/select-ks-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "78e2c9a038743b07e11875b35882ba76cdfa3e6235a9a8f75fbe5b068ce88bc7"
+      },
+      "observation": "host-owner-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "ks-decay-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 7 9 6 4200 0 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/ks-decay-received.json",
+        "body_bytes": 85,
+        "sha256": "cb3f198ea71fee5025aefe9d3b68bc5d0e79d1887db8c82ea79d6bdb9f3e0980"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        7,
+        9,
+        6,
+        4200,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ks-decay-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/ks-decay-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "f35da7457265505479dbb772718a05670ab648ed4e395b8e0827e6a35202582f"
+      },
+      "observation": "host-owner-global-ks-decay-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "select-fm-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 8 9 5 2 0 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/select-fm-received.json",
+        "body_bytes": 85,
+        "sha256": "827b9f783c95875dc883b35632eb335780eb9a8a25b16ec83356b482490fbb58"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        8,
+        9,
+        5,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "select-fm-pending",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/select-fm-pending.json",
+        "body_bytes": 3225,
+        "sha256": "697f0818a922471683387846d3f29bba17557c9b19dcb2f9c34e8410532f3969"
+      },
+      "observation": "host-owner-not-yet-adopted",
+      "published_events": 0
+    },
+    {
+      "name": "select-fm-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/select-fm-adopted.json",
+        "body_bytes": 3225,
+        "sha256": "1501a7e8c686abd2dd5915c5137bbbef78d2f9a5c1347ab95b54dad06ac9d720"
+      },
+      "observation": "host-owner-adopted-native-fm-still-unavailable",
+      "published_events": 0
+    },
+    {
+      "name": "fm-native-parameter-rejected",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 9 9 7 18 4294901760 31"
+      },
+      "response": {
+        "code": 503,
+        "fixture": "fixtures/fm-native-parameter-rejected.json",
+        "body_bytes": 39,
+        "sha256": "08496539e2a6c6c4b50641f6e67d2e4ce48b1c78e412c38f9af9268866499563"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 0,
+      "command_words": [
+        1001,
+        9,
+        9,
+        7,
+        18,
+        4294901760,
+        31
+      ]
+    },
+    {
+      "name": "state-cpu-not-ready",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-cpu-not-ready.json",
+        "body_bytes": 3225,
+        "sha256": "e31a2cc8351428c3ea2a8c9a968a5441f3d65669ab43e6b249de191ea512ee50"
+      },
+      "observation": "host-owner-ready-false-busy-true",
+      "published_events": 0
+    },
+    {
+      "name": "cpu-not-ready-select-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 9 9 5 1 0 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/cpu-not-ready-select-received.json",
+        "body_bytes": 85,
+        "sha256": "37294e13b9d53ce026f03d4d90b0c11d8239d7849e9d50b1a36d19026f796233"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        9,
+        9,
+        5,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "cpu-not-ready-select-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/cpu-not-ready-select-adopted.json",
+        "body_bytes": 3226,
+        "sha256": "e7031d8f15bcaf6144ad9188e1c85e299c992bd2d64f7434274fcc845ddb1c40"
+      },
+      "observation": "host-owner-valid-no-fault-adoption",
+      "published_events": 0
+    },
+    {
+      "name": "state-cpu-fault",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-cpu-fault.json",
+        "body_bytes": 3225,
+        "sha256": "fadb6b2c36e5b1b08eec55d68bd8c9763d627bf366f5bcb92a82fcb85cf8cbb7"
+      },
+      "observation": "host-owner-fault",
+      "published_events": 0
+    },
+    {
+      "name": "cpu-fault-select-rejected",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 10 9 5 0 0 0"
+      },
+      "response": {
+        "code": 503,
+        "fixture": "fixtures/cpu-fault-select-rejected.json",
+        "body_bytes": 43,
+        "sha256": "7f4238f0f669e7430cf1a76b6a528183cb8fbc1a1a19da1cb4a65e0cf4570c87"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 0,
+      "command_words": [
+        1001,
+        10,
+        9,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "state-cpu-invalid",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-cpu-invalid.json",
+        "body_bytes": 3227,
+        "sha256": "4f9d179e372c777d29bcb60489d78f22b3a912a8399664face84f78c93853f55"
+      },
+      "observation": "host-owner-invalid",
+      "published_events": 0
+    },
+    {
+      "name": "cpu-invalid-select-rejected",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 10 9 5 0 0 0"
+      },
+      "response": {
+        "code": 503,
+        "fixture": "fixtures/cpu-invalid-select-rejected.json",
+        "body_bytes": 43,
+        "sha256": "7f4238f0f669e7430cf1a76b6a528183cb8fbc1a1a19da1cb4a65e0cf4570c87"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 0,
+      "command_words": [
+        1001,
+        10,
+        9,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "state-sub-patch-invalid",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-sub-patch-invalid.json",
+        "body_bytes": 3227,
+        "sha256": "9a7a6f1f3f125c7c3b5235e555db0de2d26fafc788e74643bf724a344e812fe0"
+      },
+      "observation": "host-owner-sub-patch-invalid",
+      "published_events": 0
+    },
+    {
+      "name": "cc7-sub-patch-invalid-rejected",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 10 9 2 7 96 0"
+      },
+      "response": {
+        "code": 503,
+        "fixture": "fixtures/cc7-sub-patch-invalid-rejected.json",
+        "body_bytes": 46,
+        "sha256": "45687e423a24cd2cdb03a0f92d5b2bb5f203cbcfc9794d7c1e7be8d9c851a8e9"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 0,
+      "command_words": [
+        1001,
+        10,
+        9,
+        2,
+        7,
+        96,
+        0
+      ]
+    },
+    {
+      "name": "state-owner-unavailable",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-owner-unavailable.json",
+        "body_bytes": 3227,
+        "sha256": "8494624e6376d2d887dcc594bc104095a9844cce689e1752fdc8cc9c6ffde9fb"
+      },
+      "observation": "host-owner-unavailable",
+      "published_events": 0
+    },
+    {
+      "name": "owner-unavailable-keys-rejected",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 10 9 3 1 100 0"
+      },
+      "response": {
+        "code": 503,
+        "fixture": "fixtures/owner-unavailable-keys-rejected.json",
+        "body_bytes": 42,
+        "sha256": "96cf2cab9550cc6c877b2bc9ec8a0c3981e402268c2ace8433dce82e41011788"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 0,
+      "command_words": [
+        1001,
+        10,
+        9,
+        3,
+        1,
+        100,
+        0
+      ]
+    },
+    {
+      "name": "state-input-stop-pending",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-input-stop-pending.json",
+        "body_bytes": 3226,
+        "sha256": "cd39c492f6ca79817957180361a94cc0fe74d6aa1b23d98402400a2de1483307"
+      },
+      "observation": "host-owner-input-stop-pending",
+      "published_events": 0
+    },
+    {
+      "name": "state-ready-recovered",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/state-ready-recovered.json",
+        "body_bytes": 3226,
+        "sha256": "b40f553f646336798e9976f5fa3decaa4dae39fb03824cea04ca3384fb50e67c"
+      },
+      "observation": "host-owner-ready-recovered",
+      "published_events": 0
+    },
+    {
+      "name": "final-clear-received",
+      "request": {
+        "path": "/api/v2/command",
+        "body": "1001 10 9 3 0 100 0"
+      },
+      "response": {
+        "code": 202,
+        "fixture": "fixtures/final-clear-received.json",
+        "body_bytes": 86,
+        "sha256": "512c2a0110b84d04bf822c5d9d796e22febb5d23c4ecd21985e1520aaf489b43"
+      },
+      "observation": "real-core-receipt",
+      "published_events": 1,
+      "command_words": [
+        1001,
+        10,
+        9,
+        3,
+        0,
+        100,
+        0
+      ]
+    },
+    {
+      "name": "final-clear-adopted",
+      "request": {
+        "path": "/api/v2/state",
+        "body": null
+      },
+      "response": {
+        "code": 200,
+        "fixture": "fixtures/final-clear-adopted.json",
+        "body_bytes": 3230,
+        "sha256": "d112710fa72f2b0a1160718ace3f8fc91a3c9c6cf5f6d57abfca55bf618ce747"
+      },
+      "observation": "host-owner-adopted",
+      "published_events": 0
+    }
+  ]
+}

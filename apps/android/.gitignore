@@ -1,0 +1,11 @@
+.toolchain/
+build/
+*.local
+__pycache__/
+
+# Preserve reviewed validation and original failure evidence in this role only.
+!docs/fm-adaptation-20261011/*.log
+!docs/stage2-20261011/*.log
+!docs/fm-codegen-20261011/*.log
+!docs/fm-codegen-1.0.1-20261011/*.log
+!docs/fm-runtime-20261011/*.log

@@ -1,0 +1,458 @@
+{
+  "manifest_format": 1,
+  "date": "2026-10-28",
+  "source": {
+    "root": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3",
+    "head": "9658fb26071ed33b57580352a3dcf9e981f8e526",
+    "original_capture_archive_available": false,
+    "capture": "tests/host/capture_control_api.c",
+    "note": "Fresh serialization from frozen provider production C and explicit SDK-boundary RAM fixtures. No device observation."
+  },
+  "identity": {
+    "schema_sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73",
+    "profiles_sha256": "3557827b9bd78b2ac23283b21a05a0f083acdc4b24dd6b6778c02e852e333d25",
+    "contract_sha256": "5701b9f820a9755951ca3ae43bffd518f3b4e4c91d297c391abac4922c57e137"
+  },
+  "capture_sources": [
+    "tests/host/capture_control_api.c",
+    "main/control_source.c",
+    "main/web_control.c",
+    "main/patch.c",
+    "main/web_raw_queue.c",
+    "main/web_raw_midi.c",
+    "tests/host/fake_dds_presets.c"
+  ],
+  "compile_flags": [
+    "-std=gnu17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-Itests/host/http_stubs",
+    "-Itests/host/stubs",
+    "-Imain"
+  ],
+  "link_flags": [
+    "-Wl,--gc-sections",
+    "-lm",
+    "-lz",
+    "-pthread"
+  ],
+  "fixtures": [
+    "capabilities-fm-fault.json",
+    "capabilities-fm-selected.json",
+    "capabilities.json",
+    "fm-parameters-0.json",
+    "fm-parameters-8.json",
+    "fm-presets.json",
+    "fm-profile.json",
+    "v1-state.json",
+    "v2-state-fm-fault.json",
+    "v2-state-fm-selected.json",
+    "v2-state-ks.json",
+    "v2-state.json"
+  ],
+  "files": [
+    {
+      "path": "fixtures/capabilities-fm-fault.json",
+      "bytes": 730,
+      "sha256": "e9e46df585e83483f56b8b154c17ea948f93843d77e0628ba7638c725e42715e"
+    },
+    {
+      "path": "fixtures/capabilities-fm-selected.json",
+      "bytes": 717,
+      "sha256": "4f179b6709591209f859a6ba24e9d8117cb1ee6f7e7c6abdb0fa93c50de0080b"
+    },
+    {
+      "path": "fixtures/capabilities.json",
+      "bytes": 740,
+      "sha256": "9e461e2760c726457834ea53ebbe93ad46f17468b740a5340b58bd8e739829ae"
+    },
+    {
+      "path": "fixtures/fm-parameters-0.json",
+      "bytes": 1180,
+      "sha256": "27b2184cc8579bb14a59e785b4e88919c01517bc5bb89d50b65401569688c154"
+    },
+    {
+      "path": "fixtures/fm-parameters-8.json",
+      "bytes": 827,
+      "sha256": "3b0c54aad78709b04378dcfe636fae3e644d07d0ae3c0813ade9eb9595b273c2"
+    },
+    {
+      "path": "fixtures/fm-presets.json",
+      "bytes": 472,
+      "sha256": "5caf384331b2946021e0bca0aad10523d4eaee46159f53f8786882ca6c8f397a"
+    },
+    {
+      "path": "fixtures/fm-profile.json",
+      "bytes": 356,
+      "sha256": "fa3e474aa4fa9eda47d50656255b7896a9dd867a8074dfcd4efd90691f423283"
+    },
+    {
+      "path": "fixtures/v1-state.json",
+      "bytes": 1369,
+      "sha256": "2836a04798f15f8cb58aac37c5bd581cd24ff440f967c6ea77f205395c76cea4"
+    },
+    {
+      "path": "fixtures/v2-state-fm-fault.json",
+      "bytes": 3128,
+      "sha256": "539ffed09975f197256e794880bf80ae40639c781a769722b888b62daea46418"
+    },
+    {
+      "path": "fixtures/v2-state-fm-selected.json",
+      "bytes": 3116,
+      "sha256": "0e4669f1ce852fdabe2c148921e70db260501a3db93512148568db14abf738a7"
+    },
+    {
+      "path": "fixtures/v2-state-ks.json",
+      "bytes": 2716,
+      "sha256": "86bf0bee1969c85f3ebbad1cd93f42e31ab34b503fd77d3ca5e02f7efff30fbf"
+    },
+    {
+      "path": "fixtures/v2-state.json",
+      "bytes": 2716,
+      "sha256": "a32aae040cfdda4d9df56d8ce7aca12b9853aa22bc6faa51db7b6b0824a58380"
+    },
+    {
+      "path": "http-v2-fixtures/v2-capabilities.json",
+      "bytes": 740,
+      "sha256": "9e461e2760c726457834ea53ebbe93ad46f17468b740a5340b58bd8e739829ae"
+    },
+    {
+      "path": "http-v2-fixtures/v2-catalog-page-8.json",
+      "bytes": 827,
+      "sha256": "3b0c54aad78709b04378dcfe636fae3e644d07d0ae3c0813ade9eb9595b273c2"
+    },
+    {
+      "path": "http-v2-fixtures/v2-catalog.json",
+      "bytes": 1180,
+      "sha256": "27b2184cc8579bb14a59e785b4e88919c01517bc5bb89d50b65401569688c154"
+    },
+    {
+      "path": "http-v2-fixtures/v2-live-capabilities.json",
+      "bytes": 718,
+      "sha256": "d70a7c4549fc2293fc78e3a40d690973bf9b3d5faf59a3389cbb6b6e8b03e3f7"
+    },
+    {
+      "path": "http-v2-fixtures/v2-live-state.json",
+      "bytes": 2857,
+      "sha256": "7d5c21cc5c0664f1a1ae38697014cf3699034c818d95a710107aaaf5c264bb32"
+    },
+    {
+      "path": "http-v2-fixtures/v2-presets.json",
+      "bytes": 472,
+      "sha256": "5caf384331b2946021e0bca0aad10523d4eaee46159f53f8786882ca6c8f397a"
+    },
+    {
+      "path": "http-v2-fixtures/v2-profile.json",
+      "bytes": 356,
+      "sha256": "fa3e474aa4fa9eda47d50656255b7896a9dd867a8074dfcd4efd90691f423283"
+    },
+    {
+      "path": "http-v2-fixtures/v2-state.json",
+      "bytes": 2456,
+      "sha256": "15212e3397da2f8d69c6ceba5e66560f174aedcf71efc10b9a72aa92ab0dd72c"
+    },
+    {
+      "path": "s3/contract/fm/generated/c/fm_contract.h",
+      "bytes": 21345,
+      "sha256": "50424389948c30c5a39c3fcaaeabdd299105f09c9a6728ebaeeb1a1923f662f6"
+    },
+    {
+      "path": "s3/contract/midi/midi_raw_contract.h",
+      "bytes": 1375,
+      "sha256": "adf9fe0b11286cf2f9337af3c0ad5185d7c390e41d9c52c0bf8d23424b8f96b5"
+    },
+    {
+      "path": "s3/main/control_api.c",
+      "bytes": 27747,
+      "sha256": "9b53d86dac13ac496448b85573aa71e9a4a65107619716a632906a808a8686b9"
+    },
+    {
+      "path": "s3/main/control_api.h",
+      "bytes": 3524,
+      "sha256": "c8c32c44b70df935d40baebb92bc3324598fa04fd817185a33994d172c63b29d"
+    },
+    {
+      "path": "s3/main/control_source.c",
+      "bytes": 5905,
+      "sha256": "d2fb0fb1e6cc977637821bc2b3047fe918da185042917401d4262dc6770d7c41"
+    },
+    {
+      "path": "s3/main/control_source.h",
+      "bytes": 3030,
+      "sha256": "b780dcd6947384c8315b34f68369b43638b51e56845c92e0a5d0a1cef8bfc442"
+    },
+    {
+      "path": "s3/main/dds_document.h",
+      "bytes": 1433,
+      "sha256": "4973d88576cc4886b7ef70d4cd417a4f0893d5f7c07dafc9b8423980966f58f5"
+    },
+    {
+      "path": "s3/main/dds_presets.h",
+      "bytes": 3752,
+      "sha256": "1505a610ea6f3a5eab14ef36315a2e88639ec250ac421ff8eb44ef978b627077"
+    },
+    {
+      "path": "s3/main/engine_link.h",
+      "bytes": 9111,
+      "sha256": "090bacc32790cb08931bfa8a9d7000f220a6a5b8f2345a0a527a20b5ae1c2869"
+    },
+    {
+      "path": "s3/main/event_bus.h",
+      "bytes": 3448,
+      "sha256": "3ee5b2a252f0c1f90e2d909c6bae6a212663e8d04dd2b0c9285c33d669fd2f6f"
+    },
+    {
+      "path": "s3/main/fm_contract.h",
+      "bytes": 147,
+      "sha256": "62e6ba9455054369ee11ef96f6938795ae76707ed09229cc7d1f118c1c8a3a17"
+    },
+    {
+      "path": "s3/main/fm_diagnostics.h",
+      "bytes": 1434,
+      "sha256": "fd180a238a48003e3833928f56dca577125dac662510adf7240de47d6b6d6ff5"
+    },
+    {
+      "path": "s3/main/fm_engine.h",
+      "bytes": 3350,
+      "sha256": "0520d49d775d95695d9dac469503cb1da659b0d189cd771ce6e04b6c28f08a8b"
+    },
+    {
+      "path": "s3/main/fm_only_contract.h",
+      "bytes": 1001,
+      "sha256": "ec7c016b7ae8768ea16f19c328a48a3022dcfb3319b3d1892e58a6b34c8bbc81"
+    },
+    {
+      "path": "s3/main/http_dds.inc.h",
+      "bytes": 7820,
+      "sha256": "53b77e3bb7397f56cafa20d2d87ec06204bf878a01bc213f0a16bd20ba8285ef"
+    },
+    {
+      "path": "s3/main/http_fm_diagnostics.inc.h",
+      "bytes": 6518,
+      "sha256": "46ce81a19897e686baa0814dcda02f6f7189c30bd85ec2fe3af227da2331ad44"
+    },
+    {
+      "path": "s3/main/http_inputs.inc.h",
+      "bytes": 1044,
+      "sha256": "0c820409a2df43fd4ff43102aa1e9eb88b678d1d743cceecd3e34b23f0585b57"
+    },
+    {
+      "path": "s3/main/http_performance.inc.h",
+      "bytes": 1643,
+      "sha256": "7176f0127174d6db3c38c82670dfe4dd7664213cb96f74da1739afc8c10db31d"
+    },
+    {
+      "path": "s3/main/http_raw_midi.inc.h",
+      "bytes": 4144,
+      "sha256": "d33c7cf84b2feef83dc7049440490faa6c08b6a89ce4bec28b1e016e2a71831f"
+    },
+    {
+      "path": "s3/main/http_reverb.inc.h",
+      "bytes": 6033,
+      "sha256": "440d60f416dc9e59d67a060ae6dff8d15e42189fa2846de085b44e86814929f8"
+    },
+    {
+      "path": "s3/main/http_v2.inc.h",
+      "bytes": 22817,
+      "sha256": "eb8dd5c1409c82e0aff5bb92bfba19a49a72c53e401566fa93f856057be0f273"
+    },
+    {
+      "path": "s3/main/midi_parser.h",
+      "bytes": 2375,
+      "sha256": "d096a4c503bf999af952e2acddd9255b14296012e73d96ce0674b6374a767ff0"
+    },
+    {
+      "path": "s3/main/patch.c",
+      "bytes": 6905,
+      "sha256": "0dbabb535de63d7183d53092f8cffe4299aee0c688e929372b7efe88ebae4682"
+    },
+    {
+      "path": "s3/main/patch.h",
+      "bytes": 8587,
+      "sha256": "13f2017dfebcbee48bb99da4f9bb893b9a4be66d5edda22cc9afa8f65a980109"
+    },
+    {
+      "path": "s3/main/raw_midi.h",
+      "bytes": 2166,
+      "sha256": "154778b4e8c76b3e31d9a141f43ce038587c71d52c004fa7e1195d4d680a1a46"
+    },
+    {
+      "path": "s3/main/reverb_control.h",
+      "bytes": 736,
+      "sha256": "eca905daafb14f465cf4f0437052d36d8aef07c1b6bca7b646d06729529b0a6e"
+    },
+    {
+      "path": "s3/main/reverb_control_contract.h",
+      "bytes": 889,
+      "sha256": "f8757e04d5ed21910d8fac370ea7237b628b36926c5d29d2d7f2333051cbe845"
+    },
+    {
+      "path": "s3/main/status_led.h",
+      "bytes": 800,
+      "sha256": "b72621fa8ccf89178358348c94d7fa32282a0a9a67060d836be11d23e47b59dc"
+    },
+    {
+      "path": "s3/main/status_led_pattern.h",
+      "bytes": 737,
+      "sha256": "522572fb0dca7de0217b2d9c727e563b8be01ebebe139aca23fdb7fb52fd2a6c"
+    },
+    {
+      "path": "s3/main/web_asset.inc.h",
+      "bytes": 1711,
+      "sha256": "f41cfbc3a3bd43e05f8edd2b7b55ba9fa7188ca535b1c4323b31e351a5cbb04d"
+    },
+    {
+      "path": "s3/main/web_control.c",
+      "bytes": 6501,
+      "sha256": "d9c86680a2951b3e53d2f39c73c58c55a272af8e8d25d59fc6390557fd7ec217"
+    },
+    {
+      "path": "s3/main/web_control.h",
+      "bytes": 2852,
+      "sha256": "deea4fb5605f696685d915d3260e6c256f88ade2942da9dd0ab37d425cac0ae8"
+    },
+    {
+      "path": "s3/main/web_control_v2.h",
+      "bytes": 233,
+      "sha256": "f4fba3f120bff21f05755c3560510af25139f66304dcefaa3c96f6e8463cc937"
+    },
+    {
+      "path": "s3/main/web_raw_midi.c",
+      "bytes": 5212,
+      "sha256": "603dfbb7513b98234b9bd2721b1c63bbda307012a833995696aa9bee2937ed19"
+    },
+    {
+      "path": "s3/main/web_raw_midi.h",
+      "bytes": 726,
+      "sha256": "bf0db8975aca3900d19ab543245432d22b92fe6769dc7d7817a563c4d90ec4ca"
+    },
+    {
+      "path": "s3/main/web_raw_queue.c",
+      "bytes": 1525,
+      "sha256": "fe2fcda6266e55fe1a9aadfdb81886c64caa09ad6ecd5b66213c3b5358974351"
+    },
+    {
+      "path": "s3/main/web_raw_queue.h",
+      "bytes": 545,
+      "sha256": "033d57c448d6db5045bf185aab663bb793bc9c300dc0588fc666f28f1c65f46a"
+    },
+    {
+      "path": "s3/main/wifi_web.c",
+      "bytes": 16847,
+      "sha256": "b36d98f90d7f924deef40464901db16099b0075d957d34fde0e37d512c3ebd31"
+    },
+    {
+      "path": "s3/main/wifi_web.h",
+      "bytes": 40,
+      "sha256": "e4801a20057229a55942a0f9b30451651544db9f6982020a7c7b40ef2fd2c509"
+    },
+    {
+      "path": "s3/tests/host/capture_control_api.c",
+      "bytes": 3808,
+      "sha256": "8824c1c348236bedba4188846d844cdd62dcb17578dc6790d8a68562ff13e692"
+    },
+    {
+      "path": "s3/tests/host/fake_dds_presets.c",
+      "bytes": 2414,
+      "sha256": "e9042a887cf591731e64b28da9f51a5cc4607e5ed10ae79df90e2c8f88754aa4"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_err.h",
+      "bytes": 240,
+      "sha256": "a4cf1878ae4affbb68424c60420b9a29a1f212582c01b02886e8a5a450a78cf0"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_event.h",
+      "bytes": 563,
+      "sha256": "b2dfaf0ec7e0ff50108a7f5db4747b3358eb5af4e28d85268c149c44b16c9a0e"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_http_server.h",
+      "bytes": 1932,
+      "sha256": "757179487514b2bfa5c3e02ec19469957977c034f0337dbef023232c52826ecd"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_netif.h",
+      "bytes": 211,
+      "sha256": "5697375c849cde22bf1f5509bac7c9e29e75fe70e76764fcaaf78f722f01cfa2"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_random.h",
+      "bytes": 60,
+      "sha256": "8fe8d167b1dac059c8febc7de0235c7eae8599033b44bcb6556df6cb444b9288"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/esp_wifi.h",
+      "bytes": 930,
+      "sha256": "bf9ec689c8fb797bf296830cd7fa42a4b8c65791ba29e17394b1c5d8c501930c"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/miniz.h",
+      "bytes": 1148,
+      "sha256": "475829cc605d139ee09719a5bec643ebf3cac0efa67ce2761661d95deeb97a28"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/nvs.h",
+      "bytes": 364,
+      "sha256": "efb080aef8642194fcf4f0babb00ccd7327458f3feb2ec1742cf18d6d0c26378"
+    },
+    {
+      "path": "s3/tests/host/http_stubs/sdkconfig.h",
+      "bytes": 175,
+      "sha256": "91882f2c45899945d18368fd5d18c5f1fcb386101b307a21f12116b22fcde49b"
+    },
+    {
+      "path": "s3/tests/host/stubs/esp_log.h",
+      "bytes": 226,
+      "sha256": "71a027990cdbd5df6cebb4cc74354ba473ebfd5b92da8a3bb4e5cefa8122d526"
+    },
+    {
+      "path": "s3/tests/host/stubs/esp_timer.h",
+      "bytes": 357,
+      "sha256": "da878fcc6e8088f6fabc6e4ba6e2b6a1a87bebcdfe0ccbfb13051a0246893d19"
+    },
+    {
+      "path": "s3/tests/host/stubs/freertos/FreeRTOS.h",
+      "bytes": 395,
+      "sha256": "9b02cb5f1073b823f1649b236fb9dfdcf165fd113f3e0a2ac5055e57c38f1f66"
+    },
+    {
+      "path": "s3/tests/host/stubs/freertos/queue.h",
+      "bytes": 281,
+      "sha256": "2b5ab80394bcec33b91c58eb31971bf35080dc6b1a6b57071eb304702c1a3b44"
+    },
+    {
+      "path": "s3/tests/host/test_http_api.c",
+      "bytes": 12594,
+      "sha256": "efcb412ace967a3b3f93fa9368e2bc2023f85fd2d418e6ee448ac43e2e600d46"
+    },
+    {
+      "path": "s3/tests/host/test_http_v2.c",
+      "bytes": 9491,
+      "sha256": "9eba58eecaf579528b3bf0bfc3ac4ba1c6b4c533762452aae477acb36d2b7995"
+    }
+  ],
+  "handler_capture": {
+    "source": "tests/host/test_http_v2.c",
+    "fixtures": [
+      "v2-capabilities.json",
+      "v2-state.json",
+      "v2-catalog.json",
+      "v2-catalog-page-8.json",
+      "v2-profile.json",
+      "v2-presets.json",
+      "v2-live-capabilities.json",
+      "v2-live-state.json"
+    ],
+    "note": "Separate current C HTTP handler test, contexts 9/10; keeps historical lifecycle assumptions without rewriting archived JSON."
+  },
+  "publication_migration": {
+    "date": "2026-11-12",
+    "project": "空灵云音",
+    "historical_manifest_sha256": "dc941861fe74c1d5f6b93b6e93060c946edd5c53af7ab66c6ee7e124da3c59b3",
+    "scope": "Rebind renamed MIT publication source and license paths to actual file bytes; response fixtures and protocol identities unchanged."
+  }
+}

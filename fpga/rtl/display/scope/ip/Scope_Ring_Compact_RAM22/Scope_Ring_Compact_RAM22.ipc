@@ -1,0 +1,17 @@
+[General]
+file=Scope_Ring_Compact_RAM22
+ipc_version=4
+module=Scope_Ring_Compact_RAM22
+target_device=gw5ast138c-007
+type=sdp
+version=1.0
+
+[Config]
+BYTE_SIZE=0
+DEPTH_A=8192
+DEPTH_B=8192
+LANG=0
+READ=0
+RESET_MODE=true
+WIDTH_A=22
+WIDTH_B=22

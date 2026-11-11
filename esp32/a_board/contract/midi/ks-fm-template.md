@@ -1,0 +1,16 @@
+# KS/FM performance template contract 2026-10-16
+
+All addresses are 16-bit SPI WORD addresses; final SCLK data-edge strobe is perf_write_enable. Existing KS/FM control ABI is unchanged. FPGA owns note allocation and MIDI expression; S3 compiles floating-point KS values.
+
+## KS inactive bank upload, then atomic commit
+- B000 + 2*note (note 0..127): bit31 valid, bits14:0 length, reserved zero. Valid only when ks_params_note(note,127,decay,volume,pan,seed=1) succeeds. Invalid note word=0.
+- B001 + 2*note: bits15:0 tuning signed Q15, bits31:16 loss Q15, exactly from ks_params_note.
+- B200 + MIDI_pan (0..127): bits15:0 gain_left, bits31:16 gain_right from ks_params_gains(patch.volume, clamp(patch.pan + MIDI_pan - 64,-64,63)). This table includes current patch volume and pan. MIDI CC10 defaults64; CC7/CC11 each default127. FPGA first computes channel_volume=floor(CC7*CC11/127), then each side gain=floor(uploaded_gain*channel_volume/127).
+- B3FF: nonzero monotonically changing generation = commit. Upload ALL 256 note words and 128 pan words before commit; no further writes until status 0708 equals this generation (real sysclk ACK). Writes always address inactive bank. Commit is synchronized and swaps whole bank atomically; held/release voices retain pitch/tuning; COMMIT schedules LOSS and GAIN updates using the new note/pan table, preserving current decay/expression semantics. Do not send original per-note SPI ON/OFF in local MIDI mode.
+- Initial table invalid until first commit. First commit should precede enabling KS performance. On amplitude = floor(8192*velocity/127), seed nonzero deterministic stamp. KS bend intentionally ignored; original KS core has no continuous pitch command.
+
+## FM global expression
+- B400: bits7:0 patch volume in FM ABI 0..127 (old web value min(127,patch.volume/2)); bits15:8 patch pan 0..127 (clamp(64+patch.pan,0,127)); bits31:16=0. Atomic single-word SCLK mailbox, copied to synth clock. Defaults volume127,pan64. Effective per-channel volume floor(patch_volume*floor(CC7*CC11/127)/127), pan clamp(patch_pan + CC10 - 64,0,127). Every source/channel defaults CC7=127, CC11=127, CC10=64, bend8192, sustain off. Local FM sequence occupies high-bit=1 independent sequence space; SPI keeps its original sequence watermark. Session/epoch/topology and voice generations remain owned by same FM bridge and query fields.
+- Original accepted/result/completed queries retain only SPI command facts, so local music cannot overwrite a polled S3 completion. Local commands do not advance SPI sequence watermark. Optional FM extension 0670=last local accepted sequence, 0671=last local completed/cancelled sequence, 0672=local result; all read zero when ENABLE_MIDI=0. SELECT/parameter/preset use the existing FM ABI unchanged.
+
+Interfaces: KS ENABLE_MIDI parameter default0 and unsuffixed midi_enable/midi_event/midi_event_valid/midi_event_ready/midi_flush/perf_write_enable/perf_write_addr/perf_write_data. FM same parameter and names suffixed _i except midi_event_ready_o. KS additionally output [31:0] midi_template_status, last latched nonzero generation, root maps readback0708. Both events are midi_pkg::midi_event_t, source0 USB/1 Web/2 BLE/3 DIN, channel=status low4bits. Flush is synth-clock one-cycle [3:0] source mask.

@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.1",
+  "abi": {
+    "major": 1,
+    "minor": 1
+  },
+  "bundle_identity": "fm-control-v1.0.1-20261026",
+  "imported_on": "2026-10-28",
+  "schema_sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73",
+  "profiles_sha256": "3557827b9bd78b2ac23283b21a05a0f083acdc4b24dd6b6778c02e852e333d25",
+  "combined_contract_sha256": "5701b9f820a9755951ca3ae43bffd518f3b4e4c91d297c391abac4922c57e137",
+  "provider_root": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm",
+  "provider_head": "9658fb26071ed33b57580352a3dcf9e981f8e526",
+  "previous_bundle": "contracts/fm-control-v1.0.1",
+  "http_contract_frozen": true,
+  "hardware_runtime_not_verified": true,
+  "product_scope": "Generated Java identity/catalog compiled; runtime capability and state gates remain required. Current host C serializer fixtures are separately frozen; no device/audio validation.",
+  "profiles_semantic_delta": [
+    {
+      "path": "/profiles/0/presets/0/values/3/value_u32",
+      "before": 32,
+      "after": 8
+    },
+    {
+      "path": "/profiles/0/presets/1/values/14/value_u32",
+      "before": 36,
+      "after": 8
+    },
+    {
+      "path": "/profiles/0/presets/2/values/36/value_u32",
+      "before": 32,
+      "after": 8
+    }
+  ],
+  "files": [
+    {
+      "path": "docs/生成器使用.md",
+      "bytes": 10071,
+      "sha256": "195ed89a2bbed59d4cb132e89d60c7209620d50b6fbf6c2333badf9309665a25",
+      "source": "/home/ice/文档/ChatGPT/用户界面前端开发/mobile-app/console-20261028/app/contracts/fm-control-v1.0.1/docs/生成器使用.md"
+    },
+    {
+      "path": "generated/c/fm_contract.h",
+      "bytes": 21345,
+      "sha256": "50424389948c30c5a39c3fcaaeabdd299105f09c9a6728ebaeeb1a1923f662f6",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/generated/c/fm_contract.h"
+    },
+    {
+      "path": "generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "bytes": 28310,
+      "sha256": "9d51e38309a2085d7f571aaa5ae5238934aeb646cea38017b053d1e289a5ee6b",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/generated/java/cn/fpgasynth/control/generated/FmContract.java"
+    },
+    {
+      "path": "generated/js/fm-contract.mjs",
+      "bytes": 25562,
+      "sha256": "2de47b8a9e34690b8a6d5bca3b7d5350112b7b81966a84c13aaef065496e1523",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/generated/js/fm-contract.mjs"
+    },
+    {
+      "path": "generated/python/fm_contract.py",
+      "bytes": 25002,
+      "sha256": "546fce012cce642f039ebca149121975fae8775aa6053a42e9b60a10ba2c2328",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/generated/python/fm_contract.py"
+    },
+    {
+      "path": "generated/sv/fm_contract_pkg.sv",
+      "bytes": 42951,
+      "sha256": "a408218b8922f66e95cf195596242a21b265f770326d64eafc895fb032c53911",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/generated/sv/fm_contract_pkg.sv"
+    },
+    {
+      "path": "schema/backend-profiles.json",
+      "bytes": 23576,
+      "sha256": "3557827b9bd78b2ac23283b21a05a0f083acdc4b24dd6b6778c02e852e333d25",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/schema/backend-profiles.json"
+    },
+    {
+      "path": "schema/fm-control.schema.json",
+      "bytes": 12634,
+      "sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/schema/fm-control.schema.json"
+    },
+    {
+      "path": "tests/stage2-fixtures.json",
+      "bytes": 7123,
+      "sha256": "e570fa279e17b02212056013647ccd3cf643ec67025e0ad25f77c9b39dcad97e",
+      "source": "/home/ice/文档/ChatGPT/用户界面前端开发/mobile-app/console-20261028/app/contracts/fm-control-v1.0.1/tests/stage2-fixtures.json"
+    },
+    {
+      "path": "tools/fm_codegen_v1.py",
+      "bytes": 46062,
+      "sha256": "a50e37490989cb4de958ac6f2dba3ca9019392aa1af5b3bb4f2b985c41f9af99",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/tools/fm_codegen_v1.py"
+    },
+    {
+      "path": "tools/gen_fm_contract.py",
+      "bytes": 27870,
+      "sha256": "21435fd37e8bfbae698e0356a8e891b2b7a95857ebcfe947712a35820a587dd1",
+      "source": "/home/ice/Project/my_project-worktrees/esp32-runtime-stability-20261025/development/ESP32/ESP32_development/esp32s3/contract/fm/tools/gen_fm_contract.py"
+    }
+  ],
+  "app_generated_files": [
+    {
+      "path": "core/src/generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "source": "generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "sha256": "9d51e38309a2085d7f571aaa5ae5238934aeb646cea38017b053d1e289a5ee6b"
+    }
+  ],
+  "publication_migration": {
+    "date": "2026-11-12",
+    "project": "空灵云音",
+    "historical_manifest_sha256": "b8755c0706ce6f496101f199984cb31c94997cb183f5088a3d1f53e3d822609d",
+    "scope": "Rebind renamed MIT publication source and license paths to actual file bytes; response fixtures and protocol identities unchanged."
+  }
+}

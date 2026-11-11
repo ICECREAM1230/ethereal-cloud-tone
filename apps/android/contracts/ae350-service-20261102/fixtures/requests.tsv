@@ -1,0 +1,43 @@
+name	code	path	body_kind	body	observation	publications
+capabilities	200	/api/v2/capabilities	null		host-owner-initial	0
+session-get-rejected	404	/api/v2/session	null		null-means-get	0
+state-post-rejected	404	/api/v2/state	string		empty-means-post	0
+session	201	/api/v2/session	string		empty-means-post	1
+state-initial-client-ks	200	/api/v2/state	null		host-owner-session-adopted	0
+clear-received	202	/api/v2/command	string	1001 1 9 3 0 100 0	real-core-receipt	1
+clear-adopted	200	/api/v2/state	null		host-owner-adopted	0
+select-sub-received	202	/api/v2/command	string	1001 2 9 5 0 0 0	real-core-receipt	1
+select-sub-pending	200	/api/v2/state	null		host-owner-not-yet-adopted	0
+select-sub-adopted	200	/api/v2/state	null		host-owner-adopted	0
+keys-on-received	202	/api/v2/command	string	1001 3 9 3 1 100 0	real-core-receipt	1
+keys-on-pending	200	/api/v2/state	null		host-owner-not-yet-adopted	0
+keys-on-adopted	200	/api/v2/state	null		host-owner-adopted	0
+keys-off-received	202	/api/v2/command	string	1001 4 9 3 0 100 0	real-core-receipt	1
+keys-off-adopted	200	/api/v2/state	null		host-owner-adopted	0
+cc7-received	202	/api/v2/command	string	1001 5 9 2 7 96 0	real-core-receipt	1
+cc7-pending	200	/api/v2/state	null		host-owner-not-yet-adopted	0
+cc7-adopted	200	/api/v2/state	null		host-owner-shared-patch-adopted	0
+select-ks-received	202	/api/v2/command	string	1001 6 9 5 1 0 0	real-core-receipt	1
+select-ks-pending	200	/api/v2/state	null		host-owner-not-yet-adopted	0
+select-ks-adopted	200	/api/v2/state	null		host-owner-adopted	0
+ks-decay-received	202	/api/v2/command	string	1001 7 9 6 4200 0 0	real-core-receipt	1
+ks-decay-adopted	200	/api/v2/state	null		host-owner-global-ks-decay-adopted	0
+select-fm-received	202	/api/v2/command	string	1001 8 9 5 2 0 0	real-core-receipt	1
+select-fm-pending	200	/api/v2/state	null		host-owner-not-yet-adopted	0
+select-fm-adopted	200	/api/v2/state	null		host-owner-adopted-native-fm-still-unavailable	0
+fm-native-parameter-rejected	503	/api/v2/command	string	1001 9 9 7 18 4294901760 31	real-core-receipt	0
+state-cpu-not-ready	200	/api/v2/state	null		host-owner-ready-false-busy-true	0
+cpu-not-ready-select-received	202	/api/v2/command	string	1001 9 9 5 1 0 0	real-core-receipt	1
+cpu-not-ready-select-adopted	200	/api/v2/state	null		host-owner-valid-no-fault-adoption	0
+state-cpu-fault	200	/api/v2/state	null		host-owner-fault	0
+cpu-fault-select-rejected	503	/api/v2/command	string	1001 10 9 5 0 0 0	real-core-receipt	0
+state-cpu-invalid	200	/api/v2/state	null		host-owner-invalid	0
+cpu-invalid-select-rejected	503	/api/v2/command	string	1001 10 9 5 0 0 0	real-core-receipt	0
+state-sub-patch-invalid	200	/api/v2/state	null		host-owner-sub-patch-invalid	0
+cc7-sub-patch-invalid-rejected	503	/api/v2/command	string	1001 10 9 2 7 96 0	real-core-receipt	0
+state-owner-unavailable	200	/api/v2/state	null		host-owner-unavailable	0
+owner-unavailable-keys-rejected	503	/api/v2/command	string	1001 10 9 3 1 100 0	real-core-receipt	0
+state-input-stop-pending	200	/api/v2/state	null		host-owner-input-stop-pending	0
+state-ready-recovered	200	/api/v2/state	null		host-owner-ready-recovered	0
+final-clear-received	202	/api/v2/command	string	1001 10 9 3 0 100 0	real-core-receipt	1
+final-clear-adopted	200	/api/v2/state	null		host-owner-adopted	0

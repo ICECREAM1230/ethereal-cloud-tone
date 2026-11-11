@@ -1,0 +1,58 @@
+menu "Ethereal Cloud Tone test"
+
+config ECT_STRESS_TEST
+    bool "Enable synthetic MIDI stress-test injector"
+    default n
+    help
+        Spawns a task at boot that floods the event bus with CC sweeps
+        (voice mode / volume / mix) and note on/off for ~60 s, to
+        reproduce load-related crashes (issue #70) deterministically
+        without an external MIDI source. Leave OFF for normal firmware.
+
+endmenu
+
+menu "FPGA validation image"
+config FPGA_AE350_CONTROL
+    bool "AE350 CPU1 raw MIDI and template controller"
+    depends on IDF_TARGET_ESP32S3 && !FPGA_FM_ONLY
+    default y
+    help
+        This isolated candidate requires MID1 caps bit 2, CPU1 magic and ABI 1.
+        Unknown identity or read errors block every write; no legacy fallback.
+        Retains the existing SPI pins, Web/BLE RAW queues and template banks.
+
+config FPGA_FM_ONLY
+    bool "Use the independent FM-only FPGA validation image"
+    depends on IDF_TARGET_ESP32S3
+    default n
+    help
+        Requires FMV1 validation identity and ABI 1.0 at 0x07f0/0x07f1.
+        Retains real FM capability/profile verification, raw MIDI and template
+        acknowledgements; omits DDS/KS transactions absent from that image.
+        The normal controller configuration must leave this disabled.
+endmenu
+
+menu "FPGA local web control"
+config ECT_WIFI_WEB
+    bool "Enable local Wi-Fi SoftAP web controller"
+    default n
+    help
+        Built-in phone controller at http://192.168.4.1. Uses semantic
+        events and keyboard leases; BLE MIDI remains available.
+if ECT_WIFI_WEB
+config ECT_WIFI_SSID
+    string "Wi-Fi hotspot SSID (1..32 bytes)"
+    default "FPGA_Project"
+config ECT_WIFI_PASSWORD
+    string "WPA2 password (8..63 ASCII characters; empty uses a stored random password)"
+    default "Fpga-Synth-2026"
+    help
+        Empty generates a 96-bit random password once, persists it in NVS,
+        and prints it on the USB serial console. A fixed password is embedded in
+        the firmware; do not store private external Wi-Fi credentials here.
+config ECT_WIFI_CHANNEL
+    int "SoftAP channel"
+    range 1 11
+    default 6
+endif
+endmenu

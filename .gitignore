@@ -1,0 +1,16 @@
+# Rebuildable local caches only; saved releases and evidence stay available.
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/node_modules/
+**/.toolchain/
+/esp32/b_board/.build/
+/apps/android/build/
+/apps/android/delivery/
+/fpga/logs/
+/fpga/impl/*
+!/fpga/impl/ethereal_cloud_tone_process_config.json
+**/.pytest_cache/
+**/.cache/
+**/*.egg-info/
+**/test-results/

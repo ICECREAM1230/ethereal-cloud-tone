@@ -1,0 +1,2 @@
+# Tkinter is supplied by the OS / Python distribution, not PyPI.
+pyserial>=3.5,<4

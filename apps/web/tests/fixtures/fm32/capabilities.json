@@ -1,0 +1,61 @@
+{
+  "api_major": 2,
+  "api_minor": 0,
+  "schema_sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73",
+  "profiles_sha256": "e0eb566504f7f06c41ded10eb4a91abdc9bc04cab6638d2ffea48d177ab68fbd",
+  "contract_sha256": "100bc058603e6184741bc2aba62745622e1b881290a642f33b4c46c96340d123",
+  "context_epoch": 2,
+  "limits": {
+    "clients": 4,
+    "key_count": 25,
+    "lease_ms": 1200,
+    "max_body_bytes": 95,
+    "catalog_page_max": 8
+  },
+  "engines": [
+    {
+      "id": 0,
+      "available": true
+    },
+    {
+      "id": 1,
+      "available": false
+    },
+    {
+      "id": 2,
+      "available": true
+    }
+  ],
+  "catalog_profiles": [
+    {
+      "id": 1,
+      "backend_id": 1,
+      "key": "jt51_opm",
+      "profile_version": 65536,
+      "runtime_available": true
+    },
+    {
+      "id": 2,
+      "backend_id": 2,
+      "key": "msfa_two_op_reference",
+      "profile_version": 65536,
+      "runtime_available": false
+    }
+  ],
+  "fm_reason": null,
+  "cpu_mode": {
+    "version": 1,
+    "route_only": true,
+    "modes": [
+      0,
+      1,
+      2
+    ],
+    "channel_routes": true
+  },
+  "sub_patch": {
+    "version": 1,
+    "required": true,
+    "supported": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "fpga-local-web-controller",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node mock/server.mjs",
+    "dev:v2": "node mock/v2-server.mjs",
+    "test:v2-browser": "node tests/v2-browser.mjs",
+    "test:recovery-browser": "node tests/recovery-ui.browser.mjs",
+    "test:raw-midi-browser": "node tests/raw-midi.browser.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:fm-panel": "node tests/fm-panel.browser.mjs",
+    "snapshot": "python3 scripts/snapshot.py",
+    "preview:ui": "node scripts/preview-ui.mjs",
+    "test:strings-browser": "node tests/strings.browser.mjs",
+    "build:gzip": "npm run build && python3 scripts/compress-web-firmware.py dist/index.html dist/index.html.gz",
+    "test:fdc-browser": "node tests/fdc.browser.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0",
+    "terser": "5.51.2"
+  }
+}

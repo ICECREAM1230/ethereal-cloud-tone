@@ -1,0 +1,76 @@
+{
+  "baseline": "v3921 official iBOM / adapter imported history PCB",
+  "unit": "mm",
+  "user_fixed_refs": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "FDC2214"
+  ],
+  "local_origin": "J6.1, front component side up, USB up, x right and y down",
+  "pitch": 2.54,
+  "row_spacing": 20.32,
+  "first_last_pin_distance": 48.26,
+  "rows": {
+    "J6": "left",
+    "J5": "right"
+  },
+  "header_grid_center": [
+    146.99575000000002,
+    109.7405
+  ],
+  "nano_body_bbox": [
+    135.71075000000002,
+    83.00354600000001,
+    158.264723,
+    137.045519
+  ],
+  "current_board_centerline_bbox": [
+    100,
+    59.924,
+    200,
+    159.924
+  ],
+  "current_board_bbox_including_stroke": [
+    99.873,
+    59.797,
+    200.127,
+    160.051
+  ],
+  "nano_header_proposal": {
+    "J6.1": [
+      136.83575000000002,
+      85.6105
+    ],
+    "J5.1": [
+      157.15575,
+      85.6105
+    ]
+  },
+  "xy_clearance_to_inner_header_pad_centerlines": {
+    "left_inner_header_to_nano_outline_mm": 11.581750000000014,
+    "nano_outline_to_right_inner_header_mm": 11.597777000000008
+  },
+  "mount_side": "front under 138K as candidate only; backside alternative requires mirrored numbering/placement",
+  "Z_interference_verified": false,
+  "socket_drill_and_height_finalized": false,
+  "power_and_interconnect": {
+    "user_confirmed": "independent_positive_supplies_common_ground",
+    "supply_138k": "existing_own_power_input",
+    "supply_20k_default": "independent_USB",
+    "positive_5v_connected_between_boards": false,
+    "regulator_3v3_outputs_connected_between_boards": false,
+    "carrier_nano_J5_1_connection": "NC_to_138k_supply",
+    "ground_connection": {
+      "carrier": "H1.6 GND",
+      "nano": "J5.2 GND",
+      "always_connected": true
+    },
+    "signal_conductors": 5,
+    "minimum_ground_conductors": 1,
+    "ground_uses_fpga_gpio": false,
+    "power_off_io_protection": "required_not_implemented_or_verified",
+    "usb_cable_clearance_verified": false
+  }
+}

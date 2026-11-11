@@ -1,0 +1,71 @@
+{
+  "task": "FM32 single128-slot II1 core",
+  "sources": [
+    {
+      "destination": "jt51_pg32.v",
+      "source": "rtl/synthesizers/fm/native96/jt51_pg96.v",
+      "source_sha256": "c51b471cea2eec2235ebb805b440ea3d7927fcab2300a78c045a3ac14c64a981"
+    },
+    {
+      "destination": "jt51_eg32.v",
+      "source": "rtl/synthesizers/fm/native96/jt51_eg96.v",
+      "source_sha256": "1e3d3bcd4c07bdb05a889d578e77611046195539462e6b9e0f584bfdc1b52cec"
+    },
+    {
+      "destination": "jt51_op32.v",
+      "source": "rtl/synthesizers/fm/jt51/hdl/jt51_op.v",
+      "source_sha256": "5dbb743c49af67e6dff7e6c65691a66371aaf5a126834525f9501a8af1420bbf"
+    },
+    {
+      "destination": "jt51_csr_op32.v",
+      "source": "rtl/synthesizers/fm/jt51/hdl/jt51_csr_op.v",
+      "source_sha256": "b129bf97cc155bc0e4312287af79b2c7985852ef65c1768f23ffa31badd5b648"
+    },
+    {
+      "destination": "jt51_reg_ch32.v",
+      "source": "rtl/synthesizers/fm/jt51/hdl/jt51_reg_ch.v",
+      "source_sha256": "2303d898fa49bf67fa8aace6c1a1e00e48d2951f9a221e75058233953f670aad"
+    },
+    {
+      "destination": "jt51_kon32.v",
+      "source": "rtl/synthesizers/fm/jt51/hdl/jt51_kon.v",
+      "source_sha256": "e1bb08fe65a53d2dc871459cc91e4beeec9efb9e839b3a39a941fa27ac19ba0f"
+    },
+    {
+      "destination": "jt51_reg32.v",
+      "source": "rtl/synthesizers/fm/jt51/hdl/jt51_reg.v",
+      "source_sha256": "a9913cb08f562046c2f9375fd6f7a4a5a0eb4d46266df303875059761f304de7"
+    },
+    {
+      "destination": "jt51_mmr32.v",
+      "source": "rtl/synthesizers/fm/jt51/hdl/jt51_mmr.v",
+      "source_sha256": "db3a6506091e6ea99a17ad2f5b8b11ecf36d97f74dbf0c1098cf6db601d6fdd6"
+    },
+    {
+      "destination": "jt51_acc32.sv",
+      "source": "rtl/ae350/ae350_voice_backend_fm_acc.sv",
+      "source_sha256": "0c26700d11df4d85d16dc423c74b671099035258361ace90f0dba6907b4a7e21"
+    },
+    {
+      "destination": "jt51_native32.v",
+      "source": "rtl/synthesizers/fm/native96/jt51_native96.v",
+      "source_sha256": "850f41dfc13a3769f4748acfb095aacab6af8b92d94fa6cd8c69e58a8dac4704"
+    }
+  ],
+  "design": "Operator result padding4\u219252 makes latency64=2\u00d732 slots, histories32; state loops128, fixed arithmetic short delays unchanged; stereo guard21bits",
+  "reused_modules": [
+    "jt51_sh",
+    "jt51_mod",
+    "jt51_pm",
+    "jt51_phinc_rom",
+    "jt51_phrom",
+    "jt51_exprom",
+    "jt51_lfo",
+    "jt51_timers",
+    "jt51_exp2lin",
+    "jt51_lin2exp",
+    "jt51_noise96",
+    "jt51_native96_timing"
+  ],
+  "vendor_upstream_modified": false
+}

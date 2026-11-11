@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>激光竖琴 · 实时输入监控</title>
+<style>
+:root{color-scheme:dark;--bg:#101719;--panel:#182326;--line:#304044;--muted:#9fb0b3;--light:#72ded1;--shade:#f5bc69}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#ecf2f1;font:15px/1.55 system-ui,"Noto Sans CJK SC",sans-serif}main{max-width:1320px;margin:auto;padding:30px 32px}header{display:flex;justify-content:space-between;align-items:center;gap:20px}h1{margin:0;font-size:30px;letter-spacing:.02em}p{margin:8px 0;color:var(--muted)}button,a.button{border:1px solid var(--line);border-radius:6px;background:#233236;color:inherit;padding:9px 14px;font:inherit;text-decoration:none;cursor:pointer}button:hover,a.button:hover{background:#34494e}button:focus-visible,a:focus-visible{outline:3px solid var(--light)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.status{padding:7px 13px;border-radius:30px;background:#394349;white-space:nowrap}.status.online{background:#16473f;color:#a0f4d5}.status.offline{background:#57362a;color:#ffd0a8}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.card{padding:17px 20px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.label{color:var(--muted);font-size:13px}.value{font-size:28px;font-weight:650;font-variant-numeric:tabular-nums}.notice{border-left:3px solid var(--light);padding:10px 16px;background:#172b2b;margin:16px 0}.scroll{overflow:auto;border:1px solid var(--line);border-radius:8px}table{width:100%;border-collapse:collapse;white-space:nowrap;text-align:left;background:var(--panel);font-variant-numeric:tabular-nums}th,td{padding:10px 13px;border-bottom:1px solid #29393d}th{color:var(--muted);font-size:13px;font-weight:500;background:#1e2c30}tbody tr:last-child td{border-bottom:0}.level{display:inline-block;min-width:100px;border-radius:5px;padding:4px 9px;font-weight:650}.high{background:#493826;color:var(--shade)}.low{background:#163f3d;color:var(--light)}.playing{color:#f5aaff}.trace{display:flex;gap:2px;width:150px;height:24px;align-items:center}.trace i{display:block;width:4px;height:9px;flex:none;background:var(--light)}.trace i.high{height:21px;background:var(--shade)}h2{font-size:18px;margin:24px 0 10px}.footer{font-size:13px;color:var(--muted);margin-top:18px}.hint{color:var(--muted);font-size:13px}#error{color:#ffd0a8}.event-empty{padding:20px;color:var(--muted)}@media(max-width:750px){main{padding:18px 14px}.cards{grid-template-columns:repeat(2,1fr)}header{align-items:flex-start}h1{font-size:23px}.value{font-size:24px}}
+</style>
+<main>
+<header><div><h1>激光竖琴 · 实时输入监控</h1><p>ESP32-S3 实板 · FT232R UART · 115200 baud</p></div><span id="connection" class="status" role="status" aria-live="polite">等待串口数据</span></header>
+<div class="notice" id="legend">正在读取设备极性与实际输入。页面只监控，不写入参数。</div>
+<div class="cards">
+ <div class="card"><div class="label">原始输入位图</div><div class="value" id="raw">—</div></div>
+ <div class="card"><div class="label">受光 / 遮光电平</div><div class="value" id="counts">—</div></div>
+ <div class="card"><div class="label">累计击弦次数</div><div class="value" id="hits">—</div></div>
+ <div class="card"><div class="label">设备运行时间 / USB MIDI</div><div class="value" id="uptime">—</div></div>
+</div>
+<div class="toolbar"><button id="pause">暂停画面</button><a class="button" href="/events.csv" download>导出击弦 CSV</a><button id="stop">停止监控并释放串口</button><button id="start">恢复串口监控</button></div>
+<p class="hint" id="freshness" role="status">断电或拔线后会自动等待重连；停止监控后需点击“恢复串口监控”。</p>
+<p class="hint">遮挡某一路并放开，观察“原始 OUT”和“累计次数”。电位器调的是模拟门限；这里显示数字电平，不显示光强或阈值电压。</p>
+<div class="scroll"><table aria-label="十二路光敏输入"><thead><tr><th>通道</th><th>GPIO</th><th>原始 OUT</th><th>当前电平含义</th><th>发声</th><th>时长 ms</th><th>力度</th><th>MIDI 音符</th><th>累计次数</th><th>近期电平</th></tr></thead><tbody id="channels"></tbody></table></div>
+<h2>最近击弦记录</h2><div class="scroll"><table aria-label="最近击弦记录"><thead><tr><th>会话 / 序号</th><th>设备时间 ms</th><th>通道</th><th>遮光时长 ms</th><th>力度</th><th>音符</th><th>来源</th></tr></thead><tbody id="events"></tbody></table><div id="empty" class="event-empty">尚未收到击弦事件。</div></div>
+<p id="error" role="alert"></p><div class="footer" id="details">连接后自动刷新。仅发送 ping / get / status / stream，保留设备现有配置。</div>
+</main>
+<script>
+const gpio=[4,5,46,6,18,7,9,15,10,16,11,17];
+const history=Array.from({length:12},()=>[]);let paused=false,lastSession=null,lastSample=null;
+const $=id=>document.getElementById(id);
+for(let i=0;i<12;i++){
+ const tr=document.createElement('tr');tr.innerHTML=`<td><strong>OUT ${String(i+1).padStart(2,'0')}</strong></td><td>${gpio[i]}</td><td><span class="level" id="level-${i}">—</span></td><td id="meaning-${i}">—</td><td id="playing-${i}">—</td><td id="duration-${i}">—</td><td id="velocity-${i}">—</td><td id="note-${i}">—</td><td id="hit-${i}">—</td><td><div class="trace" id="trace-${i}" aria-label="近期电平"></div></td>`;$('channels').appendChild(tr);
+}
+$('pause').onclick=()=>{paused=!paused;$('pause').textContent=paused?'继续刷新':'暂停画面';};
+for(const action of ['stop','start'])$(action).onclick=async()=>{try{const r=await fetch('/'+action,{method:'POST'});if(!r.ok)throw Error(action==='stop'?'串口尚在释放，请稍候':'恢复失败，请查看连接状态');render(await (await fetch('/live.json',{cache:'no-store'})).json());}catch(e){$('error').textContent=e.message;}};
+function render(data){
+ const s=data.last_state,c=data.config,fresh=data.connected;
+ $('connection').className='status '+(fresh?'online':'offline');$('connection').textContent=!data.running?'采集已停止':fresh?'实板 · 已连接':data.connection_state==='reconnecting'?'等待串口重新连接':'等待 ESP32 数据';
+ $('stop').disabled=!data.running;$('start').disabled=data.running;
+ $('freshness').textContent=fresh?`正在接收实时数据 · 会话 ${data.session_id} · 自动重连已启用`:!data.running?'串口已释放。点击“恢复串口监控”即可继续。':`重新上电或插回 FT232R 后会自动恢复。${s?'下方为上次收到的数据，不代表当前状态。':''}${data.last_error?' 串口提示：'+data.last_error:''}`;
+ if(lastSession!==data.session_id){lastSession=data.session_id;lastSample=null;history.forEach(h=>h.length=0);for(let i=0;i<12;i++)$('trace-'+i).replaceChildren();}
+ if(paused)return;
+ $('events').replaceChildren(...(data.events??[]).slice(-12).reverse().map(e=>{const tr=document.createElement('tr');for(const v of [`${e.session} / ${e.seq}`,e.time_ms,e.channel,e.duration_ms,e.velocity,e.note,e.synthetic?'软件试奏':'实物输入']){const td=document.createElement('td');td.textContent=v;tr.appendChild(td);}return tr;}));
+ $('empty').hidden=!!data.events?.length;
+ if(!s){for(const id of ['raw','counts','hits','uptime'])$(id).textContent='—';for(let i=0;i<12;i++){for(const key of ['level','meaning','playing','duration','velocity','note','hit'])$(key+'-'+i).textContent='—';$('level-'+i).className='level';}$('legend').textContent='等待重新读取设备极性与输入。重新连接不会写入配置。';return;}
+ const polarity=c?.polarity,shaded=Array.from({length:12},(_,i)=>((s.raw>>i)&1)===polarity).filter(Boolean).length;
+ $('raw').textContent='0x'+s.raw.toString(16).toUpperCase().padStart(3,'0');$('counts').textContent=c?`${12-shaded} / ${shaded}`:'读取极性中';
+ $('hits').textContent=s.hits.reduce((a,b)=>a+b,0);$('uptime').textContent=`${(s.uptime_ms/1000).toFixed(1)}s · ${s.links?.usb?'在线':'离线'}`;
+ $('legend').textContent=!c?'正在重新读取设备极性。':polarity===1?'低电平 LOW = 受光；高电平 HIGH = 遮光电平。恢复受光后才触发音符，上电保持高电平时会等待首次受光。':'高电平 HIGH = 受光；低电平 LOW = 遮光电平。当前设备采用反相极性。';
+ const newSample=lastSample!==s.uptime_ms;lastSample=s.uptime_ms;
+ for(let i=0;i<12;i++){
+  const bit=(s.raw>>i)&1,level=$('level-'+i);level.className='level '+(bit?'high':'low');level.textContent=bit?'HIGH · 高':'LOW · 低';
+  $('meaning-'+i).textContent=!c?'读取极性中':bit===polarity?'遮光电平':'受光电平';$('playing-'+i).textContent=!fresh?'—':(s.playing>>i)&1?'发声中':'静音';$('playing-'+i).className=fresh&&(s.playing>>i)&1?'playing':'';
+  $('duration-'+i).textContent=s.duration[i];$('velocity-'+i).textContent=s.velocity[i];$('note-'+i).textContent=s.notes[i];$('hit-'+i).textContent=s.hits[i];
+  if(newSample){history[i].push(bit);if(history[i].length>24)history[i].shift();$('trace-'+i).replaceChildren(...history[i].map(v=>{const e=document.createElement('i');if(v)e.className='high';return e;}));}
+ }
+ $('details').textContent=`已采集 ${data.states} 帧 · 会话 ${data.session_id} · 编码器使能 0x${s.encoder_enabled.toString(16).toUpperCase()} · 最大采样间隔 ${s.timing.max_gap_us} μs · 漏周期 ${s.timing.missed_periods} · 丢包 ${JSON.stringify(s.drops)} · 只读监控`;
+}
+async function poll(){try{const r=await fetch('/live.json',{cache:'no-store'});if(!r.ok)throw Error('网页服务未就绪');render(await r.json());$('error').textContent='';}catch(e){$('connection').className='status offline';$('connection').textContent='网页服务未连接';$('freshness').textContent='请确认电脑上的网页监控服务仍在运行。';$('error').textContent=e.message;}finally{setTimeout(poll,400);}}
+poll();
+</script>
+</html>

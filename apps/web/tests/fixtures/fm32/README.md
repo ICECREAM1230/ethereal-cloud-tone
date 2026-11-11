@@ -1,0 +1,1 @@
+Paired32x4 offline fixtures: current actual staged HTTP handler FM descriptor/catalog identities composed with preserved original fm-parallel surrounding channel/input/client observations. Exact unmodified C responses are retained in esp32-review/http/merged01. Original real-board8voice captures remain unchanged in fm-parallel. No live device or CPU execution is claimed.

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.1",
+  "abi": {
+    "major": 1,
+    "minor": 1
+  },
+  "schema_sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73",
+  "profiles_sha256": "51a6af55646fe2adb54bf4f9f3d06e2d262bd830ec5f30f80c0e5bfa2eadf49f",
+  "combined_contract_sha256": "86aa104f60f3e8fc586a9f64052032e45b24d7148f43610b3ef0e86c9e5fed38",
+  "provider_root": "/home/ice/Project/my_project/development/tang_mega_138k_synth/interfaces/fm_control",
+  "http_contract_frozen": false,
+  "hardware_runtime_not_verified": true,
+  "product_scope": "generated Java/masks/static dimensions compiled; FM UI/HTTP disabled pending formal S3 contract and runtime capability",
+  "files": [
+    {
+      "path": "schema/fm-control.schema.json",
+      "bytes": 12634,
+      "sha256": "68d7d85ab97942edb128efcb3dffe01bdc50fb98baf9476ab4663d4f22c2cc73"
+    },
+    {
+      "path": "schema/backend-profiles.json",
+      "bytes": 23579,
+      "sha256": "51a6af55646fe2adb54bf4f9f3d06e2d262bd830ec5f30f80c0e5bfa2eadf49f"
+    },
+    {
+      "path": "tools/gen_fm_contract.py",
+      "bytes": 27870,
+      "sha256": "21435fd37e8bfbae698e0356a8e891b2b7a95857ebcfe947712a35820a587dd1"
+    },
+    {
+      "path": "tools/fm_codegen_v1.py",
+      "bytes": 46062,
+      "sha256": "a50e37490989cb4de958ac6f2dba3ca9019392aa1af5b3bb4f2b985c41f9af99"
+    },
+    {
+      "path": "tests/stage2-fixtures.json",
+      "bytes": 7123,
+      "sha256": "e570fa279e17b02212056013647ccd3cf643ec67025e0ad25f77c9b39dcad97e"
+    },
+    {
+      "path": "docs/生成器使用.md",
+      "bytes": 10071,
+      "sha256": "195ed89a2bbed59d4cb132e89d60c7209620d50b6fbf6c2333badf9309665a25"
+    },
+    {
+      "path": "generated/c/fm_contract.h",
+      "bytes": 21348,
+      "sha256": "a9d4f0bfa6bbf80aadfecef4a6acdf7365661c2b10b65849f017720728241765"
+    },
+    {
+      "path": "generated/sv/fm_contract_pkg.sv",
+      "bytes": 42954,
+      "sha256": "2d373c5abf21883497f26b5d7248258e62f47f00a4c490ba44af2db196c4cbe2"
+    },
+    {
+      "path": "generated/js/fm-contract.mjs",
+      "bytes": 25566,
+      "sha256": "ceea0b806b2bb3ad0bd60481ae1aec1018d4aedfbad6acca54ff1539ee1335b8"
+    },
+    {
+      "path": "generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "bytes": 28313,
+      "sha256": "9cf8610a71172b0ef6f002fd06d15e1fd868de3bbd0a1e15f12929f79b1110bf"
+    },
+    {
+      "path": "generated/python/fm_contract.py",
+      "bytes": 25006,
+      "sha256": "696d410601faeb15e33c97f12c404fe65737f33d088e8881881f1fb2eecb1757"
+    }
+  ],
+  "app_generated_files": [
+    {
+      "path": "core/src/generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "source": "generated/java/cn/fpgasynth/control/generated/FmContract.java",
+      "sha256": "9cf8610a71172b0ef6f002fd06d15e1fd868de3bbd0a1e15f12929f79b1110bf"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Documentation template only. Replace placeholders after the user specifies
+# wiring, then configure the project; do not flash this template blindly.
+# CONFIG_FDC_WIRING_CONFIRMED=y
+# CONFIG_FDC_SDA_GPIO=<user-assigned SDA GPIO>
+# CONFIG_FDC_SCL_GPIO=<user-assigned SCL GPIO>
+# CONFIG_FDC_SD_GPIO=-1
+# CONFIG_FDC_ADDR_GPIO=-1
+# CONFIG_FDC_I2C_ADDRESS=0x2A
+# Select exactly one confirmed source, never both:
+# CONFIG_FDC_CLOCK_EXTERNAL=y
+# CONFIG_FDC_EXTERNAL_CLOCK_HZ=40000000
+# CONFIG_FDC_EXTERNAL_FREF_DIVIDER=1
+# Or: CONFIG_FDC_CLOCK_INTERNAL=y and CONFIG_FDC_INTERNAL_FREF_DIVIDER=2
