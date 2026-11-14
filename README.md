@@ -2,7 +2,7 @@
 
 基于高云 Tang Mega 138K（GW5AST-138C）与 AE350 的电子音乐合成器工程。包含减法合成器、KS物理建模、FM声音路线，ESP32 A/B控制器、Android应用、网页控制台、PCM采集工具，以及配套IP、开发skills、历史实验数据和配套资料。
 
-[项目介绍](docs/PROJECT_OVERVIEW.md) · [系统与FPGA架构](docs/ARCHITECTURE.md) · [完整环境搭建指南](docs/ENVIRONMENT.md) · [验证与已知问题](docs/VALIDATION.md)
+[项目介绍](docs/PROJECT_OVERVIEW.md) · [技术报告](docs/technical/README.md) · [系统与FPGA架构](docs/ARCHITECTURE.md) · [完整环境搭建指南](docs/ENVIRONMENT.md) · [验证与已知问题](docs/VALIDATION.md)
 
 ## 仓库内容与入口
 
@@ -15,7 +15,7 @@
 | 手机与网页 | [Android](apps/android/README.md)、[网页](apps/web/README.md) |
 | 上位机与调试 | [host/](host/README.md)、[FDC调试](debug/fdc2214_esp32s3/README.md)、[串口MIDI工具](tools/esp32_midi_debug/README.md) |
 | 开发skills | [skills/](skills/README.md)，33个当前版本同级存放，含来源中2个未启用项；不自动安装或启用 |
-| 技术文档 | 用户正在更新，本轮暂缓上传；README、环境指南和源码架构说明继续提供 |
+| 技术报告 | [正式技术报告](docs/technical/README.md)，2026-11-14 Word版，132页，含目录、导航及参考文献 |
 | 可用产物 | [artifacts/](artifacts/README.md)，冻结FPGA参考位流/报告、A/B固件、APK、网页及明确版本的AE350软件参考 |
 | KS/FM实测数据 | [experiments/ks_fm_20261102/](experiments/ks_fm_20261102/README.md)，十段历史实测的WAV/PCM/RAW、分析、图稿和代码闭包 |
 | 延迟测量与软件参考 | [T04/AT04](AE350_UART_Latency_T04/)、[AE350参考](integration/ae350_latest/README.md) |
